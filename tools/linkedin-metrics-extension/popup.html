@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LinkedIn Metrics</title>
+    <style>
+      body { font-family: -apple-system, system-ui, sans-serif; width: 380px; padding: 12px; font-size: 13px; }
+      h1 { font-size: 14px; margin: 0 0 8px; }
+      .row { display: flex; gap: 6px; }
+      .row button { flex: 1; padding: 8px; cursor: pointer; }
+      .mode { font-size: 11px; color: #555; margin: 4px 0 8px; }
+      .post { border: 1px solid #ddd; border-radius: 4px; padding: 8px; margin: 6px 0; font-size: 12px; cursor: pointer; }
+      .post:hover { background: #f7f7f7; }
+      .post.selected { background: #eef6ff; border-color: #2196f3; }
+      .post .preview { color: #333; line-height: 1.3; }
+      .post .meta { color: #666; font-size: 11px; margin-top: 4px; }
+      .post .urn { font-family: ui-monospace, monospace; font-size: 10px; color: #888; }
+      pre { background: #f4f4f4; padding: 6px; border-radius: 4px; max-height: 140px; overflow: auto; font-size: 10px; }
+      input { width: 100%; padding: 6px; box-sizing: border-box; font-size: 12px; }
+      .status { margin-top: 8px; font-size: 12px; }
+      .ok { color: #006400; }
+      .err { color: #a00; }
+      .list { max-height: 320px; overflow-y: auto; margin: 6px 0; }
+    </style>
+  </head>
+  <body>
+    <h1>Send to workspace</h1>
+    <div class="row">
+      <button id="snap">📸 Snapshot</button>
+      <button id="sendOne" disabled>📤 Send selected</button>
+      <button id="sendAll" disabled>📤 Send all</button>
+    </div>
+    <div class="row" style="margin-top:6px;">
+      <button id="captureDMs">💬 Capture DMs (open /messaging/ first)</button>
+    </div>
+    <div class="mode" id="mode"></div>
+    <div class="list" id="list"></div>
+    <pre id="preview" style="display:none;"></pre>
+    <div class="status" id="status"></div>
+    <details style="margin-top:8px;">
+      <summary>Settings</summary>
+      <label style="display:block;margin-top:6px;">Endpoint URL</label>
+      <input id="endpoint" placeholder="http://localhost:5678/webhook/linkedin-metrics" />
+      <label style="display:block;margin-top:6px;">Shared secret</label>
+      <input id="secret" placeholder="set in .env" />
+      <button id="saveEndpoint" style="margin-top:6px;">Save</button>
+    </details>
+    <script src="popup.js"></script>
+  </body>
+</html>

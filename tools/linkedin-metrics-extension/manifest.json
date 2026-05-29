@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Metrics",
+  "version": "0.2.0",
+  "description": "Capture your own LinkedIn post metrics + DM inbox snapshots into the workspace score-posts pipeline. Client-side only \u2014 no server scraping.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Send LinkedIn data to the workspace"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/feed/update/*",
+        "https://www.linkedin.com/posts/*",
+        "https://www.linkedin.com/in/*/recent-activity/*",
+        "https://www.linkedin.com/messaging/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {}
+}

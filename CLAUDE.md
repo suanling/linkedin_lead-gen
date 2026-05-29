@@ -34,6 +34,7 @@ sops/linkedin-sop.md   the playbook (read-only)
                        post, lead-magnet-gen, amend-sop
 daily-log/             your daily notes (plan + record)
 pending-amendments/    SOP change drafts awaiting your review
+tools/                 optional: linkedin-metrics-extension (auto-capture for score-posts)
 ```
 
 ## The skills

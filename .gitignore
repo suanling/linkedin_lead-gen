@@ -29,3 +29,10 @@ trackers/*.xlsx
 
 # OS / misc
 .DS_Store
+
+# Chrome extension: local secret + captured metrics (personal)
+.env
+references/learning/inbox/posts/*
+!references/learning/inbox/posts/.gitkeep
+references/learning/inbox/dms/*
+!references/learning/inbox/dms/.gitkeep

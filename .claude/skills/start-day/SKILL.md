@@ -62,7 +62,16 @@ Open or create `daily-log/YYYY-MM-DD.md`. Write (append a fresh `## Today` if re
 
 Overdue items get `⚠️ {N}d overdue`. If a list is empty, write `- (nothing due)`.
 
-## Step 3 — Summary line
+## Step 3 — Weekly score nudge
+
+If today is a Sunday (or the last working day of the week), check `references/learning/hook-performance.md` for rows that are ≥7 days old with a blank `date_scored`. If any exist, add a line to the daily note:
+```
+### Weekly
+- [ ] Run /score-posts — {N} post(s) past the 7-day mark, unscored
+```
+This is the habit that keeps the learning loop closing. Skip on other days.
+
+## Step 4 — Summary line
 
 End with: `You have {E} to engage, {F} follow-ups ({O} overdue). Park/review: {P}.`
 

@@ -12,11 +12,15 @@ Run weekly (or whenever posts cross the 7-day mark).
 ## Step 1 — Find what's due
 Read `references/learning/hook-performance.md` and `comments-performance.md`. List rows where `date_scored` is blank AND the post is ≥7 days old. Tell the owner which posts need numbers.
 
-## Step 2 — Collect metrics
-For each due post, ask the owner for the LinkedIn analytics numbers (or accept a paste):
+## Step 2 — Collect metrics (two ways)
+
+**Auto (if the Chrome extension is set up):** check `references/learning/inbox/posts/*.json` for captured payloads. Match each to a due post by `post_id`/`post_urn`, read the metrics from the JSON, then move the processed file to `inbox/posts/_done/` (or delete) so it isn't re-counted. See `tools/linkedin-metrics-extension/README.md`.
+
+**Manual (default):** for each due post with no captured JSON, ask the owner for the numbers (or accept a paste):
 - **Post:** reactions, comments, meaningful comments (≥15 words), reposts, saves, impressions.
 - **Each pinned comment (1–7):** reactions, replies.
-If they don't have a number, leave it blank — don't invent.
+
+Either way: if a number is missing, leave it blank — don't invent.
 
 ## Step 3 — Fill the ledgers
 - Hook ledger: set `date_scored`, the metric columns, and compute `score = reactions + comments×2 + meaningful_comments×3 + reposts×4 + saves×5`.

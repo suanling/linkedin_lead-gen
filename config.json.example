@@ -1,0 +1,11 @@
+{
+  "industry": "[ xxx ]",
+  "gates": { "voice_match": true, "compliance": true, "anti_ai": true, "spam_cadence": true },
+  "media": { "selfie": true, "infographic": false, "carousel": false, "video": false },
+  "calendar": false,
+  "paths": {
+    "lead_gen_tracker": "trackers/lead-gen-tracker.xlsx",
+    "engagement_tracker": "trackers/engagement-tracker.xlsx",
+    "lead_magnets": "lead-magnets/"
+  }
+}

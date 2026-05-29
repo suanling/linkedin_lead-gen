@@ -1,0 +1,22 @@
+# Hook Performance Ledger
+
+Append-only. Every published post → 7-day score.
+
+**Schema (one row per post per scoring event):**
+```
+| date_published | date_scored | post_id | preview | format | hook_pattern | reactions | comments | meaningful_comments | reposts | saves | impressions | score | quartile | notes |
+```
+- `format` — which kk-post format was used (e.g. `6. Share a Helluva Story`)
+- `hook_pattern` — `confession` | `reframe` | `specific-number` | `contradiction` | `reader-question` | `inversion` | other
+- `meaningful_comments` — comments ≥15 words (amplification signal)
+- `saves` — strongest signal (weight heaviest)
+- `score` — `reactions + comments×2 + meaningful_comments×3 + reposts×4 + saves×5`
+- `quartile` — blank on append; filled by `score-posts`
+
+**Quartiles activate at ≥12 rows.** Below that, no bias — use judgment.
+
+| date_published | date_scored | post_id | preview | format | hook_pattern | reactions | comments | meaningful_comments | reposts | saves | impressions | score | quartile | notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+## Current Quartiles
+*(recomputed by score-posts once ≥12 rows exist)*

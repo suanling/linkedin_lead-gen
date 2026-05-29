@@ -1,0 +1,20 @@
+# Comments Performance Ledger
+
+Append-only. Every published post → 7 pinned comments → 7-day score per slot.
+
+**Schema (one row per comment per scoring event):**
+```
+| date_scored | post_id | comment_idx | pattern | preview | reactions | replies | score | quartile | notes |
+```
+- `comment_idx` — 1–7 (slot per `post` skill): 1=engagement-question · 2=tldr · 3=cta · 4=social-proof · 5=conv-extender · 6=why-i-do-this · 7=repost-amplifier
+- `pattern` — short label of the phrasing used
+- `score` — `reactions + (replies × 5)` (replies = thread alive, weighted heavier)
+- `quartile` — blank on append; filled by `score-posts`
+
+**Quartiles activate at ≥12 rows per slot.** Below that, `post` uses default templates.
+
+| date_scored | post_id | comment_idx | pattern | preview | reactions | replies | score | quartile | notes |
+|---|---|---|---|---|---|---|---|---|---|
+
+## Current Quartiles
+*(recomputed by score-posts once ≥12 rows per slot exist)*

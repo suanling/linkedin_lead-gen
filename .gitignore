@@ -1,0 +1,31 @@
+# Pristine template — the owner's data NEVER enters git.
+# Tracked: skills, agents, rules templates, SOP, docs, and *.example blanks.
+# Ignored: the live fill-in files (created from *.example by /onboard) + all operational output.
+
+# Live fill-in files (personal data) — created from their .example on onboard
+account-profile.md
+config.json
+kk-post.md
+.claude/rules/voice.md
+.claude/rules/gates.md
+references/icp.md
+references/positioning.md
+references/lead-magnets.md
+references/engagement-targets.md
+references/learning/hook-performance.md
+references/learning/comments-performance.md
+
+# Operational output + private state
+daily-log/*
+!daily-log/.gitkeep
+audit-log.md
+pending-amendments/*
+!pending-amendments/.gitkeep
+lead-magnets/*
+!lead-magnets/.gitkeep
+
+# Live trackers (contain real leads) — created blank by /onboard
+trackers/*.xlsx
+
+# OS / misc
+.DS_Store

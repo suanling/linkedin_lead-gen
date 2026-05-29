@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Write(./account-profile.md)",
+      "Edit(./account-profile.md)",
+      "Write(./config.json)",
+      "Edit(./config.json)",
+      "Write(./kk-post.md)",
+      "Edit(./kk-post.md)",
+      "Write(./audit-log.md)",
+      "Edit(./audit-log.md)",
+      "Write(./daily-log/**)",
+      "Edit(./daily-log/**)",
+      "Write(./pending-amendments/**)",
+      "Write(./trackers/**)",
+      "Edit(./trackers/**)",
+      "Write(./lead-magnets/**)",
+      "Edit(./lead-magnets/**)",
+      "Write(./references/**)",
+      "Edit(./references/**)",
+      "Write(./.claude/rules/**)",
+      "Edit(./.claude/rules/**)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)"
+    ],
+    "deny": [
+      "Write(./sops/**)",
+      "Edit(./sops/**)",
+      "Write(./.claude/skills/**)",
+      "Edit(./.claude/skills/**)",
+      "Write(./.claude/agents/**)",
+      "Edit(./.claude/agents/**)",
+      "Write(./CLAUDE.md)",
+      "Edit(./CLAUDE.md)"
+    ]
+  },
+  "_notes": {
+    "scope": "Fully self-contained — the workspace reads/writes only inside ./. No external (Thinking Brain / Knowledge Base / AIOS) paths. sops/, skills/, agents/, and CLAUDE.md are read-only (the operating layer); profile, config, trackers, references, logs, and rules are writable (the owner's data, filled by onboard and the skills).",
+    "calendar": "Google Calendar MCP intentionally NOT enabled by default. Turn on config.json.calendar and add the create_event/list_events/suggest_time MCP allows here only if the owner wants the call-booking calendar gate.",
+    "version": "template-1.0"
+  }
+}

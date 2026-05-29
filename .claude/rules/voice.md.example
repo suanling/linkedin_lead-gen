@@ -1,0 +1,18 @@
+# Outreach Voice
+
+> Filled by `/onboard`. The short, conversational voice for DMs and comments. Long-form posts
+> use `kk-post.md` instead. Replace every `[xxx]`.
+> Full anti-AI rules live in `.claude/rules/anti-ai.md` (this file is the owner-specific bits).
+
+- Tone: [xxx]
+- Banned (your additions): [xxx]
+- Signature moves: [xxx]
+
+## Always
+- Contractions ("I'm", "you're", "it's")
+- Specific to this person, never copy-paste-able to 50 people
+
+## Never (quick list — see anti-ai.md for the complete set)
+- Em dashes
+- AI vocabulary: crucial, pivotal, showcase, foster, resonate, underscore, testament, delve, landscape
+- Flattery openers ("Your profile really stood out")

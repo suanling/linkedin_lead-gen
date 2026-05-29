@@ -1,0 +1,12 @@
+# Quality Gates
+
+How `qa-gate` interprets `config.json → gates`. It runs ONLY the checks set `true`.
+
+- **voice_match** — check against `.claude/rules/voice.md` (DMs/comments) or `kk-post.md` (posts).
+- **compliance** — adapts to `config.json → industry`. Declare your industry's rules below.
+  If your field is regulated (e.g. financial advice), the gate enforces those rules; if not,
+  it's light or off.
+  - Industry rules: [ xxx — declared during /onboard; e.g. "no guaranteed returns, no advice" ]
+- **anti_ai** — strip AI tells. Full rules in `.claude/rules/anti-ai.md` (Part 1 rules + Part 2 Wikipedia field guide).
+- **spam_cadence** — volume limits + templated-spam detection to protect the LinkedIn account.
+  - Daily caps: [ xxx — e.g. comments/day, connection requests/day ]

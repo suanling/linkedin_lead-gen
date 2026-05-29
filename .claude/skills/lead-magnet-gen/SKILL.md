@@ -1,38 +1,51 @@
 ---
 name: lead-magnet-gen
-description: Create a lead magnet from scratch in the owner's voice and brand — title, outline, and a branded asset (or markdown if no design keys) — then register it so the post and dm-sales-coach skills can use it. Triggers "create a lead magnet", "make a lead magnet", "I need a freebie", "build a guide", "/lead-magnet-gen".
+description: Create a lead magnet end-to-end in the owner's voice — find the idea, write it, package it, set up delivery, run a launch checklist, and register it so post and dm-sales-coach can use it. One skill, full pipeline (idea → asset → delivery → launch). Triggers "create a lead magnet", "make a lead magnet", "I need a freebie", "lead magnet ideas", "build a guide", "/lead-magnet-gen".
 ---
 
 # Lead Magnet Generator
 
-Create a new lead magnet from a pain point, in the owner's voice. The conversion engine isn't the magnet itself — it's the 3-message post-download sequence in `dm-sales-coach`. The magnet is the hook that earns the conversation.
+Full lead-magnet pipeline. A good lead magnet solves ONE specific problem fast and creates the *next* problem your offer solves (public principle, Hormozi's *$100M Leads*: the magnet should reveal a problem, not just give value). The conversion engine isn't the magnet — it's the 3-message post-download sequence in `dm-sales-coach`. The magnet is the hook that earns the conversation.
 
 Read first: `account-profile.md` (offer, ICP), `references/icp.md` (pains), `references/positioning.md`, `.claude/rules/voice.md` + `kk-post.md` (voice), `config.json → media`.
 
-## Steps
+Run the stages in order; you can also jump to one ("just give me ideas", "package this").
 
-### 1. Pick the pain
-From `references/icp.md`, choose ONE specific, felt pain of the ICP. A magnet solves one small problem fast — not everything. If the owner names the pain, use that.
+## Stage 1 — Idea finder
+From `references/icp.md`, list the ICP's felt pains. For each, propose a magnet idea + format (checklist / template / swipe file / mini-guide / calculator / scorecard / cheat-sheet). Recommend the 1–2 with the best "quick win + reveals the next problem" fit. If the owner already has a pain in mind, start there.
 
-### 2. Title + promise
-Draft 3 title options (specific outcome, low effort, fast win). Recommend one. The promise must be a quick win the reader can act on the same day.
+## Stage 2 — Title + promise
+3 title options — specific outcome, low effort, fast win ("The 5-point X audit", "Steal my Y template"). Recommend one. The promise must be actionable the same day.
 
-### 3. Outline
-Structure: intro (name the pain) → body (the steps/checklist/template) → CTA (the next problem this surfaces → soft invite to a conversation). Keep it tight — a usable tool, not a book.
+## Stage 3 — Write it (creator)
+Structure: intro (name the pain) → body (the steps / checklist / template / framework) → bridge (the *next* problem this surfaces) → soft CTA (a conversation, not a hard sell). Keep it tight — a usable tool, not a book. Owner's voice throughout (`voice.md` / `kk-post.md`).
 
-### 4. Build the asset
-- Always available: a clean **markdown** version.
-- If `config.media` design generation is enabled (keys present): produce a branded PDF/infographic. Else, deliver markdown and note "owner to design/brand".
-- Write the output to `lead-magnets/<slug>.md` (+ asset file if generated).
+## Stage 4 — Package it
+- Decide the deliverable format and a clean name.
+- Write the "what you get" blurb (3 bullets max).
+- If `config.media` design generation is enabled (keys present): produce a branded PDF/visual. Else: deliver clean **markdown** and note "owner to design/brand".
+- Save to `lead-magnets/<slug>.md` (+ asset file if generated).
 
-### 5. Register it
-Add a row to `references/lead-magnets.md`: name, archetype/pain it serves, link/file path, UTM tag (blank for the owner to fill), notes. Now `post` and `dm-sales-coach` can match against it.
+## Stage 5 — Delivery setup
+- Draft the **delivery message** (what you send when someone opts in) — short, warm, sets up the 3-message sequence.
+- Note where the file/link lives and a **UTM tag** for the link (so downloads are trackable).
+- Reminder: deliver *after* the qualifying conversation where possible (the magnet earns the call; don't dump it cold).
 
-### 6. QA
-Run `qa-gate` (voice + anti_ai; compliance if regulated) on the magnet copy before finalising.
+## Stage 6 — Launch checklist
+Before it goes live, confirm:
+- [ ] Solves one pain, fast; reveals the next problem
+- [ ] Title promises a specific same-day win
+- [ ] Voice + `qa-gate` passed (voice + anti_ai; compliance if regulated)
+- [ ] Delivery message drafted; link/UTM set
+- [ ] Registered in `references/lead-magnets.md`
+- [ ] (Optional) announcement post — hand the topic to `/post`
+
+## Stage 7 — Register
+Add a row to `references/lead-magnets.md`: name · archetype/pain · link/file · UTM · notes. Now `post` and `dm-sales-coach` can match against it.
 
 ## Rules
-- One pain, one quick win. Don't over-scope.
+- One pain, one quick win. Don't over-scope a magnet.
 - Owner's voice throughout — never generic.
-- Always register the magnet so the rest of the funnel can use it.
-- Degrade gracefully without design API keys (markdown is fine).
+- Always register it so the rest of the funnel can use it.
+- Degrade gracefully without design keys (markdown is always fine).
+- The magnet reveals the next problem; it does not solve everything (that's the offer).

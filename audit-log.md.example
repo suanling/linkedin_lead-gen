@@ -1,0 +1,7 @@
+# Audit Log
+
+Append-only record of every outbound message (comments, DMs, replies). One line each:
+
+`[YYYY-MM-DD HH:MM] <skill> | <name> | <stage/type> | <one-line summary>`
+
+---

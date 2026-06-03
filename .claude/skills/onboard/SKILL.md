@@ -20,7 +20,7 @@ A common failure right after a `git clone`/download: the workspace ends up in a 
 python .claude/skills/onboard/detect-workspace.py
 ```
 
-It prints the working copy, flags a cloud-synced location, and lists **every** copy of this workspace it finds (matching the `CLAUDE.md` + `config.json` + `START-HERE.md` marker triplet) with each `config.json` timestamp. Exit code `0` = single local copy, safe to proceed; exit code `1` = a problem needs a decision. Act on the output:
+It does two things: (a) **detect** — prints the working copy, flags a cloud-synced location, and lists **every** copy of this workspace it finds (matching the `CLAUDE.md` + `config.json` + `START-HERE.md` marker triplet) with each `config.json` timestamp; (b) **bootstrap** — deterministically creates any missing live file in the current copy (`*.example` → live file, `kk-post-template.md` → `kk-post.md`, and blank trackers with their schemas), never overwriting an existing file, so 0b below is handled automatically rather than relying on the model. `.env` is deliberately skipped (secrets — set up in Step 7). Pass `--detect-only` to skip bootstrap. Exit code `0` = single local copy, safe to proceed; exit code `1` = a problem needs a decision (more than one copy, or a cloud working copy). Act on the output:
 
 1. **State where you're running.** Show the owner the working path the detector printed: "I read and write this workspace at `<path>`. Open your trackers and notes from exactly here, not another copy."
 2. **If a cloud-synced location is flagged** (`iCloudDrive`, `OneDrive`, `Dropbox`, `Google Drive`, macOS `Library/Mobile Documents`): cloud folders store files as **online-only placeholders** (Windows `ReparsePoint`, macOS "dataless") the tooling often can't read or write, and edits may not sync immediately. Recommend either running from a **local, non-synced copy**, or setting the folder to **"Always keep on this device"**.
@@ -30,6 +30,8 @@ It prints the working copy, flags a cloud-synced location, and lists **every** c
 > If native Python isn't available, fall back to the manual version: print the cwd, check the path for the cloud segments above, and search the owner's common roots (home, Desktop, Documents, and the cloud roots) for the marker triplet.
 
 ### 0b — First-run file creation
+> The 0a detector already performs this automatically (it bootstraps the current copy). This section is the spec it implements and the manual fallback if native Python isn't available. Either way, verify the live files below exist before continuing.
+
 This is a pristine template (the owner's data is gitignored). On first run, create the live files from their blanks:
 - For every `*.example` file, if the matching live file does NOT exist, copy it (e.g. `account-profile.md.example` → `account-profile.md`). Do not overwrite an existing live file.
 - **`kk-post.md` is special** — its blank is `kk-post-template.md` (the empty `[xxx]` format library), NOT a `.example` file. If `kk-post.md` does not exist, create it by copying `kk-post-template.md`. `kk-post-example.md` holds worked examples in a generic voice for reference only; never copy its content into `kk-post.md` and never overwrite it. (Both `kk-post-template.md` and `kk-post-example.md` are read-only references.)

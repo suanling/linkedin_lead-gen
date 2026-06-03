@@ -7,7 +7,7 @@ description: Reply to comments people leave on YOUR OWN LinkedIn posts — draft
 
 Draft replies to the comments on your posts that sound authentically like you, add real substance, invite a second reply, and quietly build positioning. Every reply does five jobs: sound human, sound like you, add something new, invite continuation, reinforce your positioning.
 
-Read first: `.claude/rules/voice.md` (and `kk-post.md` for deeper voice), `references/positioning.md` (your POV / signature angles). Quality is enforced by `qa-gate` (voice_match + anti_ai). Copy-paste mode — you paste the reply, say "done".
+Read first: `.claude/rules/voice.md` (and `kk-post.md` for deeper voice), grounded by `references/about-me.md` + `references/voice-profile.md` (the lived stories and signature moves), `references/positioning.md` (your POV / signature angles). Quality is enforced by `qa-gate` (voice_match + anti_ai). Copy-paste mode — you paste the reply, say "done".
 
 ## The (1, 3-4, 1) architecture
 Hard limit: 5-6 lines (read on phones while scrolling). You're writing for the **lurkers**, not just the commenter.

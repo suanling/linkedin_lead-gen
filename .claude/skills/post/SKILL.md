@@ -7,7 +7,7 @@ description: Produce a LinkedIn post end-to-end — pick a kk-post format, write
 
 Takes an idea or rough draft to a publish-ready LinkedIn post + its 7 pinned comments, in the owner's voice. LinkedIn-only. Content creation is a different machine from lead-gen — this is the content side.
 
-Read first: `kk-post.md` (post-format library), `account-profile.md` + `references/positioning.md` (angle, ICP), `references/lead-magnets.md`, `.claude/rules/voice.md`, `config.json` (media). Quality via `qa-gate`.
+Read first: `kk-post.md` (post-format library), `account-profile.md` + `references/positioning.md` (angle, ICP), `references/lead-magnets.md`, `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` (master profile + how she writes — the lived stories and signature moves), `references/market-context.md` (cited, compliance-safe stats when a post needs data), `config.json` (media). Quality via `qa-gate`.
 
 ## Pipeline
 

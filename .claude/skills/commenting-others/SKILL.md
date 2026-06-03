@@ -7,7 +7,7 @@ description: Comment on OTHER people's LinkedIn posts (your ICP and the voices t
 
 The daily engagement routine: leave quality comments on fresh posts from your ICP and the voices they follow, to build visibility and warm leads. Copy-paste mode — you paste the comment yourself, say "done", the skill logs and moves on. Comments are how cold people become warm; warm people become prospects (see "promote", Step 5b).
 
-Reads who/why from `references/engagement-targets.md`, ICP from `account-profile.md` + `references/icp.md`, voice from `.claude/rules/voice.md`. Quality is enforced by `qa-gate`.
+Reads who/why from `references/engagement-targets.md`, ICP from `account-profile.md` + `references/icp.md`, voice from `.claude/rules/voice.md` (grounded by `references/about-me.md` + `references/voice-profile.md` — the lived stories and signature moves), and `references/market-context.md` for any cited, compliance-safe stat. Quality is enforced by `qa-gate`.
 
 ## Tracker schema (engagement-tracker.xlsx, sheet "Accounts")
 1 Name · 2 Country · 3 Category · 4 Last Engaged · 5 Next Action · 6 Total Engagements · 7 First Engaged · 8 LinkedIn URL · 9 Date Added · 10 Notes

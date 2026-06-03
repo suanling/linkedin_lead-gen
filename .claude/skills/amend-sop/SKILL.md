@@ -19,6 +19,12 @@ Ask all four:
 
 Don't guess. If they can't answer one, ask.
 
+## Step 1.5 — Ripple check (when the change touches a step or a file)
+An amendment rarely lives in one place. Before drafting, trace the blast radius so the change doesn't leave orphans or contradictions:
+- **Steps below.** If it changes an earlier step, read every later step that depends on it (e.g. renaming a file in an early step breaks any later step that reads the old name).
+- **Related / consuming files.** Search the workspace for every skill, rule, agent, doc, and reference that names the file, field, or behavior you're changing. A new file other skills should READ is an orphan until their "Read first" lists it; a renamed file breaks every reference to the old name; a new file/gate may need `gates.md`, `config.json`, `.gitignore`, `CLAUDE.md`, or `START-HERE.md` updated to match.
+- Record every affected location in the draft's **Ripple check** field so the owner applies the whole set, not just the headline change.
+
 ## Step 2 — Write the draft
 Create `pending-amendments/YYYY-MM-DD-<slug>.md` (`<slug>` = 2-4 word kebab-case):
 
@@ -40,6 +46,9 @@ status: pending-review
 
 ## Section to amend
 <Daily checklist | Rules | Decision tree | Templates | Escalate triggers | Exceptions ledger>
+
+## Ripple check
+<downstream steps + related/consuming files this change also touches (Read-first lists, renamed references, gates.md/config.json/.gitignore/CLAUDE.md/START-HERE.md) — or "none">
 
 ## Why
 <one line — what this prevents>

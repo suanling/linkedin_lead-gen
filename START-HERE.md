@@ -8,7 +8,7 @@ Run **`/onboard`**. It walks you through:
 1. Who you are + your LinkedIn URL
 2. Your value proposition + ICP (who you target)
 3. Your offer + the call you book (call length is your choice)
-4. Your voice — a short outreach voice, plus an optional deep **Taste Interview** that fills your post-format examples in `kk-post.md`
+4. Your voice — a short outreach voice, plus an optional deep **Taste Interview** that builds your master profile (`references/about-me.md` + `references/voice-profile.md`), deepens your outreach voice, and fills your post-format examples in `kk-post.md`
 5. Your industry + which **quality gates** to enforce (voice / compliance / anti-AI / spam-cadence)
 6. Your lead magnet(s) — register existing ones, or create one with `/lead-magnet-gen`
 

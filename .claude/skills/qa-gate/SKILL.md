@@ -14,7 +14,7 @@ The last check before anything goes out. Config-driven: reads `config.json → g
 
 | Gate | Check | Source of truth |
 |------|-------|-----------------|
-| `voice_match` | Sounds like the owner? | `.claude/rules/voice.md` (DM/comment) or `kk-post.md` (post) |
+| `voice_match` | Sounds like the owner? | `.claude/rules/voice.md` (DM/comment) or `kk-post.md` (post), grounded by `references/about-me.md` + `references/voice-profile.md` (lived stories, signature moves, hard nos) |
 | `compliance` | Within the declared industry rules? Strict if regulated, light/skip if not. | `config.json.industry` + `gates.md` |
 | `anti_ai` | No AI tells: em dashes, banned vocabulary, banned sentence patterns, rule-of-three, missing contractions, formatting tells | **`.claude/rules/anti-ai.md` (complete — Part 1 rules + Part 2 field guide)** |
 | `spam_cadence` | Within daily caps; not templated/spammy | `gates.md` caps |

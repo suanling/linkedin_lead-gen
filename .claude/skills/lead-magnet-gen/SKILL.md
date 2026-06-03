@@ -7,7 +7,7 @@ description: Create a lead magnet end-to-end in the owner's voice — find the i
 
 Full lead-magnet pipeline. A good lead magnet solves ONE specific problem fast and creates the *next* problem your offer solves (public principle, Hormozi's *$100M Leads*: the magnet should reveal a problem, not just give value). The conversion engine isn't the magnet — it's the 3-message post-download sequence in `dm-sales-coach`. The magnet is the hook that earns the conversation.
 
-Read first: `account-profile.md` (offer, ICP), `references/icp.md` (pains), `references/positioning.md`, `.claude/rules/voice.md` + `kk-post.md` (voice), `config.json → media`.
+Read first: `account-profile.md` (offer, ICP), `references/icp.md` (pains), `references/positioning.md`, `.claude/rules/voice.md` + `kk-post.md` (voice) grounded by `references/about-me.md` + `references/voice-profile.md` (the lived stories and signature moves), `config.json → media`.
 
 Run the stages in order; you can also jump to one ("just give me ideas", "package this").
 

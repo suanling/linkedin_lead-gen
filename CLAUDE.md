@@ -20,18 +20,21 @@ Content creation (writing posts) is a separate machine that supports the funnel 
 ```
 account-profile.md     your identity, value prop, ICP, offer, lead magnets   (you fill)
 config.json            gate toggles, industry, media, paths                  (you fill)
-kk-post.md             post-format library — [bracket directions] = format   (examples you fill)
+kk-post.md             your filled post-format library — [bracket directions] = format   (you fill)
+kk-post-template.md    the empty [xxx] template onboard copies to kk-post.md   (read-only)
+kk-post-example.md     worked examples in a generic voice — shape reference only   (read-only)
 audit-log.md           append-only record of everything sent
 trackers/              lead-gen-tracker.xlsx + engagement-tracker.xlsx
 lead-magnets/          your magnets
-references/            icp, positioning, lead-magnets, engagement-targets, learning/
+references/            about-me + voice-profile (master profile), icp, positioning, lead-magnets,
+                       engagement-targets, market-context, iafa-compliance, learning/
 sops/linkedin-sop.md   the playbook (read-only)
 .claude/
   rules/               voice.md (outreach voice), anti-ai.md (full anti-AI rules), gates.md
   agents/              sales-coach, relationship-manager, qa-officer (lenses)
   skills/              onboard, start-day, qa-gate, commenting-others,
                        dm-sales-coach, respond-to-own, log-prospect,
-                       post, lead-magnet-gen, amend-sop
+                       post, lead-magnet-gen, score-posts, amend-sop
 daily-log/             your daily notes (plan + record)
 pending-amendments/    SOP change drafts awaiting your review
 tools/                 optional: linkedin-metrics-extension (auto-capture for score-posts)
@@ -41,7 +44,7 @@ tools/                 optional: linkedin-metrics-extension (auto-capture for sc
 
 | Skill | Does |
 |---|---|
-| `/onboard` | One-time setup: identity, ICP, offer, voice (incl. Taste Interview for kk-post), gates, lead magnets |
+| `/onboard` | One-time setup: identity, ICP, offer, voice (incl. deep Taste Interview → master profile + voice + kk-post), gates, lead magnets |
 | `/start-day` | Reads both trackers → writes today's checklist into the daily note (due + overdue) |
 | `/commenting-others` | Comment on others' posts; logs engagement; promotes good-fit accounts to prospects |
 | `/dm-sales-coach` | What to say per lead — SALES (→ call) or COLLAB (→ partnership) path |

@@ -9,7 +9,7 @@ Turn a LinkedIn DM thread into the next step — a **booked call** (sales) or an
 
 This skill **advises and drafts**. It does not write the tracker — when something happens (sent / replied / call booked / collab agreed), hand off to `log-prospect`. Run `qa-gate` on every draft before presenting.
 
-Read first: `account-profile.md` (offer, ICP, call + call length), `references/icp.md`, `references/positioning.md`, `references/lead-magnets.md`, `.claude/rules/voice.md`. The DM lens lives in `.claude/agents/sales-coach.md`.
+Read first: `account-profile.md` (offer, ICP, call + call length), `references/icp.md`, `references/positioning.md`, `references/lead-magnets.md`, `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` (the lived stories, proof bank, and signature moves). The DM lens lives in `.claude/agents/sales-coach.md`.
 
 ## The one rule
 **Never sell in DMs.** No pitching, no explaining the offer, no closing. The conversation (call or collab) is where it happens. The DM is the bridge, built on trust.

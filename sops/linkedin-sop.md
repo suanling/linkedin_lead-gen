@@ -26,7 +26,7 @@ Targets (comments/day, requests/day) are the owner's choice — set them in `ref
 ## 3. Rules
 
 **Always:**
-- Load voice first: `.claude/rules/voice.md` (outreach) and the filled examples in `kk-post.md` (posts).
+- Load voice first: `.claude/rules/voice.md` (outreach) and the filled examples in `kk-post.md` (posts), grounded by `references/about-me.md` + `references/voice-profile.md`.
 - Engage your ICP only (`account-profile.md` / `references/icp.md`). Skip disqualifiers. Skip the wrong geography if you target a specific market.
 - Fresh posts only — last 24–48h. Older than 2 days = skip.
 - Copy-paste mode — present the draft, run `qa-gate`, wait for "done", then log. Never auto-post.

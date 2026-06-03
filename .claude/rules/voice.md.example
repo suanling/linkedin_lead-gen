@@ -3,6 +3,8 @@
 > Filled by `/onboard`. The short, conversational voice for DMs and comments. Long-form posts
 > use `kk-post.md` instead. Replace every `[xxx]`.
 > Full anti-AI rules live in `.claude/rules/anti-ai.md` (this file is the owner-specific bits).
+> Apply the **"HUMAN TEXTURE"** section of `anti-ai.md` here too: DMs and comments should open on
+> recognition, use casual markers in moderation, and sound like one person talking to one person.
 
 - Tone: [xxx]
 - Banned (your additions): [xxx]

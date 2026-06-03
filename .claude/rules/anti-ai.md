@@ -53,6 +53,20 @@ showcase · foster · bolster · garner · profound · powerful (as filler) · v
 - **Opening line** — a sharp, bold claim that creates a question in the reader's mind without asking one.
 - **Closing** — a specific insight or one clear action, not a rhetorical question.
 
+## HUMAN TEXTURE (close the gap to how a person actually talks)
+> The positive counterpart to the bans above: what makes writing read like one person speaking to
+> one person, not a broadcast. Apply on top of everything else; where a texture move would break a
+> ban (em dash, vague trailing ending, opening every post with a question), the ban wins.
+- **Start sentences with "And" or "But"** when it fits the rhythm. Real thinking connects that way.
+- **Casual markers, in moderation** — "honestly," "look," "here's what I mean," "think about it this way," "you know that moment when." Sprinkle, don't saturate.
+- **Admit real uncertainty** — "maybe it's just me, but," "I'm not sure yet, and that's the point." Only where it's true; never fake humility.
+- **Open on a moment of recognition,** not a lecture or a credential. Name the feeling the reader already has, then go deeper. (The sharp-claim opening still works; this is the warmer sibling.)
+- **Insight as discovery, not declaration** — let the point land like it was just worked out, not announced from a stage.
+- **Write to one real person** on the other side of the table, never an audience.
+- **Concrete over abstract, always** — "land the client," "sleep through the night," "one employer, one decision and it's gone." Never "achieve success" or "mitigate risk."
+- **Allowed, but bounded** — an occasional sentence fragment for emphasis when the pause truly serves, and "…" mid-thought to show the mind moving. The piece still CLOSES on a firm, specific point, never a trailing "…" or a vague motivational line.
+- **Banned filler phrasing** — "in order to" (use "to"), "due to the fact that" (use "because"), "it is important to note" (just note it), "one might consider" (use "you might").
+
 The owner's specific voice, examples, and signature phrases come from `.claude/rules/voice.md`
 (outreach) and `kk-post.md` (posts). This file says what to avoid; those say what to sound like.
 

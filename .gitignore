@@ -1,3 +1,42 @@
+# Pristine template — the owner's data NEVER enters git.
+# Tracked: skills, agents, rules templates, SOP, docs, and *.example blanks.
+# Ignored: the live fill-in files (created from *.example by /onboard) + all operational output.
+
+# Live fill-in files (personal data) — created from their .example on onboard
+account-profile.md
+config.json
+kk-post.md
+.claude/rules/voice.md
+.claude/rules/gates.md
+references/icp.md
+references/positioning.md
+references/lead-magnets.md
+references/engagement-targets.md
+references/voice-profile.md
+references/learning/hook-performance.md
+references/learning/comments-performance.md
+
+# Operational output + private state
+daily-log/*
+!daily-log/.gitkeep
+audit-log.md
+pending-amendments/*
+!pending-amendments/.gitkeep
+lead-magnets/*
+!lead-magnets/.gitkeep
+
+# Live trackers (contain real leads) — created blank by /onboard
+trackers/*.xlsx
+
+# OS / misc
+.DS_Store
+
+# Chrome extension: local secret + captured metrics (personal)
+.env
+references/learning/inbox/posts/*
+!references/learning/inbox/posts/.gitkeep
+references/learning/inbox/dms/*
+!references/learning/inbox/dms/.gitkeep
 
 # iCloud Drive conflict copies — this folder lives in iCloud, which duplicates
 # changing files as "name 2.ext" / "name 2". Never let that junk enter git.

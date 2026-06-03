@@ -1,0 +1,21 @@
+# Testimonials
+
+> Social proof captured as people engage (via `references/capture-protocol.md`, bucket 3).
+> **Nothing here is publishable until consent is granted.** `qa-gate` (compliance) blocks any use of an
+> entry whose consent is not granted. If you are a regulated adviser, financial testimonials need prior
+> WRITTEN consent, no PII, no figures (Mode 2, see gates.md); other testimonials still need consent
+> before use. `/onboard` creates this file; the capture skills fill it.
+
+## Store
+
+| Date | Who (name / role) | Where (DM / comment / call) | Quote (verbatim) | Consent to publish | Compliance cleaned | Used in |
+|------|-------------------|-----------------------------|------------------|--------------------|--------------------|---------|
+| | | | | not granted | — | — |
+
+## How an entry becomes publishable
+1. Captured with `Consent to publish = not granted` (default).
+2. Ask the person; on a clear yes, set consent and note the date (and that it was written/explicit).
+3. Strip PII; if regulated, remove any figures/products and keep method + human pattern only; mark `Compliance cleaned = yes`.
+4. Only then may `post` or your profile use it. Record where in `Used in`.
+
+> Never invent or paraphrase a testimonial into existence. Capture only real words people actually said.

@@ -11,6 +11,8 @@ This skill **advises and drafts**. It does not write the tracker — when someth
 
 Read first: `account-profile.md` (offer, ICP, call + call length), `references/icp.md`, `references/positioning.md`, `references/lead-magnets.md`, `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` (the lived stories, proof bank, and signature moves). The DM lens lives in `.claude/agents/sales-coach.md`.
 
+**Capture as you go.** If the owner shares a new lived story or a sharp belief / contrarian take, or a testimonial surfaces (the prospect praises them/their work), or a prospect reveals a personal story, follow `references/capture-protocol.md`: offer to save it to the right place (Story bank / Beliefs & contrarian takes / `testimonials.md`), consent-gate testimonials, and never capture someone else's personal story as content (a private tracker note at most).
+
 ## The one rule
 **Never sell in DMs.** No pitching, no explaining the offer, no closing. The conversation (call or collab) is where it happens. The DM is the bridge, built on trust.
 

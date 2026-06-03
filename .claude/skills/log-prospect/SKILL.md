@@ -7,6 +7,8 @@ description: Quickly log a LinkedIn lead-gen update — connection request sent,
 
 Record a lead-gen event to `trackers/lead-gen-tracker.xlsx` and the daily note in one shot. Also the **manual-sourcing capture point**: since there's no proactive prospecting skill, this is where connection requests you send (manually / via Sales Navigator) get logged — it **creates a new row** if the person isn't in the tracker yet.
 
+**Capture as you log.** If a logged event includes a testimonial or a new owner story or belief / contrarian take, offer to save it per `references/capture-protocol.md` (testimonials are consent-gated; another person's personal story stays a private note in this tracker, never reused as content).
+
 ## Tracker schema (sheet "Prospects")
 1 Name · 2 Country · 3 Job Title · 4 Company · 5 Status · 6 Date Requested · 7 Date Connected · 8 DM Stage · 9 Last Contact · 10 Next Action · 11 Touchpoints · 12 Lead Magnet Sent · 13 LinkedIn URL · 14 Notes
 

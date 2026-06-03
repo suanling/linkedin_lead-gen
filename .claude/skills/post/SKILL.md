@@ -9,6 +9,8 @@ Takes an idea or rough draft to a publish-ready LinkedIn post + its 7 pinned com
 
 Read first: `kk-post.md` (post-format library), `account-profile.md` + `references/positioning.md` (angle, ICP), `references/lead-magnets.md`, `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` (master profile + how she writes — the lived stories and signature moves), `references/market-context.md` (cited, compliance-safe stats when a post needs data), `config.json` (media). Quality via `qa-gate`.
 
+**Capture beliefs & contrarian takes as you draft.** When the owner articulates a sharp, distinctly-theirs belief or contrarian take while shaping the post, offer to save it under the matching lens in `positioning.md` (Beliefs & contrarian takes) per `references/capture-protocol.md`. A consented testimonial may be *used* here, but only if `testimonials.md` marks consent granted and compliance cleaned.
+
 ## Pipeline
 
 ### 1. Intake

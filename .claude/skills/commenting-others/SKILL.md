@@ -9,6 +9,8 @@ The daily engagement routine: leave quality comments on fresh posts from your IC
 
 Reads who/why from `references/engagement-targets.md`, ICP from `account-profile.md` + `references/icp.md`, voice from `.claude/rules/voice.md` (grounded by `references/about-me.md` + `references/voice-profile.md` — the lived stories and signature moves), and `references/market-context.md` for any cited, compliance-safe stat. Quality is enforced by `qa-gate`.
 
+**Capture beliefs & contrarian takes as you draft.** When the owner voices a sharp, distinctly-theirs belief or contrarian take while shaping a comment, offer to save it under the matching lens in `positioning.md` (Beliefs & contrarian takes) per `references/capture-protocol.md`. Don't capture the post author's personal story as content (the owner's rule).
+
 ## Tracker schema (engagement-tracker.xlsx, sheet "Accounts")
 1 Name · 2 Country · 3 Category · 4 Last Engaged · 5 Next Action · 6 Total Engagements · 7 First Engaged · 8 LinkedIn URL · 9 Date Added · 10 Notes
 
@@ -38,7 +40,7 @@ Read the voice files first (`.claude/rules/voice.md`). Then assess the post (sen
 
 ```
 1     = Hook/POV — one line. A specific insight or angle, NOT flattery. Makes a lurker stop.
-2–3   = Value — 2-3 short lines. Add something NEW: a tactic, a personal example, a reframe, a named pitfall. Write for the lurkers.
+2–3   = Value — 2-3 short lines. Add something NEW. At least one line MUST be a real first-person detail from your own life (see "Two hard rules" below, not optional). Write for the lurkers.
 1     = CTA — one line. A question that invites a reply.
 ```
 Hard limit: 5-6 lines.
@@ -46,8 +48,28 @@ Hard limit: 5-6 lines.
 - **V2 Thought Leader** (5-6) — contrarian opener, develop WHY→HOW→OUTCOME, wrap + question.
 - **V3 Conversationalist** (5-6) — personal-story hook, bridge to their post, question that invites a DM. Best for accounts you want a conversation with.
 
+**Angle diversity (required):** the three variations must each add a *different* angle, ideally each one run through a different **Signature lens** (`references/positioning.md`). Three versions of the same point is a fail; that's applause, not value. Before presenting, name (to yourself) the distinct angle each one adds and confirm they're genuinely different. If the post already covers a lot, every variation still has to add something the post didn't say.
+
+### Two hard rules (what makes it sound like *you*, not an articulate stranger)
+Not optional. A draft that breaks either one fails QA — rewrite before presenting.
+
+1. **Lead from your own lived experience or a point of view only you would take.** At least one line of the value section must be unmistakably *yours* — one of:
+   - **(a) a specific first-person lived detail**: a real moment, number, or scene from your own story. Pull it from the **Story bank** in `references/about-me.md`. Use what's actually recorded there; if nothing fits, that's a weaker comment (see below), don't invent one.
+   - **(b) a signature lens, belief, or contrarian take**: a stance or angle that's distinctly yours, not the obvious take. Run the draft through one of your **Signature lenses** in `references/positioning.md`, or pull a saved **Belief / contrarian take** from that file, and let it generate the add.
+
+   What does NOT satisfy this: a generic clever reframe an articulate stranger could write. That's the articulate-but-generic gap that makes a comment feel AI-written. The test for every draft: *could this line only have come from you?* If yes via (a) or (b), it passes. Required in V2 and V3; V1 may run lighter but still obeys rule 2. Never fabricate lived detail — keep it true to `references/about-me.md` and `references/voice-profile.md`. No real anchor and no sharp lens to offer? Then it's a weaker comment; say so rather than papering over with a reframe.
+
+2. **Speak from your life, never about their people.** Don't analyse the author's clients, team, or audience as if you know them ("when you hit that pause with someone", "the leaders who…"). You haven't met their people, and theorising about them reads as presumptuous, not warm. React to the *idea* and to your *own* experience of it, in first person, on ground you've actually walked.
+
 ## STEP 4 — QA + present
-Run `qa-gate` on each variation (voice_match + anti_ai at minimum). Present all three with a one-line commenter assessment and a recommendation. Wait: "done" = log the recommended (or last-pasted); "skip" = next; "shorter"/"again" = redraft.
+Run `qa-gate` on each variation (voice_match + anti_ai at minimum). Present all three with a one-line commenter assessment and a recommendation.
+
+**Recommendation logic — account type decides the play:**
+- **Peer / fellow creator** (not a prospect, e.g. another coach or a big voice): the goal is relationship, not lurker theatre. Default-recommend the **Conversationalist** (it lowers the status gap and invites a real back-and-forth), and offer the **Thought Leader** as the alternative "if you'd rather play to their audience."
+- **ICP prospect**: lead with whichever variation best surfaces *their* pain and earns the profile view, usually the **Thought Leader** for a substantive post or the **Conversationalist** when they've revealed something personal.
+- Always say *why* in one line (account type + post tone + your goal).
+
+Wait: "done" = log the recommended (or last-pasted); "skip" = next; "shorter"/"again" = redraft.
 
 ## STEP 5 — Log on "done"
 

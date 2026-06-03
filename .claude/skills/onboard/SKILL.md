@@ -10,6 +10,26 @@ After this runs, every skill knows who the owner is, what they sell, who they ta
 Read `START-HERE.md` and `CLAUDE.md` once for context, then run the steps. Confirm each file back as you write it. **Don't invent answers** — if the owner is unsure on ICP/offer/voice, ask one sharpening question rather than guessing.
 
 ## Step 0 — First-run setup + state check
+
+### 0a — Location & duplicate-copy check (run FIRST, before creating or writing any file)
+A common failure right after a `git clone`/download: the workspace ends up in a different folder than the one the owner actually opens — e.g. a copy on the **Desktop** (where Claude Code runs) while their real vault is in **iCloud Drive / OneDrive / Dropbox / Obsidian**. The skills then write to one copy while the owner views the other, so updates "never show up" in their files. Catch this before writing anything.
+
+**Auto-detect first.** Run the bundled detector with the host's **native** Python (so cloud placeholders are enumerated — a translation layer like WSL/Git-bash often can't see `iCloudDrive`/`OneDrive`):
+
+```
+python .claude/skills/onboard/detect-workspace.py
+```
+
+It prints the working copy, flags a cloud-synced location, and lists **every** copy of this workspace it finds (matching the `CLAUDE.md` + `config.json` + `START-HERE.md` marker triplet) with each `config.json` timestamp. Exit code `0` = single local copy, safe to proceed; exit code `1` = a problem needs a decision. Act on the output:
+
+1. **State where you're running.** Show the owner the working path the detector printed: "I read and write this workspace at `<path>`. Open your trackers and notes from exactly here, not another copy."
+2. **If a cloud-synced location is flagged** (`iCloudDrive`, `OneDrive`, `Dropbox`, `Google Drive`, macOS `Library/Mobile Documents`): cloud folders store files as **online-only placeholders** (Windows `ReparsePoint`, macOS "dataless") the tooling often can't read or write, and edits may not sync immediately. Recommend either running from a **local, non-synced copy**, or setting the folder to **"Always keep on this device"**.
+3. **If more than one copy is listed:** the copies will drift (Claude writes to the current one while the owner may open another — the exact "my updates don't show up" bug). Have the owner pick the **one** source of truth. If they pick a copy other than the current working directory, **stop** and tell them to relaunch Claude Code from that folder rather than silently writing to the wrong one. Never write to two copies.
+4. **Record the choice** back to the owner so future sessions run from the same place. Only once the working copy is confirmed (detector exits `0`, or the owner has consciously accepted the setup), continue with first-run file creation below.
+
+> If native Python isn't available, fall back to the manual version: print the cwd, check the path for the cloud segments above, and search the owner's common roots (home, Desktop, Documents, and the cloud roots) for the marker triplet.
+
+### 0b — First-run file creation
 This is a pristine template (the owner's data is gitignored). On first run, create the live files from their blanks:
 - For every `*.example` file, if the matching live file does NOT exist, copy it (e.g. `account-profile.md.example` → `account-profile.md`). Do not overwrite an existing live file.
 - **`kk-post.md` is special** — its blank is `kk-post-template.md` (the empty `[xxx]` format library), NOT a `.example` file. If `kk-post.md` does not exist, create it by copying `kk-post-template.md`. `kk-post-example.md` holds worked examples in a generic voice for reference only; never copy its content into `kk-post.md` and never overwrite it. (Both `kk-post-template.md` and `kk-post-example.md` are read-only references.)

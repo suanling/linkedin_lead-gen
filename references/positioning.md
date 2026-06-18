@@ -9,19 +9,22 @@
 
 ## One-liner (problem → solution → outcome)
 
-The active "I help …" statement chooses the **focus area** for a given post. Each focus area below
-carries its own "I help" line. Pick the one that matches the post's intent; that decides the audience
-and the shift the post argues. (The *angle* — which content pillar/lens to write it through — comes
-from the Signature lenses section.)
+The active "I help …" statement chooses the **focus area(s)** for a given post. Each focus area below
+carries its own "I help" line. Pick the **primary** one that matches the post's intent — it owns the
+post, sets the audience, and provides the single shift the post argues. Add a **secondary** focus area
+only when the topic genuinely bridges two; weave it in as support, never as a second spine. Don't
+scatter across more than two — a short-form post that chases several outcomes loses its punch. (The
+*angle* — which content pillar/lens to write it through — comes from the Signature lenses section.)
 
 ## Focus areas (strategic territories)
 
 > Five focus areas. Each is a stranger-to-believer argument: name the trap, name the shift. `/post`
-> selects ONE focus area per post from the "I help" statement, writes the opener inside that shift,
-> and keeps the reframe ("from X → to Y") as the post's spine. Broad → Niche → Deep: open broad enough
-> that most professionals see themselves, then narrow to the focus area's specific audience, then go
-> deep on the one shift. (These are *not* your content pillars — pillars are the recurring themes
-> derived in `/onboard`, below.)
+> selects a **primary** focus area per post from the "I help" statement (plus an optional secondary
+> when the topic bridges two), writes the opener inside the primary shift, and keeps that one reframe
+> ("from X → to Y") as the post's spine. Broad → Niche → Deep: open broad enough that most
+> professionals see themselves, then narrow to the focus area's specific audience, then go deep on the
+> one shift. (These are *not* your content pillars — pillars are the recurring themes derived in
+> `/onboard`, below.)
 
 1. **Structural Authority & Founder Dependency Reduction** *(Business Transformation)*
    - **I help:** service-based founders build a business that keeps running when they step away.

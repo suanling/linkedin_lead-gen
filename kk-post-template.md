@@ -11,6 +11,21 @@
 > concrete. Stay inside the bans (no em dashes, close on a firm point not a trailing "…"). The
 > format gives structure; the texture makes it sound like the owner, not an AI.
 
+## Principles for filling these formats
+
+These govern every example you write below. Pull the raw material (stories, numbers, scenes) from `references/about-me.md` and `references/voice-profile.md`; these rules say how to shape it. Operating rules, not suggestions.
+
+1. **The format is sacred, the content is yours.** Never edit the [bracketed directions]. Only write the lines beneath them.
+2. **Concrete scene before any lesson.** Open on something that actually happened (a 7am start, a cold dinner, a stupid question on day three), never an abstraction.
+3. **Real numbers and real nouns.** "Twenty minutes," "level zero," "one month's allowance." The specific is what reads as human.
+4. **Short, accumulative lines, then a hard stop.** Layer with "and," then land it. Rhythm over polish.
+5. **Close on one firm point or one clear action.** Never a rhetorical question, never a trailing "…", never a motivational-poster line.
+6. **Lived and ChatGPT-proof.** If the same lines could come out of ChatGPT, they fail the litmus test. The messy, specific detail is the proof it's yours.
+7. **Stay inside the bans and HARD NOS.** No em dashes, no AI vocabulary, no announced credentials, no unbacked claims.
+8. **Compliance.** Examples are CAREER/COACHING (Mode 1). Anything financial flips to Mode 2 (concept only, no numbers, no products, no returns).
+9. **No overlap, ever.** Each of the 100 formats stands on its OWN story, example, and angle. Never reuse the same anecdote, client, or opening as the centerpiece of more than one post. The themes (the spine) can recur. The illustrations must not.
+10. **No assumptions, ever.** Never invent a fact, number, story, client, or detail. If the real material isn't in `references/about-me.md` / `references/voice-profile.md` or confirmed by the owner, leave a clear `[xxx — needs your real X]` placeholder instead of guessing. Lived experience is the only credential. One fabricated detail breaks the whole voice.
+
 ---1. The Most Popular Piece---
 
 [I do something bold repeatedly]

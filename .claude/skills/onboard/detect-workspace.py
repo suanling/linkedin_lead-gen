@@ -4,7 +4,8 @@
 Two jobs, run together:
   1. DETECT  - find every copy of this workspace, flag cloud-synced / duplicate copies.
   2. BOOTSTRAP - deterministically create any missing live file from its blank:
-       *.example -> live file, kk-post-template.md -> kk-post.md, and blank trackers.
+       *.example -> live file, kk-post-template.md -> kk-post.md,
+       kk-carousel-template.md -> kk-carousel.md, and blank trackers.
      Never overwrites an existing file, so real data is safe.
 
 Run with the host's NATIVE python (not a translation layer like WSL/Git-bash),
@@ -104,6 +105,15 @@ def bootstrap(root):
             created.append("kk-post.md")
         except OSError as e:
             notes.append(f"could not create kk-post.md: {e}")
+
+    # 2b. kk-carousel.md is special too: its blank is kk-carousel-template.md
+    kc, ctmpl = os.path.join(root, "kk-carousel.md"), os.path.join(root, "kk-carousel-template.md")
+    if not os.path.exists(kc) and os.path.exists(ctmpl):
+        try:
+            shutil.copyfile(ctmpl, kc)
+            created.append("kk-carousel.md")
+        except OSError as e:
+            notes.append(f"could not create kk-carousel.md: {e}")
 
     # 3. blank trackers with their schemas (needs openpyxl)
     tdir = os.path.join(root, "trackers")

@@ -6,6 +6,9 @@
 account-profile.md
 config.json
 kk-post.md
+kk-carousel.md
+references/profile.md
+references/content-calendar.md
 .claude/rules/voice.md
 .claude/rules/gates.md
 references/about-me.md
@@ -46,3 +49,9 @@ references/learning/inbox/dms/*
 # changing files as "name 2.ext" / "name 2". Never let that junk enter git.
 * [0-9]
 * [0-9].*
+
+# Local git-repair backup (iCloud corrupts .git; we keep a backup when repairing)
+.git.corrupted-backup/
+
+# Editor settings
+.vscode/

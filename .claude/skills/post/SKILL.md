@@ -41,13 +41,16 @@ Read `config.json → media`. Selfie / no-media always available. Infographic / 
 Run `qa-gate` on the post body. Do not proceed until it passes (voice + anti_ai always; compliance if enabled).
 
 ### 7. The 7 pinned comments
-Generate all seven (1-2 lines each, one action):
+Generate all seven (1-2 lines each, one action).
+
+**Proof rule (applies to any comment that carries a story or case — #4 and #6 especially):** proof can be the **owner's own story OR a client case**, but either way it is **sourced, never invented**. Owner's own → `references/about-me.md` + the "her own lived material" / Proof bank in `references/voice-profile.md`. Client → `references/testimonials.md` (consent granted + compliance cleared) or the `voice-profile.md` Proof bank (anonymised — no names or identifying detail). No $/products/figures on financial content. If nothing on file fits, ask the owner for a real one rather than fabricating.
+
 1. Engagement question (A/B/C reply)
 2. TL;DR lesson
 3. Next-step CTA — prefer keyword-to-DM over a link
-4. Social-proof mini-case — **source it, never invent it**: pull from `references/testimonials.md` (consent granted + compliance cleared) or the **Proof bank** in `references/voice-profile.md` (anonymised client patterns — no names or identifying detail; no $/products on financial). If nothing on file fits the post, ask the owner for a real anonymised case rather than fabricating one.
+4. Social-proof mini-case — owner's own or a client case, per the proof rule above (anonymise client cases)
 5. Conversation extender (role-specific)
-6. Why-I-do-this (humanise)
+6. Why-I-do-this (humanise) — if it leans on a personal story, ground it in the owner's recorded lived material per the proof rule, never invented
 7. Repost amplifier (why it matters)
 
 Read `references/learning/` first: if `hook-performance.md` / `comments-performance.md` have ≥12 scored rows, bias the hook and comment patterns toward their `## Current Quartiles → Top` and avoid the Bottom; else use the defaults above.

@@ -1,4 +1,4 @@
-# Brand System — Suan Ling LinkedIn Carousels
+# Brand System — LinkedIn Carousels
 
 > Visual standard for native-document/carousel posts. Read by `linkedin-carousel-creator` (and any
 > carousel render/export step). Editorial navy / cream / terracotta. Square 1080×1080 slides.

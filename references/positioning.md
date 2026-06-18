@@ -64,6 +64,32 @@ Signature lenses section.)
      (strict IAFA) triggers and the contrarian edge is **capped**. Keep the sharp/controversial voice
      to the other four focus areas.
 
+## Weekly content calendar (themes)
+
+> Owner data — captured/edited during `/onboard` (the weekly-structure step). The **theme** sets a
+> post's *intent/posture* for that day; the **focus area(s)** set the outcome; the content pillar/lens
+> sets the angle. `/post` and the `linkedin-post-creator` agent read this to shape posture by day.
+> Edit freely as the calendar evolves; the agent never hardcodes these.
+
+- **Monday — Empowering & Affirmation.** Reset mindset for the week; show the current identity trap,
+  step into builder thinking. Usual focus areas: Identity Maturity, Founder Dependency, Side-Hustle.
+- **Tuesday — Personal Story.** Humanise the authority; lived experience and internal shifts that
+  build emotional trust (e.g. responsibility patterns, financial-anxiety → semi-retirement,
+  corporate → entrepreneur, redefining success). Usual focus area: Identity Maturity.
+- **Wednesday — Expertise.** Practical, implementable systems thinking that improves operations now;
+  create "I need this" moments (systems, SOPs, AI workflows that remove chaos). Usual focus areas:
+  Sustainable Systems, AI-Era Career Intelligence, Side-Hustle.
+- **Thursday — Authority & Thought Leadership.** Strategic; see past the AI hype to real business
+  leverage; challenge a belief about business, income, or scaling. Usual focus areas: AI-Era Career
+  Intelligence, Founder Dependency, Side-Hustle.
+- **Friday — Personal Growth.** Emotional reflection; an internal-transformation narrative (identity
+  shift worker → builder, side-hustle reality vs fantasy). Usual focus areas: Identity Maturity,
+  Side-Hustle.
+- **Sunday — Practical Clarity & Life Decisions.** Use real news, cases, or everyday situations to
+  show how financial and business decisions hit families, relationships, and the long term. Usual
+  focus areas: Identity Maturity (financial), Side-Hustle, Sustainable Systems. (Financial angles
+  trigger `qa-gate` Mode 2 — see focus area 5.)
+
 ## Words you use / avoid
 - Use: concrete nouns and verbs — "land the client," "sleep through the night," "one employer, one
   decision and it's gone," "the business stops when you stop."

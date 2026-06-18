@@ -50,6 +50,9 @@ Open or create `daily-log/YYYY-MM-DD.md`. Write (append a fresh `## Today` if re
 
 ## Today — {date}
 
+### Post today
+- [ ] {theme} — {topic/angle} ({pillar focus}) → run /post
+
 ### Engage (comment on their posts)
 - [ ] {Name} — {category} {⚠️ Nd overdue if overdue}
 
@@ -61,6 +64,8 @@ Open or create `daily-log/YYYY-MM-DD.md`. Write (append a fresh `## Today` if re
 ```
 
 Overdue items get `⚠️ {N}d overdue`. If a list is empty, write `- (nothing due)`.
+
+For **Post today**, pull the row for today's date from `references/content-calendar.md` (Theme · Pillar focus · Objective · Topic/Angle). If there's no calendar or no row for today, write `- (no calendar entry — pick a topic)`.
 
 ## Step 3 — Weekly score nudge
 

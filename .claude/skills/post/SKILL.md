@@ -9,13 +9,15 @@ Takes an idea or rough draft to a publish-ready LinkedIn post + its 7 pinned com
 
 **The content lens lives in `.claude/agents/linkedin-post-creator.md`.** That agent owns the creative work — ideation and voice-drafting in the short-form shape (emotional + point-of-view opener, Broad → Niche → Deep, Hook → Shift → Lesson → Call-to-Value, under 900 chars). This skill is the full pipeline *around* that lens: intake, format pick, lead-magnet match, media, QA, the 7 pinned comments, and logging. Invoke the `linkedin-post-creator` agent for a fast draft or a set of post ideas; run `/post` when you want the whole pipeline. The short-form shape and tone bounds are defined once, in the agent — this skill defers to it rather than restating them.
 
-Read first: `kk-post.md` (post-format library), `account-profile.md` + `references/positioning.md` (angle, ICP), `references/lead-magnets.md`, `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` (master profile + how she writes — the lived stories and signature moves), `references/market-context.md` (cited, compliance-safe stats when a post needs data), `config.json` (media). Quality via `qa-gate`.
+Read first: `kk-post.md` (post-format library), `account-profile.md` + `references/positioning.md` + `references/profile.md` (angle, ICP, positioning), `references/content-calendar.md` (the dated brief for the day), `references/lead-magnets.md`, `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` (master profile + how she writes — the lived stories and signature moves), `references/market-context.md` (cited, compliance-safe stats when a post needs data), `config.json` (media). Quality via `qa-gate`.
 
 **Capture beliefs & contrarian takes as you draft.** When the owner articulates a sharp, distinctly-theirs belief or contrarian take while shaping the post, offer to save it under the matching lens in `positioning.md` (Beliefs & contrarian takes) per `references/capture-protocol.md`. A consented testimonial may be *used* here, but only if `testimonials.md` marks consent granted and compliance cleaned.
 
 ## Pipeline
 
 ### 1. Intake
+**Check the calendar first.** If `references/content-calendar.md` exists and has a row for the target date (default: today), use that row as the starting brief — its **Theme · Pillar focus · Objective · Topic/Angle** frame the post (the owner can override or pick another date). No calendar or no row for the date → fall back to the topic the owner gives.
+
 Get the topic / rough draft + the goal (visibility, authority, lead-gen). Two distinct picks from `positioning.md` (they are not the same thing):
 - **Focus area(s)** (the *outcome* sold) — driven by the input: match the owner's "I help …" statement + raw content to one or more of `positioning.md → Focus areas`, by relevance (don't force a fixed count). Build the post on a single clear shift ("from X → to Y") so short-form stays punchy, even if it touches more than one area. If the input doesn't clearly map to any focus area, ask before drafting.
 - **Content pillar / lens** (the *angle* it's told from) — from `positioning.md → Content pillars / Signature lenses` (derived in `/onboard`). Rotate a different one across posts for angle-diversity.
@@ -35,7 +37,7 @@ From `references/lead-magnets.md`, pick the magnet that fits the post's pain/top
 **Placement of the ask.** Default: pinned comment #3 as a keyword-to-DM (this protects the post's reach). Optional: when the owner wants the ask in the post body, add one explicit keyword-to-DM line after the Call-to-Value (still never the raw link/asset). Coaching content only — on financial content an in-post lead-gen ask triggers `qa-gate` Mode 2 bucket-B pre-approval, so keep it in the comment there.
 
 ### 5. Media (per config)
-Read `config.json → media`. Selfie / no-media always available. Infographic / carousel / video only if enabled (API keys present). Suggest the fitting media type; generate only what's enabled, else note "media: owner to supply".
+Read `config.json → media`. Selfie / no-media always available. Infographic / carousel / video only if enabled (API keys present). Suggest the fitting media type; generate only what's enabled, else note "media: owner to supply". When **carousel** is chosen, hand the finished post to the `linkedin-carousel-creator` agent — it mixes from the filled `kk-carousel.md` + `references/brand-system.md`.
 
 ### 6. QA gate
 Run `qa-gate` on the post body. Do not proceed until it passes (voice + anti_ai always; compliance if enabled).

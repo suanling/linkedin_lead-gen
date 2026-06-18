@@ -14,10 +14,23 @@ Read first: `kk-post.md` (post-format library), `account-profile.md` + `referenc
 ## Pipeline
 
 ### 1. Intake
-Get the topic / rough draft + the goal (visibility, authority, lead-gen). Identify the pillar/angle from `positioning.md`.
+Get the topic / rough draft + the goal (visibility, authority, lead-gen). Identify the pillar/angle from `positioning.md`. **The focus area is chosen from the "I help …" statement** the owner gives (or the closest-matching pillar in `positioning.md → Focus areas`). That focus area sets the audience and the shift ("from X → to Y") the post argues. If the intent is ambiguous between two pillars, ask which "I help" applies before drafting.
 
 ### 2. Pick a format
 Choose the best-fit template from `kk-post.md`. Follow its `[bracketed stage directions]` exactly — they are the structure. If the owner's worked example for that format is still `[xxx]`, fill it now in their voice (and save it back to `kk-post.md` so it's reusable).
+
+### 2a. Short-form mode (default shape for punchy posts)
+This is a *shape* layered on the format picked in step 2 — it never replaces format selection. The template still comes from `kk-post.md`; this compresses and sequences how its brackets get filled. Use it for tight, scroll-stopping posts; skip only when the owner asks for a long-form piece.
+
+- **Opener** — emotional + a point of view, in the first line. Lead with one of {happiness, anger, sadness, fear, disgust, surprise} + a stance. Never open on a job title or credential. One statement, ~8 words.
+- **Broad → Niche → Deep** — open broad enough that most professionals see themselves, narrow to the focus area's specific audience, then go deep on the one shift. Make it as broad as it can be at the top without going generic.
+- **Four beats, with budgets:**
+  - **Hook** (emotion / curiosity) — 120–180 chars (the top 2–3 lines).
+  - **Shift / turning point** (what changed) — 150–250 chars. After the hook, a micro-story or one concrete scenario: *show, don't tell.*
+  - **Lesson / insight** (the takeaway) — 150–250 chars. Conversational, in flowing lines, **no bullets** (bullets read academic).
+  - **Call-to-Value** — 40–80 chars. Frame the *value* of acting, not a bare instruction ("Pack away the love handles" beats "go exercise"). Not a rhetorical question.
+- **Total under 900 characters.** Clean structure: problem → insight → solution → Call-to-Value, in that order.
+- Everything still obeys `voice.md` + `anti-ai.md`. The source spec's "motivational/positive, light humor" tone is allowed, but it never overrides the bans (no em dashes, no banned vocab, no motivational-poster ending) or the contrarian edge. On **financial** content the controversy is capped per `qa-gate` Mode 2.
 
 ### 3. Write it in voice
 Fill the format with the owner's content. Apply `voice.md` (and the filled kk-post examples as the voice reference). Zero AI tells.

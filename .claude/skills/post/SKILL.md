@@ -20,8 +20,8 @@ Get the topic / rough draft + the goal (visibility, authority, lead-gen). Two di
 - **Focus area(s)** (the *outcome* sold) — driven by the input: match the owner's "I help …" statement + raw content to one or more of `positioning.md → Focus areas`, by relevance (don't force a fixed count). Build the post on a single clear shift ("from X → to Y") so short-form stays punchy, even if it touches more than one area. If the input doesn't clearly map to any focus area, ask before drafting.
 - **Content pillar / lens** (the *angle* it's told from) — from `positioning.md → Content pillars / Signature lenses` (derived in `/onboard`). Rotate a different one across posts for angle-diversity.
 
-### 2. Pick a format
-Choose the best-fit template from `kk-post.md`. Follow its `[bracketed stage directions]` exactly — they are the structure. If the owner's worked example for that format is still `[xxx]`, fill it now in their voice (and save it back to `kk-post.md` so it's reusable).
+### 2. Pick / mix formats
+Build the structure from `kk-post.md` by **mixing and matching** — combine the beats/moves from one or more templates that best fit the brief and the short-form shape. The templates are building blocks, not a single rigid mold; the `[bracketed stage directions]` are the source of structure (don't invent shapes wholesale). If a worked example you draw on is still `[xxx]`, fill it in the owner's voice and save it back to `kk-post.md` so it's reusable.
 
 ### 2a. Short-form shape (per the linkedin-post-creator lens)
 Fill the chosen format to the short-form shape defined in `.claude/agents/linkedin-post-creator.md` — an emotional + point-of-view opener (no job title, ~8 words), Broad → Niche → Deep, then **Hook** (120–180) → **Shift** (150–250) → **Lesson** (150–250) → **Call-to-Value** (40–80), under **900 characters** total, structured problem → insight → solution → Call-to-Value. The shape is layered on the kk-post format, never replaces it. Default for punchy posts; skip only for a long-form piece. See the agent for the full shape and the tone bounds — don't restate them here, follow the agent so there's one source of truth.
@@ -61,4 +61,4 @@ On "published":
 - LinkedIn only — no X/Threads/IG repurposing.
 - Never fake the owner's voice — if the draft is thin, ask before inventing lived detail.
 - Lead magnet is the hook to earn a conversation, never dropped raw in the post.
-- Follow kk-post bracket directions exactly; fill examples, never alter the format.
+- Build structure from kk-post.md by mixing and matching moves across templates to fit the brief; the templates are the building blocks, not a single rigid mold. Fill examples, keep structure sourced from kk-post (don't invent wholesale), and never reveal a template name.

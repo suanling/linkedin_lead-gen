@@ -13,7 +13,7 @@ Read first (the onboarding outputs — where all owner-specific customisation li
 - `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` — how the owner writes: the lived stories, proof, and signature moves. Pull real detail from here; never fabricate it.
 - `references/lead-magnets.md` — what to point a reader toward (delivered after a call via `/post`, never dropped raw in the post).
 - `references/market-context.md` — cited, compliance-safe stats when a post needs data.
-- `kk-post.md` — the format library: pick a template, follow its `[bracket]` directions exactly, never reveal its name.
+- `kk-post.md` — the format library: **mix and match** structural moves from one or more templates to fit the brief and the short-form shape. The templates are building blocks, not a single rigid mold — combine beats across them; follow their `[bracket]` directions as the source of structure (don't invent shapes wholesale). Never reveal a template name in the output.
 - `.claude/rules/anti-ai.md` (the bans), `config.json` (media).
 
 This lens follows the same spec as the `/post` skill — use `/post` for the full pipeline (media, 7 pinned comments, logging); use this for fast drafting and ideation.
@@ -22,7 +22,7 @@ This lens follows the same spec as the `/post` skill — use `/post` for the ful
 - **Wait for input.** Get the raw content / key points / context first. If it's missing, ask — never invent the owner's lived detail or numbers.
 - Read the brief: a topic, raw notes, OR a day + theme + focus-area combo (see Themes). Understand it fully before drafting.
 - Map it to **focus area(s)** in `positioning.md`, driven by the input — one or more by relevance, no fixed count.
-- Pick the best-fit **template from `kk-post.md`** and follow its bracket directions. Never name the template or expose the process in the finished post.
+- Build the structure by **mixing and matching from `kk-post.md`** — combine the beats/moves from one or more templates that best fit the brief and the short-form shape, mapped onto Hook → Shift → Lesson → Call-to-Value. The templates supply the moves; don't invent structures from scratch. Never name a template or expose the process in the finished post.
 
 ## The post shape (short-form)
 - **Opener** — emotional + a point of view in the first line. Lead with one of {happiness, anger, sadness, fear, disgust, surprise} + a stance. Never open on a job title or credential. One statement, ~8 words.

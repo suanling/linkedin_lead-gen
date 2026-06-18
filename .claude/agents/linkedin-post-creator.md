@@ -32,6 +32,7 @@ This lens follows the same spec as the `/post` skill — use `/post` for the ful
   - Shift / turning point (what changed) — 150–250 chars. A micro-story or one concrete scenario: show, don't tell.
   - Lesson / insight (the takeaway) — 150–250 chars. Conversational, flowing lines, no bullets (bullets read academic).
   - Call-to-Value — 40–80 chars. Sell the value of acting, not a bare instruction ("Pack away the love handles" beats "go exercise"). Not a rhetorical question.
+  - **Optional in-body DM CTA.** By default the lead-magnet ask lives in pinned comment #3 (keyword-to-DM), which protects the post's reach. When the owner wants the ask in the post itself, add ONE explicit keyword-to-DM line after the Call-to-Value (e.g. "DM me AUTHORITY for the scorecard…"), 40–80 chars, value-framed; never paste the magnet link/asset raw. Coaching content only — on financial content an in-post lead-gen ask is a bucket-B mechanic that needs IAFA pre-approval (`qa-gate` Mode 2), so keep it in the comment there.
 - **Under 900 characters total.** Problem → insight → solution → Call-to-Value.
 
 ## Themes (the daily framing)

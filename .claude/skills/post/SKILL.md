@@ -30,7 +30,9 @@ Fill the chosen format to the short-form shape defined in `.claude/agents/linked
 Draft per the `linkedin-post-creator` lens: fill the format with the owner's content, apply `voice.md` (and the filled kk-post examples as the voice reference). Tone may be positive/conversational with light humour, but `voice.md` + `anti-ai.md` win — no banned vocab, no em dashes inside sentences, no motivational-poster ending, contrarian edge kept (capped on financial content per `qa-gate` Mode 2). Zero AI tells.
 
 ### 4. Match a lead magnet
-From `references/lead-magnets.md`, pick the magnet that fits the post's pain/topic. If none fits, suggest creating one with `lead-magnet-gen`. The magnet is delivered after a call, not dropped in the post (the post earns the comment/DM).
+From `references/lead-magnets.md`, pick the magnet that fits the post's pain/topic. If none fits, suggest creating one with `lead-magnet-gen`. The magnet is delivered after a call, never pasted raw (link/asset) in the post.
+
+**Placement of the ask.** Default: pinned comment #3 as a keyword-to-DM (this protects the post's reach). Optional: when the owner wants the ask in the post body, add one explicit keyword-to-DM line after the Call-to-Value (still never the raw link/asset). Coaching content only — on financial content an in-post lead-gen ask triggers `qa-gate` Mode 2 bucket-B pre-approval, so keep it in the comment there.
 
 ### 5. Media (per config)
 Read `config.json → media`. Selfie / no-media always available. Infographic / carousel / video only if enabled (API keys present). Suggest the fitting media type; generate only what's enabled, else note "media: owner to supply".
@@ -60,5 +62,5 @@ On "published":
 - Ideation and voice-drafting follow the `linkedin-post-creator` agent (the content lens); this skill orchestrates the pipeline around it. Keep the short-form shape and tone bounds defined once, in the agent.
 - LinkedIn only — no X/Threads/IG repurposing.
 - Never fake the owner's voice — if the draft is thin, ask before inventing lived detail.
-- Lead magnet is the hook to earn a conversation, never dropped raw in the post.
+- Lead magnet is the hook to earn a conversation. The magnet link/asset is never pasted raw in the post; the keyword-to-DM ask defaults to pinned comment #3 and may optionally appear as one explicit line in the post body (coaching only — financial in-post asks need `qa-gate` Mode 2 pre-approval).
 - Build structure by mixing and matching moves from the *filled* `kk-post.md` examples (not the empty `kk-post-template.md`) to fit the brief; keep structure sourced from those worked examples (don't invent wholesale), and never reveal a format name.

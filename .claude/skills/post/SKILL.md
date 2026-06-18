@@ -14,7 +14,9 @@ Read first: `kk-post.md` (post-format library), `account-profile.md` + `referenc
 ## Pipeline
 
 ### 1. Intake
-Get the topic / rough draft + the goal (visibility, authority, lead-gen). Identify the pillar/angle from `positioning.md`. **The focus area is chosen from the "I help …" statement** the owner gives (or the closest-matching pillar in `positioning.md → Focus areas`). That focus area sets the audience and the shift ("from X → to Y") the post argues. If the intent is ambiguous between two pillars, ask which "I help" applies before drafting.
+Get the topic / rough draft + the goal (visibility, authority, lead-gen). Two distinct picks from `positioning.md` (they are not the same thing):
+- **Focus area** (the *outcome* sold) — chosen from the "I help …" statement the owner gives, matched to one of `positioning.md → Focus areas`. Sets the audience and the shift ("from X → to Y") the post argues. If intent is ambiguous between two, ask which "I help" applies before drafting.
+- **Content pillar / lens** (the *angle* it's told from) — from `positioning.md → Content pillars / Signature lenses` (derived in `/onboard`). Rotate a different one across posts for angle-diversity.
 
 ### 2. Pick a format
 Choose the best-fit template from `kk-post.md`. Follow its `[bracketed stage directions]` exactly — they are the structure. If the owner's worked example for that format is still `[xxx]`, fill it now in their voice (and save it back to `kk-post.md` so it's reusable).

@@ -1,23 +1,27 @@
 # Positioning
 
 > Your one-line positioning and the language that grounds comments, DMs, and the call invite.
-> The **Focus areas** below are your content pillars — `/post` picks the active pillar from the
-> "I help" statement you give at post time, then writes within that pillar's shift.
-> (Signature lenses + Beliefs scaffolding at the bottom are still filled by `/onboard`.)
+> **Focus areas ≠ content pillars.** The **focus areas** below are your strategic territories (the
+> outcomes you sell) — `/post` picks the active one from the "I help" statement you give at post time,
+> then writes within that area's shift. Your **content pillars** (the recurring post themes/angles you
+> rotate through) are *derived during `/onboard`* and live in the Signature lenses section below.
+> One post = one focus area (the outcome) + one content pillar/lens (the angle).
 
 ## One-liner (problem → solution → outcome)
 
-The active "I help …" statement chooses the focus area for a given post. Each pillar below carries
-its own "I help" line. Pick the one that matches the post's intent; that decides the angle, the
-audience, and the shift the post argues.
+The active "I help …" statement chooses the **focus area** for a given post. Each focus area below
+carries its own "I help" line. Pick the one that matches the post's intent; that decides the audience
+and the shift the post argues. (The *angle* — which content pillar/lens to write it through — comes
+from the Signature lenses section.)
 
-## Focus areas (content pillars)
+## Focus areas (strategic territories)
 
-> Five pillars. Each is a stranger-to-believer argument: name the trap, name the shift. `/post`
-> selects ONE per post from the "I help" statement, writes the opener inside that shift, and keeps
-> the reframe ("from X → to Y") as the post's spine. Broad → Niche → Deep: open broad enough that
-> most professionals see themselves, then narrow to the pillar's specific audience, then go deep on
-> the one shift.
+> Five focus areas. Each is a stranger-to-believer argument: name the trap, name the shift. `/post`
+> selects ONE focus area per post from the "I help" statement, writes the opener inside that shift,
+> and keeps the reframe ("from X → to Y") as the post's spine. Broad → Niche → Deep: open broad enough
+> that most professionals see themselves, then narrow to the focus area's specific audience, then go
+> deep on the one shift. (These are *not* your content pillars — pillars are the recurring themes
+> derived in `/onboard`, below.)
 
 1. **Structural Authority & Founder Dependency Reduction** *(Business Transformation)*
    - **I help:** service-based founders build a business that keeps running when they step away.
@@ -52,10 +56,10 @@ audience, and the shift the post argues.
    - **Audience:** people whose self-worth is wired to constant usefulness and output.
    - **Shift:** from constant output and worth-tied-to-usefulness → to control over time, energy, and
      money. Names the internal cost: over-responsibility, burnout cycles, identity tied to being needed.
-   - **⚠ Compliance:** the moment a post in this pillar promotes/invites re a financial product or
+   - **⚠ Compliance:** the moment a post in this focus area promotes/invites re a financial product or
      reads as financial advice (investments, insurance, CPF, returns, portfolios), `qa-gate` Mode 2
      (strict IAFA) triggers and the contrarian edge is **capped**. Keep the sharp/controversial voice
-     to the other four pillars.
+     to the other four focus areas.
 
 ## Words you use / avoid
 - Use: concrete nouns and verbs — "land the client," "sleep through the night," "one employer, one
@@ -64,10 +68,13 @@ audience, and the shift the post argues.
   innovative, journey, unlock, elevate, robust …). No em dashes inside sentences. No motivational-
   poster endings. Close on a specific insight or one clear action.
 
-## Signature lenses (the value-generation angles)
+## Content pillars / Signature lenses (the value-generation angles)
 
-> Filled during `/onboard` (Step 2c). 4-6 repeatable angles you see the world through; the writing
-> skills rotate a different lens per variation to satisfy the "lived experience OR signature lens" rule.
+> **These are your content pillars** — the recurring themes/angles you post through, *derived during
+> `/onboard`* (Step 2c). 4-6 repeatable angles you see the world through; the writing skills rotate a
+> different lens per variation to satisfy the "lived experience OR signature lens" rule. The focus area
+> (above) sets the *outcome* a post sells; the content pillar/lens sets the *angle* it's told from.
+> (Onboarding derivation to be enhanced later — leave the scaffolding below for now.)
 
 1. **[ xxx — lens name / theme ]**
    [ xxx — 1-2 sentence description, in your words ]

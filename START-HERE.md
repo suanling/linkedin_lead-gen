@@ -2,17 +2,17 @@
 
 This is a self-contained LinkedIn lead-generation workspace. Set it up once for your account, then run it daily. Everything stays inside this folder.
 
-## Set up (once, ~20 min)
+## Set up (brief pass ~20 min; deep pass anytime)
 
-Run **`/onboard`**. It walks you through:
+Run **`/onboard`**. It runs in two tiers — a **brief** pass that makes the workspace usable fast, then a **deep** pass you can do later. It walks you through:
 1. Who you are + your LinkedIn URL
 2. Your value proposition + ICP (who you target)
 3. Your offer + the call you book (call length is your choice)
-4. Your voice — a short outreach voice, plus an optional deep **Taste Interview** that builds your master profile (`references/about-me.md` + `references/voice-profile.md`), deepens your outreach voice, and fills your post-format examples in `kk-post.md`
+4. Your voice + story — a short outreach voice (the **brief** pass), plus an optional **deep** pass (the `storytelling-strategist` Taste Interview) that builds your master profile (`references/about-me.md` + `references/voice-profile.md`), your public profile (`references/profile.md`), your content pillars + weekly themes + a dated content calendar (`references/content-calendar.md`), and fills your post + carousel examples (`kk-post.md` + `kk-carousel.md`)
 5. Your industry + which **quality gates** to enforce (voice / compliance / anti-AI / spam-cadence)
-6. Your lead magnet(s) — register existing ones, or create one with `/lead-magnet-gen`
+6. Your media + brand visuals (`references/brand-system.md`), and your lead magnet(s) — register existing ones, or create one with `/lead-magnet-gen`
 
-You can stop and resume the voice interview anytime with `/onboard voice`.
+You can stop anytime; re-running **`/onboard`** shows what's left and continues the missing steps (or `/onboard voice` to resume just the voice/story interview).
 
 ## The funnel (what you're running)
 

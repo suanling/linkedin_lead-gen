@@ -23,15 +23,19 @@ config.json            gate toggles, industry, media, paths                  (yo
 kk-post.md             your filled post-format library — [bracket directions] = format   (you fill)
 kk-post-template.md    the empty [xxx] template onboard copies to kk-post.md   (read-only)
 kk-post-example.md     worked examples in a generic voice — shape reference only   (read-only)
+kk-carousel.md         your filled carousel-format library — [bracket directions] = format   (you fill)
+kk-carousel-template.md the empty [xxx] carousel template onboard copies to kk-carousel.md   (read-only)
 audit-log.md           append-only record of everything sent
 trackers/              lead-gen-tracker.xlsx + engagement-tracker.xlsx
 lead-magnets/          your magnets
-references/            about-me + voice-profile (master profile), icp, positioning, lead-magnets,
+references/            about-me + voice-profile + profile (master profile), icp, positioning,
+                       content-calendar (dated plan), brand-system (carousel visuals), lead-magnets,
                        engagement-targets, market-context, iafa-compliance, learning/
 sops/linkedin-sop.md   the playbook (read-only)
 .claude/
   rules/               voice.md (outreach voice), anti-ai.md (full anti-AI rules), gates.md
-  agents/              sales-coach, relationship-manager, qa-officer (lenses)
+  agents/              sales-coach, relationship-manager, qa-officer, linkedin-post-creator,
+                       linkedin-carousel-creator, storytelling-strategist (lenses)
   skills/              onboard, start-day, qa-gate, commenting-others,
                        dm-sales-coach, respond-to-own, log-prospect,
                        post, lead-magnet-gen, score-posts, amend-sop

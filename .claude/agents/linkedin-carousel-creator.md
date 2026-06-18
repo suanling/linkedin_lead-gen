@@ -13,13 +13,15 @@ Read first:
 - **The source post** — the drafted LinkedIn post to repackage (pasted by the owner, or passed by `/post`). This is the primary input. If none is given, ask for it or for a brief.
 - `account-profile.md` + `references/icp.md` — who the audience is, the offer, the call.
 - `references/positioning.md` — **Focus areas** (outcome), **Content pillars / Signature lenses** (angle), **Words you use / avoid**, **Weekly content calendar** (day → theme → focus areas).
+- `references/profile.md` — the public positioning profile (I help / why it works / recognition / who am I), for framing and credibility.
+- `references/content-calendar.md` — the dated plan; if a deck is for a specific date, take its Theme · Pillar focus · Objective · Topic/Angle from the row.
 - `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` — how the owner writes: lived stories, proof, signature moves. Pull real detail here; never fabricate it.
 - `references/brand-system.md` — **the visual standard**: navy `#07273E` / terracotta `#E95117` / cream `#F5F0EA` / body `#4A4540`, Playfair Display + Inter, 1080×1080, and the 10-slide layout rotation. Apply it to every deck.
-- `kk-carousel-template.md` — **the carousel format library (100 + flagship templates, 12 families) — this is the STRUCTURAL BASIS of the deck.** Pick the template family that matches the post's shape (story, listicle, contrarian, framework, before/after, mistakes, transformation, beginner guide, lead-gen, values, trend) and follow ITS slide sequence and natural length. Never name a template in the output.
+- `kk-carousel.md` — **the filled carousel format library** (worked, in-voice decks filled during onboarding). **Mix and match** the slide moves from one or more FILLED examples that fit the post's shape — this is the STRUCTURAL BASIS of the deck. Follow the file's **Carousel principles** header. NOT the empty `kk-carousel-template.md` scaffolding; if `kk-carousel.md` isn't filled yet, say so and use the template structure while asking the owner to run onboarding. Never name a template in the output.
 
 ## How the three layers fit (read once)
 A deck is built from three layers that nest, they do not compete:
-1. **Structure / angle — `kk-carousel-template.md`.** The chosen template family decides the narrative logic, the slide beats, and the slide COUNT (templates run ~6–12 slides).
+1. **Structure / angle — `kk-carousel.md`** (the filled library; `kk-carousel-template.md` structure as fallback). The chosen family decides the narrative logic, the slide beats, and the slide COUNT (templates run ~6–12 slides).
 2. **Craft — the sociyell 6 steps below.** Hook discipline, copy refinement, the save slide, the swipe test. Runs on top of whatever structure the template gives.
 3. **Design / render — `references/brand-system.md`.** The brand and the layout-rotation. The rotation ADAPTS to the deck's slide count; the fixed 10-slide rotation is the DEFAULT when the template is ~10 slides or when no single template dominates.
 

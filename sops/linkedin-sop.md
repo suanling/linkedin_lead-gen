@@ -26,7 +26,7 @@ Targets (comments/day, requests/day) are the owner's choice — set them in `ref
 ## 3. Rules
 
 **Always:**
-- Load voice first: `.claude/rules/voice.md` (outreach) and the filled examples in `kk-post.md` (posts), grounded by `references/about-me.md` + `references/voice-profile.md`.
+- Load voice first: `.claude/rules/voice.md` (outreach) and the filled examples in `kk-post.md` (posts) / `kk-carousel.md` (carousels), grounded by `references/about-me.md` + `references/voice-profile.md`. For posts and carousels, the canonical fill rules are each library's header ("Principles for filling these formats" / "Carousel principles") — the Never list below is the outreach subset; don't diverge from the headers.
 - Engage your ICP only (`account-profile.md` / `references/icp.md`). Skip disqualifiers. Skip the wrong geography if you target a specific market.
 - Fresh posts only — last 24–48h. Older than 2 days = skip.
 - Copy-paste mode — present the draft, run `qa-gate`, wait for "done", then log. Never auto-post.

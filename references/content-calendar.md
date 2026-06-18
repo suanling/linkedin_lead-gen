@@ -6,8 +6,13 @@
 > `/start-day` surfaces today's planned post.
 >
 > Each row carries the day's **Theme**, **Pillar focus**, **Objective** (why this theme), and the
-> specific **Topic / Angle**, so `/post` can generate the right post for a date without re-deciding
-> the angle. Coaching = Mode 1; financial topics flip to Mode 2 (concept-only).
+> specific **Topic / Angle**. `/post` composes the row into this exact brief, then builds the post:
+>
+> > I want to talk about **{Pillar focus}** on a **{Day}** with the theme (**{Theme}**).
+> > Reason for this theme is because **{Objective}**.
+> > Give me a post on **{Topic / Angle}** in this content pillar.
+>
+> Coaching = Mode 1; financial topics flip to Mode 2 (concept-only).
 
 | Date | Day | Theme | Pillar focus | Objective | Topic / Angle | Status |
 |------|-----|-------|--------------|-----------|---------------|--------|

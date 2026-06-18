@@ -16,7 +16,13 @@ Read first: `kk-post.md` (post-format library), `account-profile.md` + `referenc
 ## Pipeline
 
 ### 1. Intake
-**Check the calendar first.** If `references/content-calendar.md` exists and has a row for the target date (default: today), use that row as the starting brief — its **Theme · Pillar focus · Objective · Topic/Angle** frame the post (the owner can override or pick another date). No calendar or no row for the date → fall back to the topic the owner gives.
+**Check the calendar first.** If `references/content-calendar.md` exists and has a row for the target date (default: today), use that row as the starting brief. Compose it from the row in this exact shape, then build the post:
+
+> I want to talk about **{Pillar focus}** on a **{Day}** with the theme (**{Theme}**).
+> Reason for this theme is because **{Objective}**.
+> Give me a post on **{Topic / Angle}** in this content pillar.
+
+(The owner can override or pick another date.) No calendar or no row for the date → fall back to the topic the owner gives.
 
 Get the topic / rough draft + the goal (visibility, authority, lead-gen). Two distinct picks from `positioning.md` (they are not the same thing):
 - **Focus area(s)** (the *outcome* sold) — driven by the input: match the owner's "I help …" statement + raw content to one or more of `positioning.md → Focus areas`, by relevance (don't force a fixed count). Build the post on a single clear shift ("from X → to Y") so short-form stays punchy, even if it touches more than one area. If the input doesn't clearly map to any focus area, ask before drafting.

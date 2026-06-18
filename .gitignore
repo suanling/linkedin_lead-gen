@@ -55,3 +55,7 @@ references/learning/inbox/dms/*
 
 # Editor settings
 .vscode/
+
+# Python bytecode cache (onboard detect-workspace.py)
+__pycache__/
+*.pyc

@@ -7,6 +7,8 @@ description: Produce a LinkedIn post end-to-end — pick a kk-post format, write
 
 Takes an idea or rough draft to a publish-ready LinkedIn post + its 7 pinned comments, in the owner's voice. LinkedIn-only. Content creation is a different machine from lead-gen — this is the content side.
 
+**The content lens lives in `.claude/agents/linkedin-post-creator.md`.** That agent owns the creative work — ideation and voice-drafting in the short-form shape (emotional + point-of-view opener, Broad → Niche → Deep, Hook → Shift → Lesson → Call-to-Value, under 900 chars). This skill is the full pipeline *around* that lens: intake, format pick, lead-magnet match, media, QA, the 7 pinned comments, and logging. Invoke the `linkedin-post-creator` agent for a fast draft or a set of post ideas; run `/post` when you want the whole pipeline. The short-form shape and tone bounds are defined once, in the agent — this skill defers to it rather than restating them.
+
 Read first: `kk-post.md` (post-format library), `account-profile.md` + `references/positioning.md` (angle, ICP), `references/lead-magnets.md`, `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` (master profile + how she writes — the lived stories and signature moves), `references/market-context.md` (cited, compliance-safe stats when a post needs data), `config.json` (media). Quality via `qa-gate`.
 
 **Capture beliefs & contrarian takes as you draft.** When the owner articulates a sharp, distinctly-theirs belief or contrarian take while shaping the post, offer to save it under the matching lens in `positioning.md` (Beliefs & contrarian takes) per `references/capture-protocol.md`. A consented testimonial may be *used* here, but only if `testimonials.md` marks consent granted and compliance cleaned.
@@ -21,21 +23,11 @@ Get the topic / rough draft + the goal (visibility, authority, lead-gen). Two di
 ### 2. Pick a format
 Choose the best-fit template from `kk-post.md`. Follow its `[bracketed stage directions]` exactly — they are the structure. If the owner's worked example for that format is still `[xxx]`, fill it now in their voice (and save it back to `kk-post.md` so it's reusable).
 
-### 2a. Short-form mode (default shape for punchy posts)
-This is a *shape* layered on the format picked in step 2 — it never replaces format selection. The template still comes from `kk-post.md`; this compresses and sequences how its brackets get filled. Use it for tight, scroll-stopping posts; skip only when the owner asks for a long-form piece.
-
-- **Opener** — emotional + a point of view, in the first line. Lead with one of {happiness, anger, sadness, fear, disgust, surprise} + a stance. Never open on a job title or credential. One statement, ~8 words.
-- **Broad → Niche → Deep** — open broad enough that most professionals see themselves, narrow to the focus area's specific audience, then go deep on the one shift. Make it as broad as it can be at the top without going generic.
-- **Four beats, with budgets:**
-  - **Hook** (emotion / curiosity) — 120–180 chars (the top 2–3 lines).
-  - **Shift / turning point** (what changed) — 150–250 chars. After the hook, a micro-story or one concrete scenario: *show, don't tell.*
-  - **Lesson / insight** (the takeaway) — 150–250 chars. Conversational, in flowing lines, **no bullets** (bullets read academic).
-  - **Call-to-Value** — 40–80 chars. Frame the *value* of acting, not a bare instruction ("Pack away the love handles" beats "go exercise"). Not a rhetorical question.
-- **Total under 900 characters.** Clean structure: problem → insight → solution → Call-to-Value, in that order.
-- Everything still obeys `voice.md` + `anti-ai.md`. The source spec's "motivational/positive, light humor" tone is allowed, but it never overrides the bans (no em dashes, no banned vocab, no motivational-poster ending) or the contrarian edge. On **financial** content the controversy is capped per `qa-gate` Mode 2.
+### 2a. Short-form shape (per the linkedin-post-creator lens)
+Fill the chosen format to the short-form shape defined in `.claude/agents/linkedin-post-creator.md` — an emotional + point-of-view opener (no job title, ~8 words), Broad → Niche → Deep, then **Hook** (120–180) → **Shift** (150–250) → **Lesson** (150–250) → **Call-to-Value** (40–80), under **900 characters** total, structured problem → insight → solution → Call-to-Value. The shape is layered on the kk-post format, never replaces it. Default for punchy posts; skip only for a long-form piece. See the agent for the full shape and the tone bounds — don't restate them here, follow the agent so there's one source of truth.
 
 ### 3. Write it in voice
-Fill the format with the owner's content. Apply `voice.md` (and the filled kk-post examples as the voice reference). Zero AI tells.
+Draft per the `linkedin-post-creator` lens: fill the format with the owner's content, apply `voice.md` (and the filled kk-post examples as the voice reference). Tone may be positive/conversational with light humour, but `voice.md` + `anti-ai.md` win — no banned vocab, no em dashes inside sentences, no motivational-poster ending, contrarian edge kept (capped on financial content per `qa-gate` Mode 2). Zero AI tells.
 
 ### 4. Match a lead magnet
 From `references/lead-magnets.md`, pick the magnet that fits the post's pain/topic. If none fits, suggest creating one with `lead-magnet-gen`. The magnet is delivered after a call, not dropped in the post (the post earns the comment/DM).
@@ -65,6 +57,7 @@ On "published":
 - Append **1 row** to `references/learning/hook-performance.md` (format + hook_pattern, scores blank) and **7 rows** (one per comment slot) to `references/learning/comments-performance.md`. `score-posts` fills the metrics at the 7-day mark.
 
 ## Rules
+- Ideation and voice-drafting follow the `linkedin-post-creator` agent (the content lens); this skill orchestrates the pipeline around it. Keep the short-form shape and tone bounds defined once, in the agent.
 - LinkedIn only — no X/Threads/IG repurposing.
 - Never fake the owner's voice — if the draft is thin, ask before inventing lived detail.
 - Lead magnet is the hook to earn a conversation, never dropped raw in the post.

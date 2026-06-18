@@ -45,7 +45,7 @@ Generate all seven (1-2 lines each, one action):
 1. Engagement question (A/B/C reply)
 2. TL;DR lesson
 3. Next-step CTA — prefer keyword-to-DM over a link
-4. Social-proof mini-case (anonymised; compliance-aware if regulated)
+4. Social-proof mini-case — **source it, never invent it**: pull from `references/testimonials.md` (consent granted + compliance cleared) or the **Proof bank** in `references/voice-profile.md` (anonymised client patterns — no names or identifying detail; no $/products on financial). If nothing on file fits the post, ask the owner for a real anonymised case rather than fabricating one.
 5. Conversation extender (role-specific)
 6. Why-I-do-this (humanise)
 7. Repost amplifier (why it matters)

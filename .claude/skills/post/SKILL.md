@@ -15,7 +15,7 @@ Read first: `kk-post.md` (post-format library), `account-profile.md` + `referenc
 
 ### 1. Intake
 Get the topic / rough draft + the goal (visibility, authority, lead-gen). Two distinct picks from `positioning.md` (they are not the same thing):
-- **Focus area(s)** (the *outcome* sold) — chosen from the "I help …" statement, matched to `positioning.md → Focus areas`. Pick a **primary** one — it owns the post, sets the audience, and gives the single shift ("from X → to Y") the post argues. Add a **secondary** only when the topic genuinely bridges two, woven in as support (never a second spine); never more than two. If intent is ambiguous between focus areas, ask which "I help" applies before drafting.
+- **Focus area(s)** (the *outcome* sold) — driven by the input: match the owner's "I help …" statement + raw content to one or more of `positioning.md → Focus areas`, by relevance (don't force a fixed count). Build the post on a single clear shift ("from X → to Y") so short-form stays punchy, even if it touches more than one area. If the input doesn't clearly map to any focus area, ask before drafting.
 - **Content pillar / lens** (the *angle* it's told from) — from `positioning.md → Content pillars / Signature lenses` (derived in `/onboard`). Rotate a different one across posts for angle-diversity.
 
 ### 2. Pick a format

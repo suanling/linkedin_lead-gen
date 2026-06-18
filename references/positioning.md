@@ -9,22 +9,22 @@
 
 ## One-liner (problem → solution → outcome)
 
-The active "I help …" statement chooses the **focus area(s)** for a given post. Each focus area below
-carries its own "I help" line. Pick the **primary** one that matches the post's intent — it owns the
-post, sets the audience, and provides the single shift the post argues. Add a **secondary** focus area
-only when the topic genuinely bridges two; weave it in as support, never as a second spine. Don't
-scatter across more than two — a short-form post that chases several outcomes loses its punch. (The
-*angle* — which content pillar/lens to write it through — comes from the Signature lenses section.)
+Which **focus area(s)** a post belongs to is driven by the input — the "I help …" statement plus the
+raw content/context the owner gives. Match that input to one or more of the focus areas below, by
+relevance; don't force a fixed count. Each focus area carries its own "I help" line to match against.
+Keep the post itself built on a single clear shift so short-form stays punchy, even when it touches
+more than one area. (The *angle* — which content pillar/lens to write it through — comes from the
+Signature lenses section.)
 
 ## Focus areas (strategic territories)
 
 > Five focus areas. Each is a stranger-to-believer argument: name the trap, name the shift. `/post`
-> selects a **primary** focus area per post from the "I help" statement (plus an optional secondary
-> when the topic bridges two), writes the opener inside the primary shift, and keeps that one reframe
-> ("from X → to Y") as the post's spine. Broad → Niche → Deep: open broad enough that most
-> professionals see themselves, then narrow to the focus area's specific audience, then go deep on the
-> one shift. (These are *not* your content pillars — pillars are the recurring themes derived in
-> `/onboard`, below.)
+> tags a post with the focus area(s) the input is relevant to — one or more, driven by the "I help"
+> statement and the content. It writes the opener inside the most relevant shift and keeps a single
+> clear reframe ("from X → to Y") as the post's spine. Broad → Niche → Deep: open broad enough that
+> most professionals see themselves, then narrow to the focus area's specific audience, then go deep
+> on the one shift. (These are *not* your content pillars — pillars are the recurring themes derived
+> in `/onboard`, below.)
 
 1. **Structural Authority & Founder Dependency Reduction** *(Business Transformation)*
    - **I help:** service-based founders build a business that keeps running when they step away.

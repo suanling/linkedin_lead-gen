@@ -1,6 +1,6 @@
 ---
 name: commenting-others
-description: Comment on OTHER people's LinkedIn posts (your ICP and the voices they follow) — find fresh posts, draft (1,2-3,1) comments in voice, run the QA gate, optionally promote good-fit accounts into the lead-gen tracker, and log to the engagement tracker + daily note. Also handles replying under a comment you left on someone else's post (same thread, their turf). Triggers: "engagement", "comment on posts", "do my comments", "/commenting-others", "/engage".
+description: Comment on OTHER people's LinkedIn posts (your ICP and the voices they follow) — find fresh posts, draft (1,2-3,1) comments in voice, run the QA gate, optionally promote good-fit accounts into the lead-gen tracker, and log to the engagement tracker + daily note. Also handles replying under a comment you left on someone else's post (same thread, their turf), and adding named targets to your engagement groups when you paste a profile. Triggers: "engagement", "comment on posts", "do my comments", "add [name] to my targets", "here's a profile to engage", "paste a profile", "/commenting-others", "/engage".
 ---
 
 # Commenting on others' posts
@@ -27,6 +27,25 @@ Set today's target (your choice — there's no fixed number). Read `references/e
 
 ## STEP 1 — Build the queue
 From `references/engagement-targets.md` + the engagement tracker, build a list of eligible accounts (`Next Action ≤ today` or not yet engaged), ordered by priority. Skip out-of-ICP, wrong-geography, and not-yet-eligible.
+
+## STEP 1b — Add named targets (paste a profile)
+The engagement-side equivalent of `log-prospect`'s manual sourcing. When the owner wants specific people **in rotation now** instead of waiting for the auto-fill, ask them to paste each person's LinkedIn profile. Trigger this on its own ("add [name] to my targets", "here's a profile to engage") or whenever the queue is thin and the owner has people in mind.
+
+**Ask the owner to paste, per account:**
+- **Name + profile URL** (the URL is the join key)
+- **Headline / About line**
+- **Location** (confirm Singapore vs out-of-market, per the geography rule)
+- *(optional but better)* **what they post about**, or a recent post — this is how you judge whether their comment section actually holds the ICP
+
+A raw copy-paste of the profile page is fine; pull out what you need. Batch is fine (several at once).
+
+**Then, per account:**
+1. **ICP + geography filter.** Out-of-market or out-of-ICP people are still worth adding as a **Group 1** (bigger voice, borrow their audience) or **Group 3** (peer / adjacent) relationship play, but never as a **Group 2** prospect.
+2. **Pick the group** using the criteria in `references/engagement-targets.md`: Group 1 (bigger voice), Group 2 (your ICP — also tag archetype **A** or **B**), or Group 3 (peer / adjacent). Say which and why in one line.
+3. **Append a named row** to that group's table in `references/engagement-targets.md` (`Name | LinkedIn URL | why-one-line`; add the archetype for Group 2).
+4. **Seed the engagement tracker** with the Step 5a code, but set **Next Action = today** (not +7) so the account surfaces in the next queue, with `Category` = the group and `Total Engagements = 0` (you haven't commented yet).
+
+If a paste is missing **location** or **what they post about**, ask before filing — geography and comment-section fit are the two calls you shouldn't guess. Never invent a headline, location, or topic to fill a gap.
 
 ## STEP 2 — Find a fresh post
 For each account, find a post from the last ~2 days via LinkedIn content search:
@@ -111,7 +130,7 @@ If this account is a strong ICP fit and you've engaged them a few times, **offer
 - `audit-log.md`: `[YYYY-MM-DD HH:MM] commenting-others | <name> | comment | <comment text>`
 
 ## STEP 6 — When the list runs dry
-Fallbacks for more targets: (1) people who reacted to your recent posts, (2) people who commented on your posts, (3) keyword content search for your ICP topics. Same filters apply (ICP, geography, freshness, eligibility). New accounts get added to the tracker.
+Fallbacks for more targets: (1) **ask the owner to paste profiles** of people they already have in mind — run STEP 1b to file them; (2) people who reacted to your recent posts; (3) people who commented on your posts; (4) keyword content search for your ICP topics. Same filters apply (ICP, geography, freshness, eligibility). New accounts get added to the tracker.
 
 ## NOTES
 - Use browser tools (`tabs_context`, `navigate`, `get_page_text`); search pages render text, profile/activity pages often don't.

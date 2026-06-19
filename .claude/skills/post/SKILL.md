@@ -16,13 +16,19 @@ Read first: `kk-post.md` (post-format library), `account-profile.md` + `referenc
 ## Pipeline
 
 ### 1. Intake
-**Check the calendar first.** If `references/content-calendar.md` exists and has a row for the target date (default: today), use that row as the starting brief. Compose it from the row in this exact shape, then build the post:
+**Theme, Objective, and Pillar focus are fixed by weekday** and stored in `positioning.md → Weekly content calendar` (each day carries all three):
+Mon = Empowering & Affirmation · Tue = Personal Story · Wed = Expertise · Thu = Authority & Thought Leadership · Fri = Personal Growth.
+Read **{Theme}**, **{Objective}**, and **{Pillar focus}** from `positioning.md` for the target date's weekday. Never free-type or override them per post; if any need to change, amend `positioning.md`.
+
+**Only the Topic / Angle varies per date.** If `references/content-calendar.md` exists and has a row for the target date (default: today), take **{Topic / Angle}** from that row. No row → the owner supplies the topic. Then compose this exact shape and build the post:
 
 > I want to talk about **{Pillar focus}** on a **{Day}** with the theme (**{Theme}**).
 > Reason for this theme is because **{Objective}**.
 > Give me a post on **{Topic / Angle}** in this content pillar.
 
-(The owner can override or pick another date.) No calendar or no row for the date → fall back to the topic the owner gives.
+The owner may pick another date or give an ad-hoc topic; **{Theme}**, **{Objective}**, and **{Pillar focus}** still come from `positioning.md` for that weekday, not from the post-time request.
+
+**One shape for every day.** Whatever the theme, the post follows the `linkedin-post-creator` short-form shape (emotional ~8-word opener, Broad → Niche → Deep, Hook → Shift → Lesson → Call-to-Value, under 900 chars). The theme changes the *posture and content* (Tue = lived personal story; Thu = sharp authority take), never the structure. **Use the full budget — keep close to the 900-char ceiling rather than well under it.**
 
 Get the topic / rough draft + the goal (visibility, authority, lead-gen). Two distinct picks from `positioning.md` (they are not the same thing):
 - **Focus area(s)** (the *outcome* sold) — driven by the input: match the owner's "I help …" statement + raw content to one or more of `positioning.md → Focus areas`, by relevance (don't force a fixed count). Build the post on a single clear shift ("from X → to Y") so short-form stays punchy, even if it touches more than one area. If the input doesn't clearly map to any focus area, ask before drafting.

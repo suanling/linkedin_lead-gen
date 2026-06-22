@@ -1,0 +1,428 @@
+/* ============================================================
+   Lumina Clarity & Suan Ling — Colors + Type System
+   v1.0 · May 2026
+   ============================================================
+
+   Two brands share this file:
+   - Lumina Clarity (corporate, financial advisory)  → Mode A
+   - Suan Ling     (personal coaching, content)       → Mode B
+
+   Mode A is the default. Toggle Suan Ling by adding
+   `data-brand="suan-ling"` to <html> or a wrapper element.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. WEBFONTS
+   ------------------------------------------------------------
+   PRIMARY TYPE STACK now follows stackai-design:
+     · Aspekta 500  — display + headings  (via Fontshare CDN)
+     · Geist        — body + UI           (via Google Fonts CDN)
+     · DM Mono      — code / mono         (via Google Fonts CDN)
+
+   Editorial serif (Bodoni Moda / Playfair) is RETAINED as
+   --font-serif-editorial — reserved for hero pull-quotes,
+   editorial moments, and Suan Ling personal-brand surfaces.
+   ------------------------------------------------------------ */
+
+/* Aspekta — display / headings (Fontshare) */
+@import url("https://api.fontshare.com/v2/css?f[]=aspekta@300,400,500,600,700&display=swap");
+
+/* Geist + DM Mono — body, UI, code (Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap");
+
+/* Bodoni Moda — editorial serif (kept for hero quotes / Suan Ling) */
+@font-face {
+  font-family: "Bodoni Moda";
+  src: url("fonts/BodoniModa-VariableFont.ttf") format("truetype-variations");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni Moda";
+  src: url("fonts/BodoniModa-Italic-VariableFont.ttf") format("truetype-variations");
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Playfair Display — alt serif, used for hero/quote moments */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-VariableFont.ttf") format("truetype-variations");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic-VariableFont.ttf") format("truetype-variations");
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Inter — UI/body sans (Satoshi substitute) */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-VariableFont.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Italic-VariableFont.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Caveat — handwritten accent (Suan Ling personal voice) */
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat-VariableFont.ttf") format("truetype-variations");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Just Another Hand — alt handwritten, tighter & taller */
+@font-face {
+  font-family: "Just Another Hand";
+  src: url("fonts/JustAnotherHand-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------
+   2. BRAND PALETTE — Lumina Clarity (default)
+   ------------------------------------------------------------ */
+:root {
+  /* — Brand foundation — */
+  --lc-ink-navy:        #07273E;   /* primary brand foundation */
+  --lc-terracotta:      #C65A2E;   /* strategic accent */
+  --lc-terracotta-deep: #A84D28;   /* hover / press */
+  --lc-warm-cream:      #F5F0EA;   /* main background */
+  --lc-soft-white:      #FAF8F5;   /* elevated surface */
+  --lc-charcoal:        #1F1F1D;   /* primary typography */
+  --lc-stone:           #D9D3CB;   /* borders, muted surfaces */
+  --lc-mist:            #ECE7E1;   /* secondary background */
+  --lc-sage-fog:        #A8B39A;   /* supporting accent */
+  --lc-muted-gold:      #D9B26F;   /* data highlight */
+  --lc-dust-blue:       #4A6B8A;   /* informational accent */
+
+  /* — Text scale (charcoal-warmed) — */
+  --lc-text-primary:    #1F1F1D;
+  --lc-text-secondary:  #5B5651;
+  --lc-text-muted:      #8C8781;
+  --lc-text-inverse:    #FAF8F5;
+
+  /* — State colors — built from the palette, never neon — */
+  --lc-success:         #6B8E5A;   /* sage-derived */
+  --lc-warning:         #D9B26F;   /* muted gold */
+  --lc-danger:          #C65A2E;   /* terracotta */
+  --lc-info:            #4A6B8A;   /* dust blue */
+
+  /* ============ SEMANTIC TOKENS (default = Lumina Clarity) ============ */
+
+  /* Backgrounds */
+  --bg-primary:    var(--lc-warm-cream);
+  --bg-elevated:   var(--lc-soft-white);
+  --bg-muted:      var(--lc-mist);
+  --bg-dark:       var(--lc-ink-navy);
+
+  /* Surfaces & borders */
+  --surface:       var(--lc-soft-white);
+  --surface-alt:   var(--lc-mist);
+  --border:        var(--lc-stone);
+  --border-strong: #B7AEA2;
+  --divider:       rgba(31,31,29,0.08);
+
+  /* Text */
+  --fg-1:          var(--lc-text-primary);   /* body + headings */
+  --fg-2:          var(--lc-text-secondary); /* secondary body */
+  --fg-3:          var(--lc-text-muted);     /* captions, labels */
+  --fg-inverse:    var(--lc-text-inverse);   /* on dark */
+
+  /* Actions */
+  --action-primary:      var(--lc-terracotta);
+  --action-primary-hover:var(--lc-terracotta-deep);
+  --action-primary-soft: rgba(198,90,46,0.12);
+  --action-secondary:    var(--lc-ink-navy);
+  --focus-ring:          rgba(7,39,62,0.18);
+
+  /* Accents */
+  --accent:        var(--lc-terracotta);
+  --accent-cool:   var(--lc-dust-blue);
+  --accent-sage:   var(--lc-sage-fog);
+  --accent-gold:   var(--lc-muted-gold);
+
+  /* Status */
+  --status-success: var(--lc-success);
+  --status-warning: var(--lc-warning);
+  --status-danger:  var(--lc-danger);
+  --status-info:    var(--lc-info);
+
+  /* — Type families (stackai-aligned) — */
+  --font-display:          "Aspekta", "Geist", -apple-system, system-ui, sans-serif;
+  --font-sans:             "Geist", "Aspekta", -apple-system, system-ui, sans-serif;
+  --font-mono:             "DM Mono", "JetBrains Mono", ui-monospace, monospace;
+
+  /* Editorial serif — reserved for hero pull-quotes & Suan Ling */
+  --font-serif-editorial:  "Bodoni Moda", "Playfair Display", Georgia, serif;
+  /* Alias kept so existing class names still resolve. By default it
+     now points at the editorial serif (use sparingly). */
+  --font-serif:            var(--font-serif-editorial);
+  --font-serif-alt:        "Playfair Display", "Bodoni Moda", Georgia, serif;
+
+  /* Hand — Suan Ling personal voice only */
+  --font-hand:             "Caveat", "Just Another Hand", "Bradley Hand", cursive;
+  --font-hand-tight:       "Just Another Hand", "Caveat", cursive;
+
+  /* — Type sizes (rem-based, 16px root) — */
+  --fs-display-xl: 3.5rem;    /* 56 */
+  --fs-display-l:  2.5rem;    /* 40 */
+  --fs-h1:         2rem;      /* 32 */
+  --fs-h2:         1.5rem;    /* 24 */
+  --fs-h3:         1.25rem;   /* 20 */
+  --fs-h4:         1.125rem;  /* 18 */
+  --fs-body-l:     1.125rem;  /* 18 */
+  --fs-body:       1rem;      /* 16 */
+  --fs-small:      0.875rem;  /* 14 */
+  --fs-caption:    0.75rem;   /* 12 */
+
+  /* — Line heights — */
+  --lh-display:    1.12;
+  --lh-heading:    1.2;
+  --lh-body:       1.6;
+  --lh-tight:      1.3;
+
+  /* — Letter spacing — */
+  --tracking-display: -0.015em;
+  --tracking-heading: -0.01em;
+  --tracking-body:    0;
+  --tracking-caption: 0.04em;
+  --tracking-eyebrow: 0.14em;   /* small uppercase labels */
+
+  /* — Spacing scale (4px base) — */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 80px;
+  --space-5xl: 128px;
+
+  /* — Radii — */
+  --radius-xs:  4px;
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+  --radius-2xl: 32px;
+  --radius-full: 999px;
+
+  /* — Shadows — tinted navy, never gray-on-gray — */
+  --shadow-sm: 0 2px 8px rgba(7,39,62,0.04);
+  --shadow-md: 0 8px 24px rgba(7,39,62,0.06);
+  --shadow-lg: 0 16px 40px rgba(7,39,62,0.08);
+  --shadow-inset-soft: inset 0 0 0 1px rgba(7,39,62,0.04);
+
+  /* — Motion — */
+  --ease-out:   cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.8, 0.3);
+  --ease-soft:  cubic-bezier(0.32, 0.72, 0.24, 1);
+  --dur-fast:   140ms;
+  --dur-base:   260ms;
+  --dur-slow:   520ms;
+
+  /* — Layout — */
+  --content-narrow: 720px;
+  --content:        1080px;
+  --content-wide:   1280px;
+}
+
+/* ------------------------------------------------------------
+   3. SUAN LING — Mode B (personal brand)
+   Warmer, slightly less editorial, more handwritten energy.
+   Same foundation, different tone: terracotta leans softer,
+   cream warms toward ivory, handwritten accents emerge.
+   ------------------------------------------------------------ */
+:root[data-brand="suan-ling"],
+[data-brand="suan-ling"] {
+  /* Suan Ling specific palette */
+  --sl-clay:        #B85735;   /* signature warm clay */
+  --sl-clay-deep:   #993F22;
+  --sl-ivory:       #F8F2E9;   /* warmer page */
+  --sl-paper:       #FDF8F0;   /* elevated, almost off-white */
+  --sl-ink:         #2A211A;   /* warm-black ink */
+  --sl-sand:        #E6DDD0;
+  --sl-mist:        #EFE7DA;
+  --sl-tea:         #8A9B7F;   /* tea-green accent */
+  --sl-honey:       #D4A24A;
+  --sl-slate-blue:  #3F5E7C;
+
+  /* Re-map semantic tokens to Suan Ling values */
+  --bg-primary:    var(--sl-ivory);
+  --bg-elevated:   var(--sl-paper);
+  --bg-muted:      var(--sl-mist);
+  --bg-dark:       var(--sl-ink);
+
+  --surface:       var(--sl-paper);
+  --surface-alt:   var(--sl-mist);
+  --border:        var(--sl-sand);
+  --border-strong: #C8BBA8;
+  --divider:       rgba(42,33,26,0.10);
+
+  --fg-1:          var(--sl-ink);
+  --fg-2:          #5A4A3E;
+  --fg-3:          #8D7E6F;
+  --fg-inverse:    var(--sl-paper);
+
+  --action-primary:      var(--sl-clay);
+  --action-primary-hover:var(--sl-clay-deep);
+  --action-primary-soft: rgba(184,87,53,0.12);
+  --action-secondary:    var(--sl-ink);
+  --focus-ring:          rgba(184,87,53,0.22);
+
+  --accent:        var(--sl-clay);
+  --accent-cool:   var(--sl-slate-blue);
+  --accent-sage:   var(--sl-tea);
+  --accent-gold:   var(--sl-honey);
+
+  --status-success: #6B8E5A;
+  --status-warning: var(--sl-honey);
+  --status-danger:  var(--sl-clay);
+  --status-info:    var(--sl-slate-blue);
+
+  --shadow-sm: 0 2px 8px rgba(42,33,26,0.05);
+  --shadow-md: 0 8px 24px rgba(42,33,26,0.07);
+  --shadow-lg: 0 16px 40px rgba(42,33,26,0.09);
+
+  /* Suan Ling tilts the type system toward editorial-warm + handwritten */
+  --font-serif:      "Playfair Display", "Bodoni Moda", Georgia, serif;
+  --font-display:    "Bodoni Moda", "Playfair Display", Georgia, serif;
+}
+
+/* ------------------------------------------------------------
+   4. SEMANTIC TYPE RECIPES
+   Use these classes directly OR inherit the vars in your own
+   selectors. Heading / display = serif. Body / UI = sans.
+   ------------------------------------------------------------ */
+
+html { color-scheme: light; }
+body {
+  background: var(--bg-primary);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--tracking-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display + headings: Aspekta 500, slightly tight. Per stackai system. */
+.lc-display-xl,
+.lc-display-l,
+.lc-h1, .lc-h2, .lc-h3, .lc-h4,
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: var(--lh-heading);
+  letter-spacing: var(--tracking-heading);
+  color: var(--fg-1);
+  text-wrap: balance;
+}
+
+/* Opt-in editorial serif headings — use for hero pull-quotes only. */
+.lc-h1--editorial, .lc-h2--editorial, .lc-display-xl--editorial {
+  font-family: var(--font-serif-editorial);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.lc-display-xl { font-size: var(--fs-display-xl); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
+.lc-display-l  { font-size: var(--fs-display-l);  line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
+.lc-h1, h1     { font-size: var(--fs-h1); }
+.lc-h2, h2     { font-size: var(--fs-h2); }
+.lc-h3, h3     { font-size: var(--fs-h3); }
+.lc-h4, h4     { font-size: var(--fs-h4); }
+
+/* Body + small */
+.lc-body-l { font-family: var(--font-sans); font-size: var(--fs-body-l); line-height: var(--lh-body); }
+.lc-body   { font-family: var(--font-sans); font-size: var(--fs-body);   line-height: var(--lh-body); }
+.lc-small  { font-family: var(--font-sans); font-size: var(--fs-small);  line-height: var(--lh-body); }
+
+/* Caption / eyebrow — uppercase, tracked */
+.lc-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+
+/* Editorial — serif italic for emotional emphasis */
+.lc-editorial {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  color: var(--fg-2);
+}
+
+/* Hand — Suan Ling's personal voice; sparing use only */
+.lc-hand {
+  font-family: var(--font-hand);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+/* Mono — for tickers, codes, tabular numbers */
+.lc-mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  letter-spacing: 0.01em;
+}
+
+/* Numeric display — tabular figures for charts/metrics.
+   Uses Aspekta by default (matches stackai); switch to
+   .lc-numeric--editorial for serif numerals in editorial layouts. */
+.lc-numeric {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-feature-settings: "lnum" 1, "tnum" 1;
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: -0.01em;
+}
+.lc-numeric--editorial {
+  font-family: var(--font-serif-editorial);
+  font-weight: 500;
+}
+
+/* Links — quiet, underlined on hover */
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+a:hover { border-bottom-color: currentColor; }
+
+/* Focus — thin navy ring, never neon */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+/* Selection */
+::selection { background: var(--action-primary-soft); color: var(--fg-1); }

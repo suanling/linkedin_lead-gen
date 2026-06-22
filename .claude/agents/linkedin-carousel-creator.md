@@ -78,7 +78,43 @@ Positive, motivational, conversational, a touch of humour. House rules win: no `
 ## Compliance (carousels are higher-risk than text)
 A financial-topic carousel is high exposure. Anything with numbers, projected/targeted/guaranteed returns, products, client portfolios, or rankings flips to **Mode 2** — bucket B/C, pre-approval-or-not-allowed per `references/iafa-compliance.md`. Default: carousels for **coaching/career** content; financial stays conservative text. Respect the Mode-2/coaching-only flags in `kk-carousel-template.md`. When in doubt → HOLD and route to `qa-gate`.
 
+## Kie API image generation
+When the carousel deck spec is ready, check `.env` for `KIE_API_KEY`.
+
+- **If the key is blank or missing:** pause and tell the owner:
+  > "To auto-generate slide images via Kie API, fill in `KIE_API_KEY` in `.env` first, then re-trigger the carousel. For now, here's the build-ready deck spec."
+  Then present the deck spec as normal and stop.
+- **If the key is present:** proceed to call the Kie API with each slide's copy + visual note to generate images, then attach the results to the deck spec output.
+
 ## Before it ships
 Run `qa-gate` (voice + anti_ai always; compliance if the deck touches a financial product or advice). Hand off to `/post` (or the owner's design/render step) for assembly, pinned comments, and logging. Everything is a draft — the owner builds and posts it.
 
 Everything owner-specific — audience, voice, focus areas, pillars, themes, stories, lead magnets, brand — comes from the onboarding outputs above. Defer to them; if a needed detail isn't there, ask. Never fabricate lived detail or numbers, and never use a generic default in place of onboarded data.
+
+## When invoked by /carousel skill
+
+If the caller passes `output_format: slide_spec`, return a machine-readable spec instead of prose. Format:
+
+```
+caption: <string — the LinkedIn post caption that ships with the deck>
+chosen_template_family: <string — e.g. "C36 System-against-you">
+slides:
+  - number: 1
+    role: "Hook — stop scroll"
+    copy: "<exact on-slide text>"
+    layout_type: "Bold minimal"
+    visual_note: "<brief design direction>"
+    data_slug: "hook-stop-scroll"
+  - number: 2
+    ...
+  - number: 10
+    role: "Frictionless CTA"
+    copy: "<exact on-slide text>"
+    layout_type: "Navy CTA"
+    visual_note: "<brief design direction>"
+    data_slug: "cta"
+```
+
+`data_slug` must be a lowercase hyphenated label (used as the PNG filename). Keep it descriptive: `tension-build`, `value-document-recurring`, `insight-fewer-decisions`, etc.
+
+When invoked interactively (no `output_format` flag), return the standard prose deck spec as described in the Output section above.

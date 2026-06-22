@@ -1,43 +1,141 @@
 # Positioning
 
 > Your one-line positioning and the language that grounds comments, DMs, and the call invite.
-> Filled during `/onboard`.
+> **Focus areas ≠ content pillars.** The **focus areas** below are your strategic territories (the
+> outcomes you sell) — `/post` picks the active one from the "I help" statement you give at post time,
+> then writes within that area's shift. Your **content pillars** (the recurring post themes/angles you
+> rotate through) are *derived during `/onboard`* and live in the Signature lenses section below.
+> One post = one focus area (the outcome) + one content pillar/lens (the angle).
 
 ## One-liner (problem → solution → outcome)
-[ xxx — e.g. "I help [who] go from [problem] to [outcome] without [pain]." ]
 
-## The problem you name
-[ xxx — the core problem you diagnose for prospects ]
+Which **focus area(s)** a post belongs to is driven by the input — the "I help …" statement plus the
+raw content/context the owner gives. Match that input to one or more of the focus areas below, by
+relevance; don't force a fixed count. Each focus area carries its own "I help" line to match against.
+Keep the post itself built on a single clear shift so short-form stays punchy, even when it touches
+more than one area. (The *angle* — which content pillar/lens to write it through — comes from the
+Signature lenses section.)
 
-## Your point of view
-[ xxx — the contrarian / sharp take that makes you worth listening to ]
+## Focus areas (strategic territories)
+
+> Five focus areas. Each is a stranger-to-believer argument: name the trap, name the shift. `/post`
+> tags a post with the focus area(s) the input is relevant to — one or more, driven by the "I help"
+> statement and the content. It writes the opener inside the most relevant shift and keeps a single
+> clear reframe ("from X → to Y") as the post's spine. Broad → Niche → Deep: open broad enough that
+> most professionals see themselves, then narrow to the focus area's specific audience, then go deep
+> on the one shift. (These are *not* your content pillars — pillars are the recurring themes derived
+> in `/onboard`, below.)
+
+1. **[ Focus area name ]** *(e.g. Business Transformation)*
+   - **I help:** [ who ] [ do / achieve / escape ] [ what ].
+   - **Audience:** [ the specific person this speaks to ].
+   - **Shift:** from [ the trap they're in ] → to [ the outcome they want ].
+
+2. **[ Focus area name ]** *(e.g. Career Expansion)*
+   - **I help:** [ who ] [ do / achieve / escape ] [ what ].
+   - **Audience:** [ the specific person this speaks to ].
+   - **Shift:** from [ the trap ] → to [ the outcome ].
+
+3. **[ Focus area name ]** *(e.g. Future Readiness)*
+   - **I help:** [ who ] [ do / achieve / escape ] [ what ].
+   - **Audience:** [ the specific person this speaks to ].
+   - **Shift:** from [ the trap ] → to [ the outcome ].
+
+4. **[ Focus area name ]** *(e.g. Execution Design)*
+   - **I help:** [ who ] [ do / achieve / escape ] [ what ].
+   - **Audience:** [ the specific person this speaks to ].
+   - **Shift:** from [ the trap ] → to [ the outcome ].
+
+5. **[ Focus area name ]** *(e.g. Personal Evolution)*
+   - **I help:** [ who ] [ do / achieve / escape ] [ what ].
+   - **Audience:** [ the specific person this speaks to ].
+   - **Shift:** from [ the trap ] → to [ the outcome ].
+   - **⚠ Compliance note if applicable:** [ e.g. if this focus area touches regulated territory, note
+     which qa-gate mode applies and what to keep out ].
+
+## Weekly content calendar (theme + objective + pillar focus, fixed by weekday)
+
+> Owner data — the single store for **Theme**, **Objective**, and **Pillar focus**, all FIXED by
+> weekday (not overridden per post). The **theme** sets a post's intent/posture; the **objective** is
+> the standing reason for that theme; the **pillar focus** is the standing talking territory for that
+> day; the **focus area(s)** map it to the outcome sold. `/post` and the `linkedin-post-creator` agent
+> read Theme + Objective + Pillar focus from here by weekday, and take only the **Topic / Angle** from
+> `content-calendar.md` (or the owner) per date. To change any of the three fixed fields, amend this
+> section. Edit freely as the strategy evolves.
+
+- **Monday — [ Theme, e.g. Empowering & Affirmation ].**
+  **Pillar focus:** [ the recurring topics for this day — e.g. mindset · identity shift · the trap
+  you help people escape ].
+  **Objective:** [ why this theme on this day — e.g. reset the audience's mindset at the start of
+  the week; help them see the trap and want out ].
+  Maps to focus areas: [ list the focus areas above that this day draws on ].
+
+- **Tuesday — [ Theme, e.g. Personal Story ].**
+  **Pillar focus:** [ e.g. your origin story · turning points · lived experience of the shift ].
+  **Objective:** [ e.g. humanise your authority; build trust through real experience, not claims ].
+  Maps to focus area: [ list ].
+
+- **Wednesday — [ Theme, e.g. Expertise ].**
+  **Pillar focus:** [ e.g. how-to · systems · frameworks · practical tools ].
+  **Objective:** [ e.g. teach one concrete, actionable thing; create "I need this" moments ].
+  Maps to focus areas: [ list ].
+  **⚠ Compliance:** [ note if any pillar territory here touches regulated content — e.g. financial
+  concepts require concept-only treatment, no products/returns ].
+
+- **Thursday — [ Theme, e.g. Authority & Thought Leadership ].**
+  **Pillar focus:** [ e.g. contrarian takes · the bigger picture · what the industry gets wrong ].
+  **Objective:** [ e.g. challenge beliefs; position you as someone who thinks differently and is
+  worth listening to ].
+  Maps to focus areas: [ list ].
+
+- **Friday — [ Theme, e.g. Personal Growth ].**
+  **Pillar focus:** [ e.g. reflection · internal shifts · what you're still learning ].
+  **Objective:** [ e.g. end the week with an emotional note; show growth in progress, not just
+  results ].
+  Maps to focus areas: [ list ].
+
+- **Sunday — [ Theme, e.g. Practical Clarity & Life Decisions ].**
+  **Pillar focus:** [ e.g. real decisions · life design · the things people avoid thinking about ].
+  **Objective:** [ e.g. use real situations to show how decisions compound; make the abstract
+  concrete and personal ].
+  Maps to focus areas: [ list ].
+  **⚠ Compliance:** [ note any regulated territory for Sunday's pillars ].
 
 ## Words you use / avoid
-- Use: [ xxx ]
-- Avoid: [ xxx ]
+- Use: [ concrete nouns and verbs that match your world — e.g. "land the client," "the business
+  stops when you stop," "one employer, one decision and it's gone" ].
+- Avoid: the `anti-ai.md` banned list. No em dashes inside sentences. No motivational-poster
+  endings. Close on a specific insight or one clear action.
 
-## Signature lenses (the value-generation angles)
+## Content pillars / Signature lenses (the value-generation angles)
 
-> Your signature lenses are the small set (≈4-6) of repeatable angles you see the world through — the
-> reason your take on a topic is *yours* and not the obvious one. The writing skills
-> (`commenting-others`, `respond-to-own`, `post`, `dm-sales-coach`) run drafts through them to satisfy
-> the "lived experience OR signature lens" rule, and rotate a different lens per variation
-> (angle-diversity). Derive 4-6 from your own framework, scorecard, or core point of view — never a
-> generic list. Each lens is a *question you ask of any post*; the answer is your distinctive add.
-> `/onboard` (Step 2c) fills these.
+> **These are your content pillars** — the recurring themes/angles you post through, *derived during
+> `/onboard`* (Step 2c). 4-6 repeatable angles you see the world through; the writing skills rotate a
+> different lens per variation to satisfy the "lived experience OR signature lens" rule. The focus area
+> (above) sets the *outcome* a post sells; the content pillar/lens sets the *angle* it's told from.
 
-1. **[ xxx — lens name / theme ]**
-   [ xxx — 1-2 sentence description, in your words ]
-   **Use as a lens:** [ xxx — the question to run a draft through ]
-   *Framework tie: [ xxx ]. Powers: [ xxx — which content theme/day ].*
+1. **[ Lens name — e.g. "The Design Problem" ]**
+   [ 1-2 sentences: what this lens sees that others miss. e.g. "Most people treat the bottleneck
+   as a people problem. This lens reframes it as a systems problem — the operations were never
+   designed to run without the founder." ]
+   **Use as a lens:** [ The question to run a draft through — e.g. "Where is the design missing?
+   What would need to be true for this to run without them?" ]
 
-2. **[ xxx ]** — repeat for 4-6 lenses.
+2. **[ Lens name ]**
+   [ description ]
+   **Use as a lens:** [ question ]
+
+3. **[ Lens name ]**
+   [ description ]
+   **Use as a lens:** [ question ]
+
+4. **[ Lens name ]**
+   [ description ]
+   **Use as a lens:** [ question ]
 
 ### Beliefs & contrarian takes (grow over time)
 
-> Your sharp, distinctly-yours beliefs and contrarian takes, captured as you work (via
-> `capture-protocol.md`, bucket 2). Each tagged with the lens it belongs to; the reply/post skills use
-> these as the "signature lens / belief" anchor. Foundational beliefs live in `about-me.md` (BELIEFS);
-> this is the running, content-ready list of the spiky ones.
+> Captured as you work (via `capture-protocol.md`, bucket 2), tagged with the focus area / lens it
+> belongs to.
 
 - [ xxx — captured as you articulate them ]

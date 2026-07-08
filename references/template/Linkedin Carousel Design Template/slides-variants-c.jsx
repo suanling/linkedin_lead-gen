@@ -33,7 +33,7 @@ function V9W({ n, brand, img, children }) {
       <V9Grid onDark={onDark} />
       {/* Col 1 — index + label */}
       <div style={{ position:'absolute', left:0, top:0, bottom:0, width:200, display:'flex', flexDirection:'column', justifyContent:'space-between', padding:'56px 28px 56px 40px' }}>
-        <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:80, letterSpacing:'-0.04em', lineHeight:1, color: onDark?'rgba(245,240,234,0.25)':'rgba(31,31,29,0.12)' }}>
+        <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:51, letterSpacing:'-0.04em', lineHeight:1, color: onDark?'rgba(245,240,234,0.25)':'rgba(31,31,29,0.12)' , textWrap:'balance'}}>
           {String(n).padStart(2,'0')}
         </div>
         <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
@@ -71,11 +71,11 @@ function V9_01({ n, brand }) {
   return (
     <V9W n={n} brand={brand}>
       <div style={{ position:'relative', display:'inline-block', marginBottom:24 }}>
-        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:200, letterSpacing:'-0.055em', lineHeight:0.87, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:126, letterSpacing:'-0.055em', lineHeight:0.95, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' , textWrap:'balance'}}>
           replaceable.
         </Editable>
       </div>
-      <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:80, letterSpacing:'-0.015em', lineHeight:1, color:'var(--accent)', textWrap:'balance' }}>
+      <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:51, letterSpacing:'-0.015em', lineHeight:1, color:'var(--accent)', textWrap:'balance' }}>
         structurally irreplaceable.
       </Editable>
     </V9W>
@@ -85,14 +85,14 @@ function V9_01({ n, brand }) {
 function V9_02({ n, brand }) {
   return (
     <V9W n={n} brand={brand} img={<Img id="v9-02-img" shape="rect" radius={0} placeholder="industrial · stark" style={{ width:'100%', height:'100%' }} />}>
-      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:68, letterSpacing:'-0.025em', lineHeight:1.05, color:'var(--fg-1)', textWrap:'balance', marginBottom:32 }}>
+      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:44, letterSpacing:'-0.025em', lineHeight:1.05, color:'var(--fg-1)', textWrap:'balance', marginBottom:32 }}>
         Three things commodify on contact.
       </Editable>
       {[['tool','rented the moment it ships'],['skill','leased — teachable = tradeable'],['position','owned · the single exception']].map(([k,v],i)=>(
         <div key={i} style={{ display:'grid', gridTemplateColumns:'28px 1fr', gap:16, borderTop:'1px solid var(--border)', paddingTop:16, paddingBottom:16, alignItems:'baseline' }}>
           <span style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.14em', color:'var(--fg-3)' }}>0{i+1}</span>
           <div>
-            <Editable as="span" style={{ fontFamily:'var(--font-display)', fontSize:44, fontWeight:600, letterSpacing:'-0.02em', lineHeight:1, color: i===2?'var(--accent)':'var(--fg-1)', display:'block' }}>{k}</Editable>
+            <Editable as="span" style={{ fontFamily:'var(--font-display)', fontSize:44, fontWeight:600, letterSpacing:'-0.02em', lineHeight:1, color: i===2?'var(--accent)':'var(--fg-1)', display:'block' , textWrap:'balance'}}>{k}</Editable>
             <Editable as="span" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontSize:22, color:'var(--fg-2)' }}>{v}</Editable>
           </div>
         </div>
@@ -106,13 +106,13 @@ function V9_03({ n, brand }) {
     <V9W n={n} brand={brand}>
       <div style={{ borderBottom:'1px solid var(--border)', paddingBottom:32, marginBottom:32 }}>
         <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--fg-3)', marginBottom:12 }}>replaceable</div>
-        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:168, letterSpacing:'-0.05em', lineHeight:0.87, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:106, letterSpacing:'-0.05em', lineHeight:0.95, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' , textWrap:'balance'}}>
           do.
         </Editable>
       </div>
       <div>
         <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--accent)', marginBottom:12 }}>irreplaceable</div>
-        <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:168, letterSpacing:'-0.04em', lineHeight:0.87, color:'var(--accent)' }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:106, letterSpacing:'-0.04em', lineHeight:0.95, color:'var(--accent)' }}>
           see.
         </Editable>
       </div>
@@ -127,7 +127,7 @@ function V9_04({ n, brand }) {
         <div key={i} style={{ display:'grid', gridTemplateColumns:'32px 1fr', gap:16, borderTop:'1px solid var(--border)', paddingTop:18, paddingBottom:18, alignItems:'baseline' }}>
           <span style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.14em', color:'var(--fg-3)' }}>{num}</span>
           <div>
-            <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize: i===2?112:80, letterSpacing:'-0.04em', lineHeight:1, color: i===2?'var(--accent)':'var(--fg-1)' }}>{k}</Editable>
+            <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize: i===2?112:80, letterSpacing:'-0.04em', lineHeight:1, color: i===2?'var(--accent)':'var(--fg-1)' , textWrap:'balance'}}>{k}</Editable>
             <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.12em', textTransform:'uppercase', color: i===2?'var(--accent)':'var(--fg-3)', marginTop:6 }}>{sub}</div>
           </div>
         </div>
@@ -140,7 +140,7 @@ function V9_05({ n, brand }) {
   return (
     <V9W n={n} brand={brand}>
       <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.24em', textTransform:'uppercase', color:'rgba(245,240,234,0.45)', marginBottom:32 }}>03 of 03 · the bottom layer</div>
-      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:224, letterSpacing:'-0.055em', lineHeight:0.87, color:'var(--accent)' }}>
+      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:141, letterSpacing:'-0.055em', lineHeight:0.95, color:'var(--accent)' , textWrap:'balance'}}>
         OWNED.
       </Editable>
       <div style={{ marginTop:32, display:'flex', flexDirection:'column', gap:12 }}>
@@ -155,7 +155,7 @@ function V9_05({ n, brand }) {
 function V9_06({ n, brand }) {
   return (
     <V9W n={n} brand={brand} img={<Img id="v9-06-img" shape="rect" radius={0} placeholder="knife · craft" style={{ width:'100%', height:'100%' }} />}>
-      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:80, letterSpacing:'-0.025em', lineHeight:1, color:'var(--fg-1)', textWrap:'balance', marginBottom:32 }}>
+      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:51, letterSpacing:'-0.025em', lineHeight:1, color:'var(--fg-1)', textWrap:'balance', marginBottom:32 }}>
         Most advice optimises the{' '}
         <em style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', color:'var(--accent)' }}>wrong layer.</em>
       </Editable>
@@ -177,13 +177,13 @@ function V9_07({ n, brand }) {
         you'll know when someone says —
       </div>
       <div style={{ marginBottom:24 }}>
-        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:112, letterSpacing:'-0.04em', lineHeight:0.9, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:71, letterSpacing:'-0.04em', lineHeight:0.9, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' , textWrap:'balance'}}>
           function
         </Editable>
       </div>
       <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--fg-3)', marginBottom:12 }}>→ not that, but</div>
       <div style={{ display:'inline-flex', padding:'16px 28px', background:'var(--accent)', borderRadius:4 }}>
-        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:112, letterSpacing:'-0.04em', lineHeight:0.9, color:'var(--fg-inverse)' }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:71, letterSpacing:'-0.04em', lineHeight:0.9, color:'var(--fg-inverse)' , textWrap:'balance'}}>
           category.
         </Editable>
       </div>
@@ -200,11 +200,11 @@ function V9_08({ n, brand }) {
         </span>
       </div>
       <div style={{ height:32 }} />
-      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:72, letterSpacing:'-0.025em', lineHeight:1, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)', textWrap:'balance' }}>
+      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:46, letterSpacing:'-0.025em', lineHeight:1, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)', textWrap:'balance' }}>
         don't get better at the work.
       </Editable>
       <div style={{ height:24 }} />
-      <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:88, letterSpacing:'-0.02em', lineHeight:1, color:'var(--accent)', textWrap:'balance' }}>
+      <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:56, letterSpacing:'-0.02em', lineHeight:1, color:'var(--accent)', textWrap:'balance' }}>
         get better at framing it.
       </Editable>
     </V9W>
@@ -216,7 +216,7 @@ function V9_09({ n, brand }) {
     <V9W n={n} brand={brand}>
       {[['tool','rented','var(--fg-3)'],['skill','leased','var(--fg-2)'],['position','owned','var(--accent)']].map(([w,sub,c],i)=>(
         <div key={i} style={{ borderTop:'1px solid var(--border)', paddingTop:20, paddingBottom:20 }}>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize: i===2?136:100, letterSpacing:'-0.045em', lineHeight:0.9, color:c }}>{w}</Editable>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize: i===2?136:100, letterSpacing:'-0.045em', lineHeight:0.9, color:c , textWrap:'balance'}}>{w}</Editable>
           <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.14em', textTransform:'uppercase', color: i===2?'var(--accent)':'var(--fg-3)', marginTop:8 }}>{sub}{i===2?' ← own this':''}</div>
         </div>
       ))}
@@ -232,7 +232,7 @@ function V9_09({ n, brand }) {
 function V9_10({ n, brand }) {
   return (
     <V9W n={n} brand={brand} img={<Img id="v9-10-img" shape="rect" radius={0} placeholder="portrait · direct" style={{ width:'100%', height:'100%' }} />}>
-      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:68, letterSpacing:'-0.025em', lineHeight:1.05, color:'var(--fg-1)', textWrap:'balance', marginBottom:28 }}>
+      <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:44, letterSpacing:'-0.025em', lineHeight:1.05, color:'var(--fg-1)', textWrap:'balance', marginBottom:28 }}>
         If this rewired something —
       </Editable>
       <div style={{ display:'flex', alignItems:'stretch', alignSelf:'flex-start', border:'2px solid var(--fg-1)', borderRadius:4, overflow:'hidden', marginBottom:28 }}>
@@ -303,14 +303,14 @@ function V10_01({ n, brand }) {
     <V10W n={n} brand={brand} flip={false}>
       <div style={{ position:'absolute', left:80, top:'15%', zIndex:1 }}>
         <div style={{ transform:'rotate(-2deg)', transformOrigin:'left top' }}>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:320, letterSpacing:'-0.055em', lineHeight:0.87, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:202, letterSpacing:'-0.055em', lineHeight:0.95, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' , textWrap:'balance'}}>
             replaceable.
           </Editable>
         </div>
       </div>
       <div style={{ position:'absolute', right:80, bottom:'18%', zIndex:1, textAlign:'right' }}>
         <div style={{ transform:'rotate(-2deg)', transformOrigin:'right bottom' }}>
-          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:96, letterSpacing:'-0.02em', lineHeight:0.95, color:'var(--accent)' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:61, letterSpacing:'-0.02em', lineHeight:0.95, color:'var(--accent)' }}>
             structurally irreplaceable.
           </Editable>
         </div>
@@ -324,7 +324,7 @@ function V10_02({ n, brand }) {
     <V10W n={n} brand={brand} flip={true} img={<Img id="v10-02-img" shape="rect" radius={0} placeholder="industrial · tension" style={{ width:280, height:320 }} />}>
       <div style={{ position:'absolute', left:80, bottom:'44%', zIndex:1 }}>
         <div style={{ transform:'rotate(2deg)', transformOrigin:'left bottom' }}>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:108, letterSpacing:'-0.035em', lineHeight:1, color:'var(--fg-1)', textWrap:'balance', maxWidth:600 }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:68, letterSpacing:'-0.035em', lineHeight:1, color:'var(--fg-1)', textWrap:'balance', maxWidth:600 }}>
             Every layer above position commodifies on contact.
           </Editable>
         </div>
@@ -346,7 +346,7 @@ function V10_03({ n, brand }) {
       <div style={{ position:'absolute', left:80, top:'12%', zIndex:1 }}>
         <div style={{ transform:'rotate(-3deg)' }}>
           <div style={{ fontFamily:'var(--font-mono)', fontSize:13, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--fg-3)', marginBottom:12 }}>output layer · replaceable</div>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:260, letterSpacing:'-0.055em', lineHeight:0.87, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:164, letterSpacing:'-0.055em', lineHeight:0.95, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' , textWrap:'balance'}}>
             do.
           </Editable>
         </div>
@@ -354,7 +354,7 @@ function V10_03({ n, brand }) {
       <div style={{ position:'absolute', right:80, bottom:'12%', zIndex:1, textAlign:'right' }}>
         <div style={{ transform:'rotate(-3deg)', transformOrigin:'right bottom' }}>
           <div style={{ fontFamily:'var(--font-mono)', fontSize:13, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--accent)', marginBottom:12 }}>position layer · irreplaceable</div>
-          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:260, letterSpacing:'-0.04em', lineHeight:0.87, color:'var(--accent)' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:164, letterSpacing:'-0.04em', lineHeight:0.95, color:'var(--accent)' }}>
             see.
           </Editable>
         </div>
@@ -370,7 +370,7 @@ function V10_04({ n, brand }) {
         <div style={{ transform:'rotate(2deg)' }}>
           {[['tool','var(--fg-3)','rented'],['skill','var(--fg-2)','leased'],['position','var(--accent)','owned']].map(([w,c,s],i)=>(
             <div key={i} style={{ display:'flex', alignItems:'baseline', gap:20 }}>
-              <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:120, letterSpacing:'-0.04em', lineHeight:0.9, color:c }}>{w}</Editable>
+              <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:76, letterSpacing:'-0.04em', lineHeight:0.9, color:c , textWrap:'balance'}}>{w}</Editable>
               <span style={{ fontFamily:'var(--font-mono)', fontSize:14, letterSpacing:'0.14em', textTransform:'uppercase', color:c, opacity:0.7 }}>{s}</span>
             </div>
           ))}
@@ -386,7 +386,7 @@ function V10_05({ n, brand }) {
       <div style={{ position:'absolute', left:80, top:'15%', zIndex:1 }}>
         <div style={{ transform:'rotate(-2deg)' }}>
           <div style={{ fontFamily:'var(--font-mono)', fontSize:13, letterSpacing:'0.2em', textTransform:'uppercase', color:'rgba(245,240,234,0.45)', marginBottom:16 }}>03 of 03 · the only layer that compounds</div>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:340, letterSpacing:'-0.055em', lineHeight:0.87, color:'var(--accent)' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:214, letterSpacing:'-0.055em', lineHeight:0.95, color:'var(--accent)' , textWrap:'balance'}}>
             OWNED.
           </Editable>
         </div>
@@ -407,10 +407,10 @@ function V10_06({ n, brand }) {
     <V10W n={n} brand={brand} flip={true} img={<Img id="v10-06-img" shape="rect" radius={0} placeholder="knife · sharpening" style={{ width:280, height:320 }} />}>
       <div style={{ position:'absolute', left:80, bottom:'44%', zIndex:1 }}>
         <div style={{ transform:'rotate(2deg)' }}>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:108, letterSpacing:'-0.03em', lineHeight:1, color:'var(--fg-1)', textWrap:'balance', maxWidth:680 }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:68, letterSpacing:'-0.03em', lineHeight:1, color:'var(--fg-1)', textWrap:'balance', maxWidth:680 }}>
             Most advice sharpens the
           </Editable>
-          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:108, letterSpacing:'-0.025em', lineHeight:1, color:'var(--accent)' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:68, letterSpacing:'-0.025em', lineHeight:1, color:'var(--accent)' }}>
             wrong layer.
           </Editable>
         </div>
@@ -433,7 +433,7 @@ function V10_07({ n, brand }) {
         <div style={{ transform:'rotate(-2deg)' }}>
           <div style={{ fontFamily:'var(--font-mono)', fontSize:13, letterSpacing:'0.22em', textTransform:'uppercase', color:'var(--fg-3)', marginBottom:16 }}>they'll describe you as a</div>
           <div style={{ display:'inline-block', background:'var(--accent)', padding:'12px 24px', borderRadius:4 }}>
-            <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:200, letterSpacing:'-0.05em', lineHeight:0.9, color:'var(--fg-inverse)' }}>
+            <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:126, letterSpacing:'-0.05em', lineHeight:0.9, color:'var(--fg-inverse)' , textWrap:'balance'}}>
               category.
             </Editable>
           </div>
@@ -442,7 +442,7 @@ function V10_07({ n, brand }) {
       <div style={{ position:'absolute', right:80, bottom:'18%', zIndex:1, textAlign:'right' }}>
         <div style={{ transform:'rotate(-2deg)', transformOrigin:'right bottom' }}>
           <div style={{ fontFamily:'var(--font-mono)', fontSize:13, letterSpacing:'0.22em', textTransform:'uppercase', color:'var(--fg-3)', marginBottom:10 }}>not a</div>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:120, letterSpacing:'-0.04em', lineHeight:0.9, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:76, letterSpacing:'-0.04em', lineHeight:0.9, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' , textWrap:'balance'}}>
             function.
           </Editable>
         </div>
@@ -457,14 +457,14 @@ function V10_08({ n, brand }) {
       <div style={{ position:'absolute', left:80, bottom:'42%', zIndex:1 }}>
         <div style={{ transform:'rotate(3deg)' }}>
           <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.22em', textTransform:'uppercase', color:'var(--fg-inverse)', background:'var(--accent)', padding:'8px 14px', display:'inline-block', marginBottom:20 }}>the pro move</div>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:108, letterSpacing:'-0.035em', lineHeight:1, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)', textWrap:'balance', maxWidth:600 }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:68, letterSpacing:'-0.035em', lineHeight:1, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)', textWrap:'balance', maxWidth:600 }}>
             get better at the work.
           </Editable>
         </div>
       </div>
       <div style={{ position:'absolute', right:80, top:'18%', zIndex:1, textAlign:'right' }}>
         <div style={{ transform:'rotate(3deg)', transformOrigin:'right top' }}>
-          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:96, letterSpacing:'-0.02em', lineHeight:1, color:'var(--accent)', textWrap:'balance', maxWidth:540 }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:61, letterSpacing:'-0.02em', lineHeight:1, color:'var(--accent)', textWrap:'balance', maxWidth:540 }}>
             get better at framing it.
           </Editable>
         </div>
@@ -480,7 +480,7 @@ function V10_09({ n, brand }) {
         <div style={{ transform:'rotate(-2deg)' }}>
           <div style={{ display:'flex', gap:20, alignItems:'baseline' }}>
             {[['tool','var(--fg-3)'],['→','var(--fg-3)'],['skill','var(--fg-2)'],['→','var(--fg-2)'],['position','var(--accent)']].map(([w,c],i)=>(
-              <Editable key={i} as="div" style={{ fontFamily: w==='→'?'var(--font-mono)':'var(--font-display)', fontWeight:700, fontSize: w==='→'?48:168, letterSpacing:'-0.05em', lineHeight:0.87, color:c }}>{w}</Editable>
+              <Editable key={i} as="div" style={{ fontFamily: w==='→'?'var(--font-mono)':'var(--font-display)', fontWeight:700, fontSize: w==='→'?48:168, letterSpacing:'-0.05em', lineHeight:0.95, color:c }}>{w}</Editable>
             ))}
           </div>
         </div>
@@ -501,7 +501,7 @@ function V10_10({ n, brand }) {
     <V10W n={n} brand={brand} flip={true}>
       <div style={{ position:'absolute', left:80, bottom:'44%', zIndex:1 }}>
         <div style={{ transform:'rotate(2deg)' }}>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:88, letterSpacing:'-0.025em', lineHeight:1, color:'var(--fg-1)', textWrap:'balance', maxWidth:640, marginBottom:28 }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:56, letterSpacing:'-0.025em', lineHeight:1, color:'var(--fg-1)', textWrap:'balance', maxWidth:640, marginBottom:28 }}>
             If this rewired something —
           </Editable>
           <div style={{ display:'flex', alignItems:'stretch', alignSelf:'flex-start', border:'2px solid var(--fg-1)', borderRadius:4, overflow:'hidden' }}>
@@ -574,7 +574,7 @@ function V11_01({ n, brand }) {
       <div style={{ position:'absolute', bottom:'22%', left:80, right:80, zIndex:2 }}>
         <div style={{ display:'flex', alignItems:'baseline', gap:20 }}>
           <span style={{ width:36, height:2, background:'var(--accent)', display:'inline-block', transform:'translateY(-7px)' }} />
-          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:64, letterSpacing:'-0.015em', lineHeight:1, color:'var(--accent)' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:42, letterSpacing:'-0.015em', lineHeight:1, color:'var(--accent)' }}>
             structurally irreplaceable.
           </Editable>
         </div>
@@ -660,7 +660,7 @@ function V11_06({ n, brand }) {
         <V11Over word="wrong." size={220} outlineColor="var(--fg-3)" fillColor="var(--fg-1)" />
       </div>
       <div style={{ position:'absolute', bottom:'22%', left:80, right:80, zIndex:2 }}>
-        <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontSize:52, color:'var(--accent)', lineHeight:1.1, textWrap:'balance', maxWidth:640 }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontSize:35, color:'var(--accent)', lineHeight:1.1, textWrap:'balance', maxWidth:640 }}>
           Most advice sharpens the knife. Position is the moat.
         </Editable>
       </div>
@@ -728,7 +728,7 @@ function V11_10({ n, brand }) {
         <V11Over word="LAYERS" size={200} xBack={0} yBack={0} xFront={18} yFront={18} outlineColor="var(--accent)" fillColor="var(--accent)" />
       </div>
       <div style={{ position:'absolute', bottom:'20%', left:80, right:80, zIndex:2, display:'flex', flexDirection:'column', gap:20 }}>
-        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:52, letterSpacing:'-0.02em', lineHeight:1.05, color:'var(--fg-1)', textWrap:'balance', maxWidth:640 }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:35, letterSpacing:'-0.02em', lineHeight:1.05, color:'var(--fg-1)', textWrap:'balance', maxWidth:640 }}>
           Comment LAYERS — I'll DM you the 7-question audit.
         </Editable>
         <div style={{ fontFamily:'var(--font-sans)', fontSize:14, letterSpacing:'0.22em', textTransform:'uppercase', color:'var(--fg-3)', fontWeight:500 }}>

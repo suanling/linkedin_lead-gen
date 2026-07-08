@@ -66,14 +66,14 @@ function P12Hi({ children, bg='var(--accent)', fg='var(--fg-inverse)', radius=8,
 }
 
 // Callout box (like "Here's how:" or "Why it matters:")
-function P12Box({ label, children, bg='rgba(198,90,46,0.09)', border='var(--accent)', dark=false }) {
+function P12Box({ label, children, bg='rgba(198,90,46,0.09)', border='var(--accent)', dark=false, style={} }) {
   const tc = dark ? 'rgba(245,240,234,0.6)' : 'var(--fg-2)';
   return (
-    <div style={{ background:bg, border:`1.5px solid ${border}`, borderRadius:12, padding:'18px 24px', display:'flex', flexDirection:'column', gap:8 }}>
+    <div style={{ background:bg, border:`1.5px solid ${border}`, borderRadius:12, padding:'18px 24px', display:'flex', flexDirection:'column', gap:8, ...style }}>
       {label && (
         <P12Pill bg="var(--accent)" style={{ alignSelf:'flex-start', fontSize:14, padding:'5px 14px' }}>{label}</P12Pill>
       )}
-      <div style={{ fontFamily:'var(--font-sans)', fontSize:21, lineHeight:1.5, color:tc }}>
+      <div style={{ fontFamily:'var(--font-sans)', fontSize:20, lineHeight:1.65, color:tc }}>
         {children}
       </div>
     </div>
@@ -95,7 +95,7 @@ function P12Bar({ n, brand, dark }) {
         <img
           src={dark ? 'design-system/assets/lumina-clarity-logo-mark-white.svg' : 'design-system/assets/lumina-clarity-logo-mark.svg'}
           alt="" style={{ width:26, height:26 }} />
-        <span style={{ fontFamily:'var(--font-display)', fontWeight:500, fontSize:15, letterSpacing:'0.08em', textTransform:'uppercase', color:tc }}>
+        <span style={{ fontFamily:'var(--font-display)', fontWeight:500, fontSize:15, letterSpacing:'0.08em', textTransform:'uppercase', color:tc , textWrap:'balance'}}>
           {brand === 'sl' ? 'Suan Ling' : 'Lumina Clarity'}
         </span>
       </div>
@@ -145,7 +145,7 @@ function V12_01({ n, brand }) {
     <P12 n={n} brand={brand} bg="cream">
       <div style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%', padding:'40px 80px 24px', gap:28, textAlign:'center' }}>
         <P12Badge label="01" size={96} />
-        <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:96, letterSpacing:'-0.04em', lineHeight:0.95, textTransform:'uppercase', textWrap:'balance' }}>
+        <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:46, letterSpacing:'-0.035em', lineHeight:1.0, textTransform:'uppercase', textWrap:'balance' }}>
           <div>
             <Editable as="span" style={{ color:'var(--fg-1)' }}>Not the </Editable>
             <span style={{ color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)', fontStyle:'normal' }}>
@@ -181,7 +181,7 @@ function V12_02({ n, brand }) {
         <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', padding:'48px 40px 32px 64px', gap:24 }}>
           <div style={{ display:'flex', alignItems:'center', gap:18 }}>
             <P12Badge label="3" size={80} />
-            <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:28, letterSpacing:'-0.01em', lineHeight:1.1, color:'var(--fg-1)' }}>
+            <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:28, letterSpacing:'-0.01em', lineHeight:1.1, color:'var(--fg-1)' , textWrap:'balance'}}>
               things that<br/>commodify on contact
             </div>
           </div>
@@ -194,9 +194,9 @@ function V12_02({ n, brand }) {
             ].map(([num,k,v,ac],i)=>(
               <div key={i} style={{ display:'flex', gap:14, alignItems:'flex-start', borderLeft:`4px solid ${ac?'var(--accent)':'var(--border)'}`, paddingLeft:16, paddingTop:4, paddingBottom:4 }}>
                 <span style={{ fontFamily:'var(--font-mono)', fontSize:12, color:'var(--fg-3)', letterSpacing:'0.1em', flexShrink:0, paddingTop:4 }}>{num}</span>
-                <div style={{ fontFamily:'var(--font-sans)', fontSize:21, lineHeight:1.4 }}>
-                  <Editable as="strong" style={{ fontWeight:700, color:ac?'var(--accent)':'var(--fg-1)' }}>{k}</Editable>{' '}
-                  <Editable as="span" style={{ color:'var(--fg-2)' }}>{v}</Editable>
+                <div style={{ fontFamily:'var(--font-sans)', fontSize:21, lineHeight:1.55 }}>
+                  <Editable as="strong" style={{ fontWeight:700, color:ac?'var(--accent)':'var(--fg-1)', display:'block' }}>{k}</Editable>
+                  <Editable as="span" style={{ color:'var(--fg-2)', display:'block' }}>{v}</Editable>
                 </div>
               </div>
             ))}
@@ -218,7 +218,7 @@ function V12_03({ n, brand }) {
       <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', height:'100%', padding:'48px 72px', gap:24 }}>
         <div style={{ display:'flex', alignItems:'center', gap:16 }}>
           <P12Badge label="03" size={72} fontSize={28} />
-          <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:28, letterSpacing:'-0.01em', color:'var(--fg-1)', lineHeight:1.1 }}>
+          <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:28, letterSpacing:'-0.01em', color:'var(--fg-1)', lineHeight:1.1 , textWrap:'balance'}}>
             The layer beneath
           </div>
         </div>
@@ -228,7 +228,7 @@ function V12_03({ n, brand }) {
             <div style={{ width:6, alignSelf:'stretch', background:'var(--fg-3)', borderRadius:3, flexShrink:0 }} />
             <div>
               <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--fg-3)', marginBottom:8 }}>Replaceable people sell what they</div>
-              <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:80, letterSpacing:'-0.04em', lineHeight:0.9, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' }}>
+              <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:40, letterSpacing:'-0.035em', lineHeight:0.95, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' , textWrap:'balance'}}>
                 do.
               </Editable>
             </div>
@@ -238,7 +238,7 @@ function V12_03({ n, brand }) {
             <div style={{ width:6, alignSelf:'stretch', background:'var(--accent)', borderRadius:3, flexShrink:0 }} />
             <div>
               <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--accent)', marginBottom:8 }}>Irreplaceable people sell what they</div>
-              <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:80, letterSpacing:'-0.03em', lineHeight:0.9, color:'var(--accent)' }}>
+              <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:40, letterSpacing:'-0.028em', lineHeight:0.95, color:'var(--accent)', textWrap:'balance' }}>
                 see.
               </Editable>
             </div>
@@ -265,7 +265,7 @@ function V12_04({ n, brand }) {
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:24 }}>
           <div style={{ display:'flex', gap:16, alignItems:'center' }}>
             <P12Badge label="04" size={72} fontSize={28} />
-            <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:28, letterSpacing:'-0.01em', lineHeight:1.1, color:'var(--fg-1)' }}>Three layers.<br/>Most live in the top two.</div>
+            <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:28, letterSpacing:'-0.01em', lineHeight:1.1, color:'var(--fg-1)' , textWrap:'balance'}}>Three layers.<br/>Most live in the top two.</div>
           </div>
           <Img id="v12-04-img" shape="rounded" radius={16} placeholder="layers · depth · structure" style={{ width:120, height:120 }} />
         </div>
@@ -273,7 +273,7 @@ function V12_04({ n, brand }) {
           {rows.map((r,i)=>(
             <div key={i} style={{ background:r.bg, border:`1.5px solid ${r.bdr}`, borderRadius:12, padding:'16px 24px', display:'flex', alignItems:'center', gap:20, flex: r.ac ? 1.4 : 1, minHeight:0 }}>
               <span style={{ fontFamily:'var(--font-mono)', fontSize:13, letterSpacing:'0.12em', color:'var(--fg-3)', flexShrink:0, width:28 }}>{r.num}</span>
-              <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:r.sz, letterSpacing:'-0.03em', lineHeight:1, color:r.fc, flex:1, textTransform:'lowercase' }}>{r.k}</Editable>
+              <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:r.sz, letterSpacing:'-0.03em', lineHeight:1, color:r.fc, flex:1, textTransform:'lowercase' , textWrap:'balance'}}>{r.k}</Editable>
               <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.1em', textTransform:'uppercase', color:r.ac?'var(--accent)':'var(--fg-3)', textAlign:'right', maxWidth:200, lineHeight:1.4 }}>{r.sub}</div>
             </div>
           ))}
@@ -289,7 +289,7 @@ function V12_05({ n, brand }) {
     <P12 n={n} brand={brand} bg="navy">
       <div style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%', padding:'48px 80px 24px', gap:32, textAlign:'center' }}>
         <P12Pill bg="var(--accent)">05 · What you actually own</P12Pill>
-        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:220, letterSpacing:'-0.05em', lineHeight:0.85, color:'var(--accent)', textTransform:'uppercase' }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:138, letterSpacing:'-0.05em', lineHeight:0.95, color:'var(--accent)', textTransform:'uppercase' , textWrap:'balance'}}>
           OWNED.
         </Editable>
         <div style={{ display:'flex', gap:16, width:'100%' }}>
@@ -298,7 +298,7 @@ function V12_05({ n, brand }) {
             ['03','position','is owned.', 'rgba(198,90,46,0.18)', 'var(--accent)','rgba(198,90,46,0.4)']].map(([num,k,v,bg,c,bdr],i)=>(
             <div key={i} style={{ flex:1, background:bg, borderRadius:12, padding:'18px 20px', textAlign:'left', border:`1.5px solid ${bdr}` }}>
               <div style={{ fontFamily:'var(--font-mono)', fontSize:12, letterSpacing:'0.14em', color:i===2?'var(--accent)':'rgba(245,240,234,0.4)', marginBottom:8 }}>{num}</div>
-              <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:40, letterSpacing:'-0.025em', lineHeight:1, color:c, textTransform:'lowercase' }}>{k}</Editable>
+              <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:40, letterSpacing:'-0.025em', lineHeight:1, color:c, textTransform:'lowercase' , textWrap:'balance'}}>{k}</Editable>
               <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontSize:20, color:c, lineHeight:1.3, marginTop:6 }}>{v}</Editable>
             </div>
           ))}
@@ -320,9 +320,9 @@ function V12_06({ n, brand }) {
         <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', padding:'48px 64px 32px 40px', gap:22 }}>
           <div style={{ display:'flex', gap:16, alignItems:'center' }}>
             <P12Badge label="06" size={72} fontSize={28} />
-            <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:26, letterSpacing:'-0.01em', lineHeight:1.1 }}>Misallocated effort</div>
+            <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:26, letterSpacing:'-0.01em', lineHeight:1.1 , textWrap:'balance'}}>Misallocated effort</div>
           </div>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:52, letterSpacing:'-0.02em', lineHeight:1.05, textWrap:'balance' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:35, letterSpacing:'-0.02em', lineHeight:1.05, textWrap:'balance' }}>
             Most advice targets the <P12Hi>wrong layer.</P12Hi>
           </Editable>
           <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
@@ -346,13 +346,13 @@ function V12_07({ n, brand }) {
       <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', height:'100%', padding:'48px 72px', gap:28 }}>
         <div style={{ display:'flex', gap:16, alignItems:'center' }}>
           <P12Badge label="07" size={72} fontSize={28} />
-          <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:26, letterSpacing:'-0.01em', lineHeight:1.1, color:'var(--fg-1)' }}>The tell</div>
+          <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:26, letterSpacing:'-0.01em', lineHeight:1.1, color:'var(--fg-1)' , textWrap:'balance'}}>The tell</div>
         </div>
         <div style={{ fontFamily:'var(--font-mono)', fontSize:13, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--fg-3)' }}>
           You know you've moved layers when —
         </div>
         <div style={{ background:'var(--lc-soft-white)', border:'1.5px solid var(--border)', borderRadius:16, padding:'36px 44px' }}>
-          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:60, letterSpacing:'-0.025em', lineHeight:1.1, textWrap:'balance' }}>
+          <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:48, letterSpacing:'-0.02em', lineHeight:1.2, textWrap:'balance' }}>
             Someone calls you a <P12Hi px={16} py={4} radius={8}>category</P12Hi>, not a <span style={{ color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)' }}>function</span>.
           </Editable>
         </div>
@@ -372,10 +372,10 @@ function V12_08({ n, brand }) {
         <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', padding:'48px 40px 32px 64px', gap:24 }}>
           <P12Pill>✦ 08 · The pro move</P12Pill>
           <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
-            <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:60, letterSpacing:'-0.025em', lineHeight:1.05, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)', textWrap:'balance' }}>
+            <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:48, letterSpacing:'-0.02em', lineHeight:1.1, color:'var(--fg-3)', textDecoration:'line-through', textDecorationColor:'var(--fg-3)', textWrap:'balance' }}>
               Get better at the work.
             </Editable>
-            <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:64, letterSpacing:'-0.02em', lineHeight:1.0, color:'var(--accent)', textWrap:'balance' }}>
+            <Editable as="div" style={{ fontFamily:'var(--font-serif-editorial)', fontStyle:'italic', fontWeight:500, fontSize:37, letterSpacing:'-0.018em', lineHeight:1.1, color:'var(--accent)', textWrap:'balance' }}>
               Get better at framing it.
             </Editable>
           </div>
@@ -399,7 +399,7 @@ function V12_09({ n, brand }) {
       <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', height:'100%', padding:'48px 72px', gap:24 }}>
         <div style={{ display:'flex', gap:16, alignItems:'center' }}>
           <P12Badge label="↓" size={72} fontSize={34} />
-          <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:26, letterSpacing:'-0.01em', color:'var(--fg-1)' }}>Screenshot this</div>
+          <div style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:26, letterSpacing:'-0.01em', color:'var(--fg-1)' , textWrap:'balance'}}>Screenshot this</div>
         </div>
         <div style={{ display:'flex', flexDirection:'column', gap:0 }}>
           {[
@@ -410,7 +410,7 @@ function V12_09({ n, brand }) {
             <div key={i} style={{ display:'flex', gap:20, alignItems:'center', borderBottom:`${i===2?2:1}px solid ${i===2?'var(--accent)':'var(--border)'}`, padding:'18px 0' }}>
               <span style={{ fontFamily:'var(--font-mono)', fontSize:13, letterSpacing:'0.12em', color:'var(--fg-3)', width:28, flexShrink:0 }}>{num}</span>
               <div style={{ flex:1 }}>
-                <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:sz, letterSpacing:'-0.04em', lineHeight:0.92, color:c, textTransform:'lowercase' }}>{k}</Editable>
+                <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:sz, letterSpacing:'-0.04em', lineHeight:0.92, color:c, textTransform:'lowercase' , textWrap:'balance'}}>{k}</Editable>
                 <Editable as="div" style={{ fontFamily:'var(--font-sans)', fontSize:18, color:i===2?'var(--accent)':'var(--fg-3)', marginTop:4 }}>{sub}</Editable>
               </div>
               {i===2 && <HandNote size={26} color="var(--accent)" style={{ transform:'rotate(2deg)', flexShrink:0 }}>own this ←</HandNote>}
@@ -434,7 +434,7 @@ function V12_10({ n, brand }) {
     <P12 n={n} brand={brand} bg="paper">
       <div style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%', padding:'48px 80px 24px', gap:28, textAlign:'center' }}>
         <P12Badge label="10" size={96} />
-        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:72, letterSpacing:'-0.03em', lineHeight:1.05, textWrap:'balance', maxWidth:680 }}>
+        <Editable as="div" style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:38, letterSpacing:'-0.025em', lineHeight:1.1, textWrap:'balance', maxWidth:780 }}>
           If this rewired something —
         </Editable>
         <div style={{ display:'flex', alignItems:'stretch', border:'2.5px solid var(--fg-1)', borderRadius:14, overflow:'hidden', alignSelf:'center' }}>

@@ -1,6 +1,6 @@
 ---
 name: respond-to-own
-description: Reply to comments people leave on YOUR OWN LinkedIn posts — draft replies in your voice using the (1,3-4,1) comment architecture, written for the lurkers, to deepen rapport and earn DMs. Runs the QA gate, logs to the audit log. Triggers "reply to this comment", "someone commented on my post", "help me respond", "/respond-to-own", "/reply".
+description: Reply to comments people leave on YOUR OWN LinkedIn posts — draft tight 3-4 line replies in your voice using the (1,1-2,1) comment architecture, written for the lurkers, to deepen rapport and earn DMs. Runs the QA gate, logs to the audit log. Triggers "reply to this comment", "someone commented on my post", "help me respond", "/respond-to-own", "/reply".
 ---
 
 # Respond to comments on your own posts
@@ -11,11 +11,11 @@ Read first: `.claude/rules/voice.md` (and `kk-post.md` for deeper voice), ground
 
 **Capture as you reply.** A comment praising the owner is a testimonial → offer to capture it (consent-gated) per `references/capture-protocol.md`. A belief or contrarian take the owner articulates → offer to save it under its lens in `positioning.md` (Beliefs & contrarian takes).
 
-## The (1, 3-4, 1) architecture
-Hard limit: 5-6 lines (read on phones while scrolling). You're writing for the **lurkers**, not just the commenter.
+## The (1, 1-2, 1) architecture
+Default to 3-4 lines; hard limit 4 (read on phones while scrolling). Shorter wins — cut every line that isn't pulling weight. You're writing for the **lurkers**, not just the commenter.
 
 - **1 = Hook / POV** — one line, a specific insight or angle, NOT flattery. Makes a lurker stop. (Bad: "Great point!", "Love this", or flattery disguised as insight — if removing it still makes sense, it was filler.)
-- **3-4 = Value** — short lines, each one new substance. At least one line MUST be a real first-person detail from your own life (see "Two hard rules" below, not optional). It must add something **not** in the original comment. Optional tactical shape: Tactic → Example/Result → Pitfall → Why it matters.
+- **1-2 = Value** — one or two short lines, each one new substance. At least one MUST be a real first-person detail from your own life (see "Two hard rules" below, not optional) and add something **not** in the original comment. One sharp line beats two soft ones.
 - **1 = CTA** — one line, a real question that invites a reply. (Bad: "Thoughts?", "Agree?")
 
 Ground the value in **your** POV and lived experience (from `positioning.md` / `kk-post.md`) — your signature angles are what make replies unmistakably yours.
@@ -34,10 +34,10 @@ Not optional. A draft that breaks either one fails QA — rewrite before present
 ## How to draft
 1. **Load voice** (`voice.md`, `kk-post.md`) — every time.
 2. **Assess the commenter** — seniority (senior / peer / earlier-career), comment type (agreement / addition / question / challenge), relationship potential.
-3. **Generate three variations** (all within 5-6 lines):
-   - **Short & Sweet** (3-4) — light: strong one-liner + question. For simple agreements.
-   - **Thought Leader** (5-6) — full (1,3-4,1), compressed strategic insight, numbered value points. For comments on your core themes.
-   - **Conversationalist** (5-6) — value shifts toward shared experience; CTA invites a DM. For people you want a relationship with.
+3. **Generate three variations** (all within 4 lines):
+   - **Short & Sweet** (2-3) — strong one-liner + question. For simple agreements.
+   - **Thought Leader** (3-4) — full (1,1-2,1), one compressed strategic insight. For comments on your core themes.
+   - **Conversationalist** (3-4) — value shifts toward shared experience; CTA invites a DM. For people you want a relationship with.
    - **Angle diversity (required):** the three variations must each add a *different* angle, ideally each run through a different **Signature lens** (`references/positioning.md`). Three versions of the same point is a fail. Name each variation's distinct angle to yourself before presenting.
 4. **Run qa-gate** on each (voice_match + anti_ai). Fix anything it flags before presenting.
 5. **Recommend** one, with a one-line why. Factor *who commented*: for a **peer / fellow creator**, default to the **Conversationalist** (relationship over lurker theatre), offering the Thought Leader "if you'd rather play to the audience"; for an **ICP prospect**, lead with whatever best surfaces their pain and earns the DM (commenter tone, post theme, your goal: visibility / relationship / DM).
@@ -56,6 +56,6 @@ After "done", append to `audit-log.md`:
 `[YYYY-MM-DD HH:MM] respond-to-own | <commenter name> | reply | <reply text>`
 
 ## Constraints
-- 5-6 lines max. No clichés ("game-changer", "spot on", "couldn't agree more"). No emojis unless they used them first.
+- 4 lines max, 3-4 the default — shorter wins. No clichés ("game-changer", "spot on", "couldn't agree more"). No emojis unless they used them first.
 - Never open with flattery; the Hook is an insight. Never pitch in replies — the insight is the promotion.
 - If they challenge/disagree, acknowledge-then-pivot: validate first, then offer your view.

@@ -31,43 +31,43 @@ These govern every example you write below. Pull the raw material (stories, numb
 ---1. The Most Popular Piece---
 
 [I do something bold repeatedly]
-I wake up at 7am each morning.
+I'm up at 7am every single morning.
 
 [Then I do something pleasant]
-I drink a cup of coffee.
+I pour myself a coffee.
 
 [Do something that helps me grow]. [Complete another important task]
-Logged into LinkedIn, commented, and created a post.
+Opened LinkedIn, left some comments, and published a post.
 
 [Growth activity 1]. [Growth activity 2]. [Prepare myself for the day].
-Read for 20 minutes. Take a 20 minute walk. Shower.
+Read for 20 minutes. Walk for 20 minutes. Shower.
 
 [Do something that helps me grow] before [starting a crucial activity]
-Listen to a podcast before my day starts.
+Put on a podcast before the day kicks off.
 
 [Ideal result 1] [Ideal result 2] [Ideal result 3]
-I have 3 client meetings lined up. Coach my mentees and help them implement on their LinkedIn. Recruit more students.
+Three client calls are booked. Coach my mentees and walk them through their LinkedIn. Bring in more students.
 
 [Take care of your loved ones at a specific time]
-Wash the dishes for my mum after dinner.
+Do the dishes for my mum once dinner's done.
 
 [Ideal result 4] [Ideal result 5] [Ideal result 6]
-My mother and I have a healthy dinner. 30 more minutes of reading. A cup of milo.
+Mum and I eat a healthy dinner together. Another 30 minutes of reading. A warm cup of milo.
 
 [Wrap up with satisfaction]
-In bed by 10pm. Couldn't have accomplished more. Smile as I nod off. Feeling amazing. That's the perfect day.
+Lights out by 10pm. Nothing left undone. I grin as I drift off. Feeling great. That's a perfect day.
 
 [Describe how it happens less often than you'd want]
-Happens maybe 3 times a month.
+Maybe 3 times in a month.
 
 [Redefine, in a funny way, how this situation actually happens most of the time]
-Most days I wake up at 8am, scramble through a YouTube podcast and post comments on LinkedIn while brushing my teeth. Create my content on the spot. I'm not happy with it. Forget to load it. Damn. No podcast. Just some Mandopop instead. Trying to get motivated. Scrolling Instagram and LinkedIn. Feeling bad about the state of the world. Don't wash the dishes. Skip the workout to watch TV. Didn't read. Order in delivery. Scroll Instagram in bed.
+Most days I roll out of bed at 8am, half-listen to a YouTube podcast and leave LinkedIn comments while I brush my teeth. Write my content right then and there. I'm not happy with it. Forget to upload it. Damn. No podcast. Just Mandopop instead. Trying to find some motivation. Scrolling Instagram and LinkedIn. Feeling low about how the world is going. Leave the dishes. Ditch the workout for the TV. Skipped the reading. Order delivery. Scroll Instagram in bed.
 
 [I'm still grateful]
-But I still sleep well. Smiling as I nod off.
+But I still sleep fine. Grinning as I drift off.
 
 [Moral of the story]
-A reminder that every day doesn't have to be perfect. You don't have to be on your "A" game every day of every week. Try your hardest. But don't beat yourself up when you fail. Sleep soundly to see another day.
+A reminder that no day has to be flawless. You don't need to be at your best every single day of the week. Give it your all. But ease up on yourself when you fall short. Rest well so you can do it again tomorrow.
 
 [Sum it up in one line]
 Success is a marathon.
@@ -76,58 +76,58 @@ Success is a marathon.
 ---2. Give Them Reasons to Adopt a New Paradigm---
 
 [Start with a bold claim]
-My routine of working every day from Monday to Sunday is getting pummeled.
+My habit of working every day, Monday through Sunday, is taking a beating.
 
 [Aggitate your claim]
-The procrastination is growing every single day.
+The procrastination keeps building day after day.
 
 [Say you're ok with that claim]
-And I love it. Why?
+And I'm fine with it. Why?
 
 [Explain why in a single statement]
-Because it feels comfortable and I enjoy working at my own pace.
+Because it feels easy and I like setting my own pace.
 
 [Give four additional reasons that back up the past statement]
-I like working late at night. No distractions. A clearer mind to brainstorm and think of new ideas. Quiet.
+I enjoy working deep into the night. Nothing pulling at me. A clearer head to dream up ideas. Silence.
 
 [Introduce a new paradigm]
-So they're saying no to the old normal. And learning to make money on their own.
+So they're walking away from the old normal. And figuring out how to earn on their own.
 
 [List four examples of the new paradigm]
 Coaching. Teaching. Helping. Selling.
 
 [Describe a common behavior of people adopting the new paradigm]
-They're moving out of high-cost cities and into lower-cost, friendlier areas. Realising they can support themselves.
+They're leaving pricey cities for cheaper, kinder places. Waking up to the fact that they can carry themselves.
 
 [Describe the tools, processes, or mindsets that allow this new paradigm to exist]
-Armed with nothing but an internet connection and their own knowledge.
+Carrying nothing more than a wifi signal and what they already know.
 
 [Explain why this new paradigm is here to stay]
-And they won't be going back. Because they don't want dream jobs. They want dream lives.
+And there's no going back for them. Because dream jobs aren't the goal. Dream lives are.
 
 
 ---3. Give More Credit to an Unsexy Idea---
 
 [Describe a situation where you experienced simplicity at its core]
-I paid a guy $130 to move a treadmill in 30 minutes.
+I handed a guy $130 to shift a treadmill in half an hour.
 
 [Elaborate on that experience]
-He said he had 8 moves that day. Do the math. Have you made $1,040 in one day?
+He mentioned he had 8 jobs that day. Run the numbers. Have you ever pulled in $1,040 in a single day?
 
 [Reflect on what made it so special/powerful]
-Everyone wants entrepreneurship to be fancy. Sometimes it's just moving treadmills.
+Everyone wishes entrepreneurship were glamorous. Sometimes it's just hauling treadmills.
 
 [Share what you learned from it]
-Maybe your idea is fancy. Maybe it isn't. Either way, go for it.
+Maybe your idea is glamorous. Maybe it's plain. Either way, get after it.
 
 
 ---4. An Unexpected Secret Sauce---
 
 [I did something remarkable]
-I escaped the rat race 2.5 years ago.
+I walked away from the rat race 2.5 years ago.
 
 [Reflect on what helped you achieve it]
-My secret sauce is being confident and ambitious.
+My secret sauce is staying confident and hungry.
 
 [List what you didn't do that others might have expected]
 I don't:
@@ -138,13 +138,13 @@ I don't:
 
 [List what you focused on instead]
 Instead:
-- I want to spend my time working on things I enjoy with people I enjoy
-- I want to travel wherever I want, whenever I want
-- I want to spend way more time with my friends and family
-- I want to stop doing things I don't like doing
+- I want to spend my hours on work I love with people I love
+- I want to go wherever I please, whenever I please
+- I want a lot more time with friends and family
+- I want to quit doing the things that drain me
 
 [Share the moral of the story]
-Thinking about what you actually want in life can force different behavior. Take you down a different path. A path towards living more intentionally.
+Asking yourself what you genuinely want can shift how you act. Send you down another road. A road toward a life you actually chose.
 
 [Finish with a question to make the reader think]
 Are you copying someone else's life? Or designing your own?
@@ -153,179 +153,179 @@ Are you copying someone else's life? Or designing your own?
 ---5. Take a Stand on a Popular Topic---
 
 [I lived through a popular event]
-Everyone is talking about AI taking jobs.
+Everyone's talking about AI taking jobs.
 
 [Instead of just regurgitating what everyone else is saying, take a unique angle]
-Here's what I keep noticing. The panic is aimed at the wrong thing. It's not that AI does your tasks. It's that your value was tied to the tasks in the first place.
+Here's what I keep seeing. The fear is pointed at the wrong thing. The problem isn't that AI handles your tasks. It's that your worth was pinned to those tasks to begin with.
 
 [Take a stand based on your values or beliefs]
-In an agent era, the question isn't whether AI replaces you. It's whether you direct AI or you fetch for it.
+In an agent era, the real question isn't whether AI replaces you. It's whether you steer AI or run errands for it.
 
 [Explain your reasoning]
-Tools get learned faster by the machine. Projects keep you the executor. Certificates, everyone has one. The only thing that can't be copied is a point of view, how you read a problem and decide.
+The machine picks up tools faster than you do. Projects keep you as the doer. Certificates? Everybody's got a stack. The one thing nobody can copy is a point of view, how you read a problem and make the call.
 
 [I decided to do something about it]
-So I stopped helping people collect more skills, and started helping them own outcomes instead of output.
+So I quit helping people stack up more skills, and started helping them own outcomes rather than output.
 
 [Doing so helps me see the world differently]
-Once you see it, you can't unsee it. The hours stop being the point. The decisions become the point.
+Once it clicks, you can't unsee it. The hours stop mattering. The decisions start mattering.
 [I'm not completely against the popular consensus]
-And to be clear, AI will remove a lot of work. Pretending otherwise helps no one.
+And let me be clear, AI will wipe out plenty of work. Pretending otherwise helps nobody.
 
 [But I'm still going to choose kindness]
-But removed work is not a removed person. Build the part of you the machine can't reach, and let the rest go.
+But cut work isn't a cut person. Grow the part of you the machine can't touch, and let the rest fall away.
 
 
 ---6. Share a Helluva Story---
 
 [Share an occasion where you experienced failure]
-I shut down a business I had built from scratch after a death in the family hit me with a mid-life crisis.
+I closed down a business I'd built from nothing after a death in the family threw me into a mid-life crisis.
 
 [Elaborate on that experience]
-I was lost and questioning everything about my life and what I was working toward.
+I felt lost, questioning everything about my life and where it was all headed.
 
 [Provide context as to why this was a difficult experience]
-The business was my baby. I had exchanged blood and sweat for it over years. Letting it go was very tough.
+That business was my baby. I'd poured blood and sweat into it for years. Walking away from it was brutal.
 
 [Transition into how you overcame that experience]
-I reflected, and found a greater mission. I wanted my work to mean something beyond me.
+I sat with it, and found a bigger mission. I wanted my work to matter past just me.
 
 [Share how that made you feel]
-I got motivated. Pumped, with a new mission in mind. Every day.
+I got fired up. Charged, with a fresh mission ahead. Every single day.
 
 [Explain what you did next]
-I set up a new business around that mission. I worked non-stop. I hired, mentored, and trained a team.
+I built a new business around that mission. I worked without stopping. I hired, mentored, and trained a team.
 
 [What was the result?]
-I built it up and, midway, found a new passion again, speaking and training.
+I grew it and, somewhere in the middle, stumbled onto a new love again, speaking and training.
 
 [What did you learn from this experience?]
-Follow your passion and it will lead you somewhere amazing, no matter how tough life gets. It's the tough times that strengthen you and make you grow.
+Chase your passion and it'll take you somewhere incredible, no matter how rough life gets. The hard stretches are what toughen you and make you grow.
 
 [Finish with a call to action or advice]
-Be brave enough to chase your dream. Don't let the world stop you. You've only got one life to live. Don't live it in regret.
+Be brave enough to go after your dream. Don't let anyone talk you out of it. You get one life. Don't spend it on regret.
 
 
 ---7. Share Your Most Valuable Lessons---
 
 [I've just hit a significant milestone]
-I got my first speaking engagement after just one month of posting on LinkedIn.
+I landed my first speaking gig after only a month of posting on LinkedIn.
 
 [List the top lessons you can think of]
-Here are 20 lessons I've learned along the way.
+Here are 20 lessons I've picked up on the way.
 
-1. The 2nd biggest difference between success and failure is persistence.
-2. The biggest difference between success and failure is getting started.
-3. Most people are out for themselves, even when it doesn't appear so.
-4. Comparing yourself to others is the easiest way to get distracted.
-5. It's difficult to build a work ethic without the right environment.
-6. The most important skill to learn is how to learn on your own.
-7. If you have a 10-year plan, you'll outperform most people.
-8. Getting 1% better at something compounds into a huge leap.
-9. Everyone has knowledge that other people will pay for.
-10. There is nothing wrong with backing yourself.
-11. 10% of people will dislike what you do no matter what.
-12. If you can't teach yourself, you'll always be a liability.
-13. Don't spend time with people who don't reciprocate.
-14. You won't do anything special without risk.
-15. Separate yourself from anyone who drains you.
-16. Time is the single greatest asset.
-17. Money is not the root of all evil.
-18. You can't say yes to everyone.
-19. Consistency trumps all traits.
-20. Nearly everyone is winging it.
+1. The 2nd biggest gap between success and failure is sticking with it.
+2. The biggest gap between success and failure is starting at all.
+3. Most people look out for themselves, even when it doesn't look that way.
+4. Measuring yourself against others is the quickest route to distraction.
+5. A work ethic is tough to build without the right surroundings.
+6. The most valuable skill is learning how to teach yourself.
+7. With a 10-year plan, you'll leave most people behind.
+8. Improving 1% at a time stacks up into a massive jump.
+9. Everyone holds knowledge that others will happily pay for.
+10. Nothing's wrong with betting on yourself.
+11. 10% of people will dislike whatever you do, period.
+12. If you can't teach yourself, you'll stay a liability.
+13. Don't pour time into people who give nothing back.
+14. You'll never do anything notable without taking a risk.
+15. Cut loose anyone who wears you down.
+16. Time is your one greatest asset.
+17. Money isn't the root of all evil.
+18. You can't say yes to everybody.
+19. Consistency beats every other trait.
+20. Almost everyone is making it up as they go.
 
 [Finish with a quote that encapsulates the value of your journey]
-Be brave enough to pursue what you want. Want it badly. Stop giving excuses and show up for yourself.
+Be brave enough to chase what you want. Want it like crazy. Quit the excuses and show up for yourself.
 
 
 ---8. Give Advice to a Vulnerable Audience---
 
 [Describe your audience with an "if you are" statement]
-If you're thinking about starting a business and becoming an entrepreneur.
+If you're toying with the idea of starting a business and going out on your own.
 
 [Describe a common behavior or thought pattern among your audience]
-And you're telling yourself you have a stable job, earning good money, and you want to climb the corporate ladder.
+And you keep telling yourself you've got a steady job, decent pay, and you want to climb the corporate ladder.
 
 [Challenge that behavior or thought pattern]
-In my opinion, you're doing it wrong.
+Honestly, I think you've got it backwards.
 
 [Explain why]
-The likelihood of your role changing dramatically because of AI is high, and it's coming faster than most people think.
+The odds of AI reshaping your role are high, and it's arriving sooner than most people expect.
 
 [Provide an alternative way of thinking]
-So what should you be doing now? Optimise for experience. Optimise for knowledge. Optimise for people. Optimise for fun.
+So what should you do now? Stack up experience. Stack up knowledge. Stack up relationships. Stack up fun.
 
 [Continue describing ways to implement this alternative way of thinking]
-Start the side project you've always wanted to. Build something you're proud of. Gobble up as much knowledge as you can. Ask everyone you admire for theirs. Find a mentor. Build a network of smart people who lift you up, and stay in touch regularly.
+Start that side project you keep putting off. Make something you're proud of. Soak up all the knowledge you can. Ask everyone you look up to for theirs. Find a mentor. Build a circle of sharp people who pull you up, and keep in touch often.
 
 [Provide even more detail on how to implement this way of thinking]
-Also, don't forget to blow off some steam. Travel to good places. Spend time with great friends. Eat well. Move your body.
+And don't forget to let off some steam. Go see good places. Spend time with great friends. Eat well. Move your body.
 
 [Describe the ultimate benefit of thinking this way]
-You'll have a backup plan for yourself if your role changes. Play the game for yourself, not only for someone else.
+You'll have your own backup if your role shifts. Play the game for yourself, not just for somebody else.
 
 
 ---9. Step-by-Step Breakdown of a Process---
 
 [Describe a common behavior among a particular audience, and challenge that behavior]
-If you charge less than $100 an hour as a consultant, raise your rates.
+If you're charging under $100 an hour as a consultant, bump your rates.
 
 [Introduce a methodology for challenging that behavior]
-I use a process called F.I.T.I. in my own consulting business.
+In my own consulting work I run a process I call F.I.T.I.
 
 [Break the process down into simple steps]
-Here's a step-by-step guide on how you can use it.
+Here's a step-by-step on how to put it to use.
 
 [Step 1]
 Step 1: Feedback
 
 [List the tasks associated with this step]
-Get feedback from as many customers as possible.
+Pull feedback from as many clients as you can.
 - Where do they get the most value from you?
-- What do they wish they could get more of?
-- Send a survey or have a simple conversation.
-- Don't overcomplicate it.
+- What do they wish they got more of?
+- Run a survey or just have a chat.
+- Keep it simple.
 
 [Step 2]
 Step 2: Iteration
 
 [List the tasks associated with this step]
-- Develop and expand the areas customers want
-- Eliminate the things they don't want
-- Look at what you like and hate doing
-- Find the intersection, and double down there
+- Grow and broaden the areas clients actually want
+- Cut the things they don't
+- Notice what you love and hate doing
+- Find where those overlap, and lean in hard
 
 [Step 3]
 Step 3: Testimonials
 
 [List the tasks associated with this step]
-- Collect as many testimonials as possible from happy customers
-- Put written and video testimonials on every page of your site
-- This drives conversion from website visitor to booked call
-- It's also a key driver behind price increases
-- You need them at every level
+- Gather as many testimonials as you can from happy clients
+- Place written and video testimonials on every page of your site
+- This turns visitors into booked calls
+- It's also a big lever behind raising prices
+- You need them at every stage
 
 [Step 4]
 Step 4: Increase
 
 [List the tasks associated with this step]
-- You now have feedback from step 1
-- A more valuable offer from step 2
+- You've got feedback from step 1
+- A stronger offer from step 2
 - Social proof from step 3
-- Increase your prices
+- Raise your prices
 
 [Share the results you've seen from implementing this methodology in your own business]
-I've multiplied my rates over two years using this process.
+I've grown my rates many times over across two years with this process.
 
 [Finish with a call-to-action for the reader]
-Scared to ask customers for a testimonial? I dropped a template in the comments.
+Nervous about asking clients for a testimonial? I left a template in the comments.
 
 
 ---10. Compare Two Scenarios---
 
 [Describe things you care about a specific mind shift]
-When I worked a 9 to 5, I cared about:
+Back when I worked a 9 to 5, I cared about:
 - job title
 - salary and bonus
 - number of direct reports
@@ -341,7 +341,7 @@ As a solopreneur, I care about:
 - location independence
 
 [Finish with an affirmation or positive message]
-A wonderful mindset shift.
+What a beautiful shift in mindset.
 
 
 ---11. Encourage Action---
@@ -350,7 +350,7 @@ A wonderful mindset shift.
 Promote yourself.
 
 [Emphasize its importance through a "punchy" tagline or ultra-short sentence]
-No one else is going to do it for you.
+Nobody else is going to do it for you.
 
 [Attach a relevant image that expands on the idea]
 [Image: a simple visual of a person standing on a small stage they built themselves.]
@@ -359,102 +359,102 @@ No one else is going to do it for you.
 ---12. Do Something Remarkable for Your Audience---
 
 [Start with a stat that supports your argument]
-A large share of the world can't afford my products at full price.
+A big chunk of the world can't pay full price for my products.
 
 [Lead into your argument by providing context]
-I think that's a shame. So I changed it today.
+That bothers me. So I fixed it today.
 
 [Introduce your solution]
-This morning I introduced Purchasing Power Parity on my website. When you visit from outside high-income countries, you're automatically offered a coupon that makes the price make sense in your local currency.
+This morning I rolled out Purchasing Power Parity on my site. When you visit from outside high-income countries, you're automatically handed a coupon that brings the price in line with your local currency.
 
 [Provide some examples]
-Some examples:
+A few examples:
 India: 60% off. Brazil: 50% off. South Africa: 50% off. Greece: 30% off. Spain: 20% off.
 
 [Mention some pitfalls to building credibility]
-The system isn't perfect. It won't help every single person. But it's a good start.
+The system has its flaws. It won't reach every person. But it's a solid start.
 
 [Tie your point to your overall mission or values]
-And it's aligned with my mission of making my work accessible to everyone who wants to grow.
+And it fits my mission of keeping my work within reach of anyone who wants to grow.
 
 [Strengthen your argument with a "regardless" statement]
-Regardless of where they live.
+No matter where they live.
 
 [Describe how this fits into the bigger picture]
-I hope it's one of many small steps toward democratizing access to knowledge.
+I'd like to think it's one of many small steps toward opening up access to knowledge.
 
 [Call the reader to action]
-Check it out. Link in the comments.
+Go take a look. Link's in the comments.
 
 
 ---13. Before and After---
 
 [Describe a before scenario]
-My life a few years ago:
+My life a few years back:
 - underpaid
 - overweight
 - overworked
-- canceled vacations
-- physically and mentally exhausted
+- vacations called off
+- worn out in body and mind
 
 [Describe an after scenario]
-My life now:
-- higher income
-- daily workouts
+My life today:
+- a higher income
+- workouts every day
 - hours of free time each day
-- traveled several times in the last few months
-- great sleep and a carefree life
+- traveled a handful of times in recent months
+- great sleep and a life with less weight on it
 
 [Explain what changed]
-What changed? I went all-in on myself and my work.
+What flipped it? I bet everything on myself and my work.
 
 
 ---14. Lessons Learned From a Tough Life Experience---
 
 [I went through a tough life experience]
-For 6 months, I slept on a friend's couch.
+For 6 months, I crashed on a friend's couch.
 
 [Things got just a bit better]
-A few months later, I'd saved enough to move.
+A few months on, I'd put aside enough to move out.
 
 [Elaborate on low points]
-I chose a tiny bedroom. It was barely big enough to turn around in.
+I picked a tiny bedroom. There was barely room to spin around in it.
 
 [Describe an awful experience in detail]
-I bought a fold-down single futon because it was all that would fit.
+I got a fold-down single futon since it was the only thing that fit.
 
 [Help the reader understand how you felt during this time]
-It was hard as a rock, and I don't remember getting a single good night's sleep.
+It was hard as a rock, and I can't recall one decent night of sleep.
 
 [Then something happened]
-When I went into the office a few weeks later, my boss saw me and said:
+When I came into the office a few weeks later, my boss took one look at me and said:
 
 [Actual conversation moment]
-"Hey, you look really tired. What's going on?" I told him about the futon.
+"Hey, you look exhausted. What's going on?" I told him about the futon.
 
 [Something unexpected happened as a result]
-He walked back to his office and a few minutes later came back with a small piece of paper. It was a blank cheque.
+He went back to his office and returned a few minutes later with a small slip of paper. It was a blank cheque.
 
 [xxx]
 He told me to go buy any single bed that would fit, up to a set amount.
 
 [It got even better]
-I found the most comfortable bed I'd ever slept in, well under the limit.
+I found the comfiest bed I'd ever slept in, well below the limit.
 
 [I did what she said, and things got even better]
 I slept properly for the first time in months, and it changed how I showed up.
 
 [I learned something valuable during this time]
-It was the kindest gesture I'd seen at that point in my life.
+It was the kindest thing anyone had done for me up to that point in my life.
 
 [I changed my behavior to reflect this new lesson]
-I worked my tail off for the next few years.
+I worked myself to the bone for the next few years.
 
 [This happened as a result]
 I helped bring in far more than that bed ever cost.
 
 [Contrast this result with the cost of the original problem]
-That small kindness. Years of loyalty in return.
+That one small kindness. Years of loyalty back in return.
 
 [State the obvious to add emphasis]
 Pretty good return, isn't it?
@@ -472,49 +472,49 @@ Want to be happy at work? Find people who treat you like that.
 People are stressed.
 
 [Elaborate on the causes of this problem]
-40-hour weeks have quietly become 80-hour weeks.
+40-hour weeks have quietly turned into 80-hour weeks.
 
 [Explain why this is happening]
-Why? Because everything is blending.
+Why? Because everything is bleeding together.
 
 [List tangible examples of the causes]
-Your house is now your office. Your family time is now company time. Dinners are spent checking your phone. Evenings filled with "just one more email".
+Your home is your office now. Your family time is company time now. Dinners go by with one eye on your phone. Evenings filled with "just one more email".
 
 [List even more causes to add credibility to your argument]
-Pay is flat. Raises are light. Costs keep rising. Responsibility keeps growing.
+Pay is stuck. Raises are thin. Costs keep climbing. Responsibility keeps piling on.
 
 [Evoke high-arousal emotions with a painful identification]
-Want to make a little extra on the side? "Sorry, your contract forbids that."
+Want to earn a bit extra on the side? "Sorry, your contract doesn't allow that."
 
 [Use a contradicting statement to increase credibility]
-Your job can invade your personal life, but your personal life can't invade your job. Ridiculous.
+Your job can spill into your personal life, but your personal life can't spill into your job. Absurd.
 
 [Use a real-life example to add more credibility]
-I talk to people every day who are walking out of restrictive companies and into places that respect their time.
+Every day I speak with people walking out of suffocating companies and into ones that respect their time.
 
 [Look towards the future with hope]
-I hope this is the start of a real trend.
+I hope this is the beginning of a real trend.
 
 [Cheers to the future]
-Here's to the people reclaiming their lives.
+Here's to the people taking their lives back.
 
 
 ---16. Describe a Desirable Behavior---
 
 [Splinter your audience with a polarizing statement]
-The 9 to 5, as we knew it, is changing fast.
+The 9 to 5, the way we once knew it, is shifting fast.
 
 [Mention a credible source that supports your opinion]
-Even the headlines are saying so now.
+Even the headlines are admitting it now.
 
 [Quote the source directly and explain its significance]
-They talk about a wave of people leaving. Why? Because so many got a real look at their companies over the last few years.
+They write about a wave of people heading for the exit. Why? Because so many got a hard look at their companies these past few years.
 
 [List specific examples of this problem]
-Layoffs. Restructures. Roles cut overnight.
+Layoffs. Restructures. Roles gone overnight.
 
 [Describe how this new reality changed people's behavior]
-And in all that time at home, in front of a screen?
+And in all those hours stuck at home, staring at a screen?
 
 [List examples of the new behavior]
 They started:
@@ -525,49 +525,49 @@ They started:
 - exchanging
 
 [Highlight a shared desire or belief to create connection]
-They started making money on their own terms.
+They started earning on their own terms.
 
 [List concrete steps people can take to achieve this goal]
 They coached. They helped. They taught. They sold.
 
 [Describe a more desirable future]
-They built lives with more control over their time and place.
+They built lives with more say over their time and where they spend it.
 
 [Describe the ideal mindset for achieving this future]
-They realised they can support themselves, armed with an internet connection and their own knowledge.
+They saw that they can carry themselves, armed with a wifi signal and what they already know.
 
 [Contradict the credible source's original claim]
-But the headlines are still a step behind. This shift isn't coming. It's here.
+But the headlines are still a beat behind. This shift isn't on the way. It's already here.
 
 
 ---17. Give Advice on a Negative Emotion---
 
 [Give advice on a negative emotion most people experience but don't talk about]
-Never stay in a job that destroys your mental health.
+Never stick around in a job that wrecks your mental health.
 
 [Even when it's hard]
-Even with great pay, it doesn't work long term.
+Even with great pay, it falls apart over time.
 
 [Position yourself as a friend giving tough love]
 I promise.
 
 [List practical action steps for improving the situation]
 - Find a role that fits
-- Protect your mental health
-- Spend time on a passion project
-- Build it into something bigger over time
+- Guard your mental health
+- Pour time into a passion project
+- Grow it into something bigger over time
 
 [Emphasize the importance of the issue at hand]
-Wealthy and burned out is a bad trade.
+Rich and burned out is a lousy trade.
 
 [Turn the status quo on its head]
-Moderately comfortable and free is the better one.
+Comfortable enough and free is the smarter one.
 
 
 ---18. Write a Proverb That Challenges Conventional Wisdom---
 
 [Challenge a commonly-accepted, yet harmful belief in a simple way]
-If a great career costs you a terrible personal life, you're winning in reverse.
+If a brilliant career costs you a miserable personal life, you're winning backwards.
 
 
 ---19. Compare the Progression of Two Different Scenarios---
@@ -577,39 +577,39 @@ My raises as an employee:
 Year 1: 4%. Year 2: 5%. Year 3: 7%.
 
 [Compare it to a better/different situation]
-My growth on my own:
-Year 1: small. Year 2: bigger. Year 3: bigger again.
+My growth working for myself:
+Year 1: small. Year 2: bigger. Year 3: bigger still.
 
 [Summarize the key takeaway in two lines]
-Don't ask for a raise. Create one.
+Don't ask for a raise. Build one.
 
 
 ---20. Break Down a Skill Into Smaller Components---
 
 [Describe a skill your audience wants to have]
-When someone says "she's a great closer".
+When people say "she's a great closer".
 
 [Break down that skill into smaller, more manageable pieces]
-Here's what they really mean:
-- she sets a great agenda
-- she does deep discovery
-- she maps the solution back to real pain
-- she talks through the obstacles honestly
-- she gets the right people bought in
+Here's what they actually mean:
+- she sets a sharp agenda
+- she runs deep discovery
+- she ties the solution back to real pain
+- she works through the obstacles honestly
+- she gets the right people on board
 - she sets clear expectations
-- she walks through implementation
-- she positions the right package
-- she shows them how to move forward
+- she walks them through implementation
+- she frames the right package
+- she shows them how to take the next step
 - she actually asks
 
 [It's more than just isolated techniques or tactics]
-"Closing" isn't one thing. It's many things done well, together.
+"Closing" isn't a single thing. It's a lot of things done well, together.
 
 
 ---21. Relevant Concept + Relevant Image---
 
 [Introduce a concept that will make your audience's lives better]
-Repurposing: the easiest way to more, and better, content.
+Repurposing: the simplest path to more, and better, content.
 
 [Attach an image that drives the point home and exemplify with a relatable scenario]
 [Image: one strong post branching into a thread, a carousel, and a short video.]
@@ -618,28 +618,28 @@ Repurposing: the easiest way to more, and better, content.
 ---22. A Critical Decision That Turned Out Great---
 
 [I made a critical life decision that turned out great]
-A few years ago today, I started my first real business.
+A few years ago today, I launched my first real business.
 
 [Share how different things were before you made the decision]
-There was no LinkedIn content. No community. No business building. No awards. No real plan.
+There was no LinkedIn content. No community. No business to speak of. No awards. No actual plan.
 
 [I doubted myself, but also had this sneaking feeling that it would work out]
-I started with a lot of doubt and no experience, but also with a lot of ideas.
+I began with plenty of doubt and zero experience, but also with plenty of ideas.
 
 [Add a self-deprecating joke]
-And slightly too much caffeine.
+And a touch too much caffeine.
 
 [Things can change pretty quickly]
-A lot can change in a few years.
+A lot can shift in a few years.
 
 [Yet, some things stay the same]
-But one constant is the love and support of my family and friends.
+But one thing never moved, the love and support of my family and friends.
 
 [These intangible things are invaluable]
-I wouldn't trade that for anything.
+I wouldn't swap that for anything.
 
 [Close with hopes or plans for the future]
-Next, helping more people build something of their own through social media.
+Up next, helping more people build something of their own through social media.
 
 [Attach a personal photograph that captures the moment or spirit of the post]
 [Image: a candid photo from the early days.]
@@ -648,13 +648,13 @@ Next, helping more people build something of their own through social media.
 ---23. The Challenging Question---
 
 [Challenge your readers with a question]
-Want to help a cause you care about?
+Want to back a cause that matters to you?
 
 [Propose a solution that is simple and easy to do]
-I put together a page that links to vetted charities you can support.
+I built a page that points to vetted charities you can support.
 
 [Break down the solution into actionable steps]
-Two options:
+Two ways to help:
 
 [xxx]
 1. If you have money, please donate.
@@ -666,10 +666,10 @@ Two options:
 Every bit of reach helps.
 
 [Instruct the readers on how to take action]
-The link is in the comments.
+The link's in the comments.
 
 [Provide a simpler alternative solution for people who can't or won't do the first thing you suggested]
-Even a reaction on this post helps get it moving.
+Even a reaction on this post helps get it rolling.
 
 
 ---24. The System Is Against You---
@@ -678,42 +678,42 @@ Even a reaction on this post helps get it moving.
 The news is quietly running your mood.
 
 [List examples of how this is happening]
-- constant negativity
-- ruining your good days
-- pulling you into arguments with strangers
+- nonstop negativity
+- spoiling your good days
+- dragging you into fights with strangers
 
 [Hit them with a vague statement]
 What a waste.
 
 [Make the reader accountable for their own actions and feelings]
-It's on you to curate a better environment so you can think clearly.
+It's on you to build a better environment so you can think straight.
 
 [Provide actionable steps to take]
-Here's my approach:
+Here's how I do it:
 
-1. I unfollow negative accounts.
-2. I don't keep the news on in the background.
-3. I use tools that strip the doom-feed out of my apps.
-4. Each Monday I plan who to connect with, what to read, what to listen to.
-5. Each day I set my intentions: what I want to do, what I want to avoid, how I'll reward myself.
+1. I unfollow the negative accounts.
+2. I don't leave the news running in the background.
+3. I use tools that pull the doom-feed out of my apps.
+4. Every Monday I plan who to reach out to, what to read, what to listen to.
+5. Every day I set my intentions: what I want to do, what I want to steer clear of, how I'll reward myself.
 
 [People don't always agree with you]
-People ask me, "How do you know what's happening in the world?"
+People ask me, "How do you keep up with what's going on in the world?"
 
 [You're okay with that]
-My answer: the world is always happening. I'll find out what matters.
+My answer: the world is always going on. I'll catch what matters.
 
 [Tell them what not to do]
-Don't let a feed decide what fills your mind.
+Don't hand a feed the keys to what fills your head.
 
 [It's all about perspective]
 The world can be wonderful or worrying.
 
 [You can choose the world you want to live in]
-Curate the one you want to live in.
+Build the one you want to live in.
 
 [It's a life or death decision]
-Your wellbeing depends on it.
+Your wellbeing rides on it.
 
 
 ---25. Something Simple Changed Your Perspective---
@@ -734,22 +734,22 @@ But honestly, these "unglamorous" businesses deserve more respect.
 ---26. I Do X to Achieve Y---
 
 [I do X to accomplish Y]
-I spend a small monthly budget on tools to run a one-person business.
+I put aside a small monthly budget for the tools that keep my one-person business running.
 
 [Break down what X entails]
-Here are the few tools I actually rely on:
+These are the handful of tools I genuinely depend on:
 
 [xxx]
-A writing tool, a scheduler, a simple site builder, and a booking link.
+Something to write with, something to schedule, a basic website maker, and a link for bookings.
 
 [xxx]
-That's most of the stack.
+That's nearly the whole stack.
 
 [Invite readers to learn more about your process]
-Want the full breakdown of how I use each one?
+Curious how I put each one to work?
 
 [Provide a clear CTA]
-Comment "tools" and I'll send it over.
+Drop "tools" in the comments and I'll send it your way.
 
 [Attach a more complete piece of content that goes into detail about your process]
 [Carousel: a slide on each tool and how it fits the workflow.]
@@ -758,10 +758,10 @@ Comment "tools" and I'll send it over.
 ---27. Encourage Massive Action---
 
 [Take massive action on a small, yet crucial goal/activity]
-Promote yourself online every single day.
+Put yourself out there online every single day.
 
 [No matter what]
-Somewhere.
+Anywhere.
 
 [List examples of how you can do this]
 - your work
@@ -770,20 +770,20 @@ Somewhere.
 - your products
 
 [xxx]
-Pick one and post it.
+Choose one and hit publish.
 
 [List the inevitable outcomes of taking this action]
-People will either:
+People will do one of these:
 - love you (customers)
 - ignore you (no harm done)
 - join you (network)
 - follow you (audience)
 
 [xxx]
-All of those beat invisibility.
+Every one of those wins against staying invisible.
 
 [Close with a positive note]
-Have a great Sunday.
+Enjoy your Sunday.
 
 [xxx]
 Now go post.
@@ -792,70 +792,70 @@ Now go post.
 ---28. Don't Follow the Crowd; Do What Matters---
 
 [Don't pursue this big accomplishment according to most people]
-Stop bragging that you read 25 books a year.
+Quit boasting about the 25 books you read this year.
 
 [Take this opposite approach instead]
 Publish one.
 
 [Stop focusing on what everyone else is doing]
-Stop listing the podcasts you listen to.
+Quit naming all the podcasts you tune into.
 
 [Take a more active role in your life]
 Record one.
 
 [Don't get influenced by what's popular]
-Stop reciting everything you read in blogs.
+Quit repeating everything you picked up in blogs.
 
 [Be the change you want to see]
 Write one.
 
 [Summarize with a clear message]
-There's no reward for the most consumption.
+Nobody hands out a prize for consuming the most.
 
 [A rhetorical question and a powerful statement to end on]
-Creation? That's a different story.
+Creating? That's another matter entirely.
 
 [xxx]
-Make something this week.
+Build something this week.
 
 [xxx]
-That's where it changes.
+That's the moment it shifts.
 
 
 ---29. Authorities Don't Control Your Life---
 
 [Authorities don't control your personal life]
-Your employer doesn't own your LinkedIn profile.
+Your company has no claim on your LinkedIn profile.
 
 [Introduce what you're going to talk about]
-And here are 7 reasons they never should:
+And here are 7 reasons it never should:
 
 [List a few reasons that backup your claim]
-1. Your brand compounds instead of resetting with each job.
-2. Your brand stays with you wherever you work.
-3. Your brand builds connections, not just transactions.
-4. Your brand becomes your resume over time.
-5. Your brand opens new opportunities.
-6. Your brand isn't controlled by HR.
+1. Your brand compounds instead of starting over with every job.
+2. Your brand follows you no matter where you work.
+3. Your brand creates relationships, not just transactions.
+4. Your brand turns into your resume as the years pass.
+5. Your brand unlocks fresh opportunities.
+6. Your brand sits outside of HR's reach.
 7. Your brand is your safety net.
 
 [xxx]
-Each one outlives any single role.
+Each of these outlasts any one job.
 
 [xxx]
-That's the whole point.
+That's the entire point.
 
 [xxx]
-You're building an asset, not a profile.
+You're growing an asset, not just a profile.
 
 [Use an attention-grabbing word to emphasize your next point]
 Remember:
 
 [Knife twisting statement that drives the point home]
-Your employer won't rebuild your profile when you're laid off.
+Your company won't rebuild your profile the day you get laid off.
 
 [So what statement]
-So don't let them benefit from it for free while you're employed.
+So don't let them ride on it for free while you're still there.
 
 [Short CTA to empower readers to take action]
 Take control.
@@ -867,16 +867,16 @@ Start today.
 ---30. Reframe a Popular Belief---
 
 [A is not B]
-Making money is not a skill.
+Making money isn't a skill.
 
 [C is B]
 Solving problems is a skill.
 
 [A is the outcome of C]
-Money is simply the outcome.
+Money is just what comes out of it.
 
 [Transition into practical, actionable advice]
-So if you want to make more money, go learn to solve:
+So if more money is what you want, go learn to solve:
 
 [xxx]
 - more problems
@@ -884,19 +884,19 @@ So if you want to make more money, go learn to solve:
 - more expensive problems
 
 [Stop chasing A and prioritize C]
-Stop chasing money and start chasing solutions.
+Quit running after money and start running after solutions.
 
 [xxx]
-The money follows the problems you can solve.
+The money trails the problems you're able to solve.
 
 
 ---31. "How to" Bomb + Relevant Image---
 
 [Start with a "how to" statement that showcases your expertise]
-How to write much better LinkedIn posts in 5 steps:
+How to write far better LinkedIn posts in 5 steps:
 
 [Remove a common obstacle/objection]
-(without an expensive copywriting course)
+(without a pricey copywriting course)
 
 [Attach a piece of content that covers your topic in more depth]
 [Carousel: the 5 steps, one per slide.]
@@ -914,30 +914,30 @@ Amateurs: I got 3,000 likes.
 Pros: I made 3 new meaningful connections.
 
 [Summarize with a powerful statement]
-It's about real connections here. Not little thumbs and hearts.
+Real relationships are the point here. Not tiny thumbs and hearts.
 
 [xxx]
-Count the relationships, not the reactions.
+Tally the relationships, not the reactions.
 
 
 ---33. Show Them What Works---
 
 [X is the only way to achieve Y]
-The internet is one of the few places where you can change your income trajectory in a single year.
+The internet is one of the rare places where you can shift your income path inside a single year.
 
 [List the clear benefits of X, compared to a more traditional approach]
-- no fixed career path
-- no waiting on a bonus
+- no fixed career ladder
+- no waiting around for a bonus
 - no daily status meetings
 - no "can I have a raise?"
 - no performance reviews
 - no "we don't have the budget"
 
 [Describe what X entails in terms of effort]
-Just head down for 12 months, full accountability.
+Just keep your head down for 12 months, fully accountable.
 
 [Describe the ultimate benefit of X]
-And uncapped upside.
+And no ceiling on the upside.
 
 [Time-bound CTA]
 Start this weekend.
@@ -946,130 +946,130 @@ Start this weekend.
 ---34. Someone Else Simplified a Complex Topic---
 
 [Start with an irreverent statement that gets people's attention]
-Make it simple.
+Keep it simple.
 
 [Tell them what you're going to tell them]
-A true story.
+A real story.
 
 [Describe an achievement in your career]
-Years ago, I was promoted into my first leadership role.
+A while back, I got promoted into my first leadership position.
 
 [Tell us what that achievement involved in terms of responsibility and impact]
-I was tasked with launching a new product. But...
+My job was to launch a new product. But...
 
 [Share the "But..."]
-I was terrible at negotiating contracts. Awful.
+I was hopeless at negotiating contracts. Truly bad.
 
 [Someone else helped you with that]
-I sat down with a senior colleague who walked me through an agreement, point by point.
+I sat down with a senior colleague who took me through an agreement, line by line.
 
 [It was obvious that you didn't understand the situation]
-When he glanced over, he could tell my head was spinning.
+One look at me and he knew my head was spinning.
 
 [Help the reader visualize what happened next]
-I can still picture him smiling and leaning back in his chair.
+I can still see him grinning and leaning back in his chair.
 
 [Share a fragment of the actual conversation]
-"Okay, imagine you're running a lemonade stand..."
+"Alright, picture yourself running a lemonade stand..."
 
 [This person's approach was simple, but effective]
-He explained each point like I was a beginner. Because I was.
+He broke down each point as if I were a beginner. Because I was.
 
 [xxx]
-And for the first time, it made sense.
+And for the first time, it clicked.
 
 [This event changed your perspective]
-That was the first time someone made something complex easy for me to understand.
+That was the first time anyone made something complicated easy for me to grasp.
 
 [The moral of the story]
-That's what real intelligence looks like. Explaining complex things in simple ways.
+That's what real intelligence is. Making complex things simple to follow.
 
 [Tell them what to avoid]
-Forget complicated jargon. Forget fancy acronyms. Forget trying to impress with lingo.
+Drop the complicated jargon. Drop the fancy acronyms. Drop the urge to impress with lingo.
 
 [Tell them what to do]
-Just explain it in a way I can actually understand.
+Just put it in terms I can actually follow.
 
 [List where/when this philosophy can be applied]
 Works in law. Works in marketing. Works in sales. Works in customer success.
 
 [Show your human side with an emotional appeal]
-I'm not embarrassed. We all start out bad at something.
+I'm not ashamed of it. Everyone starts out bad at something.
 
 [Add a rhetorical question to get people thinking]
-Isn't it a gift when someone explains a thing so you finally get it?
+Isn't it a gift when someone explains a thing so it finally makes sense to you?
 
 [Encourage them to take action]
-Help someone the same way today.
+Do the same for someone today.
 
 
 ---35. What Years of Experience Had Taught You---
 
 [I've done this remarkable thing]
-I've hired a lot of people over my career.
+I've brought on a lot of people over the years.
 
 [Sometimes, it's great]
-Some were brilliant. Went on to be high-growth leaders.
+Some were exceptional. They became high-growth leaders.
 
 [Sometimes, it's not so great]
-Others, not so much.
+Others, far less so.
 
 [It's not perfect; I'm still learning]
-I've yet to find a perfect rule for who will succeed and who won't.
+I still haven't found a flawless rule for who makes it and who doesn't.
 
 [But I've learned this]
-But here's one thing I've learned.
+But there's one thing I've figured out.
 
 [Tell them your most valuable lesson]
-Truly great people respect your time.
+The truly great ones respect your time.
 
 [Elaborate on that]
-They're organised. They're on time. They have an agenda. They get to the point.
+They're organised. They show up on time. They bring an agenda. They get to the point.
 
 [Ask 3-4 relatable questions that put things into perspective, and provide a simple answer that inspires action]
-Can't manage your calendar? Learn to.
-Can't be on time? You're an adult.
-No agenda? Then what are we doing here?
-Rambling? Relax. Get crisp. What are we solving?
+Can't run your own calendar? Learn how.
+Can't show up on time? You're a grown adult.
+No agenda? Then why are we here?
+Rambling? Settle down. Get sharp. What are we solving?
 
 [Explain why this is crucial]
-Great hires respect your time, show up prepared, and get down to business.
+Great hires respect your time, arrive prepared, and get straight to work.
 
 [Mention the ultimate benefit of this]
-Just doing that puts you ahead of most people.
+Doing just that already puts you ahead of most people.
 
 [xxx]
-It's a small habit with an outsized return.
+It's a small habit that pays back many times over.
 
 [End with an "if this, then that" statement]
-If you're not organised, start today with a simple calendar audit.
+If you're not organised, start today with a quick calendar audit.
 
 
 ---36. Polarize Your Audience---
 
 [Polarize your audience with a simple, yet thought-provoking statement]
-You weren't born to spend 60+ hours a week building someone else's dream.
+You weren't put here to give 60+ hours a week to someone else's dream.
 
 [xxx]
-And yet most of us do, for years, without ever questioning it.
+And yet most of us do it, for years, without ever stopping to ask why.
 
 [xxx]
-Spend a little of that energy on something of your own. Even an hour a day changes the trajectory.
+Pour a little of that energy into something of your own. Even an hour a day bends the path.
 
 
 ---37. Promote the Right Behavior---
 
 [Show preference for people with X quality/trait]
-Hire people with side projects.
+Hire the people who have side projects.
 
 [Move your perspective away from what they're doing wrong]
-Don't fixate on some "distraction" you imagine.
+Don't dwell on some "distraction" you've dreamed up.
 
 [Instead, focus on what they're doing right]
-Focus on how motivated that person clearly is.
+Pay attention to how driven that person obviously is.
 
 [Encourage them to take action one more time]
-You want that energy in your team. Hire that person.
+You want that kind of energy on your team. Hire that person.
 
 [Tell them to trust you on this one]
 Trust me.
@@ -1078,7 +1078,7 @@ Trust me.
 ---38. Your Handicaps Are an Illusion---
 
 [Even if you're in X situation, you can still get Y benefits]
-Even if you're employed full-time, you can still:
+Even with a full-time job, you can still:
 
 [xxx]
 - consult
@@ -1092,105 +1092,105 @@ Even if you're employed full-time, you can still:
 - coach in cohorts
 
 [It's simpler than most people think]
-The barrier to entry has never been lower.
+Getting started has never been this easy.
 
 [The opportunity is clear]
-And the potential to build a second income has never been higher.
+And the chance to build a second income has never been this big.
 
 [xxx]
-You're not stuck. You're just unstarted.
+You're not stuck. You just haven't started.
 
 
 ---39. Join the Top Percentile of Your Industry---
 
 [Audience X is not created equal]
-LinkedIn is mostly lurkers, some consumers, and very few creators.
+LinkedIn is mostly lurkers, a few consumers, and barely any creators.
 
 [xxx]
-The gap between watching and making is enormous.
+The distance between watching and making is huge.
 
 [Take this specific action to join the top percentile]
-Publish consistently and join the few who create.
+Post consistently and join the handful who create.
 
 [Doing so will impact these particular areas of your life]
 Network changer. Income changer. Life changer.
 
 [xxx]
-All from showing up where almost no one does.
+All from showing up where almost nobody does.
 
 
 ---40. A Collection of Advice---
 
 [Here's all the advice I've been able to get in X years of experience/research/etc.]
-Every piece of business advice I could come up with after years on my own.
+Every bit of business advice I've gathered after years out on my own.
 
 [List 30-45 different pieces of advice in groups of 5]
 
-1. Stop reading 50 business books and just get started.
-2. If people root for you to fail, cut them out of your life.
-3. The best entrepreneurs know how to teach themselves.
-4. You learn far more by trying than by reading about someone else.
-5. If you don't know how to sell, you'll struggle.
+1. Quit reading 50 business books and just begin.
+2. If people are hoping you fail, remove them from your life.
+3. The best entrepreneurs can teach themselves anything.
+4. You learn far more from trying than from reading about someone else.
+5. If you can't sell, you'll have a hard time.
 
-6. Thick skin is a prerequisite for building in public.
-7. You go faster by supporting people, not tearing them down.
-8. No matter how good your product is, someone will dislike it.
-9. Price what you offer at a rate you'd be comfortable paying.
-10. Your network can speed you up or slow you down.
+6. Thick skin comes before building in public.
+7. You move faster by lifting people up, not knocking them down.
+8. However good your product is, someone will dislike it.
+9. Price your offer at a number you'd happily pay yourself.
+10. Your network can either speed you up or drag you down.
 
-11. Pessimists are often right, optimists are often wealthy.
-12. Stop asking everyone, and start figuring things out on your own.
-13. If you don't respect people's time, they won't respect you.
+11. Pessimists are often right, optimists are often rich.
+12. Quit asking everybody, and start working things out yourself.
+13. If you don't value people's time, they won't value yours.
 14. Always over-communicate.
-15. Assume you can learn something from everyone.
+15. Assume there's something to learn from everyone.
 
-16. Assume everyone is also winging it.
-17. Your business heroes are regular people who took action.
+16. Assume everyone else is winging it too.
+17. Your business heroes are ordinary people who took action.
 18. If you can make $1, you can make $1,000.
-19. If you can make $1,000, you can probably make much more.
-20. Don't ask random people questions. Ask your customers.
+19. If you can make $1,000, you can probably make a lot more.
+20. Don't quiz random people. Quiz your customers.
 
-21. You don't need perfect conditions. You need action.
-22. Don't "find a mentor". Do interesting things and attract them.
-23. Promote yourself online every day.
-24. Write daily for at least 30 minutes.
-25. Ignore haters. They're the least interesting people.
+21. You don't need ideal conditions. You need action.
+22. Don't "find a mentor". Do interesting work and pull them in.
+23. Put yourself out there online every day.
+24. Write for at least 30 minutes each day.
+25. Tune out haters. They're the dullest people around.
 
-26. Help others and let them reciprocate. If they never do, move on.
-27. Take care of your mental health, honestly.
-28. Look after your body too.
-29. Start with one revenue stream, then diversify.
-30. Anyone selling instant results is a con.
+26. Help others and let them give back. If they never do, walk away.
+27. Take your mental health seriously, honestly.
+28. Take care of your body too.
+29. Begin with one revenue stream, then branch out.
+30. Anyone promising instant results is a con.
 
-31. Systems beat motivation and discipline every time.
-32. Quit obsessing over tools. Use what you know.
-33. Experiment often, but never with two new variables at once.
-34. Use data to create better content.
-35. Never plagiarise, but learn from everyone.
+31. Systems win over motivation and discipline every time.
+32. Quit fussing over tools. Use the ones you know.
+33. Test often, but never two new variables at the same time.
+34. Let data shape better content.
+35. Never copy, but learn from everybody.
 
-36. Stop trying to be cool. Be useful. Respect will come.
-37. You're less clever than you think. Be clear.
-38. Be on time for important things.
-39. Nobody is coming to save you.
-40. Arguing online is a waste of time and energy.
+36. Quit trying to look cool. Be useful. Respect follows.
+37. You're less clever than you assume. Be clear.
+38. Show up on time for the things that count.
+39. No one is coming to rescue you.
+40. Arguing online drains time and energy.
 
-41. Don't be arrogant, but believe you can figure things out.
-42. People care less about you and more about what you can do for them.
+41. Don't be arrogant, but believe you can work it out.
+42. People think less about you and more about what you can do for them.
 43. Don't argue with your customers.
-44. Everyone has the same 24 hours. It's how you use them.
-45. Studying billionaires while you're at zero isn't useful yet.
+44. Everyone gets the same 24 hours. The difference is how you spend them.
+45. Studying billionaires while you're at zero won't help you yet.
 
 [Encourage readers to implement your advice]
-Take every piece of advice here with a grain of salt.
+Take everything here with a grain of salt.
 
 [Acknowledge the flaws of your process]
-I'm just one person sharing what I've learned. It won't all be true for you.
+I'm one person passing on what I've learned. Not all of it will hold for you.
 
 [Still, it's worth trying out]
-But if there's one takeaway, it's this: get started.
+But if there's a single takeaway, it's this: get started.
 
 [Because at the end of the day, that's all that really matters]
-That's how you learn your own lessons.
+That's how you earn your own lessons.
 
 [Add a P.S. to invite readers to take a specific step]
 P.S. Like content like this? Follow me for more.
@@ -1202,13 +1202,13 @@ P.S. Like content like this? Follow me for more.
 ---41. A Loser's Behavior---
 
 [Criticize a common behavior or belief among your audience's antagonist]
-The people who criticise the most usually create the least.
+The loudest critics tend to build the least.
 
 [xxx]
-It's easy to comment. It's hard to build.
+Commenting is easy. Building is hard.
 
 [xxx]
-Be one of the ones building.
+Be one of the people building.
 
 [xxx]
 The rest is just noise.
@@ -1217,29 +1217,29 @@ The rest is just noise.
 ---42. Show Them the Failures Behind Success---
 
 [Showcase what it takes to achieve X]
-Behind every successful creator is:
+Behind every creator who made it sits:
 
 [List all the things that it actually takes to achieve X]
-- ignored content
-- crippling self-doubt
-- worries about money
-- failed side-project ideas
-- failed launches
+- content nobody noticed
+- crushing self-doubt
+- money worries
+- side projects that flopped
+- launches that flopped
 
 [xxx]
-None of it shows up in the highlight reel.
+None of that makes the highlight reel.
 
 [This will happen, regardless of your talent or ability]
-I don't care who it is. Everyone goes through it.
+I don't care who it is. Everyone lives through it.
 
 [So, you should take this specific action to increase your chances of success]
-That's why it matters to root for each other.
+That's exactly why rooting for one another matters.
 
 [Summarize with a value-oriented CTA]
-Lift others and you lift yourself.
+Lift other people and you lift yourself.
 
 [xxx]
-Start with one comment today.
+Begin with one comment today.
 
 
 ---43. Break Down a Complex Topic Into Smaller Pieces---
@@ -1249,30 +1249,30 @@ The math behind a healthy online business:
 
 [List the different elements that make up the math or logic]
 - a monthly revenue target
-- which is a daily target
-- which is a handful of customers at a fair price
-- which is a manageable number of daily visitors at a realistic conversion rate
+- which becomes a daily target
+- which is a few customers at a fair price
+- which is a reasonable number of daily visitors at a realistic conversion rate
 
 [xxx]
-Each layer makes the big number feel reachable.
+Each layer makes the big number feel within reach.
 
 [xxx]
-You're not chasing a huge number. You're chasing the next visitor.
+You're not chasing one huge number. You're chasing the next visitor.
 
 [xxx]
 And the one after that.
 
 [xxx]
-Small inputs, compounded.
+Small inputs, stacked over time.
 
 [It's simple, not easy]
 None of this is easy.
 
 [Still, it's better than the alternative]
-But it beats staring at a big number with no plan.
+But it beats staring at a big number with no plan at all.
 
 [Tell readers what the next step is]
-Here are a few ideas you can turn into a plan:
+Here are a few ideas you can shape into a plan:
 
 [xxx]
 A service business, a digital course, a paid community, or a paid newsletter.
@@ -1281,22 +1281,22 @@ A service business, a digital course, a paid community, or a paid newsletter.
 ---44. Contradict "So-Called" Experts---
 
 ["So-called" experts say you should do this]
-What a lot of LinkedIn coaches say:
+What plenty of LinkedIn coaches tell you:
 - study the algorithm
-- use emojis to stand out
+- add emojis to stand out
 - run polls for engagement
-- write long-winded stories
-- stuff your posts with hashtags
-- chase whatever's trending
+- write rambling stories
+- pack your posts with hashtags
+- ride whatever's trending
 
 [True experts advise something different]
-What the best creators actually do:
+What the best creators are really doing:
 - study copywriting
-- find their unique angle
+- find their own angle
 - write for human emotion
 - create quality content consistently
-- stay locked on one topic
-- study what performs and why
+- stay fixed on one topic
+- study what works and why
 - turn it into repeatable templates
 
 [xxx]
@@ -1306,10 +1306,10 @@ The difference is depth, not tricks.
 Social media isn't hashtags and polls and emojis.
 
 [Mention what it's actually about]
-It's clarity mixed with creativity.
+It's clarity paired with creativity.
 
 [xxx]
-Pushed through a repeatable system.
+Run through a repeatable system.
 
 [xxx]
 That's the whole game.
@@ -1318,10 +1318,10 @@ That's the whole game.
 ---45. Take Control of Your Environment---
 
 [A mass external force is working against you]
-The daily news is relentless.
+The daily news never lets up.
 
 [Here's how to protect yourself against that force]
-So I surround myself with:
+So I keep myself around:
 - great books
 - high performers
 - uplifting podcasts
@@ -1329,10 +1329,10 @@ So I surround myself with:
 - a positive LinkedIn feed
 
 [xxx]
-I curate my inputs on purpose.
+I choose my inputs on purpose.
 
 [I'll prevent the bad from seeping in]
-I'll fill my mind before the world fills it for me.
+I'll feed my mind before the world feeds it for me.
 
 [xxx]
 What goes in shapes what comes out.
@@ -1344,16 +1344,16 @@ What goes in shapes what comes out.
 So many people carry a zero-sum mindset.
 
 [Provide an example of that behavior or belief]
-They hate seeing other people succeed.
+They can't stand watching other people succeed.
 
 [Provide a second example of that behavior or belief]
-They think it ruins their own chances.
+They figure it eats into their own shot.
 
 [Define the inevitable outcome of that behavior]
-That's exactly why they lose.
+That's exactly why they fall behind.
 
 [Take an opposite stance]
-I root for everyone to win.
+I want everyone to win.
 
 [List the things you do to support your opposite stance]
 - build something
@@ -1373,72 +1373,72 @@ Abundance is a strategy, not a personality.
 ---47. Take a Stance On a Controversial Topic---
 
 [Take a stance on a controversial topic]
-Here's an unpopular take: "hustle culture" is quietly harming a generation.
+Here's an unpopular take: "hustle culture" is quietly damaging a generation.
 
 [Share your opinion on the topic]
-Glorifying 80-hour weeks and "no days off" is not a flex. It's a fast track to burnout.
+Glorifying 80-hour weeks and "no days off" isn't a flex. It's a shortcut to burnout.
 
 [Demonstrate you're absolutely sure of your opinion]
-I'll say it plainly, and I won't soften it.
+I'll say it straight, and I won't water it down.
 
 [Provide examples]
-- I've watched talented people break their health for a job that replaced them in a week.
-- I've seen "rise and grind" used to justify terrible boundaries.
-- I've felt it myself, and paid for it.
+- I've watched gifted people wreck their health for a job that replaced them in a week.
+- I've seen "rise and grind" used to excuse awful boundaries.
+- I've felt it firsthand, and I paid the price.
 
 [Provide a more detailed example of someone or something you support that is related to the topic]
-The people I admire most work hard in seasons, then actually rest. They protect their health, their families, and their minds, and they still build remarkable things.
+The people I respect most work hard in seasons, then genuinely rest. They guard their health, their families, and their minds, and they still build remarkable things.
 
 [Take an ultimate stand]
-Hard work matters. Working yourself into the ground for someone else's dream does not.
+Hard work counts. Grinding yourself down for someone else's dream does not.
 
 [Show your indignation]
-We've normalised exhaustion and called it ambition. It's time we stopped.
+We've made exhaustion normal and called it ambition. Time to stop.
 
 
 ---48. I Made a Difficult Decision---
 
 [Start with a statement that indicates a change in direction or opinion]
-All good things must come to an end.
+Every good thing has to end at some point.
 
 [Share the thing that's coming to an end]
-Recently, I made the hard decision to leave the company I helped build.
+Not long ago, I made the tough call to leave the company I helped build.
 
 [Tell us why it matters to you]
-Years of my life went into growing it from almost nothing.
+Years of my life went into growing it from next to nothing.
 
 [Use an analogy to strengthen your point]
-It was, and still is, my baby.
+It was, and it still is, my baby.
 
 [Transition to the explanation]
-So why leave? Here's what people don't talk about enough:
+So why go? Here's what people don't say enough:
 
 [Provide a "behind-the-scenes" look into your decision]
-Behind the hustle, the awards, the big numbers, there's real mental and physical cost.
+Beneath the hustle, the awards, the big numbers, there's a real mental and physical toll.
 
 [Agitate the problem]
-I put enormous pressure on myself.
+I piled enormous pressure on myself.
 
 [Transition from a general perspective to a personal one]
-Add external pressure on top, and eventually you burn out. I burned out.
+Stack external pressure on top, and eventually you burn out. I burned out.
 
 [It's hard to admit it]
-It's not the cool thing to admit.
+It's not the cool thing to own up to.
 
 [Still, it's the truth]
 But it's the truth.
 
 [So, I'm changing course]
-So after years of building, I'm taking some real time off.
+So after years of building, I'm taking some genuine time off.
 
 [I had a great run]
 Leaving on good terms, with hugs, tears, and cheers.
 
 [Introduce proof of what you're saying or what you've done]
-A teammate caught a photo of the goodbye.
+A teammate snapped a photo of the goodbye.
 
 [Add a few emotional undertones to your story]
-I get emotional looking at it. I love this team. I hope you all feel the joy I felt here.
+I get emotional every time I look at it. I love this team. I hope you all feel the joy I felt here.
 
 [It's time for a new chapter]
 A new chapter, coming soon.
@@ -1453,16 +1453,16 @@ Goals in pen. Plans in pencil.
 ---50. The World Is Changing---
 
 [Something is becoming obsolete]
-Resumes are fading.
+Resumes are on their way out.
 
 [A new thing is replacing the old thing]
-Your online presence is the new resume.
+Your online presence is the resume now.
 
 [Regardless of your personal opinion]
-It doesn't matter whether you believe it. It's the truth.
+Whether you buy it or not doesn't change a thing. It's the truth.
 
 [This new thing is slowly, but surely becoming the ultimate standard]
-And social media has become the running record of your career:
+And social media has turned into the ongoing record of your career:
 
 [List examples of how this new thing is changing the game]
 - your roles
@@ -1473,13 +1473,13 @@ And social media has become the running record of your career:
 - your work
 
 [Provide a concrete example of how you're experiencing this change]
-I can learn far more about someone's career from their profile than from a paper resume.
+I can find out far more about someone's career from their profile than from a paper resume.
 
 [What does this mean for readers?]
-If your online presence doesn't tell your story, you'd better get started.
+If your online presence isn't telling your story, you'd better get going.
 
 [Reiterate your initial point]
-Resumes are fading.
+Resumes are on their way out.
 
 
 ---51. Tell Them How to Maximize a Resource---
@@ -1500,34 +1500,34 @@ Invest it in:
 - having real conversations
 
 [You're responsible for what you do with this valuable resource]
-Only you know your true hourly rate.
+Only you know what an hour of yours is really worth.
 
 [Finish with a powerful statement that invites readers to take action]
-Spend it wisely.
+Spend it well.
 
 
 ---52. Show Them How Absurd Their Line of Thinking Is---
 
 [Start with a common question among your audience in a narrative form]
-21-year-old: "Should I try entrepreneurship?"
+21-year-old: "Should I give entrepreneurship a go?"
 
 [Answer what most people typically say]
-Society: "No, that's too risky."
+Society: "No, far too risky."
 
 [Turn a popular, yet stupid behavior into a second question]
-21-year-old: "Can I take on debt, max a credit card, and party every weekend?"
+21-year-old: "Can I rack up debt, max out a credit card, and party every weekend?"
 
 [Show how absurd this line of thinking is]
-Society: "Sure, go for it."
+Society: "Sure, go right ahead."
 
 
 ---53. A Practical Guide For a Popular Topic---
 
 [Topic X is becoming mainstream]
-Everyone on LinkedIn is talking about side projects.
+Everyone on LinkedIn is talking about side projects right now.
 
 [Nobody actually understands how topic X works]
-But nobody's telling you how to actually start.
+But nobody's actually telling you how to begin one.
 
 [xxx]
 So here's the honest version.
@@ -1536,48 +1536,48 @@ So here's the honest version.
 No fluff.
 
 [Here are practical steps about topic X that actually work]
-Here are 10 steps to start a side project while employed:
+Here are 10 steps to start a side project while you're still employed:
 
 [List your best tips on topic X]
-1. Pick a topic you could talk about for 30 minutes unprepared.
-2. Create daily content sharing what you know.
+1. Pick a subject you could talk about for 30 minutes with no prep.
+2. Post daily content sharing what you know.
 3. When people ask questions, DM them and offer a call.
-4. Listen for the common challenges on those calls.
-5. Create a short product that solves one of them.
-6. Send it to the people you helped.
-7. Ask for testimonials in return.
+4. Notice the problems that keep coming up on those calls.
+5. Build a small product that fixes one of them.
+6. Send it to the people you've already helped.
+7. Ask them for a testimonial in return.
 
 [xxx]
-8. Put the testimonials on a simple page.
+8. Drop the testimonials onto a simple page.
 
 [xxx]
-9. Charge a modest price for the product.
+9. Set a modest price for the product.
 
 [xxx]
-10. Then offer a higher-priced call.
+10. Then offer a pricier call on top.
 
 [Explain the outcome of following these tips]
-Now you have two offers: a low-priced product and a higher-priced call.
+Now you've got two offers: a cheap product and a higher-priced call.
 
 [Break down the process even further]
-- make the product the entry point
-- make the call the premium option
-- automate collecting testimonials
+- treat the product as the entry point
+- treat the call as the premium option
+- automate the way you gather testimonials
 
 [xxx]
-If someone can't afford the call, point them to the product.
+If someone can't stretch to the call, send them to the product.
 
 [xxx]
-At the end of the product, invite them to book a call.
+At the end of the product, invite them to book the call.
 
 [xxx]
-And around it goes.
+And round it goes.
 
 [Showcase the results of following this process]
-A couple of sales a day adds up to a meaningful second income over a year.
+A few sales a day turns into a real second income over a year.
 
 [xxx]
-All built in the cracks of a normal work week.
+All built in the gaps of an ordinary work week.
 
 [The moral of the story]
 Opportunity is everywhere.
@@ -1598,7 +1598,7 @@ Social Media Engagement 101
 ---55. Success Is About Helping Others---
 
 [Show the value of something by the number of people directly or indirectly affected by it to make a point]
-Measure your success by how many people thank you for theirs.
+Judge your success by how many people thank you for theirs.
 
 
 ---56. Open Your Audience's Eyes---
@@ -1607,47 +1607,47 @@ Measure your success by how many people thank you for theirs.
 Build your own thing.
 
 [Explain the potential consequences of not taking that action]
-Every other job is replaceable.
+Every other job can be filled by someone else.
 
 
 ---57. Stay True to Your Values---
 
 [I'll never compromise my values for X]
-I'll never promote myself by tearing someone else down.
+I'll never promote myself by putting someone else down.
 
 [I'll never compromise my values for Y, either]
-And I'll never grow my business by tearing another business down.
+And I'll never grow my business by running another business down.
 
 [Even if the whole world does the opposite, I'll still do the right thing]
-In a world of noise and jealousy, I'll keep rooting for everyone.
+In a world full of noise and envy, I'll keep cheering for everyone.
 
 [I hope you choose the same path]
-Hope you'll join me.
+Hope you'll do the same.
 
 
 ---58. Reduce Their Fear to Take an Action---
 
 [Most people should do X]
-More people should try building something of their own.
+More people should have a go at building something of their own.
 
 [It's not as hard as most people think]
-It's not as risky as you think.
+It's not as risky as you imagine.
 
 [xxx]
-The downside is smaller than the story in your head.
+The downside is far smaller than the story you've built in your head.
 
 [Break down the possible scenarios of taking or not taking action]
-- likely worst case: you go back to a job
-- likely best case: you unlock a better life
+- likely worst case: you head back to a job
+- likely best case: you open up a better life
 
 [xxx]
 One of those outcomes changes everything.
 
 [xxx]
-The other is just where you already are.
+The other is simply where you're sitting already.
 
 [Shift the readers' perspective]
-It feels riskier to never even try.
+Never trying is the riskier move.
 
 [xxx]
 That's the real risk.
@@ -1659,7 +1659,7 @@ That's the real risk.
 Build your first side project this month.
 
 [With limited resources]
-(For very little money.)
+(For next to nothing.)
 
 [xxx]
 You don't need a big budget. You need a start.
@@ -1668,22 +1668,22 @@ You don't need a big budget. You need a start.
 Here's the whole thing:
 
 [Show them how, step by step]
-Here's how, step by step.
+Here's how, one step at a time.
 
-1. Clean up your LinkedIn profile to reflect what you do for people.
-2. Create daily content about one problem you solve.
+1. Tidy up your LinkedIn profile so it shows what you do for people.
+2. Post daily content about one problem you solve.
 3. When people ask questions, DM them.
-4. Offer a free call to see if you can help.
-5. Do 10 of these to understand the problem deeply.
-6. Build a process you can walk someone through in 60 minutes.
-7. Build a simple free site.
+4. Offer a free call to see whether you can help.
+5. Run 10 of these so you understand the problem properly.
+6. Build a process you can walk anyone through in 60 minutes.
+7. Set up a simple free site.
 8. Add a free booking link.
-9. Create an offer titled "From X to Y in 60 minutes".
-10. Choose a fair price.
-11. Open a few slots outside your day job.
-12. Add the link to your profile's featured section.
-13. Keep creating content daily.
-14. When people ask questions, point them to the link.
+9. Create an offer called "From X to Y in 60 minutes".
+10. Pick a fair price.
+11. Open a handful of slots outside your day job.
+12. Put the link in your profile's featured section.
+13. Keep posting content daily.
+14. When people ask questions, send them to the link.
 
 [Use a vague word that stops readers on the spot]
 Listen.
@@ -1692,67 +1692,67 @@ Listen.
 This isn't perfect.
 
 [There's a myriad of variables involved]
-And there are a hundred nuances I skipped.
+And there are a hundred details I left out.
 
 [Still, taking this small action is all it takes]
-But know this: getting started is the hardest part.
+But know this: starting is the hardest part.
 
 [Encourage them to try your method/advice]
-So try the steps above for 90 days.
+So run the steps above for 90 days.
 
 [Ask them for feedback]
-And report back.
+And let me know how it went.
 
 
 ---60. The Comprehensive Guide---
 
 [I've just hit a milestone/achieved a goal]
-This morning, my second income stream crossed a meaningful milestone.
+This morning, my second income stream passed a milestone that meant something.
 
 [Follow these steps to get similar results]
 Here are 10 simple steps to do the same:
 
 [While saving yourself from all the headaches]
-(without making all the mistakes I did)
+(without repeating all the mistakes I made)
 
 [Step 1: Address a dangerous belief among your audience and eliminate it]
-1. Drop the "am I an expert?" trap.
+1. Let go of the "am I an expert?" trap.
 
 [Bring the false belief to consciousness]
-When you start, don't agonise over whether you're an expert.
+When you're starting out, don't agonise over whether you count as an expert.
 
 [Describe the consequences of this false belief]
-If you do, you'll never begin.
+If you do, you'll never get going.
 
 [Tell them what to do to get rid of this belief]
-Instead, list your accomplishments, big and small, from the last few years.
+Instead, write down everything you've achieved, big and small, over the last few years.
 
 [Ask them a question that will help them take the next step]
-What skills did you build in that time?
+What skills did you pick up in that time?
 
 [Step 2: Build on the previous step]
-2. Identify your interests.
+2. Work out what interests you.
 
 [Continue guiding your readers throughout your process. The key is to be specific enough that they can replicate your results]
-Inside that list are things you loved and things you hated. You can't scale being miserable. Pick something you built skills in that you also enjoy.
+That list holds things you loved and things you hated. You can't scale being miserable. Pick something where you built skills and also enjoyed yourself.
 
 [xxx]
-3. Find the "you" from a few years ago. Look for people just like you, earlier in their journey. Find where they gather online.
+3. Find the "you" from a few years back. Look for people just like you, only earlier on. Find where they hang out online.
 
 [xxx]
-4. Create content. Show the people behind you that you understand their challenges and have solved them. This earns a small following.
+4. Post content. Show the people behind you that you get their problems and have solved them yourself. This earns you a small following.
 
 [xxx]
-5. Build a small service offer. A simple coaching offer can be your first income stream. Keep the pricing a no-brainer. You're here to learn, not to get rich yet.
+5. Build a small service offer. A simple coaching offer can be your first income stream. Keep the price a no-brainer. You're here to learn first, not to get rich yet.
 
 [xxx]
-6. Promote it gently. When new followers ask questions, mention your offer. When you write, add a link at the end.
+6. Promote it gently. When new followers ask questions, mention your offer. When you write, add a link at the bottom.
 
 [xxx]
-7. Listen for the common problems. This is the seed of your next income stream. Write down every problem you hear.
+7. Pay attention to the recurring problems. That's the seed of your next income stream. Note down every problem you hear.
 
 [Explain the ultimate benefit of adopting this process]
-With this simple system, a digital product and then a third income stream become a matter of time.
+With this simple system, a digital product and then a third income stream are only a matter of time.
 
 [Provide examples of tangible results this process can deliver]
 - consulting
@@ -1760,10 +1760,10 @@ With this simple system, a digital product and then a third income stream become
 - cohort-based coaching
 
 [xxx]
-Each one builds on the last.
+Each one stacks on the last.
 
 [Encourage readers to take action]
-Next? Get started.
+Next? Get going.
 
 [xxx]
 Make your first move today.
@@ -1772,31 +1772,31 @@ Make your first move today.
 ---61. Tell Them What to Avoid---
 
 [A desirable trait is never achieved through an opposite trait/behavior]
-I've never met a successful person surrounded by unsuccessful people.
+I've never met a successful person surrounded by unsuccessful ones.
 
 [Take this specific action to make sure you're on the right track]
-Audit your environment.
+Take a hard look at your environment.
 
 
 ---62. Share an Observation---
 
 [Follow the crowd and no one will ever question your reasoning]
-Tell someone you hate your job and nobody bats an eye.
+Say you hate your job and nobody blinks.
 
 [Challenge the status quo and you'll be met with resistance]
-Tell someone you're building your own thing and they lecture you on risk.
+Say you're building your own thing and they'll lecture you about risk.
 
 [It's irritating]
-Funny how that works.
+Funny how that goes.
 
 
 ---63. Tell Them How to Win---
 
 [This popular behavior/strategy/tactic is harmful/useless]
-All your eggs in one basket is a fragile strategy.
+All your eggs in one basket is a fragile way to live.
 
 [List a few alternative options that are better]
-Diversify to improve income. Diversify to find enjoyment. Diversify to reduce risk. Diversify to win.
+Diversify to grow income. Diversify to enjoy the work. Diversify to lower risk. Diversify to win.
 
 [Support your point with a relevant image]
 [Image: one income source vs several, side by side.]
@@ -1808,34 +1808,34 @@ Diversify to improve income. Diversify to find enjoyment. Diversify to reduce ri
 Try building something of your own this year.
 
 [xxx]
-Give it a real shot.
+Give it a proper go.
 
 [Even if you start small]
-Even if it's just a side project.
+Even if it's only a side project.
 
 [There's nothing to lose]
-The worst outcome? You go back to a job with too many meetings and no career path.
+The worst outcome? You go back to a job with too many meetings and nowhere to climb.
 
 [xxx]
-You've lost nothing and learned a lot.
+You've lost nothing and picked up plenty.
 
 [xxx]
 The best outcome changes your life.
 
 [xxx]
-That's a bet worth taking.
+That's a bet worth making.
 
 [Time-bound CTA]
 Start this month.
 
 [xxx]
-Today, ideally.
+Today, if you can.
 
 
 ---65. Redefine a important Concept---
 
 [Redefine what success looks like in your industry/field]
-The ultimate status symbol is free time.
+The real status symbol is free time.
 
 [xxx]
 Not the car.
@@ -1847,7 +1847,7 @@ Not the title.
 Not the corner office.
 
 [xxx]
-The ability to decide how you spend your day.
+The freedom to decide how your day goes.
 
 [xxx]
 That's the real flex.
@@ -1856,34 +1856,34 @@ That's the real flex.
 Everything else is for show.
 
 [xxx]
-Build for that.
+Build toward that.
 
 [xxx]
-And protect it.
+And guard it.
 
 
 ---66. Share the Success Story of Someone You Love---
 
 [Someone I love just did/is doing X, which makes me feel good]
-I'm so proud of my friend. Her story was just featured in the press.
+I'm so proud of my friend. Her story just ran in the press.
 
 [xxx]
-I teared up reading it.
+I welled up reading it.
 
 [xxx]
-Because I remember where she started.
+Because I remember where she began.
 
 [This event brought unpleasant memories/feelings]
-It took me back to a hard, debt-filled chapter we both want to forget.
+It carried me back to a hard, debt-heavy stretch we'd both rather forget.
 
 [xxx]
-We didn't know how it would turn out.
+We had no idea how it would end.
 
 [But these events also led to something great]
-I'm not just proud of her story. I'm proud that she turned the experience into a business.
+I'm not just proud of her story. I'm proud she turned that experience into a business.
 
 [Now things are different]
-Now, every day, she helps other people change their situation.
+Now, every single day, she helps other people change their own situation.
 
 [Good things can come from difficult experiences]
 Remember, your story can become your work.
@@ -1892,10 +1892,10 @@ Remember, your story can become your work.
 And your work can change lives.
 
 [xxx]
-This is proof.
+She's the proof.
 
 [You can use bad experiences to help others]
-The hardest chapters often become the most useful ones.
+The roughest chapters often turn into the most useful ones.
 
 [Invite readers to participate in the conversation]
 Link in the comments below.
@@ -1904,31 +1904,31 @@ Link in the comments below.
 ---67. The Helpful Listicle---
 
 [X resources for audience Y]
-10 books any new entrepreneur would be crazy to miss:
+10 books no new entrepreneur should skip:
 
 [Resource one]
 1. The Minimalist Entrepreneur by Sahil Lavingia
 
 [Description of resource one]
-Aligns with my belief in keeping entrepreneurship simple.
+Matches my belief that entrepreneurship should stay simple.
 
 [Takeaway/Benefit/Teaser]
-Key idea: you don't learn, then start. You start, then learn.
+Key idea: you don't learn first and then start. You start, then learn.
 
 [Resource two]
 2. It Doesn't Have to Be Crazy at Work by Jason Fried
 
 [Description of resource two]
-A great reminder to stay focused and cut distractions.
+A solid reminder to stay focused and cut the distractions.
 
 [Takeaway/Benefit/Teaser]
-Key idea: endless group chat is like an all-day meeting with no agenda.
+Key idea: a never-ending group chat is an all-day meeting with no agenda.
 
 [Resource three]
 3. Zero to Sold by Arvid Kahl
 
 [Description of resource three]
-I saw parts of myself in this one, and that's rare.
+I recognised bits of myself in this one, and that doesn't happen often.
 
 [Takeaway/Benefit/Teaser]
 Key idea: people pay when a solution saves them time, saves them money, or makes them money.
@@ -1937,98 +1937,98 @@ Key idea: people pay when a solution saves them time, saves them money, or makes
 4. Atomic Habits by James Clear
 
 [Description of resource four]
-Gave me systems for building repeatable habits.
+Gave me systems for building habits that stick.
 
 [Takeaway/Benefit/Teaser]
-Key idea: goals set direction, but systems make progress.
+Key idea: goals point you in a direction, but systems carry you forward.
 
 [Resource five]
 5. Factfulness by Hans Rosling
 
 [Description of resource five]
-A reminder that the world is improving, whatever the headlines say.
+A reminder that the world is getting better, whatever the headlines say.
 
 [Takeaway/Benefit/Teaser]
-Key idea: there's no room for facts when our minds are occupied by fear.
+Key idea: there's no room for facts when fear fills our heads.
 
 [Resource six]
 6. The Psychology of Money by Morgan Housel
 
 [Description of resource six]
-The only finance book I've genuinely enjoyed.
+The one finance book I've actually enjoyed.
 
 [Takeaway/Benefit/Teaser]
-Key idea: spending to show off is the fastest way to have less.
+Key idea: spending to impress is the quickest route to having less.
 
 [Resource seven]
 7. The $100 Startup by Chris Guillebeau
 
 [Description of resource seven]
-Helped me see that passion is only one part of the equation.
+Showed me that passion is only one piece of the puzzle.
 
 [Takeaway/Benefit/Teaser]
-Key idea: skills and customers matter as much as passion.
+Key idea: skills and customers count just as much as passion.
 
 [Resource eight]
 8. The Million-Dollar, One-Person Business by Elaine Pofeldt
 
 [Description of resource eight]
-Breaks a one-person business into digestible parts.
+Splits a one-person business into manageable pieces.
 
 [xxx]
-Key idea: find an idea you'll enjoy thinking about every day.
+Key idea: find an idea you'll happily think about every day.
 
 [Takeaway/Benefit/Teaser]
-That's the secret most people skip.
+That's the part most people skip.
 
 [Resource nine]
 9. Company of One by Paul Jarvis
 
 [Description of resource nine]
-Makes the case for staying intentionally small.
+Makes the case for choosing to stay small on purpose.
 
 [xxx]
-Key idea: small can be a long-term plan, not just a stepping stone.
+Key idea: small can be the long-term plan, not just a stepping stone.
 
 [Takeaway/Benefit/Teaser]
-Right-size, then get better.
+Right-size first, then get better.
 
 [Resource ten]
 10. When to Jump by Mike Lewis
 
 [Description of resource ten]
-The book that nudged me to leave my job when I was ready.
+The book that pushed me to leave my job once I was ready.
 
 [Takeaway/Benefit/Teaser]
-Key idea: there's a difference between crazy and stupid, and it's knowing when to jump.
+Key idea: there's a line between crazy and stupid, and it's knowing when to jump.
 
 [Close with a friendly and subtle CTA]
-Thanks for reading. If you like content like this, follow for more on building a one-person business.
+Thanks for reading. If this is your kind of thing, follow for more on building a one-person business.
 
 
 ---68. Things That Newbies Should Do---
 
 [If you're doing something new]
-If you're just starting on LinkedIn:
+If you're just getting started on LinkedIn:
 
 [List a few things newbies should do]
-- choose a topic you know well
-- post once a day on that topic
+- pick a topic you know well
+- post on it once a day
 - comment under bigger accounts a few times a day
-- after a while, move to repurposing your best posts
-- start a newsletter once you have an audience
+- later on, repurpose your best posts
+- launch a newsletter once you've built an audience
 
 [xxx]
 Simple, repeatable, daily.
 
 [It still requires some effort and consistency]
-Do this for a year and a half and you'll build real attention.
+Keep this up for eighteen months and you'll build real attention.
 
 [But it's the only way to get started]
 And attention is the currency of the new economy.
 
 [It's worth every second you spend on it]
-What an incredible asset to own.
+What a remarkable asset to own.
 
 
 ---69. Show Them a Better Way to Use Their Resources---
@@ -2043,37 +2043,37 @@ Ready to spend it? Clothes? A gadget? Another impulse buy?
 Try this instead. Don't. For two months.
 
 [Explain what you mean]
-For two months, find $100 you'd normally spend on things that feel good for a minute and never in the long run.
+For two months, find $100 you'd usually blow on things that feel good for a minute and do nothing over the long run.
 
 [Then what?]
-Take that money and get a professional headshot.
+Take that money and book a professional headshot.
 
 [Help them feel the pain/shame of their current way of doing things]
-Replace the blurry selfie in your car with something that looks like you mean it.
+Swap the blurry car selfie for something that says you mean business.
 
 [Why?]
 This is an investment in you.
 
 [Which will lead to what?]
-Investing in yourself pays off for years.
+Investing in yourself keeps paying out for years.
 
 [List a few examples of the benefits/results of following your advice]
 Better company. Better network. Better brand. Better opportunities.
 
 [What should they do next?]
-Once the headshot's done, repeat. Next up: a simple website.
+Once the headshot's sorted, do it again. Next up: a simple website.
 
 [Provide an alternative/consequent way of using your advice]
-Then find an hour you waste each week.
+Then find an hour you throw away each week.
 
 [List a few examples of what you mean]
-Endless scrolling. Boozing. Doom-watching the news.
+Endless scrolling. Drinking. Doom-watching the news.
 
 [Then what?]
-Turn that time into building your site, writing a post, or recording something.
+Turn that hour into building your site, writing a post, or recording something.
 
 [It'll be tough]
-It'll be uncomfortable at first.
+It'll feel awkward at first.
 
 [But it's worth it]
 Until your brand starts working for you.
@@ -2097,7 +2097,7 @@ Play the long game. Invest in yourself.
 You think building your own thing is risky?
 
 [Use a provocative statement to get their attention]
-Wait until you realise how risky your 9 to 5 is.
+Wait until you see how risky your 9 to 5 really is.
 
 [Use a relevant stat/data point to support your claim]
 Millions of people lost "safe" jobs in a single downturn.
@@ -2106,7 +2106,7 @@ Millions of people lost "safe" jobs in a single downturn.
 Their "secure" jobs.
 
 [Use a simple analogy to drive your point home]
-Stop only playing defense. Learn to play offense too.
+Stop playing only defense. Learn to play offense too.
 
 [One-word CTA that's easy to do]
 Build.
@@ -2115,7 +2115,7 @@ Build.
 ---71. Share a Process That Works For You---
 
 [Introduce a productive activity that you do regularly]
-On Sundays, I run a weekly audit of my time.
+On Sundays, I run a weekly review of my time.
 
 [Every time, I follow a structured process]
 I ask myself these questions:
@@ -2123,15 +2123,15 @@ I ask myself these questions:
 [List the steps/elements involved in the process]
 - what gave me energy?
 - what drained it?
-- what can I easily eliminate?
+- what can I drop without a fuss?
 - what can be automated?
-- what can I outsource?
+- what can I hand off?
 
 [Encourage readers to participate in the conversation]
-How do you review your week?
+How do you look back on your week?
 
 [xxx]
-I'd genuinely like to steal a good idea.
+I'd honestly love to borrow a good idea.
 
 
 ---72. Tell Them What to Avoid, and What to Do Instead---
@@ -2143,10 +2143,10 @@ Don't build a content calendar. Write one post.
 Don't start a business. Help one customer.
 
 [Don't do X. Do Y instead]
-Don't build a whole product. Finish one piece of it.
+Don't build the whole product. Finish one piece of it.
 
 [Summarize why this is important/beneficial]
-Small wins, stacked, become big wins.
+Small wins, stacked up, turn into big ones.
 
 [Encourage readers to implement this advice]
 Start small this week.
@@ -2170,7 +2170,7 @@ Do good work, love your family, help people, and see the world.
 In roughly that order.
 
 [xxx]
-Protect those four.
+Guard those four.
 
 [Everything else is noise]
 Everything else is a sideshow.
@@ -2179,26 +2179,26 @@ Everything else is a sideshow.
 ---75. A List of Practical Advice---
 
 [Simple advice to achieve X]
-Simple advice to get better at your job:
+Simple advice for getting better at your job:
 
 [List simple advice that's easy to follow]
 - practice every day
 - root for your teammates
-- show up a little earlier
-- go easy on the late nights
+- turn up a little earlier
+- ease off the late nights
 - listen more, talk less
-- surround yourself with good people
-- clear your head with a walk each day
-- don't badmouth your company or colleagues
+- keep good people around you
+- clear your head with a daily walk
+- never run down your company or colleagues
 
 [It's amazing how much this can help/impact your life]
-It's amazing how much "being better" starts with your approach.
+It's striking how much "being better" begins with your attitude.
 
 
 ---76. Talk About Common Mistakes---
 
 [X things that are harmful to your audience]
-8 things that quietly kill a one-person business:
+8 things that quietly sink a one-person business:
 
 [List must-avoid things]
 1. A big ego.
@@ -2211,24 +2211,24 @@ It's amazing how much "being better" starts with your approach.
 8. No business systems.
 
 [Emphasize the obvious]
-Avoid as many of these as you can.
+Dodge as many of these as you can.
 
 [End with a question that invites participation/conversation]
-What's a business killer you'd add?
+What's a business killer you'd add to the list?
 
 
 ---77. I Made a Tough Decision That Changed My Life---
 
 [I made a tough decision]
-A couple of years ago, I resigned from a senior role.
+A couple of years back, I quit a senior role.
 
 [I did it because...]
-My goal was to redesign my life with more intention.
+I wanted to rebuild my life with more intention.
 
 [List examples of the things that led to this decision]
-Here's what that meant to me:
-- I didn't want to hustle 24/7.
-- I didn't want to be in meetings all day.
+Here's what that came down to for me:
+- I didn't want to hustle around the clock.
+- I didn't want to sit in meetings all day.
 
 [xxx]
 - I didn't want to chase someone else's definition of success.
@@ -2238,49 +2238,49 @@ Here's what that meant to me:
 
 [List examples that support your decision/positioning]
 Instead:
-- I wanted to travel when I chose to.
+- I wanted to travel on my own schedule.
 - I wanted more time with friends and family.
-- I wanted to work on things I enjoy.
-- I wanted to stop doing things I don't.
+- I wanted to work on things I actually enjoy.
+- I wanted to drop the things I don't.
 
 [I knew I'd need to make some changes to make this happen]
-But I knew this would require a new way to earn a living.
+But I knew this meant earning a living a new way.
 
 [Significant changes]
-A very different way than I was used to.
+A very different way from what I was used to.
 
 [So, I did this...]
 So I started writing on LinkedIn.
 
 [It's been great/life-changing/amazing]
-And over time, that one skill helped build the life I was after.
+And over time, that single skill built the life I was after.
 
 [This one simple change was all it took]
-It became my key to a more intentional life.
+It turned into my way into a more intentional life.
 
 [I invite you to try it too/I'm happy to help you get started]
-So this year, I hope you'll join me in creating something, anything, consistently.
+So this year, I hope you'll join me in making something, anything, consistently.
 
 [You'll never know until you try]
-And see where it takes you. I think you'll be surprised.
+And watch where it leads. I think you'll be surprised.
 
 
 ---78. Two Parallel Ideas That Make a Solid Point---
 
 [Give new light to two different but relatable topics]
-Education is free. Degrees are expensive.
+Education is free. Degrees cost a fortune.
 
 
 ---79. Show Them Why It's Not That Bad---
 
 [People tend to be pessimistic about X]
-People complain about getting 7 likes on a post.
+People grumble about pulling 7 likes on a post.
 
 [Their behavior is contradicting/hypocritical to what they say]
-Then go to a job where they get 3 compliments a year.
+Then head to a job where they hear 3 compliments a year.
 
 [X is not that bad when you change your perspective]
-Reframe your results. You're doing just fine here.
+Reframe your numbers. You're doing just fine right here.
 
 [Encourage people to keep going/remind them that their efforts are valuable]
 Keep going.
@@ -2289,16 +2289,16 @@ Keep going.
 ---80. Share Your Unique Perspective---
 
 [Talk about an otherwise common topic with a surprising/unique perspective]
-My business plan is to avoid the things I don't like doing.
+My whole business plan is to skip the things I hate doing.
 
 
 ---81. Success Symbols Are Changing---
 
 [This sought-after "success" symbol is obsolete]
-The internet doesn't care about seniority.
+The internet couldn't care less about your seniority.
 
 [You can win without it/it's not necessary to achieve your goals]
-You can rise without:
+You can climb without:
 
 [List a few examples of the things that are no longer necessary]
 - a specific degree
@@ -2307,74 +2307,74 @@ You can rise without:
 - a previous title
 
 [It's outside of your control/it's not worth worrying about]
-For better or worse, the audience picks the winners. Not a manager.
+Like it or not, the audience picks the winners now. Not a manager.
 
 [Attack popular thinking/turn a common belief on its head]
-There's no "certification" for this. No permission to wait for. No fixed career path.
+There's no "certification" here. No permission to wait around for. No fixed career path.
 
 [Not everyone will like it/it will be controversial]
-The old guard dislikes it.
+The old guard hates it.
 
 [But it's the truth]
-But that's just how it is now.
+But that's simply how it works now.
 
 [Ignoring it won't make it go away/you can't hide from it]
-If you're not building for this, you're slowly getting left behind.
+If you're not building for this, you're quietly falling behind.
 
 
 ---82. I Took a Risk That Paid Off---
 
 [I took this huge risk a while ago]
-A few years ago, I walked away from the corporate world.
+A few years ago, I walked out of the corporate world.
 
 [And it's paid off...]
-Today, I'm doing things I never imagined.
+Today, I'm doing things I never pictured.
 
 [I honestly thought it wouldn't work out/I was terrified]
-I thought I'd freelance for a year and then go get another job.
+I assumed I'd freelance for a year, then go find another job.
 
 [But, I'm so glad I took the leap]
-Turns out, life had other plans.
+Turns out life had different plans.
 
 [xxx]
-The leap taught me more than any job ever did.
+That leap taught me more than any job ever did.
 
 [Here's proof of what I'm saying]
-Here's one of the last photos of me inside an office, hours before I started out on my own.
+Here's one of the last photos of me inside an office, hours before I set out on my own.
 
 [xxx]
 I look nervous in it.
 
 [xxx]
-I had no idea what was coming.
+I had no clue what was coming.
 
 [I'm grateful for what you've helped me achieve/I want to help you too]
-What a ride. Thanks for being part of it.
+What a ride it's been. Thanks for being part of it.
 
 
 ---83. Invite Them to Take the Road Less Traveled---
 
 [Start with a vague statement that will get people's attention]
-People have it backwards.
+People have this backwards.
 
 [Explain what you mean]
-They say building your own thing is "risky".
+They'll tell you building your own thing is "risky".
 
 [Use a rhetoric question to make them think]
 You know what's actually risky?
 
 [xxx]
-Standing still while the ground moves.
+Standing still while the ground shifts under you.
 
 [List opposite things of what they're thinking]
 - becoming redundant
 - living paycheck to paycheck
 - never creating your own income
-- navigating endless politics just to survive
-- waiting until 65 to control your own time
+- wading through endless politics just to survive
+- waiting until 65 to own your own time
 
 [In three sentences, invite them to go against the grain/take the road less traveled]
-Unlearn the default. Question the script. Build something you own.
+Unlearn the default. Question the script. Build something that's yours.
 
 
 ---84. Break Down the Logic Behind a Big Goal---
@@ -2383,22 +2383,22 @@ Unlearn the default. Question the script. Build something you own.
 Making a healthy income from a digital product is hard.
 
 [Breaking it down into smaller goals makes it more manageable/less daunting]
-But it's easier when you break it down.
+But it gets easier once you break it apart.
 
 [Break down the math/logic behind goal X]
-Here's one way to see it: a yearly target becomes a monthly one, becomes a daily one, becomes a handful of customers a day at a fair price, becomes a realistic number of visitors at a realistic conversion rate.
+Here's one way to look at it: a yearly target turns into a monthly one, turns into a daily one, turns into a handful of customers a day at a fair price, turns into a realistic number of visitors at a realistic conversion rate.
 
 [xxx]
-Suddenly the big number is just a series of small ones.
+All of a sudden the big number is just a string of small ones.
 
 [Simple doesn't equal easy]
 None of those steps are easy.
 
 [But it's still achievable/doable]
-But it beats staring at the big number with no plan.
+But it sure beats staring at the big number with no plan.
 
 [Friendly, two-sentence CTA]
-Break your plan down this weekend. Come out firing on Monday.
+Break your plan apart this weekend. Show up swinging on Monday.
 
 
 ---85. Inspire Them to Support Others---
@@ -2407,20 +2407,20 @@ Break your plan down this weekend. Come out firing on Monday.
 LinkedIn network...
 
 [If someone you know is facing problem X, do this to help them]
-If a friend or former colleague has lost their job, here are 2 things you can do in 10 minutes:
+If a friend or former colleague just lost their job, here are 2 things you can do in 10 minutes:
 
 [Break down the steps]
 1. Write them a short recommendation.
 2. Make one intro to someone you know who's hiring.
 
 [xxx]
-Both take minutes and mean a lot.
+Both take minutes and mean the world.
 
 [Invite them to take action]
-Do this for one person when you finish reading.
+Do this for one person the moment you finish reading.
 
 [Call on their sense of humanity/empathy]
-We're all busy. Let's lift our people up anyway.
+We're all busy. Let's lift our people up regardless.
 
 
 ---86. Step-by-Step "How to" Listicle---
@@ -2429,24 +2429,24 @@ We're all busy. Let's lift our people up anyway.
 How to grow faster on LinkedIn:
 
 [Here's a simpler way/a different perspective/a better way]
-Here's one habit I use:
+Here's one habit I lean on:
 
 [List practical, actionable steps]
-1. On the 1st of each month, I look at my content from a few months ago.
-2. I sort it by what performed best.
-3. I take my top posts and edit them slightly.
+1. On the 1st of every month, I revisit my content from a few months back.
+2. I sort it by what did best.
+3. I take my top posts and tweak them a little.
 4. Now half of next month is already written.
-5. I write the rest in one sitting.
-6. Then I repeat it next month.
+5. I knock out the rest in one sitting.
+6. Then I do it all again next month.
 
 [This helps me because...]
-It helps me move fast and create more than most people.
+It lets me move fast and publish more than most people do.
 
 [Pique their curiosity]
-Here's the truth though...
+Here's the real truth though...
 
 [Reveal the "aha" moment/secret behind your success]
-Nobody remembers your content like you do.
+Nobody remembers your content the way you do.
 
 [So, take this action]
 Repurpose, and grow faster.
@@ -2458,27 +2458,27 @@ Systems win.
 ---87. Walk Them Through the Entire Process---
 
 [Start with a huge past failure]
-I made nothing online for a long time.
+I made nothing online for a very long time.
 
 [Fast forward to the present and the results you've achieved]
-A few years later, my content reaches a wide audience and supports my income.
+A few years on, my content reaches a wide audience and supports my income.
 
 [Share what you did differently]
-What changed? I started writing online every day.
+What changed? I started writing online every single day.
 
 [Share the step-by-step process you took. The more detailed and specific, the better]
 Here's my simple process:
-1. Ideate quickly. Use a content matrix: pick a topic, match it to a style, write a quick headline, repeat until you have 10 ideas.
-2. Choose a solid format. Use templates for inspiration so you're never staring at a blank page.
-3. Edit ruthlessly. Read it aloud, cut the clutter, simplify the words.
-4. Distribute widely. Share it everywhere relevant, not just once.
-5. Stay consistent. This is the step that matters most.
+1. Ideate fast. Use a content matrix: pick a topic, pair it with a style, draft a quick headline, repeat until you have 10 ideas.
+2. Pick a solid format. Lean on templates for inspiration so you never face a blank page.
+3. Edit hard. Read it aloud, trim the clutter, simplify the words.
+4. Distribute wide. Share it everywhere relevant, not just the once.
+5. Stay consistent. This is the step that counts most.
 
 [xxx]
-Most of writing well is really about systems.
+Most of writing well comes down to systems.
 
 [xxx]
-And showing up when you don't feel like it.
+And showing up on the days you don't feel like it.
 
 [TL;DR]
 In short:
@@ -2489,13 +2489,13 @@ In short:
 - stay consistent
 
 [xxx]
-Boring on paper. Powerful in practice.
+Dull on paper. Mighty in practice.
 
 [Close with a friendly note]
-Hope that's helpful.
+Hope that helps.
 
 [Add a CTA disguised as a P.S.]
-P.S. Want the systems I use? They're in my featured section. Have a poke around.
+P.S. Want the systems I use? They're in my featured section. Go have a poke around.
 
 
 ---88. Contradict Conventional Wisdom---
@@ -2510,16 +2510,16 @@ What the world teaches you:
 - repeat
 
 [I suggest this instead]
-How to get off the wheel:
+How to step off the wheel:
 
 [List your alternative perspective/advice]
 - trade time for money
-- use that money to build assets
-- let those assets produce money
+- put that money into building assets
+- let those assets generate money
 - use that money to buy back your time
 
 [xxx]
-Same start. Completely different destination.
+Same start. Wildly different destination.
 
 [xxx]
 One keeps you running. The other sets you free.
@@ -2528,30 +2528,30 @@ One keeps you running. The other sets you free.
 ---89. It's Been a Wild Ride---
 
 [I started my journey a while ago]
-I wrote my first piece of LinkedIn content not long ago.
+I posted my first piece of LinkedIn content not too long ago.
 
 [I wanted to achieve goal X]
-My goal was just to get a little attention online.
+All I wanted was a little attention online.
 
 [I faced these specific challenges/roadblocks along the way]
-I didn't expect to:
+I never expected to:
 - write daily
-- be read so widely
+- get read so widely
 - launch digital products
 - work with so many people on their businesses
-- run a community across many countries
+- run a community spanning many countries
 
 [I thought I'd fail sooner because of these reasons]
-I figured I'd land a couple of clients and then go back to a job.
+I figured I'd pick up a couple of clients, then crawl back to a job.
 
 [Downplay of success/journey]
-So maybe we don't all need to know exactly where we're going. Maybe plans are looser than we think.
+So maybe none of us need to know exactly where we're headed. Maybe plans are looser than we assume.
 
 [Invite them to take action]
-If you haven't already, put yourself out there.
+If you haven't yet, put yourself out there.
 
 [End with a friendly note]
-See where this wild world takes you.
+See where this wild world carries you.
 
 
 ---90. The Right Image Is Worth a Thousand Words---
@@ -2564,25 +2564,25 @@ True wealth.
 ---91. Lead by Example---
 
 [I take a selective approach to how I spend my time]
-I say "no" to most of what comes my way.
+I turn down most of what lands on my plate.
 
 [Not everyone understands this about me]
-Some people think that's harsh.
+Some people figure that's harsh.
 
 [I don't agree with them because...]
-I don't. Prioritising your time is the kindest thing you can do for yourself and your family.
+I don't see it that way. Guarding your time is the kindest thing you can do for yourself and your family.
 
 [Summarize your point in three consecutive, parallel sentences]
 Get yourself right. Get your family right. Get your friends right.
 
 [This will help you achieve X, Y and Z goals]
-Then you're in a far better position to help others.
+Then you're in a far stronger spot to help anyone else.
 
 
 ---92. "Proverbize" One of Your Core Values/Ideas---
 
 [Proverbize one of your values in a creative way]
-Work so deliberately that people call you lucky.
+Work so deliberately that people start calling you lucky.
 
 
 ---93. Tell Them What Success Should Look Like---
@@ -2600,16 +2600,16 @@ Content = makes people aware of you.
 A newsletter or podcast = shows people how you think.
 
 [Element 3 = Result 3]
-A community = helps people build a relationship with you.
+A community = lets people build a relationship with you.
 
 [Mix these ingredients together and you get...]
-Nail all three and you're hard to ignore.
+Get all three right and you're hard to ignore.
 
 
 ---95. Redefine a Well-Known Topic---
 
 [The truest definition of X is something unexpected/unusual]
-The truest definition of failure is never getting started.
+The truest definition of failure is never starting at all.
 
 
 ---96. Share Your Accomplishments---
@@ -2623,20 +2623,20 @@ Since I started creating content, I've:
 - made real friendships
 - spoken at events
 - launched digital products
-- been a guest on many podcasts
-- built a community of hundreds
+- guested on plenty of podcasts
+- grown a community of hundreds
 
 [Doing X produces unexpected results]
-I never know what a new piece of content will do.
+I never know what a fresh piece of content will do.
 
 [But certainly X will produce Y]
-But I know content creates attention.
+But I know content earns attention.
 
 [And Y is always a positive thing]
-And attention has almost nothing but upside.
+And attention carries almost nothing but upside.
 
 [Because Y equals Z desired result/outcome]
-Attention is the currency of today's economy.
+Attention is the currency of the economy we live in.
 
 
 ---97. How to Go Against the Grain---
@@ -2656,7 +2656,7 @@ Things most people don't do:
 - build something
 
 [xxx]
-Anything of their own.
+Anything that's their own.
 
 [Going against the grain is how you succeed]
 Do what everyone does, get what everyone gets. Do what most won't, get what most don't.
@@ -2668,7 +2668,7 @@ It's that simple. Start today.
 ---98. Take Control of Your Own Destiny---
 
 [Help them see how fragile their current situation is]
-You're afraid to leave your job, but your job isn't afraid to leave you.
+You're scared to leave your job, but your job isn't scared to leave you.
 
 [Tell them how to protect themselves in one sentence]
 Build something you own.
@@ -2680,16 +2680,16 @@ Leverage.
 ---99. Share a Weird Observation---
 
 [A weird observation about X]
-A strange thing I've noticed on LinkedIn:
+A strange thing I keep noticing on LinkedIn:
 
 [Describe the thing you noticed]
-Content from smaller accounts is often better than from large ones.
+Content from smaller accounts often beats content from the big ones.
 
 [xxx]
 More honest. Less polished. More useful.
 
 [xxx]
-The little accounts are where the gold is.
+The little accounts are where the gold sits.
 
 [So, I want to take this action]
 So I want to connect with more up-and-coming creators.
@@ -2707,15 +2707,15 @@ Let's grow this network together.
 ---100. Break Down a Recent Accomplishment Into Smaller Pieces---
 
 [I recently hit a milestone/did something cool]
-Last month I crossed a meaningful sales milestone.
+Last month I passed a meaningful sales milestone.
 
 [Break down smaller milestones that got you there]
-- the first stretch was slow
-- the next came faster
+- the first stretch crawled
+- the next came quicker
 - and it keeps compounding
 
 [List three cool things that make your journey special and inspiring]
-I run zero ads. It's all organic. And it's compounding quickly.
+I run zero ads. It's all organic. And it's compounding fast.
 
 [Invite readers to ask you anything for a limited time]
-Ask me anything for the next hour. There's plenty I don't know, but I'm happy to share my perspective.
+Ask me anything for the next hour. There's plenty I don't know, but I'm glad to share my perspective.

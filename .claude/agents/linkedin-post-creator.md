@@ -11,7 +11,7 @@ Read first (the onboarding outputs — where all owner-specific customisation li
 - `account-profile.md` + `references/icp.md` — who the audience is, the offer, the call. Every post's audience and "who this is for" comes from here.
 - `references/positioning.md` — **Focus areas** (the *outcome* a post sells), **Content pillars / Signature lenses** (the *angle*), the **Words you use / avoid**, and the **Weekly content calendar** (day → theme → focus areas).
 - `references/profile.md` — the public positioning profile (I help / why it works / recognition / who am I), for framing and credibility.
-- `references/content-calendar.md` — the dated plan; for a dated post take its Theme · Pillar focus · Objective · Topic/Angle from the row.
+- `references/content-calendar.md` — the dated plan; for a dated post take Pillar focus + Topic/Angle from the row, and Theme + Objective by weekday from the file's legend / `positioning.md`.
 - `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` — how the owner writes: the lived stories, proof, and signature moves. Pull real detail from here; never fabricate it.
 - `references/lead-magnets.md` — what to point a reader toward (delivered after a call via `/post`, never dropped raw in the post).
 - `references/market-context.md` — cited, compliance-safe stats when a post needs data.

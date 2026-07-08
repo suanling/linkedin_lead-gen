@@ -1,228 +1,211 @@
 ---
 name: linkedin-carousel
-description: Generate a fully-branded LinkedIn carousel (1080×1080, 10 slides) following the sociyell viral framework — angle → flow → copy → visual translation → visual rhythm → swipe test. Populates the branded HTML template in references/template/, user picks a visual variant, exports numbered PNGs via Puppeteer (or Canva MCP fallback), runs QA, and logs. Trigger on "carousel", "slides", "swipe post", "LinkedIn carousel", "design a deck", or when /post routes a draft to carousel media.
+description: Generate a fully-branded LinkedIn carousel (1080×1080, 10 slides) following the sociyell viral framework — angle → flow → copy → visual translation → visual rhythm → swipe test. Maps a finished post into a per-variant slide set, exports numbered PNGs + a contact sheet via Puppeteer (over a local HTTP server), runs QA, and logs. Trigger on "carousel", "slides", "swipe post", "LinkedIn carousel", "design a deck", or when /post routes a draft to carousel media.
 metadata:
-  version: 1.4.0
+  version: 3.0.0
 ---
 
 # LinkedIn Carousel Design — Pipeline Skill
 
-This skill is a **pipeline wrapper**. Content generation (the sociyell 6-step framework, kk-carousel template selection, voice, copy refinement, swipe test) is owned entirely by the `linkedin-carousel-creator` **agent**. This skill invokes that agent, then populates the branded HTML template, the user picks a visual variant, Puppeteer exports that variant's slides, QA runs, and it logs.
+Turns a finished post into a branded 10-slide carousel. Content (the sociyell 6-step
+framework, kk-carousel family selection, voice, copy, swipe test) is owned by the
+`linkedin-carousel-creator` **agent**. This skill is the pipeline around it: get the copy,
+put it in the template's copy source, export PNGs + a contact sheet, QA, log.
+
+> **This file matches the template as it is today** (`Linkedin Carousel Design Template`,
+> the per-variant Step Back system). It supersedes the old `CAROUSEL_DATA` data-layer
+> approach — that template was replaced. Don't promise behavior that isn't built.
 
 ---
 
-## Three-Layer Architecture
+## Template location + how it's driven (read first)
 
 ```
-kk-carousel.md (100 templates, 12 families)
-  ↓ agent reads → picks structural family + slide beats
-linkedin-carousel-creator (agent) — sociyell 6-step, voice, copy, swipe test
-  ↓ returns structured 10-slide spec
-/linkedin-carousel (this skill) — pipeline wrapper
-  ↓ populate Editable slots → user picks variant → export PNGs → QA → log
+references/template/Linkedin Carousel Design Template/index.html
 ```
 
----
+A React + Babel canvas that renders many visual variants, each a 10-slide section.
 
-## Template Location
+**One array drives everything: `SLIDES`** at the top of `slides-stepback-all.jsx`. It's a
+10-entry array (one per slide), and EVERY variant (sb-v1 … sb-v11) reads from it — the
+helper arrays (`SB_BG/SB_EYE/SB_WORD/SB_ACCENT/SB_SHORT/SB_RICH`) are derived from `SLIDES`,
+so there is exactly one place to edit. To regenerate the whole carousel for ANY post,
+replace the 10 `SLIDES` entries (the skill fills them from the agent's `slide_spec`).
 
-```
-references/template/Linkedin Carousel Template/index.html
-```
+Per-slide schema (only `headline` is required; each layout uses the fields present and
+falls back gracefully — these map onto the recurring kk-carousel slide shapes so any family
+can be expressed):
 
-This is a React + Babel design canvas that renders **all 10 visual variants simultaneously**, each as a full 10-slide section. Supporting files (do not move):
+- `bg` cream|paper|navy|mist · `eyebrow` · `word` (hero word or null) · `accent` (bool)
+- `headline` (required) · `body` · `extra` · `short` (one-line for minimal variants) · `img` (kie.ai seed)
+- `list: []` — mini-list (Family A) · `bars: [{label,sub}]` — self-test/signs/audit (the SAVE slide)
+- `compare: {oldLabel,old,newLabel,new}` — before/after (Family F) · `tagged: [{text,tag}]` — framework rows / save line (C41–C50)
+- `strike` + `alt` — reframe (Family D) · `cta: {pre,key}` — slide-10 CTA button
 
-- `design-system/colors_and_type.css` — full token system (Lumina Clarity + Suan Ling palettes)
-- `slides-bold.jsx` — V1 Original
-- `slides-variants-a.jsx` — V2 Bleed, V5 Ruled, V6 Numeral, V7 Max Reduce
-- `slides-variants-b.jsx` — V8 Poster, V9 Swiss Grid, V10 Diagonal
-- `slides-variants-c.jsx` — V11 Overprint
-- `slides-v12-playful.jsx` — V12 Playful
-- `image-slot.js` — image placeholder web component
+The full schema with comments lives at the top of `slides-stepback-all.jsx`. You can also
+click any text in the browser to retype in-session (edits are session-only; editing
+`SLIDES` is what persists).
 
-### The 10 visual variants
+Two hard truths:
 
-| ID | Name | Character |
+1. **Serve over HTTP, not `file://`.** Babel-standalone fetches the `.jsx` by XHR; under
+   `file://` the browser CORS-blocks them and the page renders blank. Always:
+   ```bash
+   cd "references/template/Linkedin Carousel Design Template" && python3 -m http.server 8765
+   ```
+   Point the export script at `http://localhost:8765/index.html`.
+
+2. **Use the Step Back (`sb-*`) variants for real content.** The legacy `v1..v12` /`ex`
+   entries still hold the old "structural irreplaceability" essay copy. The `sb-*` set is
+   the one wired to the current Step Back copy.
+
+### The Step Back variants (these are the live ones)
+
+| Picker id | Name | Character |
 |---|---|---|
-| V1 | Original | Strikethrough hook, 3-tier color-block. The reference. |
-| V2 | Bleed | Type cropped at slide edges. The cut is the composition. |
-| V5 | Ruled | 7 horizontal rules at 132px — ledger/stave. Type interrupts. |
-| V6 | Numeral | Slide counter at 660px / 7% opacity as texture. |
-| V7 | Max Reduce | 1–3 words at absolute max scale. Space is the statement. |
-| V8 | Poster | Centered vertical stack. Fight-card hierarchy. |
-| V9 | Swiss Grid | 3-col: index / content / aside. Visible vertical rules. |
-| V10 | Diagonal | 22° rule crosses each slide. Kinetic energy. |
-| V11 | Overprint | Stroke-only outline behind solid fill. Print-inspired. |
-| V12 | Playful | Grid bg, number badges, ALL CAPS chips, bold labels. |
+| `sb-v1`  | V1 Original  | Key word as hero type, serif-italic support. The reference. |
+| `sb-v2`  | V2 Bleed     | Word bleeds off the edge; copy anchors bottom. |
+| `sb-v5`  | V5 Ruled     | 7 stave rules; full headline + body. |
+| `sb-v6`  | V6 Numeral   | Watermark slide number; big headline + body. |
+| `sb-v8`  | V8 Poster    | Centered stack: eyebrow → word → rule → headline → body. |
+| `sb-v9`  | V9 Swiss Grid| 3-column; word + headline + body in column 2. |
+| `sb-v10` | V10 Diagonal | 22° crossing rule; word above, copy below at angle. |
+| `sb-v11` | V11 Overprint| Stroke + fill layered word; copy anchors bottom. |
 
-All variants share the **same 10-slide copy** — the content is populated once; the visual treatment differs.
+(`ex` = a Step Back example in V12 Playful. Legacy `v1..v12` = old essay copy, ignore.)
 
-### The 10 slide roles (fixed across all variants)
+### The 10 beats (locked structure, per design-notes.md)
 
 ```
-01 hook → 02 tension → 03 do→see → 04 three layers → 05 owned →
-06 wrong layer → 07 the tell → 08 pro move → 09 screenshot → 10 cta
+01 hook → 02 tension → 03–07 value progression (5 micro-payloads) →
+08 insight upgrade (the pro move) → 09 crystallised takeaway (the screenshot line) →
+10 frictionless CTA
 ```
+
+Image slots sit on **slides 2, 4, 6, 8, 10** (every other from slide 2; slide 1 is pure
+type so the hook lands; slide 10 is the portrait/selfie). Slots are `<Img placeholder="…">`
+inside `slides-stepback-all.jsx`; the placeholder text is the art direction.
 
 ---
 
 ## Inputs
 
-1. **Brief.** Pasted text OR a path to a `.md` file.
-   - If no brief is given, ask before proceeding.
-
-2. **Output folder.** Default: `daily-log/`. PNGs land in `<output-folder>/export/<variant-id>/`.
-
----
-
-## Step 1 — Invoke `linkedin-carousel-creator` Agent
-
-Pass to the agent:
-- The brief
-- `output_format: slide_spec`
-
-The agent returns:
-```
-caption: <string>
-chosen_template_family: <string>
-slides:
-  - number: 1
-    role: "Hook — stop scroll"
-    copy: "<exact on-slide text>"
-    layout_type: "Bold minimal"
-    visual_note: "<brief design direction>"
-    data_slug: "hook-stop-scroll"
-  - ...
-  - number: 10
-    data_slug: "cta"
-```
+1. **A finished post** (pasted or `.md`; from `/post`, the drafted body). If none, ask.
+2. **Brand.** `sl` = Suan Ling (ink/clay on ivory, Caveat CTA mark). `lc` = Lumina Clarity
+   (navy + terracotta on cream). Default `sl` for the owner.
+3. **Output folder.** Default `daily-log/`. PNGs → `daily-log/export/<variant>/`; contact
+   sheet → `daily-log/export/<variant>-contact-sheet.png`.
 
 ---
 
-## Step 2 — Generate Background Images (kie.ai)
+## Step 1 — Get the slide copy (kk-carousel + the agent)
 
-Slides 4 (three layers) and 7 (the tell) use photo-background overlay layouts in some variants. Generate images before opening the browser so they're ready to inline.
+Invoke `linkedin-carousel-creator` with the post and `output_format: slide_spec`. It picks
+a kk-carousel structural family and returns 10 beats (role, on-slide copy, layout note,
+visual note). This maps directly onto `SB_RICH` (word/headline/body/extra) + `SB_WORD` +
+`SB_SHORT` + `SB_EYE`.
 
-**API:** `https://api.kie.ai`
-**Model:** `nano-banana-2`
-**API key:** `KIE_API_KEY` environment variable — never hardcode
+## Step 2 — SAVE-WORTHINESS (required)
 
-Run:
-```bash
-node scripts/generate-images.js "<slide4 visual_note from agent spec>" "<slide7 visual_note from agent spec>" "<output-folder>"
-```
+A carousel earns saves through reference value — at least one slide a reader will want
+back. Every deck MUST contain:
+- **A self-test / checklist slide** the reader runs on themselves (the "three things"
+  beat at slide 4 is the natural home).
+- **A quotable slide** — one clean, screenshot-ready line (the slide-9 takeaway).
+If the agent's spec lacks either, add it before writing the copy arrays. QA checks this.
 
-This writes `<output-folder>/slide-04-bg.png`, `<output-folder>/slide-07-bg.png`, and `<output-folder>/images.json`.
+## Step 3 — Put the copy in the template
 
-**If `KIE_API_KEY` is not set:** skip, leave `image-slot` placeholders, and tell the user:
-> "Slides 4 and 7 need background images. Set `KIE_API_KEY` in your environment or paste image URLs and I'll inline them."
+Replace the 10 entries of the `SLIDES` array at the top of `slides-stepback-all.jsx` with
+the agent's `slide_spec` (same field names). That single edit updates ALL variants. Keep
+10 entries; only `headline` is required per slide; add the structured fields (`bars`,
+`compare`, `tagged`, `list`, `strike`/`alt`, `cta`) where the beat calls for them. Ensure
+one `bars` self-test slide and one `tagged`/quotable slide are present (save-worthiness).
+Do not edit the derived helper arrays (they read from `SLIDES`).
 
----
+## Step 4 — Background images (kie.ai), optional
 
-## Step 3 — Populate the Editable Slots
+Image directions live as `<Img placeholder="…">` strings on slides 2/4/6/8 (and the slide-10
+portrait, which is a selfie, never AI). To generate:
+- **API:** `https://api.kie.ai` · `POST /api/v1/jobs/createTask` → poll `GET /api/v1/jobs/recordInfo`.
+- **Model:** `google/nano-banana` (override `KIE_MODEL`). API key: `KIE_API_KEY` env var.
+- `scripts/generate-images.js` currently expects a `carousel-data.js` with prompts (the old
+  flow). For this template, either pass the placeholder strings as prompts directly, or add
+  a small prompts file. **If `KIE_API_KEY` is unset:** skip; the slots stay as clean
+  placeholders. Tell the user they can set the key and re-run, or supply images.
 
-The template JSX files use `<Editable>` components with default placeholder text. The skill's job is to **inject the agent's copy** into those slots by writing a thin data layer the template can read.
-
-Write a `carousel-data.js` file alongside `index.html`:
-
-```js
-window.CAROUSEL_DATA = {
-  brand: "lc",  // "lc" = Lumina Clarity | "sl" = Suan Ling (activates data-brand="suan-ling" palette)
-  slides: [
-    { n: 1,  slug: "hook-stop-scroll",   copy: "...", subCopy: "..." },
-    { n: 2,  slug: "tension-build",      copy: "...", subCopy: "..." },
-    // ... all 10
-  ],
-  images: {
-    slide4Bg: "./slide-04-bg.png",   // path relative to index.html
-    slide7Bg: "./slide-07-bg.png"
-  }
-};
-```
-
-Copy `carousel-data.js` and the bg images into the template folder (or the output folder if you copy the full template there). The template reads `window.CAROUSEL_DATA` at render time to fill `<Editable>` defaults.
-
-**Brand:** Use `brand: "sl"` for Suan Ling's personal coaching content (activates clay/ivory/Playfair palette). Use `brand: "lc"` for Lumina Clarity content.
-
-After writing the data file, say:
-> "Carousel data ready. Open `references/template/Linkedin Carousel Template/index.html` in a browser to browse all 10 variants. Arrow keys navigate slides within each variant. Tell me which variant you want (V1–V12) and I'll export it."
-
----
-
-## Step 4 — User Picks a Variant
-
-The user opens `index.html`, scrolls through all 10 variants (V1–V12), and tells you which one to export. Wait for their choice before proceeding.
-
----
-
-## Step 5 — Export PNGs for the Chosen Variant
-
-**Primary — Puppeteer:**
-
-Run `scripts/export-png.js`, passing the variant ID so it targets only that section:
+## Step 5 — Serve over HTTP
 
 ```bash
-node scripts/export-png.js "references/template/Linkedin Carousel Template/index.html" "<output-folder>/export/" "<variant-id>"
+cd "references/template/Linkedin Carousel Design Template" && python3 -m http.server 8765 &
 ```
+Background it; kill it at the end. The user can open `http://localhost:8765/index.html` to
+browse the `sb-*` variants and pick one.
 
-The export script navigates to the chosen variant's section (e.g. `#v9`), iterates its 10 artboards, and screenshots each 1080×1080 canvas.
+## Step 6 — Export the chosen variant
 
-PNG naming: `NN-<data-slug>.png`
+```bash
+node ".claude/skills/linkedin-carousel/scripts/export-png.js" \
+  "http://localhost:8765/index.html" "daily-log/export/<variant>/" "<variant>"
+# e.g. <variant> = sb-v1, sb-v8, sb-v9
 ```
-01-hook-stop-scroll.png
-02-tension-build.png
-...
-10-cta.png
-```
+The script forces the canvas to 1:1, screenshots each 1080×1080 slide at 2× (→ 2160px,
+retina), names them `NN-<slug>.png`, **auto-purges stale-slug PNGs** from a prior run, and
+**auto-writes `<variant>-contact-sheet.png`** (a 2-col grid of all 10). Review the contact
+sheet — fastest way to catch a wrong/old slide.
 
-**If Puppeteer is missing:**
-```
-Puppeteer not found. To install: npm install puppeteer
-Or I can export via Canva instead — just say "use Canva".
-```
-Do not auto-install. Wait for user instruction.
+If Puppeteer/Chromium is missing: `npm install puppeteer && npx puppeteer browsers install
+chrome`. Don't auto-install without telling the user.
 
-**Fallback — Canva MCP:**
-If user says "use Canva":
-1. `mcp__claude_ai_Canva__generate-design-structured` — pass the 10-slide outline
-2. `mcp__claude_ai_Canva__create-design-from-candidate` — save chosen candidate
-3. `mcp__claude_ai_Canva__resize-design` — 1080×1080 (warn: uses trial resize credit)
-4. `mcp__claude_ai_Canva__export-design` — PNG, all pages
-5. Share the download URL
+## Step 7 — QA gate
+
+Run `/qa-gate` on the caption + all on-slide copy (voice + anti_ai always; compliance per
+`config.json`). Carousel-specific checks on top:
+- No em dashes in on-slide copy (placeholder/art-direction strings are exempt).
+- No leftover legacy essay copy ("leverage code", "replaceable", "the wrong layer",
+  "tool/skill/position", "LAYERS" keyword) rendering on any `sb-*` slide.
+- Save-worthiness present: ≥1 self-test slide AND ≥1 quotable slide (Step 2).
+- Mode 2 (financial) → mark the deck DRAFT-FOR-COMPLIANCE-REVIEW.
+
+## Step 8 — Log
+
+```
+[YYYY-MM-DD HH:MM] carousel | <topic> | variant: <id> | <output path> | qa: <pass/hold>
+```
+Kill the HTTP server.
 
 ---
 
-## Step 6 — QA Gate
+## Flow summary
 
-Invoke `/qa-gate` on the final slide copy (voice + anti_ai always; compliance if the brief touches FA/MAS-regulated content). If compliance Mode 2 triggers, mark the deck DRAFT-FOR-COMPLIANCE-REVIEW.
-
----
-
-## Step 7 — Log
-
-Append one line to `audit-log.md`:
-```
-[date] carousel | [brief title/topic] | variant: [V?] | [output path] | qa: [pass/hold]
-```
-
----
-
-## Flow Summary
-
-1. Get brief (paste or `.md` — ask if missing)
-2. Invoke `linkedin-carousel-creator` agent → get structured 10-slide spec
-3. Run `scripts/generate-images.js` for slides 4 + 7 (skip if no `KIE_API_KEY`)
-4. Write `carousel-data.js` with agent's copy + image paths into template folder
-5. User opens `references/template/Linkedin Carousel Template/index.html` → browses all 10 variants
-6. User picks variant (V1–V12)
-7. Run `scripts/export-png.js` for the chosen variant → numbered PNGs in `<output-folder>/export/`
-8. Run `/qa-gate`
-9. Append to `audit-log.md`
-
----
+1. Finished post → `linkedin-carousel-creator` → 10 beats (kk-carousel family).
+2. Ensure a self-test slide + a quotable slide (saves).
+3. Edit the `SB_*` copy arrays in `slides-stepback-all.jsx` for this post.
+4. (Optional) kie.ai images for slides 2/4/6/8 if `KIE_API_KEY` is set.
+5. Serve over HTTP.
+6. `export-png.js` for an `sb-*` variant → PNGs + contact sheet (auto-cleaned).
+7. `/qa-gate` + carousel-specific checks.
+8. Log; stop the server.
 
 ## Trigger from `/post`
 
-When `/post` selects carousel as the media format:
-- Input: `brief` (drafted post text), `output_folder`, optional `hook_draft`
-- Return: `html_path`, `png_paths` (or Canva URL), `qa_result`
+Input `brief` (drafted post body), `output_folder`, optional `brand`; return `png_paths`,
+`contact_sheet_path`, `qa_result`.
+
+## Files
+
+- `scripts/export-png.js` — render + screenshot one variant; auto-clean; contact sheet.
+  Works with any variant id in `app.jsx` (`sb-v1`, `v8`, `ex`, …).
+- `scripts/generate-images.js` — kie.ai image gen (older data-layer flow; adapt prompts
+  for this template, see Step 4).
+- `references/template/Linkedin Carousel Design Template/` — the canvas.
+  `slides-stepback-all.jsx` holds the `SB_*` copy arrays + variant components.
+  `slide-frame.jsx` holds shared chrome (counter, swipe hint, brand mark, `Editable`).
+  `design-notes.md` is the locked structure + design system of record.
+
+## History / gotchas
+
+- The folder was renamed from `Linkedin Carousel Template` → `Linkedin Carousel Design
+  Template` and the copy approach moved from a `CAROUSEL_DATA` data file to centralized
+  `SB_*` arrays. Any old path or `carousel-data.js` reference is stale.
+- Legacy `v1..v12` variants still render the old essay; only `sb-*` carry current copy.

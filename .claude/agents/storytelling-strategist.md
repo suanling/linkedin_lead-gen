@@ -44,7 +44,7 @@ Run as a guided interview; every output is owner-confirmed, never invented:
 3. **5 content pillars** — theme · why it matters · 5 post ideas · how it ties to the offer → `references/positioning.md → Content pillars / Signature lenses`.
 4. **Focus areas** (the structured "I help …" territories) → `positioning.md → Focus areas` (confirm/refine).
 5. **Weekly calendar** — per day: **theme · pillar focus · objective · content angle** → `positioning.md → Weekly content calendar` (confirm/refine).
-6. **Yearly editorial plan** (5 posts/week, dated) → `references/content-calendar.md`, each row carrying Date · Day · Theme · Pillar focus · Objective · Topic/Angle.
+6. **Yearly editorial plan** (5 posts/week, dated) → `references/content-calendar.md`. Theme + Objective are fixed by weekday — write them once into the file's legend (mirroring `positioning.md`); each table row carries only Date · Day · Pillar focus · Topic/Angle (Pillar focus = that month's facet of the day's pillar).
 7. The same story set then fills worked examples in `kk-post.md` and `kk-carousel.md` (follow each file's header "Principles for filling these formats"; no overlap across formats; `[xxx — needs your real X]` where material is missing).
 
 ## Writing principles

@@ -14,7 +14,7 @@ Read first:
 - `account-profile.md` + `references/icp.md` — who the audience is, the offer, the call.
 - `references/positioning.md` — **Focus areas** (outcome), **Content pillars / Signature lenses** (angle), **Words you use / avoid**, **Weekly content calendar** (day → theme → focus areas).
 - `references/profile.md` — the public positioning profile (I help / why it works / recognition / who am I), for framing and credibility.
-- `references/content-calendar.md` — the dated plan; if a deck is for a specific date, take its Theme · Pillar focus · Objective · Topic/Angle from the row.
+- `references/content-calendar.md` — the dated plan; if a deck is for a specific date, take Pillar focus + Topic/Angle from the row, and Theme + Objective by weekday from the file's legend / `positioning.md`.
 - `.claude/rules/voice.md` grounded by `references/about-me.md` + `references/voice-profile.md` — how the owner writes: lived stories, proof, signature moves. Pull real detail here; never fabricate it.
 - `references/brand-system.md` — **the visual standard**: navy `#07273E` / terracotta `#E95117` / cream `#F5F0EA` / body `#4A4540`, Playfair Display + Inter, 1080×1080, and the 10-slide layout rotation. Apply it to every deck.
 - `kk-carousel.md` — **the filled carousel format library** (worked, in-voice decks filled during onboarding). **Mix and match** the slide moves from one or more FILLED examples that fit the post's shape — this is the STRUCTURAL BASIS of the deck. Follow the file's **Carousel principles** header. NOT the empty `kk-carousel-template.md` scaffolding; if `kk-carousel.md` isn't filled yet, say so and use the template structure while asking the owner to run onboarding. Never name a template in the output.
@@ -93,28 +93,42 @@ Everything owner-specific — audience, voice, focus areas, pillars, themes, sto
 
 ## When invoked by /carousel skill
 
-If the caller passes `output_format: slide_spec`, return a machine-readable spec instead of prose. Format:
+If the caller passes `output_format: slide_spec`, return a machine-readable spec the
+carousel template consumes directly. The template is driven by ONE array, `SLIDES`,
+in `references/template/Linkedin Carousel Design Template/slides-stepback-all.jsx`.
+**Return one object per slide using that exact field schema** so the skill can drop it
+straight in. Every variant (sb-v1 … sb-v11) renders these fields in its own layout.
+
+Per-slide fields (only `headline` is required; include the structured fields that fit
+the beat — they map onto the recurring kk-carousel slide shapes):
 
 ```
 caption: <string — the LinkedIn post caption that ships with the deck>
-chosen_template_family: <string — e.g. "C36 System-against-you">
+chosen_template_family: <string — e.g. "C22 Tough-Decision Story">
 slides:
-  - number: 1
-    role: "Hook — stop scroll"
-    copy: "<exact on-slide text>"
-    layout_type: "Bold minimal"
-    visual_note: "<brief design direction>"
-    data_slug: "hook-stop-scroll"
-  - number: 2
+  - n: 1
+    bg: cream|paper|navy|mist        # background tone, for rhythm
+    eyebrow: "01 · the hook"          # small top-left label
+    word: null                        # ONE hero word for type-as-image variants, or null
+    accent: true                      # render the hero word in terracotta
+    headline: "<the main line>"       # REQUIRED
+    body: "<supporting sentence(s)>"
+    extra: "<optional third line>"    # or omit
+    short: "<one-line version for minimal variants>"
+    img: "<art-direction tag>"        # image slot seed (kie.ai), or omit
+  # Use these structured fields when the beat calls for the shape:
+  #   list:    ["item","item","item"]                         # mini-list (Family A)
+  #   bars:    [{label,sub},{label,sub},{label,sub}]          # self-test / signs / audit (the SAVE slide)
+  #   compare: {oldLabel, old, newLabel, new}                 # before/after, myth→truth (Family F)
+  #   tagged:  [{text,tag},{text,tag},{text,tag}]             # framework rows / the save line (C41–C50)
+  #   strike: "<crossed-out>"   alt: "<affirmative>"          # reframe (Family D)
+  #   cta:     {pre:"DM me for a", key:"AUTHORITY"}           # slide-10 CTA button
+  - n: 10
     ...
-  - number: 10
-    role: "Frictionless CTA"
-    copy: "<exact on-slide text>"
-    layout_type: "Navy CTA"
-    visual_note: "<brief design direction>"
-    data_slug: "cta"
 ```
 
-`data_slug` must be a lowercase hyphenated label (used as the PNG filename). Keep it descriptive: `tension-build`, `value-document-recurring`, `insight-fewer-decisions`, etc.
+**Save-worthiness (required):** include at least one `bars` self-test slide AND one
+`tagged`/quotable slide — a save is worth ~5x a like for reach.
 
-When invoked interactively (no `output_format` flag), return the standard prose deck spec as described in the Output section above.
+No em dashes in any on-slide string (they render). `eyebrow` numbering is `NN · label`.
+When invoked interactively (no `output_format` flag), return the standard prose deck spec.

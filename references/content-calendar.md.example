@@ -5,15 +5,63 @@
 > sequence) and editable anytime. `/post` reads the row for the target DATE to build the post brief;
 > `/start-day` surfaces today's planned post.
 >
-> Each row carries the day's **Theme**, **Pillar focus**, **Objective** (why this theme), and the
-> specific **Topic / Angle**. `/post` composes the row into this exact brief, then builds the post:
+> **Theme + Objective are FIXED by weekday** — they live once in the legend below (and the master
+> copy in `positioning.md → Weekly content calendar`), so the table doesn't repeat them per row.
+> Each table row carries only what varies: the **Pillar focus** (this month's facet of the day's
+> pillar) and the specific **Topic / Angle**. `/post` composes the row into this exact brief:
 >
 > > I want to talk about **{Pillar focus}** on a **{Day}** with the theme (**{Theme}**).
 > > Reason for this theme is because **{Objective}**.
 > > Give me a post on **{Topic / Angle}** in this content pillar.
 >
-> Coaching = Mode 1; financial topics flip to Mode 2 (concept-only).
+> Theme + Objective are looked up by weekday from the legend; only Pillar focus + Topic come from
+> the row. Coaching = Mode 1; financial topics flip to Mode 2 (concept-only).
 
-| Date | Day | Theme | Pillar focus | Objective | Topic / Angle | Status |
-|------|-----|-------|--------------|-----------|---------------|--------|
-| [ YYYY-MM-DD ] | [ Mon ] | [ theme ] | [ pillar focus ] | [ why this theme — the objective ] | [ the specific topic/angle for this date ] | [ planned / drafted / published ] |
+## How this calendar is built (structure to keep)
+
+Two layers fix the editorial rhythm so every row is purposeful, not random:
+
+1. **Weekday themes (the horizontal rhythm) — FIXED in the legend / `positioning.md`.** Each weekday
+   owns one Theme + Objective (e.g. Mon empowering/mindset · Tue personal story · Wed expertise/how-to
+   · Thu authority/contrarian · Fri growth/reflection). The same five recur every week, so they are
+   stored ONCE in the legend, not retyped per row. To change a Theme or Objective, amend
+   `positioning.md` and the legend, not the table.
+
+2. **Monthly themes (the vertical arc) — one campaign idea per month.** Give each month a single
+   umbrella theme so the year tells a story instead of looping. The **Pillar focus** column carries
+   each weekday's facet of that month's theme. Example arc (replace with your own):
+   `Month 1 = the core problem you solve · Month 2 = the system/method · Month 3 = the mindset shift ·
+   Month 4 = the transition it requires · Month 5 = proof + objections · Month 6 = vision + reflection`.
+   List your monthly themes above the table so the arc is visible at a glance.
+
+The grid is **5 posts/week, Mon–Fri** (add Sun if your weekly structure includes it). Skip the dates
+already past when you generate, and start the table from the next upcoming weekday. Leave a few
+**`(open)`** slots near the end of the horizon rather than over-planning months out.
+
+## Standard weekday themes (the legend — fixed)
+
+> Mirror of `positioning.md → Weekly content calendar`. `/start-day` and `/post` read Theme +
+> Objective from here by weekday.
+
+| Day | Theme | Objective |
+|-----|-------|-----------|
+| Mon | [ Mon theme ] | [ Mon objective ] |
+| Tue | [ Tue theme ] | [ Tue objective ] |
+| Wed | [ Wed theme ] | [ Wed objective ] |
+| Thu | [ Thu theme ] | [ Thu objective ] |
+| Fri | [ Fri theme ] | [ Fri objective ] |
+
+## Monthly themes (the arc — fill your own)
+
+> [ Month 1 = theme · Month 2 = theme · Month 3 = theme · … ] — one umbrella idea per month; every
+> row that month is a facet of it (carried in the Pillar focus column).
+
+| Date | Day | Pillar focus | Topic / Angle | Status |
+|------|-----|--------------|---------------|--------|
+| [ YYYY-MM-DD ] | [ Mon ] | [ this month's facet of the Mon pillar ] | [ the specific topic/angle for this date ] | [ planned / drafted / published ] |
+| [ YYYY-MM-DD ] | [ Tue ] | [ this month's facet ] | [ topic/angle ] | [ planned ] |
+| [ YYYY-MM-DD ] | [ Wed ] | [ this month's facet ] | [ topic/angle — Mode 2 concept-only if financial ] | [ planned ] |
+| [ YYYY-MM-DD ] | [ Thu ] | [ this month's facet ] | [ topic/angle ] | [ planned ] |
+| [ YYYY-MM-DD ] | [ Fri ] | [ this month's facet ] | [ topic/angle ] | [ planned ] |
+| … | … | … | … | … |
+| [ YYYY-MM-DD ] | [ Mon ] | [ (open) ] | [ open slot — capture a fresh angle near the horizon ] | [ planned ] |

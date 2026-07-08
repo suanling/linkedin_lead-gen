@@ -56,6 +56,17 @@ references/learning/inbox/dms/*
 # Editor settings
 .vscode/
 
+# Node dependencies (carousel pipeline: puppeteer etc.) — never commit
+node_modules/
+
+# Local machine-specific Claude settings
+.claude/settings.local.json
+
+# Owner content + working backups (personal data, never enters git)
+content/
+kk-post.backup-*.md
+kk-post.source-old.md
+
 # Python bytecode cache (onboard detect-workspace.py)
 __pycache__/
 *.pyc

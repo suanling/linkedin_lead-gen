@@ -8,7 +8,12 @@ description: Draft an SOP amendment when an exception comes up. Captures what ha
 You hit something `sops/linkedin-sop.md` doesn't cover, or something it says that feels wrong. This captures the exception and drafts it for the owner to review. **You do not change the SOP yourself** — the owner decides.
 
 ## Hard rule
-You CANNOT write to `sops/linkedin-sop.md`. It is read-only. This skill writes only to `pending-amendments/`.
+You CANNOT write to any SOP master. This skill writes only to `pending-amendments/`.
+
+> **Note (2026-08-01).** There is no `sops/linkedin-sop.md` — it was never created. The
+> procedures live in `.claude/skills/`, one per task. An amendment that changes how a task
+> runs is therefore a proposed edit to a SKILL.md; still draft it into `pending-amendments/`
+> and let the owner apply it. The read-only rule stands, the target is just different.
 
 ## Step 1 — Capture the exception
 Ask all four:

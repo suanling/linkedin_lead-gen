@@ -30,6 +30,20 @@
   function findCountInScope(scope, labels) {
     const candidates = scope.querySelectorAll("button, span, a, div");
     for (const el of candidates) {
+      // aria-label first — LinkedIn puts "127 reactions" / "1,234 impressions"
+      // in the aria-label even when the visible text is just an icon or a name
+      // list ("Sarah and 126 others"). textContent alone misses reactions.
+      const aria = (el.getAttribute && el.getAttribute("aria-label") || "")
+        .trim()
+        .toLowerCase();
+      if (aria && aria.length <= 80) {
+        for (const label of labels) {
+          if (aria.includes(label)) {
+            const n = parseCount(aria);
+            if (n !== null) return n;
+          }
+        }
+      }
       const t = (el.textContent || "").trim().toLowerCase();
       if (t.length > 60) continue; // avoid sucking in entire post bodies
       for (const label of labels) {
@@ -40,6 +54,32 @@
       }
     }
     return null;
+  }
+
+  // Reactions need a dedicated path: on the post-detail social bar the count
+  // lives in a bare-number span (no label word) or a button aria-label, so the
+  // generic label scan misses it. Try explicit selectors, then fall back.
+  function findReactionCount(scope) {
+    // 1) Explicit reactions-count span (visible number, no label word)
+    const span = scope.querySelector(
+      ".social-details-social-counts__reactions-count, " +
+      '[class*="social-details-social-counts__reactions"] [aria-hidden="true"], ' +
+      '[class*="social-counts-reactions"]'
+    );
+    if (span) {
+      const n = parseCount((span.textContent || "").trim());
+      if (n !== null) return n;
+    }
+    // 2) Reactions button / link aria-label ("127 reactions")
+    const btn = scope.querySelector(
+      'button[aria-label*="reaction" i], a[aria-label*="reaction" i]'
+    );
+    if (btn) {
+      const n = parseCount(btn.getAttribute("aria-label") || "");
+      if (n !== null) return n;
+    }
+    // 3) generic fallback (now aria-label-aware)
+    return findCountInScope(scope, ["reaction", "like"]);
   }
 
   function countMeaningfulComments(card) {
@@ -83,7 +123,7 @@
 
   // ─── Pinned / top comment capture ──────────────────────────────────────
   // For score-posts, we need the FIRST comment's reaction count as a proxy
-  // for clicks on the lead-magnet link you pin as comment-1.
+  // for clicks on the lead-magnet link the owner pins as comment-1.
   // DOM (as of 2026-05): comments live under `.comments-comments-list` with
   // each item as `article.comments-comment-entity` (or legacy
   // `.comments-comment-item`). The first such element in document order is
@@ -173,7 +213,7 @@
     return {
       captured_at: new Date().toISOString(),
       source: "linkedin-metrics-extension",
-      version: "0.2.0",
+      version: "0.2.1",
       post_urn: urn,
       post_url: urn
         ? `https://www.linkedin.com/feed/update/${urn}/`
@@ -181,7 +221,7 @@
       preview,
       metrics: {
         // Engagement volume (legacy signals)
-        reactions: findCountInScope(card, ["reaction", "like"]),
+        reactions: findReactionCount(card),
         comments: findCountInScope(card, ["comment"]),
         reposts: findCountInScope(card, ["repost", "share"]),
         impressions: findCountInScope(card, ["impression", "view"]),
@@ -340,7 +380,7 @@
           payload: {
             captured_at: new Date().toISOString(),
             source: "linkedin-metrics-extension",
-            version: "0.2.0",
+            version: "0.2.1",
             kind: "dm-inbox-snapshot",
             conversations,
             skipped

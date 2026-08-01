@@ -1,51 +1,109 @@
-# LinkedIn Metrics — Chrome extension (optional)
+# AIOS LinkedIn Metrics — Chrome Extension
 
-Automates the metrics half of the learning loop. Instead of pasting numbers into `/score-posts` by hand, this captures your own LinkedIn post + comment metrics from the page and drops them into `references/learning/inbox/`, where `score-posts` drains them.
+**v0.2.0** — Captures **your own** LinkedIn post metrics + DM-inbox snapshots from the pages you're already viewing, and sends them to your local AIOS inbox so the `score-posts` skill can roll them into the hook-performance + DM-attribution ledgers.
 
-**Client-side only.** It reads the analytics already shown on *your* posts while *you're* logged in. No scraping of other people, no credentials stored, no cloud — the data goes only to a server running on your own machine.
+## What gets captured
 
-You do NOT need this. `/score-posts` works fine with manual paste. Install it only if you want the numbers captured automatically.
+| Source | Endpoint | Lands at |
+|---|---|---|
+| Post metrics + comment-1 reactions/replies | `/webhook/linkedin-metrics` | `references/learning/inbox/posts/<timestamp>-<urn>.json` |
+| DM inbox snapshot (1:1 only, InMail/group skipped) | `/webhook/linkedin-dms` | `references/learning/inbox/dms/YYYY-MM-DD.json` (overwrites same-day) |
+| Lead-magnet click exports (manual drop) | n/a | `references/learning/inbox/clicks/*.json` — ⚠️ **no live source since 2026-07-20** (was Beehiiv UTM export; newsletter moved to Substack, which has no equivalent export) |
 
-## What you need
-- Google Chrome (or any Chromium browser: Edge, Brave)
-- Node.js installed (`node --version` should print a version)
+**Why client-side?** LinkedIn's ToS forbids server-side scraping. This extension only reads the DOM in your own browser session — same access pattern as a human reading the page. Nothing runs in the background; nothing scrapes other people's profiles.
 
-## Install — 5 steps
+## Install (developer mode)
 
-**1. Set a secret.** Create a file named `.env` in the workspace root (one level above `tools/`) with:
-```
-METRICS_SECRET=pick-any-long-random-string
-```
+1. Chrome → `chrome://extensions/` → toggle **Developer mode** on (top right).
+2. Click **Load unpacked** → select `plugins/linkedin-metrics-extension/`.
+3. Pin the extension to the toolbar.
 
-**2. Start the local receiver.** In a terminal:
-```
-cd tools/linkedin-metrics-extension
+## Usage
+
+1. Open one of your published posts in standalone view (URL contains `urn:li:activity:`). The post analytics card needs to be visible — easiest is to open the post detail page or your "View analytics" view.
+2. Click the AIOS extension icon → **📸 Snapshot**.
+3. Review the JSON preview. If `reactions` / `comments` / `impressions` are `null`, scroll the page so the analytics card is rendered, then snapshot again. (Selectors are best-effort; LinkedIn DOM changes often.)
+4. Click **📤 Send**.
+
+The payload lands in your local server (or n8n webhook) → AIOS `references/learning/inbox/posts/`.
+
+### Capture DMs
+
+1. Open `linkedin.com/messaging/`.
+2. Click extension icon → **💬 Capture DMs**.
+3. The popup scrapes the visible conversation list (scroll to load more first if you want a deeper window), filters out group chats and InMail, and POSTs to `/webhook/linkedin-dms`. Same-day captures overwrite — each click is a fresh snapshot.
+
+### Use it weekly
+
+Every Sunday before running `/score-posts`: (1) open each post you published this week and click **Snapshot → Send all** so post-metrics + comment-1 stats land in `inbox/posts/`. (2) Open `linkedin.com/messaging/`, scroll back ~7 days, click **Capture DMs** so a fresh `inbox/dms/<today>.json` is written. (3) Lead-magnet attribution via `inbox/clicks/` is **paused** — the Beehiiv UTM export was its only source and the newsletter moved to Substack on 2026-07-20. Skip this step until a replacement source exists. (4) Then run `/score-posts` — it'll drain whichever folders have data.
+
+## Endpoint
+
+Default: `http://localhost:5678/webhook/linkedin-metrics`
+
+Override in popup → Settings if you run n8n on a different host/port.
+
+## Local receiver (no n8n needed)
+
+`server.js` is a zero-dependency Node script that listens on the endpoint and writes each payload into `references/learning/inbox/`.
+
+### Run it
+
+```bash
+cd "plugins/linkedin-metrics-extension"
 node server.js
 ```
-You should see "LinkedIn Metrics receiver running… Listening: http://127.0.0.1:5678". Leave it running while you capture. (Stop with Ctrl+C.)
 
-**3. Load the extension in Chrome.**
-- Go to `chrome://extensions`
-- Turn on **Developer mode** (top-right)
-- Click **Load unpacked**
-- Select this folder: `tools/linkedin-metrics-extension`
-- The "LinkedIn Metrics" extension appears in your toolbar.
+You'll see:
 
-**4. Configure it.** Click the extension icon → set:
-- Endpoint: `http://localhost:5678/webhook/linkedin-metrics`
-- Shared secret: the SAME string you put in `.env`
-- Save.
+```
+AIOS LinkedIn Metrics receiver running.
+  Listening: http://127.0.0.1:5678/webhook/linkedin-metrics
+  Inbox:     /Users/.../references/learning/inbox
+  Stop:      Ctrl+C
+```
 
-**5. Capture.** Open one of your own LinkedIn posts (or your post analytics view), click the extension icon → **Send**. A JSON file lands in `references/learning/inbox/posts/`. (For DM inbox snapshots, open Messaging and use the DM capture button — lands in `inbox/dms/`.)
+Leave it running while you snapshot posts. Stop with Ctrl+C.
 
-## Then score
-Run **`/score-posts`** — it drains `references/learning/inbox/posts/*.json`, fills the blank rows in the ledgers, and recomputes quartiles. (If you skip the extension, score-posts just asks you to paste the numbers instead.)
+### Auto-start on login (macOS, optional)
 
-## Auto-start the server (optional, macOS)
-Add a `launchd` plist that runs `node server.js` on login, so the receiver is always up. Otherwise just run it manually before a capture session.
+Create `~/Library/LaunchAgents/com.aios.linkedin-metrics.plist`:
 
-## Privacy / safety
-- Runs on `127.0.0.1` only — not reachable from the network.
-- Rejects any request without your `METRICS_SECRET`.
-- Captured JSON (your metrics) lives in `references/learning/inbox/` and is **gitignored** — never committed.
-- Reads only pages you open while logged in; stores no LinkedIn credentials.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.aios.linkedin-metrics</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>/ABSOLUTE/PATH/TO/plugins/linkedin-metrics-extension/server.js</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>/tmp/aios-linkedin-metrics.log</string>
+  <key>StandardErrorPath</key><string>/tmp/aios-linkedin-metrics.err</string>
+</dict>
+</plist>
+```
+
+Then: `launchctl load ~/Library/LaunchAgents/com.aios.linkedin-metrics.plist`
+
+Edit the absolute paths first. Find your node path with `which node`.
+
+## Limitations & sanity checks
+
+- **DM attribution is proxy-based.** `score-posts` uses (a) lead_magnet_clicks via UTM (clicks/ folder), (b) keyword DMs whose preview contains a `cta_code`, (c) proxy DMs = new inbound 1:1 DMs in the 48h after a post goes live. The extension feeds (b) and (c) via the DM snapshot.
+- **InMail-promoted DMs aren't captured** because LinkedIn flags them with the `inmail-pill` and they're paid promo, not organic — they would inflate proxy-DM counts. If you want them later, remove the InMail filter in `content.js → scrapeDMInbox`.
+- **Group chats skipped** — name has commas / "and N others". Score-posts only attributes 1:1 inbound.
+- **DM scrape only sees what's rendered.** Scroll the conversation list to load older threads before clicking Capture DMs.
+- **Comment-1 stats are proxy for click-count.** LinkedIn doesn't expose link clicks; reactions on the pinned/top comment are the next-best signal. If LinkedIn changes the comment social-bar selectors, `comment_1_selector` in the JSON will be `null` and counts will stop landing.
+- **Selectors are fragile.** If LinkedIn changes the DOM, snapshot returns nulls. Patch `content.js` — selector choices are commented inline.
+- **Use only on your own posts.** This extension is designed for self-monitoring.
+
+## Security
+
+- No external endpoints. Only `localhost:5678` (or your override).
+- No analytics, no telemetry.
+- Reads only the active tab's DOM when you click Snapshot.

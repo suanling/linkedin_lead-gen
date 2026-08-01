@@ -67,7 +67,7 @@ Present so the owner (or the render step) can build it:
 - **Caption:** the text intro to paste with the carousel — its first two lines stop the scroll before slide 1 is seen, written to the same hook standard as a post opener. Tease the payoff.
 - **Slides 1–10:** a numbered list. For each: the **on-slide copy** (what literally goes on the slide, tight — not a paragraph about it), the **layout type** from the rotation, and a short **[visual note]** where image/diagram matters.
 - Keep on-slide copy short enough to read in ~2 seconds. Slide 9 is the screenshot-worthy save line.
-- **Optional in-deck DM CTA** on slide 10: ONE keyword-to-DM line, value-framed (e.g. "Comment AUTHORITY and I'll send the scorecard"), never the raw link. Coaching content only — on financial content an in-deck lead-gen ask is a bucket-B mechanic needing IAFA pre-approval (`qa-gate` Mode 2), so keep it in the pinned comment there.
+- **Optional in-deck DM CTA** on slide 10: ONE keyword-to-DM line, value-framed (e.g. "Comment BOTTLENECK and I'll send the audit"), never the raw link. Coaching content only — on financial content an in-deck lead-gen ask is a bucket-B mechanic needing IAFA pre-approval (`qa-gate` Mode 2), so keep it in the pinned comment there.
 
 ## Ideation mode
 When asked for "carousel ideas" (and given a post or brief), give 3–5 sharp angles: each a one-line slide-1 hook + the through-line + the focus area(s) it serves + the template family that fits (named for the owner's reference only, not in the final output). Owner picks one, then build it in full.
@@ -122,7 +122,7 @@ slides:
   #   compare: {oldLabel, old, newLabel, new}                 # before/after, myth→truth (Family F)
   #   tagged:  [{text,tag},{text,tag},{text,tag}]             # framework rows / the save line (C41–C50)
   #   strike: "<crossed-out>"   alt: "<affirmative>"          # reframe (Family D)
-  #   cta:     {pre:"DM me for a", key:"AUTHORITY"}           # slide-10 CTA button
+  #   cta:     {pre:"DM me for the", key:"BOTTLENECK"}           # slide-10 CTA button
   - n: 10
     ...
 ```

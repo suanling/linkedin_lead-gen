@@ -107,7 +107,7 @@ You can ignore this part at first. But if you want to peek under the hood:
 - **`trackers/`** — The spreadsheets that track your leads and your engagement.
 - **`lead-magnets/`** — Your free giveaways.
 - **`references/`** — Deeper notes about your voice, your story, and your targets.
-- **`sops/linkedin-sop.md`** — The full playbook, if you ever want the long version.
+- **`.claude/skills/`** — the playbook, one file per task. Each skill *is* the procedure.
 
 ## If you only remember three things
 

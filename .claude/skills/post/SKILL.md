@@ -70,10 +70,24 @@ Generate all seven (1-2 lines each, one action).
 Read `references/learning/` first: if `hook-performance.md` / `comments-performance.md` have ≥12 scored rows, bias the hook and comment patterns toward their `## Current Quartiles → Top` and avoid the Bottom; else use the defaults above.
 
 ### 8. Log
-On "published":
-- Save the post to a local content store (or note it) with frontmatter: format used, lead_magnet, media_type, comment_patterns.
+On "published", invoke `.claude/skills/log-linkedin-post/SKILL.md`. Pass the five inputs it
+needs: post body, topic, CTA keyword, the LinkedIn URL/URN, and the hook pattern. It writes
+the content file to the vault (`Thinking Brain/Content/`), updates today's daily note and
+`Content — Index.md`, and mirrors a copy to `Knowledge Base/raw/`.
+
+Then, here in the workspace:
 - Append to `audit-log.md`: `[YYYY-MM-DD HH:MM] post | linkedin | <topic> | published`.
-- Append **1 row** to `references/learning/hook-performance.md` (format + hook_pattern, scores blank) and **7 rows** (one per comment slot) to `references/learning/comments-performance.md`. `score-posts` fills the metrics at the 7-day mark.
+- Append **1 row** to `references/learning/hook-performance.md` (format + hook_pattern,
+  scores blank) and **7 rows** (one per comment slot) to
+  `references/learning/comments-performance.md`. `score-posts` fills the metrics at the
+  7-day mark.
+
+Add these to the content file's frontmatter so `score-posts` can read them back:
+`lead_magnet`, `media_type`, `comment_patterns: [1..7]`, `format`.
+
+**The URN matters.** `score-posts` matches captures by date + opening line, not by URN
+alone — a published post emits two sibling URNs ~0.7s apart. Log whichever you have; the
+scorer handles the mismatch.
 
 ## Rules
 - Ideation and voice-drafting follow the `linkedin-post-creator` agent (the content lens); this skill orchestrates the pipeline around it. Keep the short-form shape and tone bounds defined once, in the agent.

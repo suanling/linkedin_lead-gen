@@ -1,9 +1,9 @@
-// LinkedIn Metrics — service worker
-// Receives a payload from the popup and POSTs it to the local metrics server.
-// The server writes the JSON to references/learning/inbox/.
+// AIOS LinkedIn Metrics — service worker
+// Receives a payload from the popup and POSTs it to the local n8n webhook.
+// The n8n workflow writes the JSON to references/learning/inbox/.
 
 const DEFAULT_ENDPOINT = "http://localhost:5678/webhook/linkedin-metrics";
-const DEFAULT_SECRET = "change-me";
+const DEFAULT_SECRET = "change-me-aios-2026";
 
 async function getConfig() {
   const { endpoint, secret } = await chrome.storage.sync.get([
@@ -31,7 +31,7 @@ async function postJson(url, secret, payload) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-Metrics-Secret": secret
+      "X-AIOS-Secret": secret
     },
     body: JSON.stringify(payload)
   });

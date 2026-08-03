@@ -24,8 +24,9 @@ references/learning/hook-performance.md
 references/learning/comments-performance.md
 
 # Operational output + private state
-daily-log/*
-!daily-log/.gitkeep
+# daily-log: the notes ARE tracked (they are the work). Only the carousel
+# render output is excluded — 28MB of sb-v1..v11 PNG exports, regenerable.
+daily-log/export/
 audit-log.md
 pending-amendments/*
 !pending-amendments/.gitkeep
@@ -70,3 +71,6 @@ kk-post.source-old.md
 # Python bytecode cache (onboard detect-workspace.py)
 __pycache__/
 *.pyc
+
+# Metrics receiver runtime output
+tools/linkedin-metrics-extension/logs/

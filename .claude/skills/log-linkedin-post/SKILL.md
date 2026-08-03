@@ -2,9 +2,9 @@
 name: log-linkedin-post
 phase: 3
 description: >
-  Log a published LinkedIn post to the vault — creates the content file in /Content/, 
-  appends a log line to today's daily note, and adds the post to the Published section of 
-  Content — Index.md. Post counts are rolled up weekly by the weekly-review skill.
+  Log a published LinkedIn post — files it in the content store, appends a line to today's
+  daily note, and updates the content index when one is configured. All destinations come
+  from config.json → paths. Scored later at the 7-day mark by score-posts.
   
   Use this skill any time the owner says "I published", "just posted", "log this post", 
   "save my LinkedIn post", "I went live on LinkedIn", "/log-post", or pastes a LinkedIn 
@@ -19,6 +19,18 @@ description: >
 When the owner shares a post that's been published on LinkedIn, do the steps below in sequence.
 
 ---
+
+
+> **Paths come from `config.json`.** Read `config.json → paths` and write only where it points:
+> - `content_store` — where published posts are filed (default `content/`)
+> - `daily_notes` — the daily-note folder (default `daily-log/`)
+> - `daily_note_template` — the template used when today's note doesn't exist yet
+> - `content_index` — a running index of published posts; skip STEP 3 when blank
+>
+> These default to folders inside the workspace. They can point at an external notes vault
+> instead, in which case say so plainly in the confirmation, since the write lands outside
+> the workspace and outside whatever backs it up. If a path is blank, ask the owner where it
+> should go and offer to save it to `config.json`. Never hardcode an absolute path here.
 
 ## STEP 0: GATHER WHAT'S NEEDED
 
@@ -38,10 +50,15 @@ If the post body is missing, ask for it before doing anything else.
 
 ## STEP 1: CREATE THE CONTENT FILE
 
-**File location:** `Thinking Brain/Content/`
-**File name format:** `YYYY-MM-DD — LinkedIn — [Topic].md`
+**File location:** `<config.paths.content_store>/`
+**File name format:** `YYYY-MM-DD-[kebab-slug].md`
 
-Example: `2026-04-17 — LinkedIn — The Real Cost of Waiting.md`
+Example: `2026-06-23-founder-identity-shift.md`
+
+**Match the folder you are writing into.** Before creating the file, list
+`<config.paths.content_store>/` and follow the naming already in use there. The kebab-slug
+form above is this workspace's `content/` convention; a vault using
+`YYYY-MM-DD — LinkedIn — Topic.md` keeps that instead. Never mix two conventions in one folder.
 
 Build the file with this structure:
 
@@ -78,13 +95,13 @@ scored: false
 - Tags: always include `content` and `linkedin`, then add 1–3 topical tags (lowercase, hyphenated) inferred from the post theme (e.g. `financial-clarity`, `career-transition`, `ai-mindset`)
 - `cta`: use the exact keyword (e.g. `DM BUFFER`) — if none in the post, leave blank
 
-Write this file to: `Thinking Brain/Content/YYYY-MM-DD — LinkedIn — [Topic].md`
+Write this file to: `<config.paths.content_store>/` using the naming convention you confirmed above.
 
 ---
 
 ## STEP 2: UPDATE TODAY'S DAILY NOTE
 
-**File:** the owner's daily note for today, `daily-log/YYYY-MM-DD.md`
+**File:** `<config.paths.daily_notes>/YYYY-MM-DD.md`
 
 Find the section `## 📝 What Happened Today` and append this line:
 
@@ -94,16 +111,20 @@ Find the section `## 📝 What Happened Today` and append this line:
 
 **Important:** 
 - Append — never overwrite existing lines
-- If today's daily note doesn't exist yet, create it from the owner's daily-note template (copy the structure verbatim — headers, helpers, all sections) before adding the line
+- If today's daily note doesn't exist yet, create it from `<config.paths.daily_note_template>` when that is set; otherwise start a plain note with a `## 📝 What Happened Today` heading
+- If the heading isn't present in an existing note, add it at the end rather than rewriting the note
 - If a "Published LinkedIn post" line already exists for today, add a second one (each post gets its own line)
 
 ---
 
 ## STEP 3: UPDATE CONTENT INDEX
 
-**File:** `Thinking Brain/Content/Content — Index.md`
+**File:** `<config.paths.content_index>`
 
-Under the `### Published` section, add a new line at the **top** of the list (most recent first):
+**Skip this step entirely when `content_index` is blank** — the content folder is then the
+record, and there is no index to maintain. Do not invent one.
+
+When it is set, find the `### Published` section and add a new line at the **top** of the list (most recent first):
 
 ```
 - [[YYYY-MM-DD — LinkedIn — [Topic]]] — *[2–5 word descriptor of the post's theme]*
@@ -115,66 +136,26 @@ The descriptor should capture the angle or pillar in plain language — not the 
 
 ## STEP 4: (removed) DAILY FUNNEL TRACKING
 
-The daily note no longer contains a `📊 Daily Tracking` table — LinkedIn post counts are now rolled up Sunday by the `weekly-review` skill from the Chrome-extension inbox. **Skip this step.** Do not look for or create a Content & Visibility table in the daily note.
+The daily note no longer contains a `📊 Daily Tracking` table. Post performance is picked up
+at the 7-day mark by `/score-posts`, which reads the metrics inbox and matches on `post_urn`.
+**Skip this step.** Do not look for or create a Content & Visibility table in the daily note.
 
 ---
-
-## STEP 4.5: (SKIP) KNOWLEDGE BASE RAW
-
-> **Retired 2026-08-01.** The `Knowledge Base` vault was renamed `Knowledge Base (Backup)`
-> and last received a post on 2026-06-08. Do not write there — a mirror into a backup vault
-> is worse than no mirror. Skip this step. If a raw mirror is wanted again, pick a live
-> destination first and update this file.
-
-<details><summary>Original step (kept for reference)</summary>
-
-**File:** `Knowledge Base/raw/YYYY-MM-DD-linkedin-<slug>.md`
-
-`<slug>` = lowercase topic, hyphenated (e.g. `friday-energy-audit`).
-
-Write a copy of the post with this frontmatter:
-
-```
----
-source_type: own-content
-platform: LinkedIn
-date_published: YYYY-MM-DD
-post_url: <full LinkedIn URL>
-post_urn: <urn:li:activity:NNN>
-topic: <Topic>
-pillar: <pillar>
-hook_pattern: <pattern>
-emotion: <emotion>
-cta: <CTA keyword>
-ingested: false
----
-
-<full post body>
-```
-
-If `Knowledge Base/raw/` doesn't exist or KB is offline, skip this step silently and
-note `KB raw write skipped` in the confirmation. Don't block the rest of the logging.
-
-This file gets picked up when KB Phase B ingest runs — no live ingestion now.
-
----
-
-</details>
 
 ## STEP 5: CONFIRM
 
 Show a clean summary:
 
 ```
-✅ Post logged: [[YYYY-MM-DD — LinkedIn — Topic]]
+✅ Post logged: <filename>
 
-📄 Content file created: Content/YYYY-MM-DD — LinkedIn — Topic.md
+📄 Content file created: <content_store>/<filename>
 📝 Daily note updated: logged under What Happened Today
-📋 Content Index updated: added to Published
-📚 KB raw written: Knowledge Base/raw/YYYY-MM-DD-linkedin-<slug>.md
+📋 Content Index updated: added to Published        ← omit when content_index is blank
 ```
 
-If anything was skipped (e.g. daily note didn't exist, table not found), note it clearly so she knows what's missing.
+List only the steps that actually ran. If a step was skipped (no index configured, daily note
+heading missing), say so plainly rather than printing a line that implies it happened.
 
 ---
 

@@ -11,11 +11,11 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/node</string>
-        <string>/ABSOLUTE/PATH/TO/va-workspace/tools/linkedin-metrics-extension/server.js</string>
+        <string>/ABSOLUTE/PATH/TO/workspace Documents/com~apple~CloudDocs/Obsidian/va-workspace/tools/linkedin-metrics-extension/server.js</string>
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/ABSOLUTE/PATH/TO/va-workspace/tools/linkedin-metrics-extension</string>
+    <string>/ABSOLUTE/PATH/TO/workspace Documents/com~apple~CloudDocs/Obsidian/va-workspace/tools/linkedin-metrics-extension</string>
 
     <key>RunAtLoad</key>
     <true/>
@@ -23,9 +23,9 @@
     <true/>
 
     <key>StandardOutPath</key>
-    <string>/ABSOLUTE/PATH/TO/va-workspace/tools/linkedin-metrics-extension/logs/launchd-stdout.log</string>
+    <string>/ABSOLUTE/PATH/TO/workspace Documents/com~apple~CloudDocs/Obsidian/va-workspace/tools/linkedin-metrics-extension/logs/launchd-stdout.log</string>
     <key>StandardErrorPath</key>
-    <string>/ABSOLUTE/PATH/TO/va-workspace/tools/linkedin-metrics-extension/logs/launchd-stderr.log</string>
+    <string>/ABSOLUTE/PATH/TO/workspace Documents/com~apple~CloudDocs/Obsidian/va-workspace/tools/linkedin-metrics-extension/logs/launchd-stderr.log</string>
 
     <key>EnvironmentVariables</key>
     <dict>

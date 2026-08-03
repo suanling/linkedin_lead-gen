@@ -72,10 +72,11 @@ Read `references/learning/` first: if `hook-performance.md` / `comments-performa
 ### 8. Log
 On "published", invoke `.claude/skills/log-linkedin-post/SKILL.md`. Pass the five inputs it
 needs: post body, topic, CTA keyword, the LinkedIn URL/URN, and the hook pattern. It writes
-the content file to the vault (`Thinking Brain/Content/`), updates today's daily note and
-`Content — Index.md`, and mirrors a copy to `Knowledge Base/raw/`.
+the content file to `<config.paths.content_store>` (`content/`) and appends a line to today's
+daily note in `<config.paths.daily_notes>` (`daily-log/`). Everything stays inside this
+workspace; there is no external vault write and no Knowledge Base mirror.
 
-Then, here in the workspace:
+Then, also here in the workspace:
 - Append to `audit-log.md`: `[YYYY-MM-DD HH:MM] post | linkedin | <topic> | published`.
 - Append **1 row** to `references/learning/hook-performance.md` (format + hook_pattern,
   scores blank) and **7 rows** (one per comment slot) to

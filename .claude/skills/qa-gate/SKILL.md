@@ -16,11 +16,47 @@ The last check before anything goes out. Config-driven: reads `config.json → g
 |------|-------|-----------------|
 | `voice_match` | Sounds like the owner? | `.claude/rules/voice.md` (DM/comment) or `kk-post.md` (post), grounded by `references/about-me.md` + `references/voice-profile.md` (lived stories, signature moves, hard nos) |
 | `compliance` | Within the declared industry rules? Strict if regulated, light/skip if not. | `config.json.industry` + `gates.md` |
-| `anti_ai` | No AI tells: em dashes, banned vocabulary, banned sentence patterns, rule-of-three, missing contractions, formatting tells | **`.claude/rules/anti-ai.md` (complete — Part 1 rules + Part 2 field guide)** |
+| `anti_ai` | No AI tells: em dashes, banned vocabulary, banned sentence patterns, rule-of-three, missing contractions, formatting tells | **`.claude/rules/anti-ai.md` (complete: Hard bans, flag on one occurrence, plus Cluster tells, flag only when several co-occur)** |
 | `spam_cadence` | Within daily caps; not templated/spammy | `gates.md` caps |
 
-3. **Output** per enabled gate: `PASS`, or the exact problem + the fix (quote the offending phrase, give the rewrite).
-4. If any gate fails, the draft does **not** ship until fixed. Re-run after the fix.
+3. **Mechanical scan before the holistic read (`anti_ai` only).** Don't rely on a single vibes-based
+   read to catch reversal/contrast constructions — self-review has repeatedly missed fresh instances
+   of this exact pattern even moments after fixing the same pattern elsewhere in the same draft.
+   Before judging tone, literally scan the draft text for these markers, and check every hit against
+   `anti-ai.md`'s "Reversal / contrast tricks" bullets (AI pivot, difficulty-escalation reversal,
+   negative parallelism, symmetric quotable pair):
+   - "isn't" / "wasn't" / "doesn't" paired later in the same sentence or the next one with "it's" /
+     "it does" / a restated subject
+   - "not X, but" / "not because ... but because" / a trailing "..., not ___" at a sentence's end
+   - "the actual/real ___" / "what actually matters/counts" / "___ matters more"
+   - two consecutive sentences with matched subjects and an escalating verb ("Good ___ does A. Great
+     ___ does B."; "___ alone doesn't do A. A well-planned ___ can do B.")
+   A hit isn't automatically a fail — plenty are innocent factual comparisons or the sanctioned
+   acknowledge-then-redirect move from `voice.md` — but every hit must be run through the strip-down
+   test ("does this collapse to '[Thing] wasn't the problem, [other thing] was'?") before the draft
+   can be marked clean. Do this scan even on a draft that already looks fine.
+4. **Party-differentiation scan before the holistic read (`voice_match` only).** Same reasoning as
+   Step 3: don't trust a vibes-only read to catch a fact attributed to the wrong person — self-review
+   has already let three separate instances through in one session. Every fact in a draft belongs to
+   exactly one of two parties, the owner or the target being commented on/replied to/messaged; this
+   scan checks the draft hasn't blurred which is which. Before judging tone, literally scan for:
+   - **"your ___" claims** ("your research," "your product," "your team," "your nine years") —
+     trace each one back to the target's own post/thread text. If the source frames it as observed,
+     learned, or relayed ("I saw this," "I learned this on a trip") rather than built/owned, a draft
+     that treats it as the target's own work fails.
+   - **Causal connectors** ("so," "that's why," "because") joining two claims — if both claims come
+     from `about-me.md`, confirm the source text itself draws that connection; two true facts near
+     each other there is not evidence they're linked.
+   - **A bare "you" sitting next to a specific number, scene, or credential** — check whether that
+     detail is actually the *owner's own* fact from `about-me.md`. If so, it must be explicitly
+     marked as hers ("I... myself"), never left phrased as if it describes the target. This is the
+     one that matters most: never let the owner's own information read as a claim about the person
+     she's writing to.
+   A hit isn't automatically a fail — plenty of "your X" phrasings are accurate. But every hit must
+   be traced to its source before the draft can be marked clean, on every draft, not just ones that
+   look risky.
+5. **Output** per enabled gate: `PASS`, or the exact problem + the fix (quote the offending phrase, give the rewrite).
+6. If any gate fails, the draft does **not** ship until fixed. Re-run after the fix.
 
 **Testimonial consent (part of `compliance`).** If a draft quotes or paraphrases a testimonial, confirm it exists in `references/testimonials.md` with `Consent to publish` granted (and, if regulated, `Compliance cleaned = yes` — no PII, no figures, Mode 2). Not consented, or not in the store, → FAIL: it cannot ship.
 

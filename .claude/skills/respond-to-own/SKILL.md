@@ -43,6 +43,10 @@ Not optional. A draft that breaks either one fails QA — rewrite before present
 5. **Recommend** one, with a one-line why. Factor *who commented*: for a **peer / fellow creator**, default to the **Conversationalist** (relationship over lurker theatre), offering the Thought Leader "if you'd rather play to the audience"; for an **ICP prospect**, lead with whatever best surfaces their pain and earns the DM (commenter tone, post theme, your goal: visibility / relationship / DM).
 
 ## Failure patterns to avoid (the lessons, not the bio)
+- **Manufactured arc** — see `.claude/rules/anti-ai.md` → Banned arcs → "The comment shape": one
+  reaction + one personal observation is enough, no lesson required. Avoid contrast constructions,
+  extended metaphors, three-part lists, summarising the commenter's point back to them, and a
+  polished closing aphorism.
 - **Poetic paraphrasing** — restating the commenter's point in fancier words. Fix: add a specific lived anecdote + a new angle + a CTA.
 - **AI structural tells** — "not just X but Y" parallelism, "It is/That is" without contractions, stiff words ("genuinely unsettling"). Fix: contractions, plain phrasing, one concrete detail.
 - **Abstract / academic** — jargon + rule-of-three lists. Fix: one concrete personal example, plain language.

@@ -55,8 +55,27 @@ The last check before anything goes out. Config-driven: reads `config.json → g
    A hit isn't automatically a fail — plenty of "your X" phrasings are accurate. But every hit must
    be traced to its source before the draft can be marked clean, on every draft, not just ones that
    look risky.
-5. **Output** per enabled gate: `PASS`, or the exact problem + the fix (quote the offending phrase, give the rewrite).
-6. If any gate fails, the draft does **not** ship until fixed. Re-run after the fix.
+5. **Already-in-the-post scan (comments and replies only, part of `anti_ai`).** Same reasoning as
+   Steps 3 and 4, and the same failure mode: the earlier scans all check the draft against the
+   owner's own files (`voice.md`, `about-me.md`, `anti-ai.md`) and never against **the post being
+   commented on**. A draft can pass every one of them and still be a bot comment, because what gives
+   an automated commenter away isn't its prose, it's that it has nothing of its own to say. Real
+   incident, 2026-08-11: a fully gate-passing comment restated the post's own two key phrases and
+   then asked a question the post's closing line had already answered; the author publicly called it
+   out as a bot tell. Run these three, literally, against the post text:
+   - **Subtraction test.** Delete from the draft everything the post already states, in any wording.
+     If what's left is only agreement, restatement, or connective tissue, **FAIL** — there is no
+     comment here. Something must survive.
+   - **Answered-question trace.** For every question in the draft, find its answer in the post. Read
+     the closing lines specifically; posts often announce there exactly what the question is asking
+     about. If the post answers it, **FAIL** — cut the question or replace it with the observation.
+   - **Thesis-echo check.** Identify the post's main point in one sentence. If the draft's hook or
+     value line is that point reworded, **FAIL**. Quote a detail or an aside, never the thesis.
+   To pass, the draft must carry **at least one thing not derivable from the post**: a disagreement
+   or qualification, a different cause than the one the author named, a lived detail from
+   `about-me.md`, or a genuinely open question. Agreement plus a question is not a comment.
+6. **Output** per enabled gate: `PASS`, or the exact problem + the fix (quote the offending phrase, give the rewrite).
+7. If any gate fails, the draft does **not** ship until fixed. Re-run after the fix.
 
 **Testimonial consent (part of `compliance`).** If a draft quotes or paraphrases a testimonial, confirm it exists in `references/testimonials.md` with `Consent to publish` granted (and, if regulated, `Compliance cleaned = yes` — no PII, no figures, Mode 2). Not consented, or not in the store, → FAIL: it cannot ship.
 

@@ -77,6 +77,16 @@ The last check before anything goes out. Config-driven: reads `config.json → g
 6. **Output** per enabled gate: `PASS`, or the exact problem + the fix (quote the offending phrase, give the rewrite).
 7. If any gate fails, the draft does **not** ship until fixed. Re-run after the fix.
 
+**Carousel truth gate (carousels only, runs BEFORE the gates above).** Per
+`references/template/Linkedin Carousel Design Template/design-notes.md` (applied amendment
+2026-08-18-carousel-design-anti-slop): (a) no statistic without a nameable source — an unsourced
+number fails here even before compliance sees it; (b) no invented proof — an omitted slide beats
+a fabricated one; (c) no three equally-weighted slides in a row — the 03–07 value progression
+must build, with the strongest beat given the most room. Also confirm the deck states its
+one-line design read ("Reading this as: [template A–E] for [one real person], [palette]"). Any
+truth-gate fail stops the run; fix, then run the normal gates. Note: (a) overlaps
+`iafa-compliance` Mode 2 — the truth gate runs first and catches the cheap cases.
+
 **Testimonial consent (part of `compliance`).** If a draft quotes or paraphrases a testimonial, confirm it exists in `references/testimonials.md` with `Consent to publish` granted (and, if regulated, `Compliance cleaned = yes` — no PII, no figures, Mode 2). Not consented, or not in the store, → FAIL: it cannot ship.
 
 ## Owner's final pass (after the gates PASS)

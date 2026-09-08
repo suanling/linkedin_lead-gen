@@ -30,7 +30,7 @@ Before any hook ships, check it against:
 5. **No cliffhanger bait** — don't promise a payoff you can't deliver in the body
 6. **One idea** — if the hook contains two ideas, cut one
 
-Full reference: `references/hook-checklist.md` and `references/scroll-stopping-hooks.md`.
+Full reference: `.claude/skills/hook/references/hook-checklist.md` and `.claude/skills/hook/references/scroll-stopping-hooks.md`.
 
 ## Scroll-stopping patterns (verified to work in her voice)
 
@@ -51,7 +51,7 @@ Every strong hook also triggers at least one of:
 - **Curiosity** — "I need to know this" (e.g. "After 8 years of cold calling, this is the only opener that works.")
 - **Polarisation** — "Wait, really?" / "I disagree" (e.g. "Most advisors are afraid of cold calling. That is exactly why it works.")
 
-Then refine with: **Quantify** (add a number), **Personalise** (first person), **Simplify** (cut to the spine). Full template library: `references/scroll-stopping-hooks.md`.
+Then refine with: **Quantify** (add a number), **Personalise** (first person), **Simplify** (cut to the spine). Full template library: `.claude/skills/hook/references/scroll-stopping-hooks.md`.
 
 When generating options, label each by emotion type and note which refinements were applied. Always run the 6-point checklist before recommending.
 
@@ -86,9 +86,9 @@ Buzzwords ("game-changer", "synergy", "leverage" as a verb, "crushing it") · wa
 
 ## References
 
-- `references/hook-checklist.md` — full checklist (mirrored from `references/hook-checklist.md` in AIS-OS)
-- `references/scroll-stopping-hooks.md` — pattern library (mirrored from `Content/Strategy/scroll-stopping-hooks.md`)
-- `references/hook-retain-reward.md` — the unit framework (mirrored from `Zettelkasten/Content Unit — Hook Retain Reward.md`)
+- `.claude/skills/hook/references/hook-checklist.md` — full checklist (mirrored from AIS-OS)
+- `.claude/skills/hook/references/scroll-stopping-hooks.md` — pattern library (mirrored from `Content/Strategy/scroll-stopping-hooks.md`)
+- `.claude/skills/hook/references/hook-retain-reward.md` — the unit framework (mirrored from `Zettelkasten/Content Unit — Hook Retain Reward.md`)
 - `.claude/rules/voice.md` (grounded by `references/voice-profile.md`) (one level up at `.claude/rules/voice.md` (grounded by `references/voice-profile.md`)) — VOICE PROFILE, single source of truth
 
 ## Boundaries

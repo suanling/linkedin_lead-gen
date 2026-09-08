@@ -3,7 +3,7 @@
 > Your public-facing positioning profile — the LinkedIn-style "about" structure. Filled during
 > `/onboard` (the storytelling-strategist sequence) from your real story and working history;
 > never invented (lived experience only). Companion to the deep private `references/about-me.md`
-> and the operational `account-profile.md`. Financial claims stay concept-only (Mode 2).
+> and the operational `account-profile.md`. In a regulated field, regulated claims stay concept-only per `.claude/rules/gates.md`.
 
 ## I help
 [ xxx — who you help + the outcome, one line ]

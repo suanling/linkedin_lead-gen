@@ -3,7 +3,7 @@
 > Social proof captured as people engage (via `references/capture-protocol.md`, bucket 3).
 > **Nothing here is publishable until consent is granted.** `qa-gate` (compliance) blocks any use of an
 > entry whose consent is not granted. If you are a regulated adviser, financial testimonials need prior
-> WRITTEN consent, no PII, no figures (Mode 2, see gates.md); other testimonials still need consent
+> WRITTEN consent, no PII, no figures (in a regulated field, see gates.md); other testimonials still need consent
 > before use. `/onboard` creates this file; the capture skills fill it.
 
 ## Store

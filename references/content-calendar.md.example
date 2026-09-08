@@ -15,7 +15,7 @@
 > > Give me a post on **{Topic / Angle}** in this content pillar.
 >
 > Theme + Objective are looked up by weekday from the legend; only Pillar focus + Topic come from
-> the row. Coaching = Mode 1; financial topics flip to Mode 2 (concept-only).
+> the row. In a regulated field, a regulated topic escalates per `.claude/rules/gates.md` (concept-only).
 
 ## How this calendar is built (structure to keep)
 
@@ -60,7 +60,7 @@ already past when you generate, and start the table from the next upcoming weekd
 |------|-----|--------------|---------------|--------|
 | [ YYYY-MM-DD ] | [ Mon ] | [ this month's facet of the Mon pillar ] | [ the specific topic/angle for this date ] | [ planned / drafted / published ] |
 | [ YYYY-MM-DD ] | [ Tue ] | [ this month's facet ] | [ topic/angle ] | [ planned ] |
-| [ YYYY-MM-DD ] | [ Wed ] | [ this month's facet ] | [ topic/angle — Mode 2 concept-only if financial ] | [ planned ] |
+| [ YYYY-MM-DD ] | [ Wed ] | [ this month's facet ] | [ topic/angle — regulated? concept-only if financial ] | [ planned ] |
 | [ YYYY-MM-DD ] | [ Thu ] | [ this month's facet ] | [ topic/angle ] | [ planned ] |
 | [ YYYY-MM-DD ] | [ Fri ] | [ this month's facet ] | [ topic/angle ] | [ planned ] |
 | … | … | … | … | … |

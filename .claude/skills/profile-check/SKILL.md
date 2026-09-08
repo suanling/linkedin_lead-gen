@@ -43,7 +43,8 @@ real engagement. A Group 2 verdict means "worth warming", not "a live lead".
   invent an answer to one mid-check.
 - ICP + disqualifiers: `references/icp.md`
 - Hard exclusions + geography + group definitions: `references/engagement-targets.md`
-- Compliance mode: `.claude/rules/gates.md` and `references/iafa-compliance.md`
+- Compliance mode: `.claude/rules/gates.md`, plus any operational ruleset it names
+  (regulated owners only; non-regulated workspaces have none)
 - Positioning (for the competitor test): `references/positioning.md`
 
 Check the audit log for the name before starting. If they have been checked before,
@@ -430,7 +431,7 @@ Append one line to `audit-log.md`:
 [YYYY-MM-DD HH:MM] profile-check | Name | verdict | evidence and reasoning
 ```
 
-Verdict is one of: `GROUP 1` · `GROUP 2 (A1/A2/A3)` · `GROUP 3` ·
+Verdict is one of: `GROUP 1` · `GROUP 2` (with the owner's sub-type where defined) · `GROUP 3` ·
 `declined-G2` · `excluded-all` · `qualified-quiet` · `research-needed` ·
 `compliance-review` · `peer-watch` · `DELIVERY-PARTNER CANDIDATE` ·
 `NOT added (referral outlet, direct contact only)`.

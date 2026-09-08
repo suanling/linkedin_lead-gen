@@ -3,6 +3,55 @@
 > Who you comment on, and why. Fill this during/after `/onboard`. Three groups work well —
 > adapt to your strategy. Add LinkedIn URLs and the outcome you want from each.
 
+## Geography
+
+Which markets you source from, and the exception that lets a non-primary-market account in.
+Per-group markets live in `references/engagement-profile-criteria.md`; this is the summary.
+
+- Primary market: [ xxx ]
+- The audience exception: a voice outside your market enters only when their audience IS your
+  buyer. Whose audience it is, not how large.
+
+---
+
+## Hard exclusions (never engage, regardless of fit, reach or content quality)
+
+> **`/profile-check` reads this section and stops on a hit.** These are automatic. They are not
+> weighed against ICP fit or post quality, and a good post does not override them. Checked BEFORE
+> any classification work.
+>
+> Leave this list empty if nothing applies to you. An empty list is a valid answer, and the skills
+> handle it. Do not invent exclusions to fill it.
+
+**1. Direct competitors.** [ xxx — the test that decides it. The default is all four of same
+buyer, same problem, same offer, same market; three or fewer is an adjacent business and a
+possible referral partner, not an exclusion. See `references/engagement-profile-criteria.md`. ]
+
+**2. Regulated-field exclusions, if your field is regulated.** [ xxx — delete this whole entry if
+you hold no licence and work in no regulated field. Where it applies, name the accounts you may
+not comment under, and note that the exclusion follows the VENTURE, not the person: someone can
+run an excluded business and a clean one. A venture-level admission does not survive a headline
+that advertises the excluded business. ]
+
+**3. [ xxx — any further category you decide on. ]**
+
+**Post-type filters.** An account can be admitted with a filter rather than blocked outright,
+where only part of their content is unsafe. Write the filter into that account's row as
+*"comment ONLY on X, SKIP Y"*, and `/commenting-others` applies it before drafting.
+
+---
+
+## Checked and declined (do not re-check without new information)
+
+`/profile-check` appends here so the same profile is not re-litigated. Record the group whose
+test failed, never a bare "not a fit", and name what would change the verdict.
+
+| Name | Date | Verdict | Why | What would flip it |
+|------|------|---------|-----|--------------------|
+| [ xxx ] | [ xxx ] | [ declined-G2 / excluded-all ] | [ xxx ] | [ xxx ] |
+
+---
+
 ## Group 1 — Bigger voices (borrow their audience)
 People with large followings whose audience IS your ICP. You become a familiar, sharp name
 in their comments. Their followers find you.

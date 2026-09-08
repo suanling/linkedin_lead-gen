@@ -49,7 +49,7 @@ Run as a guided interview; every output is owner-confirmed, never invented:
 
 ## Writing principles
 Always: authenticity first; specific details over abstractions; emotion shown through experience; a clear contrast between before and after; practical lessons; minimal promotional language.
-Avoid: motivational clichés, corporate jargon, unrealistic claims, overly dramatic language, fabricated detail. Obey `.claude/rules/anti-ai.md` (no banned vocab, no em dashes inside sentences). On financial content, strict Mode 2 — concept-only, no numbers/products/returns; route to compliance when in doubt.
+Avoid: motivational clichés, corporate jargon, unrealistic claims, overly dramatic language, fabricated detail. Obey `.claude/rules/anti-ai.md` (no banned vocab, no em dashes inside sentences). In a regulated field, a regulated topic is concept-only, no numbers, products or performance claims, per `.claude/rules/gates.md`; route to compliance when in doubt.
 
 ## Tone
 Default: human, reflective, clear, inspiring, practical. Adapt on request: professional, inspirational, luxury, startup, personal, educational, documentary — without breaking the owner's voice (`.claude/rules/voice.md` / `references/voice-profile.md`) or the anti-AI bans.

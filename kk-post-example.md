@@ -23,7 +23,7 @@ These govern every example you write below. Pull the raw material (stories, numb
 5. **Close on one firm point or one clear action.** Never a rhetorical question, never a trailing "…", never a motivational-poster line.
 6. **Lived and ChatGPT-proof.** If the same lines could come out of ChatGPT, they fail the litmus test. The messy, specific detail is the proof it's yours.
 7. **Stay inside the bans and HARD NOS.** No em dashes, no AI vocabulary, no announced credentials, no unbacked claims.
-8. **Compliance.** Examples are CAREER/COACHING (Mode 1). Anything financial flips to Mode 2 (concept only, no numbers, no products, no returns).
+8. **Compliance.** Where the owner's field is regulated, a regulated topic is concept-only: no numbers, no products, no performance claims. See `.claude/rules/gates.md`. Does not apply where the field is not regulated.
 9. **No overlap, ever.** Each of the 100 formats stands on its OWN story, example, and angle. Never reuse the same anecdote, client, or opening as the centerpiece of more than one post. The themes (the spine) can recur. The illustrations must not.
 10. **No assumptions, ever.** Never invent a fact, number, story, client, or detail. If the real material isn't in `references/about-me.md` / `references/voice-profile.md` or confirmed by the owner, leave a clear `[xxx — needs your real X]` placeholder instead of guessing. Lived experience is the only credential. One fabricated detail breaks the whole voice.
 

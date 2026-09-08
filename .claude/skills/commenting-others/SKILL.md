@@ -1248,7 +1248,7 @@ If the owner explains what feels wrong, update the reasoning first.
 | primary group | one value, from `Category` |
 | post URL or topic | what was commented under |
 | comment angle | the move in a few words, for the repetition scan |
-| compliance mode | Mode 1 or Mode 2, per `.claude/rules/gates.md` |
+| compliance mode | whichever mode `.claude/rules/gates.md` defines |
 | profile view | where observable |
 | follow | where observable |
 | DM | opened, and by whom |

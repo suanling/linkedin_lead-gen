@@ -165,7 +165,7 @@ Run `/qa-gate` on the caption + all on-slide copy (voice + anti_ai always; compl
 - No leftover legacy essay copy ("leverage code", "replaceable", "the wrong layer",
   "tool/skill/position", "LAYERS" keyword) rendering on any `sb-*` slide.
 - Save-worthiness present: ≥1 self-test slide AND ≥1 quotable slide (Step 2).
-- Mode 2 (financial) → mark the deck DRAFT-FOR-COMPLIANCE-REVIEW.
+- A regulated topic in a regulated field → mark the deck DRAFT-FOR-COMPLIANCE-REVIEW, per `gates.md`.
 
 ## Step 8 — Log
 

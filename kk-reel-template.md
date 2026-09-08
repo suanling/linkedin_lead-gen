@@ -262,7 +262,7 @@ Concrete before abstract, per the voice profile.
 [Caption: LONG. Name the promise. End "DM me [word]".]
 [xxx]
 > ⚠️ Compliance: operational ROI on tools and headcount is Mode 1 business analysis. It flips to
-> Mode 2 the moment it touches personal financial products, returns, or income claims.
+> In a regulated field, escalates the moment it touches a regulated topic. See `.claude/rules/gates.md`.
 
 ---R8. The Comment-Answer Reel---
 > Best for: answering the question your own comment section keeps asking. **The highest-converting

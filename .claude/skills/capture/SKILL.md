@@ -35,7 +35,7 @@ Draft the entry from what was actually said. Then:
 - **Testimonial → `references/testimonials.md`.** Add a row with Date · Who (name/role) · Where ·
   Quote (verbatim) · `Consent to publish = not granted` · `Compliance cleaned = —` · `Used in = —`.
   **Flag clearly that consent is required before it can be used anywhere**, and that for financial
-  testimonials it must be prior WRITTEN consent, no PII, no figures (Mode 2, gates.md). Never paraphrase
+  testimonials it must be prior WRITTEN consent, no PII, no figures (per `gates.md`). Never paraphrase
   a testimonial into existence; capture only the real words.
 
 - **Someone else's personal story → do NOT capture as content.** This is the owner's hard rule (never

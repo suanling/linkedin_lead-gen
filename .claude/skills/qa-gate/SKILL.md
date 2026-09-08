@@ -88,7 +88,7 @@ truth-gate fail stops the run; fix, then run the normal gates. Note: (a) overlap
 strictest compliance mode in `.claude/rules/gates.md` where the owner's field is regulated; the
 truth gate runs first and catches the cheap cases.
 
-**Testimonial consent (part of `compliance`).** If a draft quotes or paraphrases a testimonial, confirm it exists in `references/testimonials.md` with `Consent to publish` granted (and, if regulated, `Compliance cleaned = yes` — no PII, no figures, Mode 2). Not consented, or not in the store, → FAIL: it cannot ship.
+**Testimonial consent (part of `compliance`).** If a draft quotes or paraphrases a testimonial, confirm it exists in `references/testimonials.md` with `Consent to publish` granted (and, if regulated, `Compliance cleaned = yes` — no PII, no figures, per `gates.md`). Not consented, or not in the store, → FAIL: it cannot ship.
 
 ## Owner's final pass (after the gates PASS)
 The machine gates catch the tells. They can't see whether the words are actually yours. So when

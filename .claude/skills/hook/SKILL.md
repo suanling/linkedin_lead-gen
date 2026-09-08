@@ -70,7 +70,7 @@ When she says "write a hook for [topic]":
 1. **Read the ledger.** `references/learning/hook-performance.md` → top quartile patterns. Note the dominant pattern and emotion type for her best-performing posts in the last 30 days.
 2. Ask one question: **what's the one true thing she wants the reader to walk away knowing?** (the Reward, in one sentence)
 3. Generate **3 hook options** — different patterns from the list above
-3. For each, show the first 2 lines + 1 sentence on why it'd hook her ICP (PMs/BAs/SWEs in Singapore who feel quietly replaceable)
+3. For each, show the first 2 lines + 1 sentence on why it'd hook the owner's ICP (see `references/icp.md`)
 4. Mark her natural pick (the one closest to recent published posts in `Content/`)
 5. After she picks one, draft Retain + Reward to match the hook's contract
 

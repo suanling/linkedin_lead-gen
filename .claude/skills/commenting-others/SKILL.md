@@ -130,7 +130,7 @@ Columns:
 
 1. Name
 2. Country
-3. Category
+3. Category — the **primary group**, one value only
 4. Last Engaged
 5. Next Action
 6. Total Engagements
@@ -138,6 +138,13 @@ Columns:
 8. LinkedIn URL
 9. Date Added
 10. Notes
+11. Status
+12. Decline group
+13. Audience host
+14. Activity status
+15. Commentable today
+16. Engagement route
+17. Company lane
 
 ---
 
@@ -148,6 +155,22 @@ Columns:
 Skip anyone outside the ICP or matching disqualifiers in `account-profile.md`.
 
 Skip the wrong geography when targeting a specific market.
+
+### Group criteria
+
+**The three group tests live in `references/engagement-profile-criteria.md`.** Read it before
+adding a named target. It carries accept-when, do-not-accept and the edge cases for each group.
+
+### Group-specific rejection reasons
+
+**"Employee", "product business" and "not a founder" are GROUP 2 outcomes only.** They answer
+the Group 2 question and say nothing about the other two, so they must never close Group 1 or
+Group 3 without those tests being run and recorded. An employee at the right firm can be a
+Group 1 host; a product founder can be a Group 3 peer. Record which group's test failed in
+`Decline group`.
+
+Only two grounds close all three at once: a **direct competitor** (four-out-of-four on buyer,
+problem, offer and market) and a **compliance exclusion**.
 
 ---
 
@@ -300,15 +323,38 @@ State:
 
 Using `references/engagement-targets.md` and the engagement tracker, build a list of eligible accounts.
 
-Eligible means:
+Eligible means **ALL FOUR** of:
 
-`Next Action ≤ today`
-
-or the account has not yet been engaged.
+1. `Next Action ≤ today`, or the account has not yet been engaged
+2. `Status` is `qualified-active`, `accepted-g1` or `peer-watch`
+3. `Commentable today` is not `no`
+4. Outside cooldown, and no other account sharing its `Company lane` has been worked in
+   the same window
 
 Order by priority.
 
-Skip:
+## Statuses that are SKIPPED, not worked
+
+**Never select these, whatever their Next Action says.** Only a status change makes them
+eligible — never a date.
+
+| Status | Why it is skipped |
+|---|---|
+| `qualified-quiet` | Commercially qualified, but not comment inventory. Work its `Engagement route` instead |
+| `research-needed` | A named fact is missing. Find the fact, then re-status |
+| `compliance-review` | Blocked on a written compliance rule |
+| `declined-g2` / `excluded-all` | Not in the book |
+
+A `qualified-quiet` account showing as due is a **data error, not a task.** Its Next Action
+should not have been set. Clear the date rather than commenting.
+
+## The daily cap
+
+**15 comments per day, total** (`.claude/rules/gates.md`). It is an account-safety limit, not
+a per-lane or per-author one, and the queue stops at 15 however many accounts are eligible.
+Existing cooldown and lane-collision rules apply on top and only ever reduce the number.
+
+Also skip:
 
 - out-of-ICP accounts where engagement has no strategic value
 - wrong geography where relevant
@@ -348,11 +394,11 @@ Do not classify them as a Group 2 prospect unless they actually fit the ICP.
 
 ### 2. Pick the group
 
-Use the criteria in `references/engagement-targets.md`.
+Use `references/engagement-profile-criteria.md`. Test all three before rejecting.
 
-- Group 1 — bigger voice
-- Group 2 — ICP
-- Group 3 — peer / adjacent
+- Group 1 — bigger voice, the room
+- Group 2 — the buyer
+- Group 3 — peer / adjacent route
 
 For Group 2, tag the appropriate archetype.
 
@@ -395,6 +441,30 @@ If no suitable post is found after reasonable attempts, skip.
 Do not rely on profile/activity pages if they do not expose the full post text.
 
 If the owner pastes a post without identifying the author and identity matters to the drafting or classification, confirm before proceeding.
+
+## ⚠️ CHECK THE ROW'S POST-TYPE FILTER BEFORE DRAFTING
+
+**Read the account's row in `references/engagement-targets.md` before you draft.** Some rows carry
+a **post-type filter**: the account is admitted, but only part of their content is workable. A
+filter is written into the row as *"comment ONLY on X, SKIP Y"*.
+
+**A post that fails the filter is a SKIP, not a drafting problem.** It does not matter how good
+the post is, how overdue the account is, or how strong the angle would be. Log the skip with the
+filter as the reason and move to the next account.
+
+**Two filter families:**
+
+| Family | Skip these posts |
+|---|---|
+| **Compliance** | Whatever the owner's licence or regulated field bars. The list is in `references/engagement-profile-criteria.md`; the account's row names which posts it covers. |
+| **Lane** | Whatever the row names, where an account's content splits across safe and off-lane topics. |
+
+> **Why this is checked here and not left to `qa-gate`.** The gate reads the *draft*. A perfectly
+> clean comment under the wrong post still puts the owner's licensed name in the wrong section,
+> and the gate cannot see that. **The filter is a post-selection rule; the gate is a text rule.
+> Both run, and this one runs first.**
+
+Where a row says `compliance-review`, do not comment at all until the row says otherwise.
 
 ---
 
@@ -1164,6 +1234,32 @@ If the owner explains what feels wrong, update the reasoning first.
 ---
 
 # STEP 5 — LOG ON "DONE"
+
+## STEP 5-OUTCOME — ONE ROW PER COMMENT (required)
+
+**Every shipped comment gets one outcome row**, appended to `audit-log.md` on the existing
+`[YYYY-MM-DD HH:MM] commenting-others | Name | comment | ...` line. Fields, in order:
+
+| Field | Notes |
+|---|---|
+| date | |
+| account | person |
+| company | the firm, so lane collisions stay visible |
+| primary group | one value, from `Category` |
+| post URL or topic | what was commented under |
+| comment angle | the move in a few words, for the repetition scan |
+| compliance mode | Mode 1 or Mode 2, per `.claude/rules/gates.md` |
+| profile view | where observable |
+| follow | where observable |
+| DM | opened, and by whom |
+| conversation | live thread |
+| call | booked |
+| proposal | sent |
+| revenue | closed |
+| next action | date and what |
+
+**Leave a field blank when it is not observable. Never guess one.** LinkedIn does not attribute
+profile views to a single comment; record views weekly against volume rather than per comment.
 
 ## STEP 5A — ENGAGEMENT TRACKER
 

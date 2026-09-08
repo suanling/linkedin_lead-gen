@@ -30,7 +30,7 @@ If name or event is unclear, ask.
 | "parked" / "not interested" | Parked / Closed Lost | — | +30 days / none |
 
 ## STEP 1b — Quick ICP check (new connection requests only)
-When creating a new row, do a fast fit-check against `account-profile.md` + `references/icp.md`: which archetype, strong/weak fit. **Record the result in Notes** (no Tier column), e.g. `ICP: strong fit — Archetype A`. Never fabricate; if unsure, say so.
+When creating a new row, do a fast fit-check against `account-profile.md` + `references/icp.md`: which archetype, strong/weak fit. **Record the result in Notes** (no Tier column), e.g. `ICP: strong fit — <archetype from icp.md>`. Never fabricate; if unsure, say so.
 
 ## STEP 2 — Update / create the row
 

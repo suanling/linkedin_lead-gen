@@ -5,7 +5,9 @@ Two jobs, run together:
   1. DETECT  - find every copy of this workspace, flag cloud-synced / duplicate copies.
   2. BOOTSTRAP - deterministically create any missing live file from its blank:
        *.example -> live file, kk-post-template.md -> kk-post.md,
-       kk-carousel-template.md -> kk-carousel.md, and blank trackers.
+       kk-carousel-template.md -> kk-carousel.md,
+       references/engagement-profile-criteria-template.md ->
+       references/engagement-profile-criteria.md, and blank trackers.
      Never overwrites an existing file, so real data is safe.
 
 Run with the host's NATIVE python (not a translation layer like WSL/Git-bash),
@@ -97,23 +99,32 @@ def bootstrap(root):
                     except OSError as e:
                         notes.append(f"could not create {os.path.relpath(live, root)}: {e}")
 
-    # 2. kk-post.md is special: its blank is kk-post-template.md (not a *.example file)
-    kk, tmpl = os.path.join(root, "kk-post.md"), os.path.join(root, "kk-post-template.md")
-    if not os.path.exists(kk) and os.path.exists(tmpl):
+    # 2. Blanks that are NOT *.example files: a live file paired with its own -template.md.
+    #    A MISSING blank is reported, never passed over. Silence here is how a client ends up
+    #    with a skill pointing at a file their workspace could never create (found 2026-09-08:
+    #    engagement-profile-criteria-template.md had never been published, so bootstrap said
+    #    "created 0 missing file(s)" and looked like success).
+    for live_rel, blank_rel in (
+        ("kk-post.md", "kk-post-template.md"),
+        ("kk-carousel.md", "kk-carousel-template.md"),
+        ("references/engagement-profile-criteria.md",
+         "references/engagement-profile-criteria-template.md"),
+    ):
+        live = os.path.join(root, *live_rel.split("/"))
+        blank = os.path.join(root, *blank_rel.split("/"))
+        if os.path.exists(live):
+            continue
+        if not os.path.exists(blank):
+            notes.append(f"MISSING BLANK: {live_rel} not created because {blank_rel} "
+                         f"is absent. Skills that read {live_rel} will not work. "
+                         f"Update the template repo.")
+            continue
         try:
-            shutil.copyfile(tmpl, kk)
-            created.append("kk-post.md")
+            os.makedirs(os.path.dirname(live), exist_ok=True)
+            shutil.copyfile(blank, live)
+            created.append(live_rel)
         except OSError as e:
-            notes.append(f"could not create kk-post.md: {e}")
-
-    # 2b. kk-carousel.md is special too: its blank is kk-carousel-template.md
-    kc, ctmpl = os.path.join(root, "kk-carousel.md"), os.path.join(root, "kk-carousel-template.md")
-    if not os.path.exists(kc) and os.path.exists(ctmpl):
-        try:
-            shutil.copyfile(ctmpl, kc)
-            created.append("kk-carousel.md")
-        except OSError as e:
-            notes.append(f"could not create kk-carousel.md: {e}")
+            notes.append(f"could not create {live_rel}: {e}")
 
     # 3. blank trackers with their schemas (needs openpyxl)
     tdir = os.path.join(root, "trackers")

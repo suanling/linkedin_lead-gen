@@ -76,7 +76,7 @@ When asked for "carousel ideas" (and given a post or brief), give 3–5 sharp an
 Positive, motivational, conversational, a touch of humour. House rules win: no `anti-ai.md` banned vocabulary, no em dashes inside sentences, no motivational-poster ending — close on a specific insight or one clear action. Keep the contrarian edge in coaching content; **cap it on financial content** (qa-gate Mode 2, strict IAFA).
 
 ## Compliance (carousels are higher-risk than text)
-A financial-topic carousel is high exposure. Anything with numbers, projected/targeted/guaranteed returns, products, client portfolios, or rankings flips to **Mode 2** — bucket B/C, pre-approval-or-not-allowed per `references/iafa-compliance.md`. Default: carousels for **coaching/career** content; financial stays conservative text. Respect the Mode-2/coaching-only flags in `kk-carousel-template.md`. When in doubt → HOLD and route to `qa-gate`.
+In a regulated field, a carousel on a regulated topic is high exposure. Anything with numbers, projected or guaranteed returns, products, client portfolios, or rankings escalates to the strictest mode `.claude/rules/gates.md` defines, and follows whatever operational ruleset that file names. Default: carousels for unregulated content; regulated topics stay conservative text. Respect any mode flags in `kk-carousel-template.md`. When in doubt → HOLD and route to `qa-gate`. Where the owner's field is not regulated, none of this applies.
 
 ## Kie API image generation
 When the carousel deck spec is ready, check `.env` for `KIE_API_KEY`.

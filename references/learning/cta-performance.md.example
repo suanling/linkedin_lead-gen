@@ -1,0 +1,9 @@
+# CTA Performance Ledger
+
+> Appended by `/score-posts` at the 7-day mark. One row per post that carried a CTA.
+> `/post` reads the top quartile to pick a closing move that has actually worked.
+>
+> Empty until you have scored posts. That is expected for a new workspace.
+
+| Date | Post | CTA type | Wording | Impressions | Comments | DMs | Quartile |
+|------|------|----------|---------|-------------|----------|-----|----------|

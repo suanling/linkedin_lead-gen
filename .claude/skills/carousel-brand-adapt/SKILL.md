@@ -140,6 +140,6 @@ Do not touch any SOP master; system-level rule changes go through `/amend-sop`.
 
 ## Compliance
 
-This workspace's rules still bind: truth gate feeds `references/iafa-compliance.md`
-(an unsourced number is a Mode 2 risk, not just a slop risk), and `qa-gate` runs after
-these gates, never instead of them.
+This workspace's rules still bind. Where the owner's field is regulated, the truth gate feeds
+whatever operational ruleset `.claude/rules/gates.md` names (an unsourced number is a compliance
+risk there, not just a slop risk). `qa-gate` runs after these gates, never instead of them.

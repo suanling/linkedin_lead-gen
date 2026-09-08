@@ -84,8 +84,9 @@ number fails here even before compliance sees it; (b) no invented proof — an o
 a fabricated one; (c) no three equally-weighted slides in a row — the 03–07 value progression
 must build, with the strongest beat given the most room. Also confirm the deck states its
 one-line design read ("Reading this as: [template A–E] for [one real person], [palette]"). Any
-truth-gate fail stops the run; fix, then run the normal gates. Note: (a) overlaps
-`iafa-compliance` Mode 2 — the truth gate runs first and catches the cheap cases.
+truth-gate fail stops the run; fix, then run the normal gates. Note: (a) overlaps the
+strictest compliance mode in `.claude/rules/gates.md` where the owner's field is regulated; the
+truth gate runs first and catches the cheap cases.
 
 **Testimonial consent (part of `compliance`).** If a draft quotes or paraphrases a testimonial, confirm it exists in `references/testimonials.md` with `Consent to publish` granted (and, if regulated, `Compliance cleaned = yes` — no PII, no figures, Mode 2). Not consented, or not in the store, → FAIL: it cannot ship.
 

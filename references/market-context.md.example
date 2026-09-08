@@ -1,0 +1,21 @@
+# Market Context
+
+> Cited, verifiable facts the writing skills draw on when a post or comment needs data.
+> `/post` and `/commenting-others` read this file.
+>
+> **An empty table is a valid state.** The skills write without stats when there are none.
+> Never let a skill invent a number to fill this file.
+>
+> Every row needs a real source and the date you checked it. A statistic with no source is
+> worse than no statistic, and in a regulated field it is a compliance breach.
+
+| Fact | Number | Source (name + link) | As at |
+|------|--------|----------------------|-------|
+| [ xxx ] | [ xxx ] | [ xxx ] | [ xxx ] |
+
+## Notes
+
+- Prefer a primary source over a summary of one.
+- Re-check anything older than 12 months before using it again.
+- If a number cannot be sourced, cut it from the draft rather than softening it into
+  "studies show" or "research suggests" (both banned in `.claude/rules/anti-ai.md`).

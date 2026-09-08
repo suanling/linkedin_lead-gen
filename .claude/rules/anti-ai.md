@@ -216,6 +216,54 @@ which is exactly why they're gated behind clustering here rather than enforced i
 The owner's specific voice, examples, and signature phrases come from `.claude/rules/voice.md`
 (outreach) and `kk-post.md` (posts). This file says what to avoid; those say what to sound like.
 
+## Self-repetition (owner decision, approved 2026-08-20)
+
+> The tells above are about sounding like AI. This one is about sounding like a **template**, which
+> a reader spots faster and trusts less. It is the only rule here that cannot be checked by reading
+> the draft, because the evidence lives in what already shipped. Every pattern found so far was
+> invisible while drafting and only ever surfaced by counting: "The line I'd [verb]" (3x in one
+> day), "nobody/anyone" (7x in 9 days), the quote-the-post opener (16 of 109 comments).
+
+**Run the count before drafting, not after.**
+`python3 tools/spent-phrases/spent_phrases.py` reads the last 14 days of owner-written entries out
+of `audit-log.md` and writes `references/learning/spent-phrases.md`: phrases that reached a second
+recipient, every opener, every closer, stories already spent, and shape counts. Load it at the top
+of a writing session so the constraint shapes the draft instead of auditing it. Checking afterwards
+means the owner reviews prose that is about to be withdrawn.
+
+**Re-run against the FINAL text after any owner edit.** The shipped version is what enters the log
+and what future sessions compare against. Checking only the assistant's draft misses it.
+
+**Retire the move, not the wording.** Retiring "The line I'd [verb]" did not retire opening on a
+quoted phrase; the move reappeared the next morning wearing different words. Name the underlying
+move when retiring a pattern.
+
+### Lived stories are a finite inventory, with a 30-day cooldown
+
+The owner has a limited number of real stories. Each one spends a little of its power every time it
+appears, and reusing one across two people's comments is worse than a generic comment, because it
+looks like a personal detail being deployed as material rather than remembered.
+
+**A story used in the last 30 days does not get reused without a deliberate decision.** This is a
+hard ban within the window, not a preference.
+
+Real incidents that produced this rule (all found by the tool on its first run, 2026-08-20, none
+noticed by any session before it):
+- The childhood money story ran twice. Min-Liang Tan: "I started tracking every dollar as a kid
+  because food wasn't always guaranteed." Mylen Baluca: "I started tracking every cent I had in a
+  notebook as a kid, because food wasn't always guaranteed at home." Same detail, lightly reworded.
+- "I spent years running system rollouts..." went to James Tan (2026-08-19) and Isaac Timothy Tay
+  (2026-08-11), near-identical clause. This is also the exact credential-preamble construction
+  banned under *Show the lived detail, don't narrate having lived it* above, so it broke two rules
+  at once.
+- "...evaluating me instead of..." went to Michelle Koh, Dr. Ralph Ostertag and Ozbay Memet across
+  three consecutive days.
+
+Ties to `voice.md`'s rule that a comment must be **specific to this person, never copy-paste-able to
+50 people**. A reused childhood anecdote is copy-paste-able by definition.
+
+---
+
 ## The litmus test
 > "Does this sound like something the owner would actually say — or like an AI trying hard to imitate them? Could someone get the same answer from ChatGPT?"
 

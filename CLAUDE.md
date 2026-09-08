@@ -37,7 +37,7 @@ sops/linkedin-sop.md   the playbook (read-only)
   agents/              sales-coach, relationship-manager, qa-officer, linkedin-post-creator,
                        linkedin-carousel-creator, storytelling-strategist (lenses)
   skills/              onboard, start-day, qa-gate, commenting-others,
-                       dm-sales-coach, respond-to-own, log-prospect,
+                       dm-sales-coach, respond-to-own, log-prospect, profile-check,
                        post, lead-magnet-gen, score-posts, amend-sop
 daily-log/             your daily notes (plan + record)
 pending-amendments/    SOP change drafts awaiting your review
@@ -54,6 +54,7 @@ tools/                 optional: linkedin-metrics-extension (auto-capture for sc
 | `/dm-sales-coach` | What to say per lead — SALES (→ call) or COLLAB (→ partnership) path |
 | `/respond-to-own` | Reply to comments on your own posts |
 | `/log-prospect` | Quick logger; also captures manual/Sales-Nav connection requests |
+| `/profile-check` | Check an uploaded LinkedIn profile PDF against ICP + hard exclusions; logs the verdict either way |
 | `/post` | Write a LinkedIn post (kk-post format → voice → media → QA → 7 comments) |
 | `/lead-magnet-gen` | Create a lead magnet from a pain point |
 | `/score-posts` | Weekly — score posts + comments at 7 days; feeds the learning ledgers so `post` improves |

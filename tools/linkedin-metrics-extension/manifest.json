@@ -1,9 +1,14 @@
 {
   "manifest_version": 3,
   "name": "AIOS LinkedIn Metrics",
-  "version": "0.2.1",
-  "description": "Capture your own LinkedIn post metrics + DM inbox snapshots into the owner's AIOS score-posts pipeline. Client-side only — no server scraping.",
-  "permissions": ["activeTab", "storage"],
+  "version": "0.4.0",
+  "description": "Capture your own LinkedIn post metrics + DM inbox snapshots into the owner's AIOS score-posts pipeline. Client-side only \u2014 no server scraping.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
   "host_permissions": [
     "https://www.linkedin.com/*"
   ],
@@ -20,9 +25,14 @@
         "https://www.linkedin.com/feed/update/*",
         "https://www.linkedin.com/posts/*",
         "https://www.linkedin.com/in/*/recent-activity/*",
-        "https://www.linkedin.com/messaging/*"
+        "https://www.linkedin.com/messaging/*",
+        "https://www.linkedin.com/analytics/*",
+        "https://www.linkedin.com/feed/update/*/analytics/*",
+        "https://www.linkedin.com/posts/*/analytics/*"
       ],
-      "js": ["content.js"],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ],

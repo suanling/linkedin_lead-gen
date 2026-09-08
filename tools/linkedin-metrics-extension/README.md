@@ -1,6 +1,6 @@
 # AIOS LinkedIn Metrics — Chrome Extension
 
-**v0.2.0** — Captures **your own** LinkedIn post metrics + DM-inbox snapshots from the pages you're already viewing, and sends them to your local AIOS inbox so the `score-posts` skill can roll them into the hook-performance + DM-attribution ledgers.
+**v0.4.0** — Captures **your own** LinkedIn post metrics + DM-inbox snapshots from the pages you're already viewing, and sends them to your local AIOS inbox so the `score-posts` skill can roll them into the hook-performance + DM-attribution ledgers.
 
 ## What gets captured
 
@@ -20,12 +20,36 @@
 
 ## Usage
 
-1. Open one of your published posts in standalone view (URL contains `urn:li:activity:`). The post analytics card needs to be visible — easiest is to open the post detail page or your "View analytics" view.
+1. Open the post's **"View analytics"** page, not the feed and not your Activity list. The URL ends in `/analytics/`. This matters: `saves`, `dwell_time_avg_s` and `profile_visits` exist ONLY on that page. Snapshotting from the feed or Activity list returns them as `null`, and since saves are weighted 10x in the 360Brew score, every score comes out understated.
 2. Click the AIOS extension icon → **📸 Snapshot**.
-3. Review the JSON preview. If `reactions` / `comments` / `impressions` are `null`, scroll the page so the analytics card is rendered, then snapshot again. (Selectors are best-effort; LinkedIn DOM changes often.)
+3. Review the JSON preview. The popup warns you if `saves` / `dwell` / `profile_visits` all came back null — that almost always means you're on the wrong page. If `reactions` / `comments` / `impressions` are null, scroll so the panel is rendered and snapshot again. (Selectors are best-effort; LinkedIn DOM changes often.)
+
+> **Known failure, 2026-09-04.** All 48 captures in that batch were taken from the Activity feed
+> (`page_title: "Activity | ... | LinkedIn"`). Every one had saves, dwell and profile visits null,
+> so those posts are scored on reactions and impressions alone. v0.3.0 adds the analytics URLs to
+> the manifest (the content script could not even run there before) and warns in the popup.
 4. Click **📤 Send**.
 
 The payload lands in your local server (or n8n webhook) → AIOS `references/learning/inbox/posts/`.
+
+### Capture everything at once (v0.4.0)
+
+Instead of visiting each post's analytics page by hand:
+
+1. Open your **Activity page** (Profile → "Show all posts").
+2. Scroll back as far as you want captured — the extension only sees loaded posts.
+3. Click the extension icon → **⚡ Capture all**.
+
+It reads the post list, then opens each post's analytics page in a background tab,
+snapshots it, sends it, and closes the tab. Roughly 4.5 seconds per post, so ~20 posts
+takes about 90 seconds. Progress shows in the popup; you can close the popup and it keeps going.
+
+The Activity page is used only as an index of which posts exist. Every metric still comes
+from the post's own analytics page, because that is the only place `saves` is exposed.
+
+**Why it's paced.** `BULK_DELAY_MS` in `background.js` spaces the page loads out. This stays
+client-side and roughly human-paced on purpose — same access pattern as you clicking through
+the pages yourself. Don't lower it to speed up a run.
 
 ### Capture DMs
 

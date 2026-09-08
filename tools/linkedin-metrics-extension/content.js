@@ -224,11 +224,17 @@
         reactions: findReactionCount(card),
         comments: findCountInScope(card, ["comment"]),
         reposts: findCountInScope(card, ["repost", "share"]),
-        impressions: findCountInScope(card, ["impression", "view"]),
+        impressions: findCountInScope(card, [
+          "impression", "view", "members reached"
+        ]),
 
         // 360Brew (2026) high-value signals
-        saves: findCountInScope(card, ["save", "saved"]),
-        profile_visits: findCountInScope(card, ["profile visit", "members visited"]),
+        saves: findCountInScope(card, ["save", "saved", "bookmark"]),
+        followers_gained: null,   // analytics-page only
+        link_clicks: null,        // analytics-page only
+        profile_visits: findCountInScope(card, [
+          "profile visit", "members visited", "profile viewer", "viewed your profile"
+        ]),
         dwell_time_avg_s: findDwellTime(card),
         meaningful_comments: countMeaningfulComments(card),
 
@@ -269,10 +275,68 @@
 
   function detectMode() {
     if (location.href.includes("/messaging/")) return "DMS";
+    // Analytics must be tested BEFORE the /posts/ and /feed/update/ checks:
+    // the analytics URL can contain those segments too, and the analytics
+    // page needs its own snapshot path (no post card, no body text, URN
+    // lives in the URL rather than a data-urn attribute).
+    if (location.href.includes("/analytics/")) return "ANALYTICS";
     if (location.href.includes("/feed/update/")) return "SINGLE";
     if (location.href.includes("/recent-activity/")) return "LIST";
     if (location.href.includes("/posts/")) return "SINGLE";
     return "UNKNOWN";
+  }
+
+  // The post-analytics page (/analytics/post-summary/urn:li:activity:NNN/) is
+  // the ONLY place saves, dwell time and profile visits are exposed. It has no
+  // feed card and no post body, so snapshotPostCard()'s card-scoped lookups
+  // find nothing and activityListSnapshot() returns an empty array — which is
+  // what made Snapshot appear to do nothing before v0.3.0. Scope the metric
+  // search to the whole document and take the URN from the URL.
+  function analyticsSnapshot() {
+    const urn = urnFromString(location.href);
+    const scope = document.body;
+    return [{
+      captured_at: new Date().toISOString(),
+      source: "linkedin-metrics-extension",
+      version: "0.3.0",
+      post_urn: urn,
+      post_url: urn
+        ? `https://www.linkedin.com/feed/update/${urn}/`
+        : location.href,
+      preview: "",
+      metrics: {
+        reactions: findReactionCount(scope),
+        comments: findCountInScope(scope, ["comment"]),
+        reposts: findCountInScope(scope, ["repost", "share"]),
+        impressions: findCountInScope(scope, [
+          "impression", "view", "members reached"
+        ]),
+        saves: findCountInScope(scope, ["save", "saved", "bookmark"]),
+        profile_visits: findCountInScope(scope, [
+          "profile visit", "members visited", "profile viewer", "viewed your profile"
+        ]),
+        // Followers gained and link clicks are rated high-value for discovery and
+        // conversion but LinkedIn's wording on the analytics panel is unverified,
+        // so several phrasings are tried. If these stay null across captures while
+        // the figures are visible on screen, the labels below are wrong — fix them
+        // here rather than assuming the metric is unavailable.
+        followers_gained: findCountInScope(scope, [
+          "followers gained", "new follower", "started following"
+        ]),
+        // Deliberately narrow: a bare "clicks" would also match UI chrome like
+        // "click to view". A wrong number is worse than a null, because null is
+        // visibly missing whereas a wrong number silently enters the ledger.
+        link_clicks: findCountInScope(scope, ["link click"]),
+        dwell_time_avg_s: findDwellTime(scope),
+        meaningful_comments: null,
+        dms_received_estimate: null,
+        comment_1_reactions: null,
+        comment_1_replies: null,
+        comment_1_selector: null
+      },
+      page_title: document.title,
+      notes: "captured from post-analytics page"
+    }];
   }
 
   // ─── DM inbox scraper ──────────────────────────────────────────────────
@@ -353,7 +417,8 @@
       try {
         const mode = detectMode();
         let items = [];
-        if (mode === "SINGLE") items = singlePageSnapshot();
+        if (mode === "ANALYTICS") items = analyticsSnapshot();
+        else if (mode === "SINGLE") items = singlePageSnapshot();
         else if (mode === "LIST") items = activityListSnapshot();
         else if (mode === "DMS") items = []; // use AIOS_DM_SNAPSHOT instead
         else items = activityListSnapshot();

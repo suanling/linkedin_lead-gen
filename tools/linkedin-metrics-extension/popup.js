@@ -70,6 +70,7 @@ $("snap").addEventListener("click", async () => {
     $("mode").textContent = `Mode: ${res.mode || "?"} — ${res.items.length} post(s) found`;
     items = res.items;
     renderList();
+    warnMissingHighValue(res.items);
   });
 });
 
@@ -151,4 +152,88 @@ $("saveEndpoint").addEventListener("click", async () => {
     secret: $("secret").value.trim()
   });
   $("status").innerHTML = '<span class="ok">Saved.</span>';
+});
+
+// The 360Brew score weights saves 10x. Those fields only exist on a post's
+// own analytics page ("View analytics"), not on the feed or Activity list —
+// capturing from the wrong page silently produces null and understates every
+// score. All 48 captures in the 2026-09-04 batch had this problem, which is
+// why the warning is loud rather than a console line.
+function warnMissingHighValue(items) {
+  if (!items || !items.length) return;
+  const missing = items.filter((it) => {
+    const m = (it && it.metrics) || {};
+    return m.saves === null && m.dwell_time_avg_s === null && m.profile_visits === null;
+  }).length;
+  if (!missing) return;
+  const onAnalytics = /\/analytics\//.test(location.href);
+  const hint = onAnalytics
+    ? "Scroll so the full analytics panel is rendered, then snapshot again."
+    : "Open the post's \u201cView analytics\u201d page and snapshot there.";
+  $("status").innerHTML =
+    '<span class="err">' +
+    missing + " of " + items.length +
+    " capture(s) have no saves / dwell / profile visits. " + hint +
+    " Sending anyway records reactions and impressions only.</span>";
+}
+
+// ─── Bulk capture (v0.4.0) ─────────────────────────────────────────────────
+// Collects post URNs from the Activity list, then hands them to the service
+// worker, which visits each post's analytics page in turn. The Activity page
+// is only used as an index of which posts exist — every metric still comes
+// from the post's own analytics page, the one place saves are exposed.
+chrome.runtime.onMessage.addListener((msg) => {
+  if (msg && msg.type === "AIOS_BULK_PROGRESS") {
+    const l = msg.last || {};
+    const mark = l.ok ? "✓" : "✗";
+    $("status").textContent =
+      `Capturing ${msg.done}/${msg.total}… ${mark} ` +
+      (l.ok ? `saves=${l.saves}` : l.error || "failed");
+  }
+});
+
+$("bulkCapture").addEventListener("click", async () => {
+  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  if (!tab || !/linkedin\.com/.test(tab.url || "")) {
+    $("status").innerHTML = '<span class="err">Open LinkedIn first.</span>';
+    return;
+  }
+  $("status").textContent = "Reading your post list…";
+  $("preview").style.display = "none";
+
+  chrome.tabs.sendMessage(tab.id, { type: "AIOS_SNAPSHOT" }, async (res) => {
+    if (chrome.runtime.lastError || !res || !res.ok) {
+      $("status").innerHTML =
+        '<span class="err">Stale content script. Refresh the tab (Cmd+R) and try again.</span>';
+      return;
+    }
+    const urns = [...new Set((res.items || []).map((i) => i.post_urn).filter(Boolean))];
+    if (!urns.length) {
+      $("status").innerHTML =
+        '<span class="err">No posts found on this page. Open your Activity page ' +
+        '(Profile → Show all posts) and try again.</span>';
+      return;
+    }
+    const est = Math.ceil((urns.length * 4.5) / 60);
+    $("status").textContent =
+      `Found ${urns.length} posts. Capturing each analytics page (~${est} min). ` +
+      `Tabs will open and close on their own.`;
+    chrome.runtime.sendMessage({ type: "AIOS_BULK_CAPTURE", urns }, (out) => {
+      if (!out || !out.ok) {
+        $("status").innerHTML = '<span class="err">Bulk capture failed.</span>';
+        return;
+      }
+      const ok = out.results.filter((r) => r.ok).length;
+      const failed = out.results.filter((r) => !r.ok);
+      let html = `Done. ${ok}/${out.results.length} captured and sent.`;
+      if (failed.length) {
+        html +=
+          `<br><span class="err">${failed.length} failed: ` +
+          failed.slice(0, 3).map((f) => f.urn.split(":").pop()).join(", ") +
+          (failed.length > 3 ? "…" : "") +
+          "</span>";
+      }
+      $("status").innerHTML = html;
+    });
+  });
 });

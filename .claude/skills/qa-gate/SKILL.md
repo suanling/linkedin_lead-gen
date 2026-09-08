@@ -77,9 +77,9 @@ The last check before anything goes out. Config-driven: reads `config.json → g
 6. **Output** per enabled gate: `PASS`, or the exact problem + the fix (quote the offending phrase, give the rewrite).
 7. If any gate fails, the draft does **not** ship until fixed. Re-run after the fix.
 
-**Carousel truth gate (carousels only, runs BEFORE the gates above).** Per
-`references/template/Linkedin Carousel Design Template/design-notes.md` (applied amendment
-2026-08-18-carousel-design-anti-slop): (a) no statistic without a nameable source — an unsourced
+**Carousel truth gate (carousels only, runs BEFORE the gates above).** Per the owner's carousel
+design system (`references/brand-system.md`, and the design notes inside whatever template
+directory it names): (a) no statistic without a nameable source — an unsourced
 number fails here even before compliance sees it; (b) no invented proof — an omitted slide beats
 a fabricated one; (c) no three equally-weighted slides in a row — the 03–07 value progression
 must build, with the strongest beat given the most room. Also confirm the deck states its

@@ -18,7 +18,7 @@
 
 3. **Testimonial (someone praising the owner or their work)** → `references/testimonials.md`, captured
    verbatim with who / where / date and `Consent to publish = not granted` by default. **Never publish
-   without consent.** Financial testimonials need prior WRITTEN consent, no PII, no figures (Mode 2, see
+   without consent.** In a regulated field, testimonials on regulated topics need prior WRITTEN consent, no PII, no figures (see
    gates.md); coaching testimonials still need consent before use. Offer to capture and flag that consent
    is required before it can be used anywhere.
 

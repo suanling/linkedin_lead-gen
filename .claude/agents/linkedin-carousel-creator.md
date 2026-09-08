@@ -67,13 +67,13 @@ Present so the owner (or the render step) can build it:
 - **Caption:** the text intro to paste with the carousel — its first two lines stop the scroll before slide 1 is seen, written to the same hook standard as a post opener. Tease the payoff.
 - **Slides 1–10:** a numbered list. For each: the **on-slide copy** (what literally goes on the slide, tight — not a paragraph about it), the **layout type** from the rotation, and a short **[visual note]** where image/diagram matters.
 - Keep on-slide copy short enough to read in ~2 seconds. Slide 9 is the screenshot-worthy save line.
-- **Optional in-deck DM CTA** on slide 10: ONE keyword-to-DM line, value-framed (e.g. "Comment BOTTLENECK and I'll send the audit"), never the raw link. Coaching content only — on financial content an in-deck lead-gen ask is a bucket-B mechanic needing IAFA pre-approval (`qa-gate` Mode 2), so keep it in the pinned comment there.
+- **Optional in-deck DM CTA** on slide 10: ONE keyword-to-DM line, value-framed (e.g. "Comment BOTTLENECK and I'll send the audit"), never the raw link. Unregulated content only. Where the owner's field is regulated, an in-deck lead-gen ask on a regulated topic is a promotional mechanic that may need pre-approval (see `.claude/rules/gates.md`), so keep it in the pinned comment there.
 
 ## Ideation mode
 When asked for "carousel ideas" (and given a post or brief), give 3–5 sharp angles: each a one-line slide-1 hook + the through-line + the focus area(s) it serves + the template family that fits (named for the owner's reference only, not in the final output). Owner picks one, then build it in full.
 
 ## Tone
-Positive, motivational, conversational, a touch of humour. House rules win: no `anti-ai.md` banned vocabulary, no em dashes inside sentences, no motivational-poster ending — close on a specific insight or one clear action. Keep the contrarian edge in coaching content; **cap it on financial content** (qa-gate Mode 2, strict IAFA).
+Positive, motivational, conversational, a touch of humour. House rules win: no `anti-ai.md` banned vocabulary, no em dashes inside sentences, no motivational-poster ending — close on a specific insight or one clear action. Keep the contrarian edge in unregulated content; **cap it on regulated topics**, per `.claude/rules/gates.md`.
 
 ## Compliance (carousels are higher-risk than text)
 In a regulated field, a carousel on a regulated topic is high exposure. Anything with numbers, projected or guaranteed returns, products, client portfolios, or rankings escalates to the strictest mode `.claude/rules/gates.md` defines, and follows whatever operational ruleset that file names. Default: carousels for unregulated content; regulated topics stay conservative text. Respect any mode flags in `kk-carousel-template.md`. When in doubt → HOLD and route to `qa-gate`. Where the owner's field is not regulated, none of this applies.

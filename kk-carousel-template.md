@@ -39,7 +39,7 @@ these first; when the goal is a DM/lead, reach for Family J. Both can be true in
 6. **Close on the CTA slide, not a question.** Earn a save, a keyword, a follow, or a DM. CTAs occasional, not every deck.
 7. **Concrete, real numbers, lived examples.** If a slide could come from ChatGPT, it fails. Never invent — leave `[xxx — needs your real X]`.
 8. **No overlap, ever.** Each carousel stands on its own story and angle. Themes recur; illustrations don't.
-9. **Compliance.** Examples are CAREER/COACHING (Mode 1). Financial topics (numbers, returns, products, rankings) flip to Mode 2 — bucket B/C → pre-approval or NOT allowed per `references/iafa-compliance.md`. Default: carousels for coaching/career; financial stays conservative text. When in doubt → HOLD.
+9. **Compliance.** Where the owner's field is regulated, a regulated topic (numbers, performance claims, products, rankings) escalates to the strictest mode `.claude/rules/gates.md` defines, and follows the operational ruleset that file names: pre-approval, or not allowed. Default: carousels for unregulated content; regulated topics stay conservative text. When in doubt → HOLD. None of this applies where the owner's field is not regulated.
 10. **Run qa-gate before shipping.** Voice, anti-AI, compliance, cadence.
 
 ---
@@ -98,7 +98,7 @@ these first; when the goal is a DM/lead, reach for Family J. Both can be true in
 [Slide 11. CTA: "Save the whole thing. Follow for more like it."]
 
 ---C7. The Stat-Stack Carousel---
-> Best for: a sequence of surprising facts that build a case. NOTE: non-financial stats only (Mode 2).
+> Best for: a sequence of surprising facts that build a case. NOTE: in a regulated field, keep stats off regulated topics.
 [Caption: the surprising truth the stats reveal.]
 [Slide 1. Hook: a single jarring stat, stated alone.]
 [Slides 2–7. One stat per slide: the number + what it actually means for the reader.]
@@ -334,7 +334,7 @@ these first; when the goal is a DM/lead, reach for Family J. Both can be true in
 ---
 
 # FAMILY D — Contrarian, Myth-Busting & Hot Takes
-> Pick a fight with conventional wisdom. KEEP THE EDGE IN COACHING CONTENT — financial topics may not be provocative (Mode 2). Maps to #5, #15, #28, #44, #47, #62, #79, #88.
+> Pick a fight with conventional wisdom. KEEP THE EDGE IN UNREGULATED CONTENT — in a regulated field, regulated topics may not be provocative. Maps to #5, #15, #28, #44, #47, #62, #79, #88.
 
 ---C31. The Myth → Truth Carousel---
 > Best for: dismantling false beliefs one by one. Maps to #44, #88.
@@ -948,7 +948,7 @@ these first; when the goal is a DM/lead, reach for Family J. Both can be true in
 [Slide 7. CTA: "Save this and get ahead of it."]
 
 ---C99. The Prediction Carousel---
-> Best for: a point of view on where things are going. NON-FINANCIAL predictions only (Mode 2).
+> Best for: a point of view on where things are going. In a regulated field, no predictions on regulated topics.
 [Caption: the timeframe + domain.]
 [Slide 1. Hook: "[N] predictions for [domain] over the next [timeframe]."]
 [Slides 2–7. One prediction per slide + the reasoning.]

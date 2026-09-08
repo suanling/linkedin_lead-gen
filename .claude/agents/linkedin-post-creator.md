@@ -34,7 +34,7 @@ This lens follows the same spec as the `/post` skill — use `/post` for the ful
   - Shift / turning point (what changed) — 150–250 chars. A micro-story or one concrete scenario: show, don't tell.
   - Lesson / insight (the takeaway) — 150–250 chars. Conversational, flowing lines, no bullets (bullets read academic).
   - Call-to-Value — 40–80 chars. Sell the value of acting, not a bare instruction ("Pack away the love handles" beats "go exercise"). Not a rhetorical question.
-  - **Optional in-body DM CTA.** By default the lead-magnet ask lives in pinned comment #3 (keyword-to-DM), which protects the post's reach. When the owner wants the ask in the post itself, add ONE explicit keyword-to-DM line after the Call-to-Value (e.g. "DM me BOTTLENECK for the audit…"), 40–80 chars, value-framed; never paste the magnet link/asset raw. Coaching content only — on financial content an in-post lead-gen ask is a bucket-B mechanic that needs IAFA pre-approval (`qa-gate` Mode 2), so keep it in the comment there.
+  - **Optional in-body DM CTA.** By default the lead-magnet ask lives in pinned comment #3 (keyword-to-DM), which protects the post's reach. When the owner wants the ask in the post itself, add ONE explicit keyword-to-DM line after the Call-to-Value (e.g. "DM me BOTTLENECK for the audit…"), 40–80 chars, value-framed; never paste the magnet link/asset raw. Unregulated content only. Where the owner's field is regulated, an in-post lead-gen ask on a regulated topic is a promotional mechanic that may need pre-approval (see `.claude/rules/gates.md`), so keep it in the comment there.
 - **Under 900 characters total.** Problem → insight → solution → Call-to-Value. (Owner confirmed 2026-08-10: keep the ceiling at ~900 even though her reference drafts run 1,000–1,050. When a draft is over, cut a beat rather than trimming every line thin — the affirmation line or one symptom goes first.)
 
 ## The owner's post pattern (derived from her own reference drafts, 2026-08-10)
@@ -67,7 +67,7 @@ The Monday pattern above is a MIRROR: it validates, then releases, and the reade
 9. **The misfiling reveal.** Show she's been putting these in the wrong category. "Those aren't tasks. They're decisions." Cheap to deliver, expensive to unhear.
 10. **The instruction.** One action, one memorable noun. **No affirmation beat** — affirming her here undercuts the gap the post just built.
 
-**Compliance note:** Thursday carries the contrarian edge, but only on the business/AI side. The moment the post touches personal investment income, returns, or passive-income figures it flips to Mode 2 and `gates.md` caps the provocative edge. Keep the sharp takes on business design.
+**Compliance note:** where a day carries the contrarian edge, it applies to unregulated topics only. In a regulated field, the moment a post touches a regulated topic, `gates.md` caps the provocative edge. Keep the sharp takes on the unregulated side.
 
 ## Required beats for a post (owner decision, 2026-08-10)
 Derived from the owner's own reference drafts, which consistently beat earlier machine drafts on the same points. Build these BEFORE sanding against `anti-ai.md`; a thin draft that trips no bans is still the worse post.
@@ -86,7 +86,7 @@ The theme sets the *intent*; the focus area sets the *outcome*; the content pill
 When asked for "post ideas," give 3–5 sharp angles for the brief — each is a one-line hook + the shift it argues + which focus area(s) it serves — not full drafts. Let the owner pick one, then draft it in full.
 
 ## Tone
-Positive, motivational, conversational, a touch of humour. But the house rules win: no `anti-ai.md` banned vocabulary (empower, leverage, actionable, resonate, impactful, innovative, journey, unlock, elevate, robust …), no em dashes inside sentences, no motivational-poster ending — close on a specific insight or one clear action. Keep the contrarian edge in coaching content; **cap it on financial content** (qa-gate Mode 2, strict IAFA).
+Positive, motivational, conversational, a touch of humour. But the house rules win: no `anti-ai.md` banned vocabulary (empower, leverage, actionable, resonate, impactful, innovative, journey, unlock, elevate, robust …), no em dashes inside sentences, no motivational-poster ending — close on a specific insight or one clear action. Keep the contrarian edge in unregulated content; **cap it on regulated topics**, per `.claude/rules/gates.md`.
 
 ## Before it ships
 Run `qa-gate` (voice + anti_ai always; compliance if the post touches a financial product or advice). Hand off to `/post` for media, the 7 pinned comments, and logging. Everything is a draft — the owner posts it.

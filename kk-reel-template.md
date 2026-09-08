@@ -64,9 +64,10 @@ loud is correct here, not sloppy.
    Never invent — leave `[xxx — needs your real X]`.
 10. **No overlap, ever.** Each reel stands on its own story and angle. Themes recur;
     illustrations don't.
-11. **Compliance.** Examples are CAREER/COACHING (Mode 1). Anything financial flips to Mode 2 —
-    concept only, no numbers, no products, no returns, and the contrarian edge is capped. See
-    `references/iafa-compliance.md`.
+11. **Compliance.** Where the owner's field is regulated, a regulated topic escalates to the
+    strictest mode `.claude/rules/gates.md` defines: concept only, no numbers, no products, no
+    performance claims, and the contrarian edge capped. Follow whatever operational ruleset that
+    file names. None of this applies where the owner's field is not regulated.
 12. **Run qa-gate before shipping.** Voice, anti-AI, compliance, cadence.
 
 ---
@@ -390,8 +391,8 @@ machine" — income framing, bucket C. It is also his worst-performing format at
 bloodline waited for centuries", "some people are never gonna clap for you", "God put that dream
 in your heart"). **Excluded on five counts:** `voice-profile.md` — "if ChatGPT could've produced
 it, it's worthless and not hers"; `anti-ai.md` — motivational-poster endings banned; "never make
-claims without verifiable proof"; IAFA slide 23 — plagiarised or uncited content is bucket C;
-IAFA slide 23 — **religious content is bucket C**.
+claims without verifiable proof"; and, in a regulated field, uncited content and religious or
+political content both fall in the never-allowed bucket.
 
 **The credential-dump opening.** Not a format but a move, used in his teaching reels: "I've
 grown over 1.5 million followers, been invited to speak on stages, work with brands around the

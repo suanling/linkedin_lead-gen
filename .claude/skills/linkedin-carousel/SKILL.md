@@ -91,8 +91,8 @@ inside `slides-stepback-all.jsx`; the placeholder text is the art direction.
 ## Inputs
 
 1. **A finished post** (pasted or `.md`; from `/post`, the drafted body). If none, ask.
-2. **Brand.** `sl` = Suan Ling (ink/clay on ivory, Caveat CTA mark). `lc` = Lumina Clarity
-   (navy + terracotta on cream). Default `sl` for the owner.
+2. **Brand.** The palettes and marks defined in `references/brand-system.md`. Where the owner has
+   more than one brand, that file names the key for each and which is the default.
 3. **Output folder.** Default `daily-log/`. PNGs → `daily-log/export/<variant>/`; contact
    sheet → `daily-log/export/<variant>-contact-sheet.png`.
 

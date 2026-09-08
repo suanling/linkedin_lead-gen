@@ -30,7 +30,8 @@ trackers/              lead-gen-tracker.xlsx + engagement-tracker.xlsx
 lead-magnets/          your magnets
 references/            about-me + voice-profile + profile (master profile), icp, positioning,
                        content-calendar (dated plan), brand-system (carousel visuals), lead-magnets,
-                       engagement-targets, market-context, iafa-compliance, learning/
+                       engagement-targets, engagement-profile-criteria (group tests),
+                       market-context, learning/ (+ an operational compliance ruleset, regulated fields only)
 sops/linkedin-sop.md   the playbook (read-only)
 .claude/
   rules/               voice.md (outreach voice), anti-ai.md (full anti-AI rules), gates.md
@@ -56,6 +57,11 @@ tools/                 optional: linkedin-metrics-extension (auto-capture for sc
 | `/log-prospect` | Quick logger; also captures manual/Sales-Nav connection requests |
 | `/profile-check` | Check an uploaded LinkedIn profile PDF against ICP + hard exclusions; logs the verdict either way |
 | `/post` | Write a LinkedIn post (kk-post format → voice → media → QA → 7 comments) |
+| `/hook` | Write or sharpen an opening line (Hook · Retain · Reward) |
+| `/linkedin-carousel` | Build a branded 10-slide carousel from a finished post and export the PNGs |
+| `/carousel-brand-adapt` | Build a brand's carousel design system from reference decks and a brand kit |
+| `/log-linkedin-post` | Log a published post so `score-posts` can score it at 7 days |
+| `/capture` | Save a story, belief or testimonial into the right store, in voice |
 | `/lead-magnet-gen` | Create a lead magnet from a pain point |
 | `/score-posts` | Weekly — score posts + comments at 7 days; feeds the learning ledgers so `post` improves |
 | `/qa-gate` | Runs the enabled quality checks before anything ships |

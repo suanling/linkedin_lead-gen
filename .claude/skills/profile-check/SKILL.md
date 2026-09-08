@@ -128,11 +128,10 @@ it and stop; no ICP analysis is needed.
 
 # STEP 3 — THE GROUP PASS
 
-**Read the current group balance first**, from `references/engagement-targets.md` →
-"Where you actually stand". Recompute it from the tracker rather than trusting the
-prose; that section has gone a week out of date before and misled two sourcing
-decisions. As of the last count: Group 1 is ~15 points under target and is the gap.
-Group 2 is at target. Group 3 is ~13 points over.
+**Read the current group balance first**, computed from `trackers/engagement-tracker.xlsx`
+against the target split in `references/engagement-targets.md` → "Session mix". Recompute from
+the tracker rather than trusting any prose summary; a written-down balance goes out of date
+within days and will mislead a sourcing decision.
 
 The balance does not override a genuine fit. It breaks ties, and it raises the bar for
 Group 3 specifically.
